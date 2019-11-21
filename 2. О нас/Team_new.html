@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		[[$meta_new_ru]]
+		<link rel="stylesheet" href="assets/new/global-styles/main.css" type="text/css" />
+		<link rel="stylesheet" href="assets/new/portfolio.css" />
+		<link rel="stylesheet" href="assets/new/libs/modaal.css" />
+		<link rel="stylesheet" href="assets/new/team.css" />
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='assets/new/libs/modaal.js'></script>
+	</head>
+
+	<body>
+		<hr class="center-line" />
+		<hr class="left-line" />
+		<hr class="right-line" />
+		[[$header_ru_new]]
+		[[$menu_new_ru]]
+		<hr class="gorizontal-line" />
+		<div class="team-page-container">
+			<div class="team-page-left-part">
+				<h1 class="rev-block team-page-header">
+					<span class="light-font">профессиональная</span>
+					<br />
+					<span>команда</span>
+				</h1>
+				<span class="rev-block" style="display: inline-block;">
+					<span class="non-line uppercase">zrobym architects</span>
+				</span>
+			</div>
+			<div class="team-page-right-part">
+				<div class="team-page-description">
+					<h4>архитектура с идеей</h4>
+					<p>
+						Мы видим миссию нашей команды в изменении окружающего мира за счет качественной
+						концептуальной архитектуры. В каждом нашем проекте заложен уникальный смысл и
+						авторская идея
+					</p>
+				</div>
+			</div>
+		</div>
+		<hr class="gorizontal-line" />
+		<div class="arrow-block">
+			<div class="arrow-grey arrow-animate"></div>
+		</div>
+		<hr class="gorizontal-line" />
+		<main>
+			<h1 class="rev-block team-page-header" id="persons-header">
+				<span>специалисты</span>
+			</h1>
+			<div class="persons-container" style="padding-top: 20px;" id="person-template">
+				[[getProducts?
+				&parents=`2462`
+				&includeTVs=`1`
+				&includeTVList=`pagetitle,image,profession,alt`
+				&tpl=`employeeOutTpl_new`]]
+			</div>
+		</main>
+		<hr class="gorizontal-line" />
+		<div class="team-page-container" style="background-color: #ECECEC">
+			<div class="team-page-left-part">
+				<h1 class="rev-block team-page-header">
+					<span class="light-font">ищем</span>
+					<br>
+					<span>сотрудников!</span>
+				</h1>
+				<span class="rev-block" style="display: inline-block;">
+					<span class="non-line uppercase header3">в команду zrobym architects</span>
+				</span>
+			</div>
+			<div class="team-page-right-part">
+				<div class="team-page-description">
+					<h3>как попасть в нашу команду?</h3>
+					<p>
+						Ищем суперпрофессионала, архитектурного фанатика, гения дизайна с КПД 200%
+						в команду архитекторов ZROBYM! Предлагаем как удаленную работу, так и работу
+						в офисе студии, высокую ЗП, ведение проектов и реализацию Вашего творческого
+						потенциала!
+					</p>
+					<div class="buttons-container" style="padding: 100px 0 0">
+						<div class="rev-button">
+							<a href="[[~951]]"><span>Посмотреть требования</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		[[$forma_contacts_ru_new_2]]
+		[[$footer_ru_new]]
+
+		<!--MENU-MORE-TEXT-->
+		<script async>
+			$('.menu-label-block').modaal({
+				fullscreen: true,
+				background: "#000000",
+				overlay_opacity: 0.9,
+				hide_close: true,
+				before_open() {
+					$('.menu-label-block').addClass("click");
+				},
+				after_close() {
+					$('.menu-label-block').removeClass("click");
+				}
+			});
+			$("#close-button").click(function() {
+				$('.menu-label-block').modaal('close');
+			});
+
+		</script>
+
+		<!--SCROLL MY ARROW-->
+		<script async>
+			$('.arrow-grey').click(function() {
+				var win = $('.team-page-container').height() + 213;
+				$('body,html').animate({
+					scrollTop: win
+				}, 800);
+				return false;
+			});
+			$('.arrow').click(function() {
+				var win = $('.team-page-container').height() + 213;
+				$('body,html').animate({
+					scrollTop: win
+				}, 800);
+				return false;
+			});
+
+		</script>
+
+		<!--FEEDBACK OPENING BLOCK-->
+		<script async>
+			$("#open-input").focus(function() {
+				$("#feedback-input-block").addClass('height-auto');
+				$(".confirm-block").addClass('height-auto');
+				$(".feedback-input").addClass('open-block');
+				$("#open-input").addClass('full');
+			});
+
+		</script>
+		<script async>
+			const footerHeaderBlock = document.getElementById('footer-header-block');
+			const footerHeader = document.getElementById('footer-header');
+
+			$(document).on("scroll", function() {
+				var st = $(this).scrollTop();
+				var wh = $(document).height();
+				var perc = (st * 100) / wh;
+				if (footerHeaderBlock.getBoundingClientRect().top < 500) {
+					footerHeader.classList.add("rev-block");
+					footerHeader.classList.remove("header-label");
+				}
+			});
+
+		</script>
+	</body>
+
+</html>

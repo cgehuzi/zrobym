@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+
+	<head>
+		[[$meta_new_by]]
+		<link rel="stylesheet" href="assets/new/global-styles/main.css" type="text/css">
+		<link rel="stylesheet" href="assets/new/team-card.css" type="text/css">
+		<link rel="stylesheet" href="assets/new/libs/modaal.css">
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+	</head>
+
+	<body>
+		<hr class="center-line" />
+		<hr class="left-line" />
+		<hr class="right-line" />
+		<div class="burger-block" style="position: absolute;z-index: 3;">
+			<div class="burger-black">
+			</div>
+		</div>
+		[[$menu_new_by]]
+		<hr class="gorizontal-line" style="top: 110px;" />
+		<div class="team-card-container" style="padding: 0;min-height: 100vh">
+			<div class="team-card-head-left-part">
+				<h1 class="rev-block team-card-header" style="margin:0 0 0 20%">
+					<span>[[*nameempl]]</span>
+					<br>
+					<span class="light-font">[[*sernameempl]]</span>
+				</h1>
+
+				<span class="rev-block" style="margin:0 0 0 20%">
+					<span class="non-line">[[*profession:ucase]]</span>
+				</span>
+			</div>
+			<div class="team-card-head-right-part person-image">
+				<!--    <img style="height: 100%;" src="[[*image]]" alt="[[*alt]]">-->
+			</div>
+			<style>
+				.person-image {
+					background: url("[[*image]]");
+					background-size: cover;
+				}
+
+			</style>
+		</div>
+		<hr class="gorizontal-line" style="top: -100px;" />
+		<div class="arrow-block" style="top: -100px;">
+			<div class="arrow-grey arrow-animate"></div>
+		</div>
+		<hr class="gorizontal-line" style="top: -100px;" />
+		<div class="team-card-container">
+			<div class="team-card-left-part team-card-info">
+				<h4>[[*h1:empty=`[[*pagetitle]]`]]</h4>
+				<p>
+					[[*contentempl]]
+				</p>
+				<p id="more-text" class="more-text">
+					<br>
+					[[*contentmore]]
+				</p>
+				<div id="more-button" class="more-button">
+					<span>Чытаць цалкам</span>
+				</div>
+				<div class="direction-container">
+					<h4>Напрамкі дзейнасці:</h4><br />
+					[[*napravlenie]]
+
+				</div>
+			</div>
+			<div class="team-card-right-part"></div>
+		</div>
+		<div class="interests-container">
+			<div class="interests-left-part">
+				<h1 class="rev-block team-card-header">
+					<span class="light-font">Нашы</span>
+					<br>
+					<span>праекты</span>
+				</h1>
+			</div>
+			<div class="interests-right-part">
+				<div class="interests-description">
+					<span>Магчыма вам будуць цікавыя іншыя напрамкі і праекты нашай студыі:</span>
+					<div class="buttons-container">
+						<div class="rev-button black" style="width: 100%;margin-bottom: 25px;">
+							<a href="by/[[~2538]]" style="display: block;width: 100%;">
+								<span style="display: flex; justify-content: center;">Дызайн унутраных прастор</span>
+							</a>
+						</div>
+						<div class="rev-button black" style="width: 100%;margin-bottom: 25px;">
+							<a href="by/[[~2553]]" style="display: block;width: 100%;">
+								<span style="display: flex; justify-content: center;">нашы рэалізаваныя праекты</span>
+							</a>
+						</div>
+						<div class="rev-button black" style="width: 100%;">
+							<a href="by/[[~2458]]" style="display: block;width: 100%;">
+								<span style="display: flex; justify-content: center;">брэнд серыйнай мэблі</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		[[$forma_contacts_by_new_2]]
+		[[$footer_by_new]]
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='assets/new/libs/modaal.js'></script>
+		<!--BACKGROUND-PHOTO-HEIGHT-->
+		<script>
+			$(document).ready(function() {
+
+				function calcHeight() {
+					let height = $('.team-card-container').height() +
+						$('.arrow-block').height() +
+						$('.burger-block').height();
+					return height;
+				}
+
+				function setHeight(height) {
+					$('.right-corner-pic').height(height);
+				}
+
+				function resize() {
+					setHeight(calcHeight());
+				}
+
+				resize();
+
+				$(window).on('resize', () => {
+					resize();
+				});
+
+			});
+
+		</script>
+		<!--MENU-MORE-TEXT-->
+		<script async>
+			$('.menu-label-block').modaal({
+				fullscreen: true,
+				background: "#000000",
+				overlay_opacity: 0.9,
+				hide_close: true,
+				before_open() {
+					$('.menu-label-block').addClass("click");
+				},
+				after_close() {
+					$('.menu-label-block').removeClass("click");
+				}
+			});
+			$('.close').click(function() {
+				$('.menu-label-block').modaal('close');
+			});
+
+		</script>
+		<!--SCROLL MY ARROW-->
+		<script async>
+			$('.arrow-grey').click(function() {
+				var win = $('.team-card-container:eq(0)').height() +
+					$('.arrow-block').height();
+				$('body,html').animate({
+					scrollTop: win
+				}, 800);
+				return false;
+			});
+
+		</script>
+		<!--FEEDBACK OPENING BLOCK-->
+		<script async>
+			$("#open-input").focus(function() {
+				$("#feedback-input-block").addClass('height-auto');
+				$(".confirm-block").addClass('height-auto');
+				$(".feedback-input").addClass('open-block');
+				$("#open-input").addClass('full');
+			});
+
+		</script>
+		<!--FOOTER-HEADER-ANIMATION-->
+		<script async>
+			const footerHeaderBlock = document.getElementById('footer-header-block');
+			const footerHeader = document.getElementById('footer-header');
+
+			$(document).on("scroll", function() {
+				if (footerHeaderBlock.getBoundingClientRect().top < 500) {
+					footerHeader.classList.add("rev-block");
+					footerHeader.classList.remove("header-label");
+				}
+			});
+
+		</script>
+		<!--OPEN-MORE-TEXT-->
+		<script async>
+			let textButton = 'Читать больше';
+			$('.menu-label-block').modaal({
+				fullscreen: true,
+				background: "#000000",
+				overlay_opacity: 0.9,
+				hide_close: true,
+				before_open() {
+					$('.menu-label-block').addClass("click");
+				},
+				after_close() {
+					$('.menu-label-block').removeClass("click");
+				}
+			});
+			$('.close').click(function() {
+				$('.menu-label-block').modaal('close');
+			});
+			$("#more-button").click(function() {
+				$("#more-text").toggleClass(function() {
+					switch (textButton) {
+						case 'Чытаць больш': {
+							textButton = 'Схаваць';
+							break;
+						}
+						case 'Схаваць': {
+							textButton = 'Чытаць больш';
+							break;
+						}
+					}
+					$("#more-button span").text(textButton);
+					return 'open'
+				});
+			});
+
+		</script>
+	</body>
+
+</html>

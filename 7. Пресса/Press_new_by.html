@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		[[$meta_new_by]]
+		<link rel="stylesheet" href="assets/new/global-styles/main.css" type="text/css">
+		<link rel="stylesheet" href="assets/new/press.css">
+		<link rel="stylesheet" href="assets/new/libs/modaal.css">
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
+		<link rel="stylesheet" href="assets/new/flexslider.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="assets/new/flexslider-rtl-min.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="assets/new/flexslider-rtl.css" type="text/css" media="screen" />
+
+
+	</head>
+
+	<body>
+		<hr class="center-line" />
+		<hr class="left-line" style="left: calc(10% - 1px);" />
+		<hr class="right-line" style="right: calc(10% - 1px);" />
+		[[$header_ru_new]]
+		[[$menu_new_by]]
+		<hr class="gorizontal-line" />
+		<div class="press-container">
+			<div class="press-left-part">
+				<h1 class="rev-block press-header" style="margin-bottom: 0;">
+					<span>Пресса</span><br>
+					<span class="light-font">
+						О Zrobym architects
+					</span>
+				</h1>
+				<span class="rev-block">
+					<span class="non-line">у відэа і часопісах</span>
+				</span>
+			</div>
+			<div class="press-right-part">
+				<div class="press-description">
+					<h4>Навіны аб праектах студыі
+						на youtube, у СМІ і на сайтах</h4>
+					<p> Для многіх панятак пра ідэальны праект дома ўжо сфарміраваны і складаецца з
+						уласнага ўяўлення пра камфорт і арганізацыю побыта. Для праектавання дамоў для
+						пэўных асоб, наша архітэктурная студыя бярэ за основу іх звыклы вобраз
+						жыцця і прафесійна арганізуе для іх прастору. Рэалізуючы некаторыя архітэктурныя
+						праекты дамоў у Мінску ды іншых гарадах Беларусі, мы атрымалі каштоўны досвед, які і выкарыстоўваем у сваёй
+						працы.
+					</p>
+				</div>
+			</div>
+		</div>
+		<hr class="gorizontal-line" />
+		<div class="arrow-block">
+			<div class="arrow-grey arrow-animate"></div>
+		</div>
+		<main>
+			<div class="categories" id="categories">
+				<input type="radio" checked="checked" id="all" name="radio-categories">
+				<label for="all">Усе публікацыі</label>
+				<input type="radio" id="category-1" name="radio-categories">
+				<label for="category-1">Часопісы</label>
+				<input type="radio" id="category-2" name="radio-categories">
+				<label for="category-2">Web</label>
+			</div>
+			<h1 class="rev-block press-header">
+				<span class="light-font">
+					Zrobym architects
+				</span><br>
+				<span>публікацыі</span>
+			</h1>
+		</main>
+		<div class="container" id="publications">
+			<section class="publications_item" id="magazine">
+
+				[[!getPage@Pagging?
+				&elementClass=`modSnippet`
+				&element=`getImageList`
+				&limit=`2`
+				&pageNavVar=`page.nav`
+				&tvname=`magazines_new`
+				&tpl=`magazinesOutTpl_new`
+				]]
+
+			</section>
+			<section class="publications_item" id="web">
+
+				[[!getPage@Pagging?
+				&elementClass=`modSnippet`
+				&element=`getImageList`
+				&limit=`2`
+				&pageNavVar=`page.nav`
+				&tvname=`WEB_new`
+				&tpl=`webOutTpl_new`
+				]]
+
+			</section>
+		</div>
+		<!--<div class="container" id="category-1">
+        <section class="publications_item" id="magazine">
+          [[!getPage@Pagging?
+              &elementClass=`modSnippet`
+              &element=`getImageList`
+               &limit=`5`
+               &pageNavVar=`page.nav`
+              &tvname=`magazines_new`
+              &tpl=`magazinesOutTpl_new`
+            ]]
+               </section>
+      </div>-->
+		<!-- <div class="container" id="category-2">
+        <section class="publications_item" id="web">
+               [[!getPage@Pagging?
+              &elementClass=`modSnippet`
+              &element=`getImageList`
+                &limit=`5`
+            &pageNavVar=`page.nav`
+              &tvname=`WEB_new`
+              &tpl=`webOutTpl_new`
+            ]]
+        </section>
+      </div>-->
+		<div class="pagination-container" style="padding-right: 3px;">
+			<!--<div class="left-arrow">
+        <img src="assets/new/assets/images/press/left-arrow.svg">
+    </div>
+    <div class="right-arrow">
+        <img src="assets/new/assets/images/press/right-arrow.svg">
+    </div>-->
+			<hr style="top: 118px;position:absolute;" class="gorizontal-line" />
+			[[!+page.nav]]
+			<!--   <input type="radio" name="pagination" id="p1" checked="checked">
+   
+  <label for="p1">1
+        <div class="checkmark"></div>
+    </label>
+    <input type="radio" name="pagination" id="p2">
+    <label for="p2">2
+        <div class="checkmark"></div>
+    </label>
+    <input type="radio" name="pagination" id="p3">
+    <label for="p3">3
+        <div class="checkmark"></div>
+    </label>
+    <input type="radio" name="pagination" id="p4">
+    <label for="p4">4
+        <div class="checkmark"></div>
+    </label>
+    <input type="radio" name="pagination" id="p5">
+    <label for="p5">5
+        <div class="checkmark"></div>
+    </label>
+    <input type="radio" name="pagination" id="p6">
+    <label for="p6">6
+        <div class="checkmark"></div>
+    </label>-->
+
+		</div>
+		<div class="youtube-wrapper">
+			<h1 class="rev-block press-header">
+				<span class="light-font">Zrobym architects</span><br>
+				<span>На youtube </span>
+			</h1>
+		</div>
+
+		<div class="flexslider" style="direction:rtl;padding: 0 10%;overflow: hidden;">
+			<ul class="slides">
+
+				[[getImageList?
+				&tvname=`videos_new`
+				&tpl=`videosOutTpl_new`
+				]]
+			</ul>
+		</div>
+		<div class="pagination-container" style="padding: 12px calc(10% + 3px) 40px 10%;">
+			<div class="left-arrow" style="top:-34px">
+				<img src="assets/new/assets/images/press/left-arrow.svg">
+			</div>
+			<div class="right-arrow" style="top:-34px">
+				<img src="assets/new/assets/images/press/right-arrow.svg">
+			</div>
+			<hr style="top: -1px;position:absolute;" class="gorizontal-line" />
+			<!-- <input type="radio" name="pagination" id="p1" checked="checked">
+    <label for="p1"><span>1</span>
+        <div class="checkmark"></div>
+    </label>
+    <input type="radio" name="pagination" id="p2">
+    <label for="p2"><span>2</span>
+        <div class="checkmark"></div>
+    </label>
+    <input type="radio" name="pagination" id="p3">
+    <label for="p3"><span>3</span>
+        <div class="checkmark"></div>
+    </label> -->
+		</div>
+		<div class="empty-left-part">
+			<div class="left-part-about ">
+			</div>
+			<div class="right-part-about">
+				<div style="padding: 15px">
+					Паглядзіце нашыя апошнія відэа на YouTube
+					<div class="buttons-container" style="display: flex; flex-direction: column;align-items: flex-start;">
+						<div class="rev-button black" style="margin: 15px 0;">
+							<a href="https://www.youtube.com/channel/UCxc3agJ3TIg4H0dilD-yBlQ" style="display: block;"><span>Паглядзець на Youtube</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		[[$forma_contacts_by_new_2]]
+		[[$footer_by_new]]
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')
+
+		</script>
+		<script defer src="assets/new/scripts/jquery.flexslider.js"></script>
+		<script defer src="assets/new/scripts/jquery.flexslider-min.js"></script>
+
+		<!-- Syntax Highlighter -->
+		<script type="text/javascript" src="assets/new/scripts/shCore.js"></script>
+		<script type="text/javascript" src="assets/new/scripts/shBrushXml.js"></script>
+		<script type="text/javascript" src="assets/new/scripts/shBrushJScript.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				SyntaxHighlighter.all();
+			});
+			$(window).load(function() {
+				$('.flexslider').flexslider({
+					animation: "slide",
+					directionNav: false,
+					start: function(slider) {
+						$('body').removeClass('loading');
+					}
+				});
+				$('.left-arrow').click(function() {
+					$('.flexslider').flexslider('prev')
+				});
+				$('.right-arrow').click(function() {
+					$('.flexslider').flexslider('next')
+				});
+			});
+
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='assets/new/libs/modaal.js'></script>
+		<!--OPEN-MORE-TEXT-->
+		<script async>
+			let textButton = 'Чытаць больш';
+			$('.menu-label-block').modaal({
+				fullscreen: true,
+				background: "#000000",
+				overlay_opacity: 0.9,
+				hide_close: true,
+				before_open() {
+					$('.menu-label-block').addClass("click");
+				},
+				after_close() {
+					$('.menu-label-block').removeClass("click");
+				}
+			});
+			$(".close").click(function() {
+				$('.menu-label-block').modaal('close');
+			})
+			$("#more-button").click(function() {
+				$("#more-text").toggleClass(function() {
+					switch (textButton) {
+						case 'Чытаць больш': {
+							textButton = 'Схаваць';
+							break;
+						}
+						case 'Схаваць': {
+							textButton = 'Чытаць больш';
+							break;
+						}
+					}
+					$("#more-button span").text(textButton);
+					return 'open'
+				});
+			});
+
+		</script>
+		<!--SCROLL MY ARROW-->
+		<script async>
+			$('.arrow-grey').click(function() {
+				var win = $('#first-monitor').height() + 213;
+				$('body,html').animate({
+					scrollTop: win
+				}, 800);
+				return false;
+			});
+			$('.arrow').click(function() {
+				var win = $('#first-monitor').height() + 213;
+				$('body,html').animate({
+					scrollTop: win
+				}, 800);
+				return false;
+			});
+
+		</script>
+		<!--FEEDBACK OPENING BLOCK-->
+		<script async>
+			$("#open-input").focus(function() {
+				$("#feedback-input-block").addClass('height-auto');
+				$(".confirm-block").addClass('height-auto');
+				$(".feedback-input").addClass('open-block');
+				$("#open-input").addClass('full');
+			});
+
+		</script>
+		<script src="assets/new/scripts/Collection.js"></script>
+		<script src="assets/new/scripts/Model.js"></script>
+		<script src="assets/new/scripts/View.js"></script>
+		<script src="assets/new/scripts/Controller.js"></script>
+		<script async>
+			const footerHeaderBlock = document.getElementById('footer-header-block');
+			const footerHeader = document.getElementById('footer-header');
+
+			$(document).on("scroll", function() {
+				var st = $(this).scrollTop();
+				var wh = $(document).height();
+				var perc = (st * 100) / wh;
+				if (footerHeaderBlock.getBoundingClientRect().top < 500) {
+					footerHeader.classList.add("rev-block");
+					footerHeader.classList.remove("header-label");
+				}
+			});
+
+		</script>
+        <script async>
+            $("#all").click(function () {
+                $('#publications').empty()
+                $('#publications').append(
+                                `  [[!getPage@Pagging?
+                        &elementClass=`modSnippet`
+                        &element=`getImageList`
+                        &limit=`2`
+                        &pageNavVar=`page.nav`
+                        &tvname=`magazines_new`
+                        &tpl=`magazinesOutTpl_new`
+                    ]]
+                                [[!getPage@Pagging?
+                        &elementClass=`modSnippet`
+                        &element=`getImageList`
+                        &limit=`2`
+                    &pageNavVar=`page.nav`
+                        &tvname=`WEB_new`
+                        &tpl=`webOutTpl_new`
+                    ]]
+                    `)
+                    
+            });
+        $("#category-1").click(function () {
+                $('#publications').empty()
+                $('#publications').append(
+                                `[[!getPage@Pagging?
+                        &elementClass=`modSnippet`
+                        &element=`getImageList`
+                        &limit=`5`
+                        &pageNavVar=`page.nav`
+                        &tvname=`magazines_new`
+                        &tpl=`magazinesOutTpl_new`
+                    ]]
+                    `)
+            });
+            $("#category-2").click(function () {
+                $('#publications').empty()
+                $('#publications').append(
+                                `[[!getPage@Pagging?
+                        &elementClass=`modSnippet`
+                        &element=`getImageList`
+                        &limit=`5`
+                    &pageNavVar=`page.nav`
+                        &tvname=`WEB_new`
+                        &tpl=`webOutTpl_new`
+                    ]]
+                    `)
+            });
+            
+                
+        </script>
+	</body>
+
+</html>

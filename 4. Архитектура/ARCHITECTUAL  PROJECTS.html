@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		[[$meta_new_ru]]
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<link rel="stylesheet" href="assets/new/global-styles/main.css" type="text/css">
+		<link rel="stylesheet" href="assets/new/libs/modaal.css">
+		<link rel="stylesheet" href="assets/new/posadochnaya.css">
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<link rel="stylesheet" href="../assets/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="../assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="../assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="../assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="../assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="../assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="../assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script type="text/javascript">
+			if (jQuery().fancybox) {
+				jQuery(".fancybox-media").fancybox({
+					openEffect: 'none',
+					closeEffect: 'none',
+					helpers: {
+						media: {}
+					}
+				});
+			}
+
+		</script>
+		<!--<link rel="stylesheet" href="/assets/template/css/style.css?1412">-->
+
+
+	</head>
+
+	<body>
+		<hr class="center-line" />
+		<hr class="left-line" />
+		<hr class="right-line" />
+		<div class="video-container">
+			<video autoplay muted loop class="fullscreen-bg__video">
+				<source src="assets/new/assets/video/architecture.mp4" type="video/mp4">
+			</video>
+			<div class="burger-block">
+				<div class="logo-container">
+					<img src="assets/new/assets/logos/Zrobym_logo_White.svg">
+				</div>
+			</div>
+			<hr class="gorizontal-line" />
+			<div class="video-content">
+				<div class="video-content-block">
+				</div>
+				<div class="video-content-block black">
+					<h1 style=" margin-bottom: 0px;" class="rev-block" id="about-header">
+						<span class="light-font">Architectual</span>
+						<br>
+						<span>projects</span>
+					</h1>
+					<span class="rev-block">
+						<span class="non-line">by Zrobym architects</span>
+					</span>
+				</div>
+			</div>
+			<hr class="gorizontal-line" />
+			<div class="arrow-block">
+				<!--                <div class="arrow arrow-animate"></div>-->
+				<img class=" arrow arrow-animate" src="assets/new/assets/icons/White/arrow.svg">
+				<div class="language">RU</div>
+			</div>
+		</div>
+		[[$menu_new_ru]]
+		<hr class="gorizontal-line" />
+		<main>
+			<div class="information-container">
+				<div class="information-left-part">
+					<h1 class="rev-block posadochnaya-header">
+						<span class="light-font">проектирование:</span>
+						<br>
+						<span>что вы знаете<br>об этом?</span>
+					</h1>
+				</div>
+				<div class="information-right-part">
+					<div class="information-description">
+						<h4>как проходит архитектурное проектирование в нашей студии</h4>
+						<p> Первое и, пожалуй, самое важное для постройки собственного дома - идея.
+							Без смелой идеи не будет и оригинальной реализации проекта. Многие люди
+							не заказывают индивидуальное проектирование зданий с авторским
+							замыслом и интересной идей, а идут по белее простому пути - покупка
+							типового проекта. Минимум вложений, минимум затрат и минимум
+							сложностей - по крайней мере, на первоначальном этапе. Такому решению
+							сегодня верны многие домовладельцы, и вариант имеет право на жизнь. </p>
+						<p id="more-text" class="more-text">
+							Нельзя упустить из виду тот факт, что типовой проект обойдется заказчику
+							примерно втрое дешевле, чем услуги архитектурной студии, которая
+							постарается до мелочей продумать индивидуальный проект нового дома.
+						</p>
+						<div id="more-button" class="more-button">
+							<span>Читать полностью</span>
+						</div>
+						<div class="buttons-container" style="padding: 100px 0">
+							<div class="rev-button black">
+								<a class="fancybox-media" href="https://www.youtube.com/watch?v=wkEmtFMKkxQ"><span class="wow draw">видео о нас</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="gorizontal-line" />
+			<div class="information-container" style="margin-bottom: 100px;">
+				<div class="information-left-part">
+					<h1 class="rev-block posadochnaya-header">
+						<span class="light-font">новые проекты</span><br>
+						<span>ZROBYM </span><br>
+						<span>ARCHITECTS</span>
+					</h1>
+				</div>
+				<div class="information-right-part">
+					<div class="information-description">
+						<h4>новые проекты на сайте</h4>
+						<p>
+							Новые архитектурные проекты, недавно добавленные на сайт
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="project-container">
+			<hr class="gorizontal-line" />
+			<div class="project" style="flex-wrap: wrap">
+				[[getProducts?
+				&parents=`2468`
+				&includeTVs=`1`
+				&includeTVList=`project-type,image,profession, pagetitle, proj_param, alt`
+				&tvFilters=`{"number":"1"}`
+				&tpl=`projectsOutTpl_posadoch_new`]]
+
+
+			</div>
+			<hr class="gorizontal-line" />
+			<div class="project">
+				[[getProducts?
+				&parents=`2468`
+				&includeTVs=`1`
+				&includeTVList=`project-type,image,profession, pagetitle, proj_param, alt`
+				&tvFilters=`{"number":"2"}`
+				&tpl=`projectsOutTpl_posadoch_new_2`]]
+			</div>
+			<hr class="gorizontal-line" />
+			<div class="project">
+				[[getProducts?
+				&parents=`2468`
+				&includeTVs=`1`
+				&includeTVList=`project-type,image,profession, pagetitle, proj_param, alt`
+				&tvFilters=`{"number":"3"}`
+				&tpl=`projectsOutTpl_posadoch_new`]]
+			</div>
+			<hr class="gorizontal-line" />
+			<div class="project">
+				[[getProducts?
+				&parents=`2468`
+				&includeTVs=`1`
+				&includeTVList=`project-type,image,profession, pagetitle, proj_param, alt`
+				&tvFilters=`{"number":"4"}`
+				&tpl=`projectsOutTpl_posadoch_new_2`]]
+			</div>
+			<div class="empty-right-part" style="padding: 0">
+				<div class="left-part-empty" style="display: flex;flex-direction:row;justify-content: center;align-items: center">
+					<div class="space-description"></div>
+					<div class="more-projects-text">
+						<h4 class="uppercase header3" style="display: flex">еще больше проектов<br></h4>
+						<p>
+							Перейдите в наше портфолио, чтобы посмотреть
+							реализованные, а также все наши проекты
+						</p>
+					</div>
+				</div>
+				<div class="right-part-empty">
+				</div>
+			</div>
+			<div class="empty-left-part">
+				<div class="left-part-empty">
+				</div>
+				<div class="right-part-empty">
+					<div class="buttons-wrapper">
+						<div class="buttons-container" style="display: flex; flex-direction: column; align-items: center">
+							<div class="rev-button" style="margin-bottom: 15px;">
+								<a href="[[~2505]]" style="display: block;width: 100%;">
+									<span style="display: flex; justify-content: center;">реализованные проекты</span>
+								</a>
+							</div>
+							<div class="rev-button" style="margin-bottom: 15px;">
+								<a href="[[~2473]]" style="display: block;">
+									<span style="display: flex; justify-content: center;">все проекты студии</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="project last">
+				<div class="project-image">
+					<img src="assets/new/assets/architect.gif">
+				</div>
+				<div class="project-description" style="white-space: initial">
+					<div class="project-description-container" style="display:block;padding: 50px; width: 80%">
+						<h4>индивидуальное проектирование дома</h4>
+						<p>
+							При индивидуальном проектировании вашего дома мы
+							раскроем всю красоту участка, рационально и с учётом всех
+							предпочтений распланируем пространство и прилегающую к
+							дому территорию. Создадим уникальный проект дома с учетом
+							всех особенностей и пожеланий клиента.
+						</p>
+						<p id="more-text-2" class="more-text">
+							А также поможем
+							создать приятную уютную атмосферу в доме. Проектирование
+							домов от студии ZROBYM architects - это именно то, что вам
+							нужно!
+						</p>
+						<div id="more-button-2" class="more-button">
+							<span>Читать полностью</span>
+						</div>
+						<div class="buttons-container project-last-button">
+							<div class="rev-button black">
+								<a href="[[~2459]]"><span>рассчитать стоимость</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="space-description"></div>
+				</div>
+			</div>
+		</div>
+
+		[[$yandex_projectMap_RU]]
+
+		[[$nashi_proecti_arch]]
+		[[$forma_contacts_ru_new_2]]
+		[[$footer_ru_new]]
+
+		<script src='assets/new/libs/modaal.js'></script>
+		<!--OPEN-MORE-TEXT-->
+		<script async>
+			let textButton = 'Читать больше';
+			$('.menu-label-block').modaal({
+				fullscreen: true,
+				background: "#000000",
+				overlay_opacity: 0.9,
+				hide_close: true,
+				before_open() {
+					$('.menu-label-block').addClass("click");
+				},
+				after_close() {
+					$('.menu-label-block').removeClass("click");
+				}
+			});
+			$(".close").click(function() {
+				$('.menu-label-block').modaal('close');
+			})
+			$("#more-button").click(function() {
+				$("#more-text").toggleClass(function() {
+					switch (textButton) {
+						case 'Читать больше': {
+							textButton = 'Скрыть';
+							break;
+						}
+						case 'Скрыть': {
+							textButton = 'Читать больше';
+							break;
+						}
+					}
+					$("#more-button span").text(textButton);
+					return 'open'
+				});
+			});
+			$("#more-button-2").click(function() {
+				$("#more-text-2").toggleClass(function() {
+					switch (textButton) {
+						case 'Читать больше': {
+							textButton = 'Скрыть';
+							break;
+						}
+						case 'Скрыть': {
+							textButton = 'Читать больше';
+							break;
+						}
+					}
+					$("#more-button-2 span").text(textButton);
+					return 'open'
+				});
+			});
+
+		</script>
+		<!--SCROLL MY ARROW-->
+		<script async>
+			$('.arrow-grey').click(function() {
+				var win = $('.first-monitor').height() + 213;
+				$('body,html').animate({
+					scrollTop: win
+				}, 800);
+				return false;
+			});
+			$('.arrow').click(function() {
+				var win = $('.video-container').height();
+				$('body,html').animate({
+					scrollTop: win
+				}, 800);
+				return false;
+			});
+
+		</script>
+		<!--FEEDBACK OPENING BLOCK-->
+		<script async>
+			$("#open-input").focus(function() {
+				$("#feedback-input-block").addClass('height-auto');
+				$(".confirm-block").addClass('height-auto');
+				$(".feedback-input").addClass('open-block');
+				$("#open-input").addClass('full');
+			});
+
+		</script>
+		<!--GET DEFAULT NUMBERS TO TOP POSITION-->
+		<script async>
+			$('.close').click(function() {
+				$('.anim-about').css({
+					'top': 0 + "%"
+				});
+			});
+
+		</script>
+		<script async>
+			const footerHeaderBlock = document.getElementById('footer-header-block');
+			const footerHeader = document.getElementById('footer-header');
+
+			$(document).on("scroll", function() {
+				var st = $(this).scrollTop();
+				var wh = $(document).height();
+				var perc = (st * 100) / wh;
+				if (footerHeaderBlock.getBoundingClientRect().top < 500) {
+					footerHeader.classList.add("rev-block");
+					footerHeader.classList.remove("header-label");
+				}
+			});
+
+		</script>
+
+	</body>
+
+</html>

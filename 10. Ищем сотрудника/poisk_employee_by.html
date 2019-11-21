@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		[[$meta_new_by]]
+		<link rel="stylesheet" href="assets/new/global-styles/main.css" type="text/css">
+		<link rel="stylesheet" href="assets/new/portfolio.css">
+		<link rel="stylesheet" href="assets/new/libs/modaal.css">
+	</head>
+
+	<body>
+		<hr class="center-line" />
+		<hr class="left-line" style="left: calc(10% - 1px);" />
+		<hr class="right-line" style="right: calc(10% - 1px);" />
+		<div class="burger-block">
+			<div class="logo-container">
+				<img src="assets/new/assets/logos/Zrobym_logo_Black.svg">
+			</div>
+		</div>
+		[[$menu_new_by]]
+		<hr class="gorizontal-line" />
+		<div class="portfolio-container">
+			<div class="portfolio-left-part ">
+				<h1 style="margin-bottom: 0px;" class="rev-block portfolio-header">
+					<span class="light-font">Шукаем</span><br>
+					<span> супрацоўніка
+					</span>
+				</h1>
+				<!--        <span class="rev-block" style="display:inline-block;">
+                <span class="non-line">портфолио проектов</span>
+            </span>-->
+			</div>
+			<div class="portfolio-right-part">
+				<div style="padding-top: 20px;" class="portfolio-description">
+					<h4>Абавязковыя крытэрыі адбору:</h4>
+					<p>Шукаем суперпрафесіянала, архітэктурнага фанатыка, генія дызайну з ККД 200% у каманду
+						архітэктараў ZROBYM! Прапануем як дыстанцыйную працу, так і працу ў офісе студыі,
+						высокі заробак, вядзенне праектаў і рэалізацыю Вашага творчага патэнцыялу!</p>
+
+
+					<p style="text-align: left;">
+						- Досвед працы з замоўцамі, адказнасць<br>
+						- Матывацыя ў стварэнні якасных праектаў<br>
+						- Валоданне праграмамі 3d-Max, Revit, AutoCad, Photoshop<br>
+						- Здольнасць добра маляваць рукамі і хутка генераваць ідэі<br>
+						- Валоданне беларускай мовай<br>
+						- Адсутнасць творчых крызісаў<br>
+						- Жаданне творча расці і развівацца
+					</p>
+
+					<p id="more-text" class="more-text">
+						Калі Вы падзяляеце погляды студыі і падыходзіце па нашых крытэрыях, дасылайце сваё партфоліа на наш
+						е-мэйл: zrobym@gmail.com<br><br>
+
+						Тым, хто нам спадабаецца, мы дасылаем пробнае заданне.<br><br>
+
+						Поспехаў!<br><br>
+
+						Zrobym architects.
+					</p>
+					<div id="more-button" class="more-button">
+						<span>Чытаць больш</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="gorizontal-line" />
+		<div class="arrow-block">
+			<div class="arrow-grey arrow-animate"></div>
+		</div>
+		<hr class="gorizontal-line" />
+		<!--<div class="categories">
+    <input type="radio" checked="checked" id="all-projects" name="radio-categories">
+    <label for="all-projects">Все проекты</label>
+    <input type="radio" id="category-1" name="radio-categories">
+    <label for="category-1">Частные дома</label>
+    <input type="radio" id="category-2" name="radio-categories">
+    <label for="category-2">Общественные здания</label>
+    <input type="radio" id="category-3" name="radio-categories">
+    <label for="category-3">Квартальная застройка</label>
+    <input type="radio" id="category-4" name="radio-categories">
+    <label for="category-4">Реконструкция</label>
+</div>-->
+		<!--<main>
+    <div class="year-label">
+        <span class="bolder header">2019<div class="underline"></div></span>
+    </div>
+    <div class="projects-container" id="projects-container">
+         [[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2490`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year":"2019"}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+    </div>
+        <div class="year-label">
+        <span class="bolder header">2018<div class="underline"></div></span>
+    </div>
+   <div class="projects-container" id="projects-container2">
+         [[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2490`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year":"2018"}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+    </div>
+     
+
+</main>
+<div class="portfolio-container">
+    <div class="portfolio-left-part ">
+        <h1 class="rev-block portfolio-header">
+                <span class="light-font">
+                   готовые<br>
+                </span>
+            <span>проекты домов</span>
+        </h1>
+    </div>
+    <div class="portfolio-right-part">
+        <div class="portfolio-description">
+            <h4>Модульныя дамы</h4>
+            <p> Шматгадовая праца і аналіз будаўнічай індустрыі, падштурхнулі нас распрацаваць уласныя гатовыя
+                праекты дамоў у Беларусиі. Перад начаткам праектавання мы старанна вывучаем усе неабходныя аспекты
+                и затым улічваем іх пры будаўніцтве. Таму ўсе нашыя  дамы адрозніваюцца дакладнай адаптацыяй пад
+                кліматычныя ўмовы краіны і маюць унікальную модульную тэхналогію. Модульныя дамы дазваляюць кліенту
+                атрымаць якасную еўрапейскую  архітэктуру пры экономіі сродкаў на будаўніцтва.</p>
+            <p id="more-text-2" class="more-text">
+                Зроблены на прадпрыемстве дом збіраецца на ўчастку ў сярэднім за два тыдні. Нашы
+                архітэктары заўжды готовы адаптаваць выбраны архітэктурны праект пад асаблівасці канкрэтнага
+                участка, улічыць рэльеф мясцовасці, орыентацыю дома па бакам света і заезды на тэрыторыю.
+                Будаўніцтва – адказны занятак і таму да архітэктурнага праектавання
+                варта падыйсці дастаткова сур’ёзна.
+                <br><br>
+                                Гатовыя праекты модульных дамоў змяшчаюць усе неабходныя для будаўніцтва раздзелы
+                (АЭ, КР, ОВ, ВК). Уласная брыгада мантажнікаў на процягу некалькіх год вырабляе
+                і мантуе дамы для нашых кліентаў. Выбіраючы праект дома, вы заўжды можаце разлічваць на
+                безкаштоўную кансультацыю і дапамогу кваліфікаваных адмыслоўцаў студыі ZROBYM architects.
+            </p>
+            <div id="more-button-2" class="more-button">
+                <span>Чытаць больш</span>
+            </div>
+            <div class="buttons-container" style="padding: 50px 0">
+                <div class="rev-button black">
+                    <a href="#"><span>нашы модульныя дамы</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+[[$nashi_proecti_inter_by]]
+[[$forma_contacts_by_new_2]]-->
+		[[$footer_by_new]]
+
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='assets/new/libs/modaal.js'></script>
+		<!--OPEN-MORE-TEXT-->
+		<script async>
+			let textButton = 'Чытаць больш';
+			$('.menu-label-block').modaal({
+				fullscreen: true,
+				background: "#000000",
+				overlay_opacity: 0.9,
+				hide_close: true,
+				before_open() {
+					$('.menu-label-block').addClass("click");
+				},
+				after_close() {
+					$('.menu-label-block').removeClass("click");
+				}
+			});
+			$(".close").click(function() {
+				$('.menu-label-block').modaal('close');
+			})
+			$("#more-button").click(function() {
+				$("#more-text").toggleClass(function() {
+					switch (textButton) {
+						case 'Чытаць больш': {
+							textButton = 'Схаваць';
+							break;
+						}
+						case 'Скрыть': {
+							textButton = 'Чытаць больш';
+							break;
+						}
+					}
+					$("#more-button span").text(textButton);
+					return 'open'
+				});
+			});
+			$("#more-button-2").click(function() {
+				$("#more-text-2").toggleClass(function() {
+					switch (textButton) {
+						case 'Чытаць больш': {
+							textButton = 'Схаваць';
+							break;
+						}
+						case 'Схаваць': {
+							textButton = 'Чытаць больш';
+							break;
+						}
+					}
+					$("#more-button-2 span").text(textButton);
+					return 'open'
+				});
+			});
+
+		</script>
+		<!--SCROLL MY ARROW-->
+		<script async>
+			$('.arrow-grey').click(function() {
+				var win = $('#first-monitor').height() + 213;
+				$('body,html').animate({
+					scrollTop: win
+				}, 800);
+				return false;
+			});
+			$('.arrow').click(function() {
+				var win = $('#first-monitor').height() + 213;
+				$('body,html').animate({
+					scrollTop: win
+				}, 800);
+				return false;
+			});
+
+		</script>
+		<!--FEEDBACK OPENING BLOCK-->
+		<script async>
+			$("#open-input").focus(function() {
+				$("#feedback-input-block").addClass('height-auto');
+				$(".confirm-block").addClass('height-auto');
+				$(".feedback-input").addClass('open-block');
+				$("#open-input").addClass('full');
+			});
+
+		</script>
+		<script src="scripts/Collection.js"></script>
+		<script src="scripts/Model.js"></script>
+		<script src="scripts/View.js"></script>
+		<script src="scripts/Controller.js"></script>
+		<script async>
+			const footerHeaderBlock = document.getElementById('footer-header-block');
+			const footerHeader = document.getElementById('footer-header');
+
+			$(document).on("scroll", function() {
+				var st = $(this).scrollTop();
+				var wh = $(document).height();
+				var perc = (st * 100) / wh;
+				if (footerHeaderBlock.getBoundingClientRect().top < 500) {
+					footerHeader.classList.add("rev-block");
+					footerHeader.classList.remove("header-label");
+				}
+			});
+
+		</script>
+		<!--<script async>
+     $("#all-projects").click(function () {
+       $('#projects-container').empty()
+       $('#projects-container').append(
+                      `[[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2473`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year": 2019}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+           `)
+           
+           $('#projects-container2').empty()
+       $('#projects-container2').append(
+                      `[[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2473`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year": 2018}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+           `)
+    });
+ $("#category-1").click(function () {
+       $('#projects-container').empty()
+       $('#projects-container').append(
+                      `[[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2473`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year": 2019, "type_project": "Частные дома"}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+           `)
+           
+           
+       $('#projects-container2').empty()
+       $('#projects-container2').append(
+                      `[[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2473`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year": 2018, "type_project": "Частные дома"}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+           `)
+    });
+     $("#category-2").click(function () {
+       $('#projects-container').empty()
+       $('#projects-container').append(
+                      `[[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2473`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year": 2019, "type_project": "Общественные здания"}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+           `)
+           
+           $('#projects-container2').empty()
+       $('#projects-container2').append(
+                      `[[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2473`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year": 2018, "type_project": "Общественные здания"}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+           `)
+    });
+         $("#category-3").click(function () {
+       $('#projects-container').empty()
+       $('#projects-container').append(
+                      `[[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2473`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year": 2019, "type_project": "Квартальная застройка"}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+           `)
+           
+           $('#projects-container2').empty()
+       $('#projects-container2').append(
+                      `[[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2473`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year": 2018, "type_project": "Квартальная застройка"}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+           `)
+    });
+         $("#category-4").click(function () {
+       $('#projects-container').empty()
+       $('#projects-container').append(
+                      `[[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2473`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year": 2019, "type_project": "Реконструкция"}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+           `)
+           
+                  $('#projects-container2').empty()
+       $('#projects-container2').append(
+                      `[[getProducts?
+            &includeTVs=`1`
+            &includeTVList=`image,realize,alt, name,project-type`
+            &parents=`2473`
+            &sortby=`menuindex`
+            &sortdir=`ASC`
+            &tpl=`projectsOutTpl_new`
+            &tvFilters=`{"year": 2018, "type_project": "Реконструкция"}`
+            &noResults=`<div class="col-xs-12" style="text-align: center; color: #777777;">Не знойдзена праектаў за гэты год.</div> `]]
+           `)
+    });
+</script>-->
+
+	</body>
+
+</html>
