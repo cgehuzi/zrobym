@@ -1,0 +1,151 @@
+$fw_light: 300;
+$fw_regular: 400;
+$fw_medium: 500;
+$fw_semi: 600;
+$fw_bold: 700;
+$fw_extra: 800;
+
+$fast: 0.25s cubic-bezier(.5, 0, 0, 1);
+$slow: 0.5s cubic-bezier(.5, 0, 0, 1);
+
+$gold: #cda173;
+$border_light: #e5e5e5;
+$grey_light: #c8c8c8;
+
+@mixin for-phone-small {
+	@media (max-width: 359px) {
+		@content;
+	}
+}
+
+@mixin for-phone-small-down {
+	@media (max-width: 359px) {
+		@content;
+	}
+}
+
+@mixin for-phone-vertical {
+	@media (max-width: 575px) {
+		@content;
+	}
+}
+
+@mixin for-phone-vertical-down {
+	@media (max-width: 575px) {
+		@content;
+	}
+}
+
+@mixin for-phone-horizontal {
+	@media (min-width: 576px) and (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin for-phone-horizontal-up {
+	@media (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin for-phone-horizontal-down {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin for-phone {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin for-phone-down {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin for-tablet-vertical {
+	@media (min-width: 768px) and (max-width: 991px) {
+		@content;
+	}
+}
+
+@mixin for-tablet-vertical-up {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin for-tablet-vertical-down {
+	@media (max-width: 991px) {
+		@content;
+	}
+}
+
+@mixin for-tablet-horizontal {
+	@media (min-width: 992px) and (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin for-tablet-horizontal-up {
+	@media (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin for-tablet-horizontal-down {
+	@media (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin for-tablet-up {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin for-tablet {
+	@media (min-width: 768px) and (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin for-tablet-down {
+	@media (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin for-laptop {
+	@media (min-width: 1200px) and (max-width: 1999px) {
+		@content;
+	}
+}
+
+@mixin for-laptop-up {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin for-laptop-down {
+	@media (max-width: 1999px) {
+		@content;
+	}
+}
+
+@mixin for-desktop {
+	@media (min-width: 2000px) {
+		@content;
+	}
+}
+
+@mixin for-desktop-up {
+	@media (min-width: 2000px) {
+		@content;
+	}
+}

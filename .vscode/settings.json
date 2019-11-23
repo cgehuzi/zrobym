@@ -1,0 +1,19 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**",
+        "html/**",
+        "images/**",
+        "OLD/**",
+        "scss/1-const.scss",
+        "scss/1-reset.scss"
+    ],
+    "liveSassCompile.settings.showOutputWindow": false,
+}

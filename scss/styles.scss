@@ -1,0 +1,96 @@
+@import './1-const.scss';
+
+// сброс умолчаний
+// =============================================
+@import './1-reset.scss';
+
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: 0;
+}
+
+/*SCROLL STYLING*/
+
+::-webkit-scrollbar {
+	width: 6px;
+	background-color: $border_light;
+
+	&-track {
+		box-shadow: inset 0 0 6px rgba(#000000, 0.3);
+		background-color: $border_light;
+	}
+
+	&-thumb {
+		background-color: $gold;
+		border-radius: 10px;
+	}
+}
+
+html {
+	font-size: 15px;
+
+	@include for-laptop {
+		font-size: 16px;
+	}
+
+	@include for-desktop {
+		font-size: 1vw;
+	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: $fw_light;
+	background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	text-transform: uppercase;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a,
+button {
+	font-family: 'Montserrat', sans-serif;
+	transition: $fast;
+}
+
+.grid-line {
+	display: none;
+
+	@include for-phone-horizontal-up {
+		display: block;
+		position: fixed;
+		min-height: 100%;
+		margin: 0;
+		color: $border_light;
+		background-color: $border_light;
+		width: 1px;
+		height: 100%;
+		border: none;
+
+		&--left {
+			left: 10vw;
+		}
+
+		&--center {
+			left: 50%;
+		}
+
+		&--right {
+			right: 10vw;
+		}
+	}
+}

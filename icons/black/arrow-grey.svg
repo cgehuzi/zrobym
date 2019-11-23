@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 36" width="67" height="36">
+    <style>
+        tspan { white-space:pre }
+        .shp0 { opacity: 0.502;fill: #959595 }
+    </style>
+    <path id="Стрелка" class="shp0"
+          d="M0.28 2.49L2.39 0.38L35.62 33.61L33.51 35.73L0.28 2.49ZM31.4 33.61L64.63 0.38L66.74 2.49L33.51 35.73L31.4 33.61Z"/>
+</svg>
