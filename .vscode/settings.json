@@ -13,7 +13,8 @@
         "images/**",
         "OLD/**",
         "scss/1-const.scss",
-        "scss/1-reset.scss"
+        "scss/1-reset.scss",
+        "scss/components/**"
     ],
     "liveSassCompile.settings.showOutputWindow": false,
 }

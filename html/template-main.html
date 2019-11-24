@@ -4,111 +4,488 @@
 	<head>
 
 		{{head}}
+		<link rel="stylesheet" href="assets/templates/zrobym/css/template-main.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
 	</head>
 
-	<body>
+	<body class="template-main">
 		<hr class="grid-line grid-line--left">
 		<hr class="grid-line grid-line--center">
 		<hr class="grid-line grid-line--right">
 
-		<link rel="stylesheet" href="assets/templates/zrobym/css/menu.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
-		<button class="menu-open" type="button">
-			<div class="menu-open__text">Меню</div>
-			<div class="menu-open__icon">
-				<div class="menu-open__icon-top"></div>
-				<div class="menu-open__icon-center"></div>
-				<div class="menu-open__icon-bottom"></div>
+		{{menu}}
+
+		<link rel="stylesheet" href="assets/templates/zrobym/css/header.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
+		<div class="header section">
+			<video autoplay muted loop class="header__back">
+				<source src="assets/files/video/architecture.mp4" type="video/mp4">
+			</video>
+			<div class="header__header">
+				<img class="header__header-logo" src="assets/templates/zrobym/images/logo-full-white.svg" alt="logo">
 			</div>
-		</button>
-		<div class="menu">
-			<hr class="grid-line grid-line--left">
-			<hr class="grid-line grid-line--center">
-			<hr class="grid-line grid-line--right">
-			<div class="menu__header">
-				<a href="[(site_url)]" class="menu__header-link">
-					<img src="assets/templates/zrobym/images/logo-full-white.svg" alt="logo">
-				</a>
+			<div class="section__separ"></div>
+			<div class="header__body section__body">
+				<div class="section__body-col">
+					<div class="section__header">
+						<div class="section__header-title">
+							Архитектура <strong>со смыслом</strong>
+						</div>
+						<div class="section__header-subtitle">zrobym architects</div>
+					</div>
+				</div>
 			</div>
-			<div class="menu__body">
-				<ul class="menu__list">
-					<li class="menu__list-point">
-						<a href="#" class="menu__list-link">Главная</a>
-					</li>
-					<li class="menu__list-point">
-						<a href="#" class="menu__list-link">О нас</a>
-					</li>
-					<li class="menu__list-point">
-						<a href="#" class="menu__list-link">Реализованные проекты</a>
-					</li>
-					<li class="menu__list-point">
-						<a href="#" class="menu__list-link parent">Архитектурные проекты</a>
-						<ul class="menu__sublist">
-							<li class="menu__sublist-point">
-								<a href="#" class="menu__sublist-link">Наши проекты</a>
-							</li>
-							<li class="menu__sublist-point">
-								<a href="#" class="menu__sublist-link">Рассчитать стоимость</a>
-							</li>
-						</ul>
-					</li>
-					<li class="menu__list-point">
-						<a href="#" class="menu__list-link parent">Дизайн интерьера</a>
-						<ul class="menu__sublist">
-							<li class="menu__sublist-point">
-								<a href="#" class="menu__sublist-link">Дизайн квартиры</a>
-							</li>
-							<li class="menu__sublist-point">
-								<a href="#" class="menu__sublist-link">Дизайн коттеджей</a>
-							</li>
-							<li class="menu__sublist-point">
-								<a href="#" class="menu__sublist-link">Дизайн общественных пространств</a>
-							</li>
-							<li class="menu__sublist-point">
-								<a href="#" class="menu__sublist-link">Рассчитать стоимость</a>
-							</li>
-						</ul>
-					</li>
-					<li class="menu__list-point">
-						<a href="#" class="menu__list-link">Бренд серийной мебели</a>
-					</li>
-					<li class="menu__list-point">
-						<a href="#" class="menu__list-link">Пресса</a>
-					</li>
-					<li class="menu__list-point">
-						<a href="#" class="menu__list-link">Контакты</a>
-					</li>
-				</ul>
-				<ul class="menu__lang">
-					<li class="menu__lang-point">RU</li>
-					<li class="menu__lang-point">
-						<a href="#" class="menu__lang-link">ENG</a>
-					</li>
-					<li class="menu__lang-point">
-						<a href="#" class="menu__lang-link">BY</a>
-					</li>
-				</ul>
+			<div class="section__separ"></div>
+			<div class="header__footer">
+				<div class="header__footer-lang">[[DocInfo? &docid=`[[UltimateParent? &toplevel=`1`]]`]]</div>
 			</div>
-			<div class="menu__footer">
-				<div class="menu__footer-lang">[[DocInfo? &docid=`[[UltimateParent? &toplevel=`1`]]`]]</div>
+			<img class="header__arrow" src="assets/templates/zrobym/icons/white/arrow.svg" alt="">
+		</div>
+
+		<link rel="stylesheet" href="assets/templates/zrobym/css/about.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
+		<div class="section about">
+			<div class="section__separ"></div>
+			<div class="section__body">
+				<div class="section__body-col">
+					<div class="section__header">
+						<div class="section__header-title">
+							Zrobym <strong>architects</strong>
+						</div>
+					</div>
+				</div>
+				<div class="section__body-col">
+					<div class="section__content">
+						<h4>Немного информации о нашей компании</h4>
+						<p>Аритектурное бюро "ЗРОБIМ" всегда стремится применять в своих проектах новейшие достижения мировой архитектуры и дизайна. Проектируя для конкретных людей, мы материализуем их собственное видение идеального пространства, их мечты и желания.</p>
+						<p>Проекты нашей студии - это итог творческого союза архитекторов с заказчиком, итог совместного размышления. И поэтому среди наших работ Вы не найдете двух одинаковых зданий или интерьеров. Создавая различные проекты для людей, мы меняем их жизнь к лучшему.</p>
+						<div class="about__more" style="display: none;">
+							<p>При выборе дизайн студии, каждому заказчику нужно знать, каким образом осуществляется работа над проектом. Моделируя пространство, мы используем самые продвинутые графические редакторы. Наши проекты проходят путь от концепции на листе бумаги до сложнейшей BIM-модели на компьютере, обеспечивающей высокую точность в чертежах. Получая точные чертежи, заказчик может рассчитывать на успех в реализации проекта.</p>
+						</div>
+						<button class="about__more-button" type="button">
+							<span class="closed">Читать больше</span>
+							<span class="opened" style="display: none;">Скрыть</span>
+						</button>
+					</div>
+					<a href="#" class="button">Узнать больше</a>
+				</div>
+			</div>
+			<div class="section__separ"></div>
+		</div>
+
+		<script async>
+			const about_more = document.querySelector('.about__more');
+			const about_more_button = document.querySelector('.about__more-button');
+			about_more_button.addEventListener('click', function() {
+				$(about_more).slideToggle();
+				about_more_button.classList.toggle('active');
+				if (about_more_button.classList.contains('active')) {
+					about_more_button.querySelector('.closed').style.display = "none";
+					about_more_button.querySelector('.opened').style.display = "block";
+				} else {
+					about_more_button.querySelector('.closed').style.display = "block";
+					about_more_button.querySelector('.opened').style.display = "none";
+				}
+			})
+		</script>
+
+		<link rel="stylesheet" href="assets/templates/zrobym/css/city.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
+		<div class="section section--dark city">
+			<div class="section__separ section__separ--bottom"></div>
+			<div class="section__separ"></div>
+			<div class="section__body">
+				<div class="section__body-col">
+					<div class="section__header">
+						<div class="section__header-title">
+							<strong>Мы проектируем</strong> по всему миру
+						</div>
+					</div>
+				</div>
+				<div class="section__body-col">
+					<div class="section__content">
+						<h4>Мы говорим на одном языке с вами!</h4>
+						<p>При выборе дизайн студии, каждому заказчику нужно знать, каким образом осуществляется работа над проектом. Моделируя пространство, мы используем самые продвинутые графические редакторы.</p>
+					</div>
+					<a href="#" class="button button--white">Наш офис | Шоурум</a>
+				</div>
+			</div>
+			<div class="city__block">
+				<div class="section__separ section__separ--center"></div>
+				<div class="section__body">
+					<div class="city__title">Наши представители в 13 городах:</div>
+					<div class="city__map"></div>
+				</div>
+			</div>
+			<div class="section__separ"></div>
+			<div class="section__separ section__separ--top"></div>
+		</div>
+		<script src="https://d3js.org/d3.v3.js"></script>
+		<script async>
+			var w = 960,
+				h = 500;
+
+			var circleWidth = 4;
+
+			var nodes = [{
+				"name": "Минск"
+			}, {
+				"name": "Детройт"
+			}, {
+				"name": "Нью-Йорк"
+			}, {
+				"name": "Бразилиа"
+			}, {
+				"name": "Лос Анджелес"
+			}, {
+				"name": "Гданьск"
+			}, {
+				"name": "Вильнюс"
+			}, {
+				"name": "Киев"
+			}, {
+				"name": "Берлин"
+			}, {
+				"name": "Краков"
+			}, {
+				"name": "Париж"
+			}, {
+				"name": "Шанхай"
+			}, {
+				"name": "Эр-Рияд"
+			}, {
+				"name": "Москва"
+			}, ]
+
+			var links = [{
+				source: nodes[0],
+				target: nodes[1]
+			}, {
+				source: nodes[0],
+				target: nodes[2]
+			}, {
+				source: nodes[0],
+				target: nodes[3]
+			}, {
+				source: nodes[0],
+				target: nodes[4]
+			}, {
+				source: nodes[0],
+				target: nodes[5]
+			}, {
+				source: nodes[0],
+				target: nodes[6]
+			}, {
+				source: nodes[0],
+				target: nodes[7]
+			}, {
+				source: nodes[0],
+				target: nodes[8]
+			}, {
+				source: nodes[0],
+				target: nodes[9]
+			}, {
+				source: nodes[0],
+				target: nodes[10]
+			}, {
+				source: nodes[0],
+				target: nodes[11]
+			}, {
+				source: nodes[0],
+				target: nodes[12]
+			}, {
+				source: nodes[0],
+				target: nodes[13]
+			}, ]
+
+
+			var vis = d3.select(".city__map")
+				.append("svg:svg")
+				.attr("class", "city__map-body")
+				.attr("preserveAspectRatio", "xMinYMin meet")
+				.attr("viewBox", "0 0 960 500");
+
+			var force = d3.layout.force()
+				.nodes(nodes)
+				.links([])
+				.gravity(0.06)
+				.charge(-400)
+				.size([w, h]);
+
+			var link = vis.selectAll(".link")
+				.data(links)
+				.enter().append("line")
+				.attr("class", "city__map-line")
+				.attr("stroke", "#f5f5f5")
+				.attr("fill", "#f5f5f5");
+
+			var node = vis.selectAll("circle.node")
+				.data(nodes)
+				.enter().append("g")
+				.attr("class", "city__map-node")
+
+				//MOUSEOVER
+				.on("mouseover", function(d, i) {
+					if (i > 0) {
+						//CIRCLE
+						d3.select(this).selectAll("circle")
+							.transition()
+							.duration(250)
+							.style("cursor", "grab")
+							.attr("r", circleWidth + 2)
+							.attr("fill", "#FCF4DC");
+
+						//TEXT
+						d3.select(this).select("text")
+							.transition()
+							.style("cursor", "grab")
+							.duration(250)
+							.style("cursor", "grab")
+							.attr("font-size", "1.5em")
+							.attr("x", 25)
+							.attr("y", 5)
+					} else {
+						d3.select(this).selectAll("circle")
+							.transition()
+							.duration(250)
+							.style("cursor", "grab")
+
+					}
+				})
+
+				//MOUSEOUT
+				.on("mouseout", function(d, i) {
+					if (i > 0) {
+						//CIRCLE
+						d3.select(this).selectAll("circle")
+							.transition()
+							.duration(250)
+							.attr("r", circleWidth)
+							.attr("fill", "#f5f5f5");
+
+						//TEXT
+						d3.select(this).select("text")
+							.transition()
+							.duration(250)
+							.attr("font-size", "1em")
+							.attr("x", 15)
+							.attr("y", 5)
+					}
+				})
+
+				.call(force.drag);
+
+
+			//CIRCLE
+			node.append("svg:circle")
+				.attr("cx", function(d) {
+					return d.x;
+				})
+				.attr("cy", function(d) {
+					return d.y;
+				})
+				.attr("r", function(d, i) {
+					if (i > 0) {
+						return circleWidth;
+					} else {
+						return circleWidth + 5;
+					}
+				})
+				.attr("fill", function(d, i) {
+					if (i > 0) {
+						return "#f5f5f5";
+					} else {
+						return "#fff7d8"
+					}
+				})
+
+			//TEXT
+			node.append("text")
+				.text(function(d, i) {
+					return d.name;
+				})
+				.attr("x", 15)
+				.attr("y", 5)
+				.attr("font-family", "Montserrat")
+				.attr("fill", function(d, i) {
+					return "#cda173";
+				})
+				.attr("font-size", function(d, i) {
+
+					if (i > 0) {
+						return "1em";
+					} else {
+						return "2em";
+					}
+
+				})
+				.attr("text-anchor", function(d, i) {
+					return "beginning";
+				});
+
+
+			force.on("tick", function(e) {
+				node.attr("transform", function(d, i) {
+					return "translate(" + d.x + "," + d.y + ")";
+				});
+
+				link.attr("x1", function(d) {
+						return d.source.x;
+					})
+					.attr("y1", function(d) {
+						return d.source.y;
+					})
+					.attr("x2", function(d) {
+						return d.target.x;
+					})
+					.attr("y2", function(d) {
+						return d.target.y;
+					});
+			});
+			force.start();
+		</script>
+
+		<link rel="stylesheet" href="assets/templates/zrobym/css/tabs.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
+		<div id="tabs" class="section section--dark tabs">
+			<ul class="section__body tabs__list">
+				<li class="tabs__list-point">
+					<button class="tabs__list-button" type="button" data-tab-open="#tab-1" data-tab-group="#tabs">Архитектурное проектирование</button>
+				</li>
+				<li class="tabs__list-point">
+					<button class="tabs__list-button" type="button" data-tab-open="#tab-2" data-tab-group="#tabs">Дизайн интерьера</button>
+				</li>
+				<li class="tabs__list-point">
+					<button class="tabs__list-button" type="button" data-tab-open="#tab-3" data-tab-group="#tabs">Свой бренд серийной мебели</button>
+				</li>
+				<li class="tabs__list-point">
+					<button class="tabs__list-button" type="button" data-tab-open="#tab-4" data-tab-group="#tabs">Магазин готовых проектов</button>
+				</li>
+			</ul>
+			<div id="tab-1" class="tabs__item" style="background-image: url('assets/images/tab-1.jpg');">
+				<div class="section__separ"></div>
+				<div class="section__body">
+					<div class="section__body-col">
+						<div class="section__header">
+							<div class="section__header-title">
+								То, чем мы <strong>гордимся</strong>
+							</div>
+						</div>
+					</div>
+					<div class="section__body-col tabs__item-content">
+						<div class="section__content">
+							<h4>Architectual projects by ZROBYM architects</h4>
+							<p>Команда студии ZROBYM architects любит архитектуру любого размера и назначения: от частных домов до административных, общественных зданий и торговых центров, от жилых кварталов до малых архитектурных форм и благоустройства. Создавая архитектуру, мы делаем не просто проект и все его стадии, мы думаем о сценариях жизни человека, который там будет жить, работать, отдыхать, учиться.</p>
+							<p>Создание архитектуры — это многослойный процесс, начинается он с концепции и с каждой стадией уточняется, детализируется. Мы считаем путь от общего к частному и аналитический подход к процессу создания формы опорными точками своего метода проектирования.</p>
+						</div>
+						<a href="#" class="button button--white">Узнать больше</a>
+					</div>
+				</div>
+				<div class="section__separ"></div>
+			</div>
+			<div id="tab-2" class="tabs__item" style="background-image: url('assets/images/tab-2.jpg');">
+				<div class="section__separ"></div>
+				<div class="section__body">
+					<div class="section__body-col">
+						<div class="section__header">
+							<div class="section__header-title">
+								То, чем мы <strong>гордимся</strong>
+							</div>
+						</div>
+					</div>
+					<div class="section__body-col tabs__item-content">
+						<div class="section__content">
+							<h4>Interior design by ZROBYM architects</h4>
+							<p>Современный дизайн интерьера – это решение задач. Задач бюджета, функциональности, красоты и много другого. В создании дизайна интерьера мы используем аналитический подход, он позволяет нам проектировать, как частное жилье, так и офисы, кафе, рестораны, бары, галереи, музеи и т.д.</p>
+							<p>Мы исходим из тех задач, которые перед нами ставит клиент и пространство интерьера. Думаем о том, как рационально использовать бюджет на реализацию и создать уникальный дизайн под конкретную задачу.</p>
+						</div>
+						<a href="#" class="button button--white">Узнать больше</a>
+					</div>
+				</div>
+				<div class="section__separ"></div>
+			</div>
+			<div id="tab-3" class="tabs__item" style="background-image: url('assets/images/tab-3.JPG');">
+				<div class="section__separ"></div>
+				<div class="section__body">
+					<div class="section__body-col">
+						<div class="section__header">
+							<div class="section__header-title">
+								То, чем мы <strong>гордимся</strong>
+							</div>
+						</div>
+					</div>
+					<div class="section__body-col tabs__item-content">
+						<div class="section__content">
+							<h4>BY Furniture brand </h4>
+							<p>Предметы в интерьере должны быть эстетичными и удобными. Каждый предмет вашего личного пространства должен приносить радость. Мебель должна быть красивой сама по себе, она является законченным произведением, продуктом мыслительного процесса конкретного дизайнера, конструктора, сборщика и т.д.</p>
+							<p>Мы думаем о каждом предмете, который создаем, думаем об эргономике, функционале, эстетике, мы любим каждый наш предмет мебели. Наши объекты дизайна можно приобрести в наших брендовых шоурумах, расположенных в г. Минске.</p>
+						</div>
+						<a href="#" class="button button--white">Узнать больше</a>
+					</div>
+				</div>
+				<div class="section__separ"></div>
+			</div>
+			<div id="tab-4" class="tabs__item" style="background-image: url('assets/images/tab-4.jpg');">
+				<div class="section__separ"></div>
+				<div class="section__body">
+					<div class="section__body-col">
+						<div class="section__header">
+							<div class="section__header-title">
+								То, чем мы <strong>гордимся</strong>
+							</div>
+						</div>
+					</div>
+					<div class="section__body-col tabs__item-content">
+						<div class="section__content">
+							<h4>Shop ready projects by ZROBYM architects</h4>
+							<p>На определенном этапе жизни, человек приходит к решению построить себе дом. Во всем мире, процесс проектирования индивидуального жилья занимает долгий период времени и стоит достаточно дорого. Если у вас нет времени и бюджета на создание индивидуального проекта дома, мы даём возможность купить у нас готовый проект.</p>
+							<p>Каждый из проектов, которые мы предлагаем, был разработан нашей компанией. Это не типовой польский или литовский проект, это дома уже адаптированные под материалы и нормативы стран СНГ. Все, что вам нужно, это взять готовый проект, привязать дом к участку и построить его. Вы можете выбрать конструктивную систему дома, планировку, материалы фасада, кровли, а поможем вам адаптировать проект под ваш бюджет.</p>
+						</div>
+						<a href="#" class="button button--white">Узнать больше</a>
+					</div>
+				</div>
+				<div class="section__separ"></div>
 			</div>
 		</div>
-		<button class="menu-close" type="button"></button>
+
 		<script async>
-			const menu = document.querySelector('.menu');
-			const menu_open = document.querySelector('.menu-open');
-			const menu_close = document.querySelector('.menu-close');
-			menu_open.addEventListener('click', function() {
-				menu.classList.add('opened');
-				menu_close.classList.add('active');
-			});
-			menu_close.addEventListener('click', function() {
-				menu.classList.remove('opened');
-				menu_close.classList.remove('active');
-			})
+			// ====================================================
+			// Реализация блока tabs
+			// ====================================================
+			const tabInit = function(block) {
+				const TAB__BUTTONS_block = document.querySelector(block);
+				const TAB__BUTTONS = TAB__BUTTONS_block.querySelectorAll('.tabs__list-button');
+
+				for (let index = 0; index < TAB__BUTTONS.length; index++) {
+					let TAB__BUTTON = TAB__BUTTONS[index];
+					let TAB_active_class = 'active';
+					let TAB__ITEM__id = TAB__BUTTON.getAttribute('data-tab-open');
+					let TAB__ITEM__target = document.querySelector(TAB__BUTTON.getAttribute('data-tab-open'));
+					let TAB__GROUP__id = TAB__BUTTON.getAttribute('data-tab-group');
+					let TAB__GROUP__items = document.querySelectorAll(TAB__GROUP__id + ' .tabs__item');
+					let TAB__GROUP__buttons = document.querySelectorAll(TAB__GROUP__id + ' .tabs__list-button');
+
+					TAB__BUTTON.addEventListener('click', function(e) {
+						for (let index = 0; index < TAB__GROUP__items.length; index++) {
+							const TAB__GROUP__item = TAB__GROUP__items[index];
+							TAB__GROUP__item.classList.remove(TAB_active_class);
+						}
+
+						for (let index = 0; index < TAB__GROUP__buttons.length; index++) {
+							const TAB__GROUP__button = TAB__GROUP__buttons[index];
+							TAB__GROUP__button.classList.remove(TAB_active_class);
+						}
+
+						TAB__ITEM__target.classList.add(TAB_active_class);
+						TAB__BUTTON.classList.add(TAB_active_class);
+					});
+				}
+
+				const TAB__BUTTON_active = TAB__BUTTONS_block.querySelector('.tabs__list-button');
+				TAB__BUTTON_active.click();
+			};
+			tabInit("#tabs");
+			// END ------------------------
 		</script>
 
 		<script src="https://cdn.polyfill.io/v2/polyfill.js?features=Element.prototype.classList"></script>
 		<script src="https://unpkg.com/focus-visible"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</body>
 
 </html>

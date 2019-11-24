@@ -1,0 +1,142 @@
+.section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	@include for-phone-vertical {
+		text-align: center;
+	}
+
+	&--dark {
+		background-color: $dark;
+		color: #ffffff;
+	}
+
+	&__separ {
+		flex-basis: 100%;
+		max-width: 100%;
+		height: 32px;
+		min-height: 32px;
+		padding: 0;
+
+		@include for-phone-horizontal-up {
+			padding: 0 10vw;
+		}
+
+		@include for-tablet-horizontal-up {
+			height: 5vw;
+			min-height: 5vw;
+		}
+
+		&--top,
+		&--bottom {
+			display: none;
+
+			@include for-tablet-up {
+				display: block;
+				height: 5vw;
+				min-height: 5vw;
+			}
+
+		}
+
+		&--top {
+			border-top: 1px solid $border_light;
+		}
+
+		&--bottom {
+			border-bottom: 1px solid $border_light;
+		}
+
+		&--center {
+			height: 0;
+			min-height: 0;
+			border-top: 1px solid $border_light;
+			margin: 32px 0;
+
+			@include for-tablet-horizontal-up {
+				margin: 5vw 0;
+			}
+		}
+	}
+
+	&__body {
+		flex-grow: 1;
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+
+		@include for-phone-horizontal-up {
+			padding: 0 10vw;
+		}
+
+		&-col {
+			flex-basis: 100%;
+			max-width: 100%;
+			display: flex;
+			flex-direction: column;
+			padding: 32px;
+
+			@include for-tablet-horizontal-up {
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+		}
+	}
+
+	&__header {
+		position: sticky;
+		top: 32px;
+
+		&-title {
+			position: relative;
+			line-height: 1.2;
+			font-size: 2rem;
+			text-transform: uppercase;
+			font-weight: $fw_regular;
+			padding-bottom: 1rem;
+
+			@include for-tablet {
+				font-size: 2.4rem;
+			}
+
+			@include for-laptop-up {
+				font-size: 2.8rem;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -4px;
+				height: 8px;
+				width: 128px;
+				background-color: $gold;
+
+				@include for-phone-vertical {
+					left: 50%;
+					margin-left: -64px;
+				}
+			}
+
+			strong {
+				display: block;
+				font-weight: $fw_extra;
+			}
+		}
+
+		&-subtitle {
+			margin-top: 1rem;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			font-weight: $fw_medium;
+		}
+	}
+
+	&__content {
+		& + .button {
+			margin-top: 4rem;
+		}
+	}
+}

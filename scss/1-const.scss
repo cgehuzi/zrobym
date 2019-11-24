@@ -8,9 +8,13 @@ $fw_extra: 800;
 $fast: 0.25s cubic-bezier(.5, 0, 0, 1);
 $slow: 0.5s cubic-bezier(.5, 0, 0, 1);
 
+$dark: #1b1b1b;
 $gold: #cda173;
+$gold_hover: #947049;
 $border_light: #e5e5e5;
 $grey_light: #c8c8c8;
+
+$back_light: #bebebe;
 
 @mixin for-phone-small {
 	@media (max-width: 359px) {

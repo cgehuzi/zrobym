@@ -1,0 +1,78 @@
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: 0;
+}
+
+/*SCROLL STYLING*/
+
+::-webkit-scrollbar {
+	width: 6px;
+	background-color: $border_light;
+
+	&-track {
+		box-shadow: inset 0 0 6px rgba(#000000, 0.3);
+		background-color: $border_light;
+	}
+
+	&-thumb {
+		background-color: $gold;
+		border-radius: 10px;
+	}
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+html {
+	font-size: 15px;
+
+	@include for-laptop {
+		font-size: 16px;
+	}
+
+	@include for-desktop {
+		font-size: 1vw;
+	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: $fw_light;
+	line-height: 1.4;
+	background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: $fw_semi;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a,
+button {
+	font-family: 'Montserrat', sans-serif;
+	transition: $fast;
+}
+
+strong {
+	font-weight: $fw_bold;
+}

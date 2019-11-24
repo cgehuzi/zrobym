@@ -1,1 +1,25 @@
 @import './1-const.scss';
+
+.template-main {
+	.menu {
+		&-open {
+			@include for-phone {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+			}
+
+			&__icon {
+
+				&-top,
+				&-center,
+				&-bottom {
+					@include for-phone {
+						background-color: #ffffff;
+					}
+				}
+			}
+		}
+	}
+}
