@@ -35,11 +35,17 @@
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	border: 2px #000000 solid;
-	padding: 12px 32px;
 	white-space: nowrap;
+	background-color: transparent;
 	animation: button-text 0.001s linear forwards;
 	animation-delay: 1.4s;
 	cursor: pointer;
+	padding: 12px 32px;
+	line-height: 1.4;
+
+	@include for-desktop {
+		padding: 1.2vw 3vw;
+	}
 
 	&::after {
 		content: '';
@@ -59,10 +65,6 @@
 		&::after {
 			background-color: #ffffff;
 		}
-	}
-
-	@include for-desktop {
-		padding: 1.2vw 3vw;
 	}
 
 	@include for-laptop-up {

@@ -1,6 +1,8 @@
 @import './1-const.scss';
 
 .chief {
+	z-index: 1;
+
 	&__image {
 		margin: 0 -32px;
 		object-fit: cover;
@@ -24,12 +26,16 @@
 
 	&__item {
 		display: flex;
-        align-items: center;
-        justify-content: center;
+		align-items: center;
+		justify-content: center;
 		margin-bottom: 1rem;
 		text-transform: uppercase;
 		font-weight: $fw_bold;
 		font-size: 1.2rem;
+
+		@include for-phone-horizontal-up {
+			justify-content: flex-start;
+		}
 	}
 
 	&__title {
@@ -50,11 +56,22 @@
 		display: block;
 
 		&-image {
-            display: block;
+			display: block;
 			width: 20px;
 			height: 20px;
 			object-fit: contain;
 			object-position: center;
+		}
+	}
+
+	.section {
+		&__body {
+			@include for-tablet-horizontal-up {
+				align-items: center;
+				min-height: 35vw;
+				margin-top: 32px;
+				margin-bottom: 32px;
+			}
 		}
 	}
 }

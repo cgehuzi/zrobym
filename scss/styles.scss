@@ -4,7 +4,12 @@
 // =============================================
 @import './1-reset.scss';
 
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: 0;
+}
+
 @import './components/html.scss';
 @import './components/grid-line.scss';
 @import './components/section.scss';
 @import './components/button.scss';
+@import './components/input.scss';

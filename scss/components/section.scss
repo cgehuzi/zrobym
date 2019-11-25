@@ -135,6 +135,20 @@
 	&__content {
 		& ~ .button {
 			margin-top: 4rem;
+
+			@include for-phone-vertical {
+				width: 100%;
+			}
+
+			@include for-phone-horizontal-up {
+				margin-right: auto;
+			}
+		}
+
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 }

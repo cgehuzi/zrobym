@@ -1,0 +1,122 @@
+@import './1-const.scss';
+
+.footer {
+	background-color: $dark;
+	color: #ffffff;
+
+	&__title {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	&__subtitle {
+		font-size: 1.4rem;
+		color: $gold;
+		line-height: 1.2;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+
+	&__block {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -24px;
+
+		&-col {
+			flex-basis: 100%;
+			max-width: 100%;
+			padding: 42px 24px 0;
+
+			@include for-tablet-vertical {
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+
+			@include for-laptop-up {
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+
+			&.fullwidth {
+				padding-top: 24px;
+
+				@include for-tablet-vertical {
+					flex-basis: 100%;
+					max-width: 100%;
+				}
+
+				@include for-laptop-up {
+					flex-basis: 100%;
+					max-width: 100%;
+				}
+			}
+
+			&--zrobym {
+				order: 1;
+
+				@include for-tablet-vertical {
+					order: initial;
+				}
+
+				@include for-laptop-up {
+					order: initial;
+				}
+			}
+
+			&--furniture {
+				order: 2;
+
+				@include for-tablet-vertical {
+					order: initial;
+				}
+
+				@include for-laptop-up {
+					order: initial;
+				}
+
+				.footer {
+					&__block {
+						&-subtitle {
+							display: none;
+
+							@include for-tablet-vertical {
+								display: block;
+								opacity: 0;
+							}
+
+							@include for-laptop-up {
+								display: block;
+								opacity: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&-title {
+			font-size: 1.2rem;
+			font-weight: $fw_medium;
+			text-transform: uppercase;
+			margin-bottom: 24px;
+		}
+
+		&-subtitle {
+			font-weight: $fw_medium;
+			text-transform: uppercase;
+			margin-bottom: 8px;
+			color: #ffffff;
+		}
+
+		&-content {
+			color: $grey_light;
+			font-size: 0.9rem;
+			line-height: 1.6;
+		}
+	}
+
+	&__link {
+		color: $grey_light;
+		text-decoration: none;
+	}
+}
