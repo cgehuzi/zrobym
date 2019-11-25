@@ -1,0 +1,60 @@
+@import './1-const.scss';
+
+.chief {
+	&__image {
+		margin: 0 -32px;
+		object-fit: cover;
+		object-position: center;
+		max-width: none;
+		width: calc(100% + 64px);
+
+		@include for-phone-vertical {
+			margin-top: -64px;
+		}
+
+		@include for-tablet-horizontal-up {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 50%;
+			height: 100%;
+			margin: 0;
+		}
+	}
+
+	&__item {
+		display: flex;
+        align-items: center;
+        justify-content: center;
+		margin-bottom: 1rem;
+		text-transform: uppercase;
+		font-weight: $fw_bold;
+		font-size: 1.2rem;
+	}
+
+	&__title {
+		margin-right: 12px;
+		line-height: 1;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+
+		&-point {
+			padding: 0 6px;
+		}
+	}
+
+	&__social {
+		display: block;
+
+		&-image {
+            display: block;
+			width: 20px;
+			height: 20px;
+			object-fit: contain;
+			object-position: center;
+		}
+	}
+}
