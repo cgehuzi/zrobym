@@ -13,10 +13,8 @@
 	}
 
 	&__separ {
-		flex-basis: 100%;
-		max-width: 100%;
+		flex-basis: 32px;
 		height: 32px;
-		min-height: 32px;
 		padding: 0;
 
 		@include for-phone-horizontal-up {
@@ -24,8 +22,8 @@
 		}
 
 		@include for-tablet-horizontal-up {
+			flex-basis: 5vw;
 			height: 5vw;
-			min-height: 5vw;
 		}
 
 		&--top,
@@ -34,8 +32,8 @@
 
 			@include for-tablet-up {
 				display: block;
+				flex-basis: 5vw;
 				height: 5vw;
-				min-height: 5vw;
 			}
 
 		}
@@ -135,7 +133,7 @@
 	}
 
 	&__content {
-		& + .button {
+		& ~ .button {
 			margin-top: 4rem;
 		}
 	}

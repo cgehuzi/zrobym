@@ -531,9 +531,41 @@
 			<div class="section__separ"></div>
 		</div>
 
+		<link rel="stylesheet" href="assets/templates/zrobym/css/team.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
+		<div class="section team">
+			<div class="section__separ"></div>
+			<div class="section__body">
+				<div class="section__body-col">
+					<div class="team__header">
+						<div class="section__header">
+							<div class="section__header-title">
+								<strong>Главное</strong>
+							</div>
+						</div>
+					</div>
+					<div class="team__content">
+						<div class="section__content">
+							<h4>Профессиональная команда</h4>
+							<p>У нас высокопрофессиональная команда архитекторов, дизайнеров, смежников</p>
+						</div>
+						<div id="team" class="team__slider" style="background-image: url('assets/images/team.jpg');"></div>
+						<a href="#" class="button">Вся команда</a>
+					</div>
+				</div>
+			</div>
+			<div class="section__separ"></div>
+		</div>
+
 		<script src="https://cdn.polyfill.io/v2/polyfill.js?features=Element.prototype.classList"></script>
 		<script src="https://unpkg.com/focus-visible"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="assets/templates/zrobym/plugins/cyclotron/jquery.cyclotron.min.js"></script>
+		<script>
+			$('#team').cyclotron({
+				dampingFactor: 1,
+				autorotation: 0.8
+			});
+		</script>
 	</body>
 
 </html>
