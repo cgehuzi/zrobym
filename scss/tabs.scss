@@ -1,5 +1,17 @@
 @import './1-const.scss';
 
+@keyframes tabs-after {
+	0% {
+		left: 0;
+		width: 100%;
+	}
+
+	100% {
+		left: 50%;
+		width: 50%;
+	}
+}
+
 .tabs {
 
 	&__list {
@@ -66,6 +78,11 @@
 
 		&.active {
 			display: block;
+
+			&::after {
+				animation: tabs-after 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+				animation-iteration-count: 1;
+			}
 		}
 
 		&::before {
@@ -90,6 +107,20 @@
 				top: 0;
 				width: 50%;
 				height: 100%;
+				background-color: $dark;
+			}
+		}
+
+		&-content {
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 0;
 				background-color: $dark;
 			}
 		}

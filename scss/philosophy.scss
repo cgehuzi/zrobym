@@ -1,0 +1,46 @@
+@import './1-const.scss';
+
+.philosophy {
+	&__header {
+		flex-grow: 1;
+		padding-bottom: 64px;
+	}
+
+	&__list {
+		margin: 0 -16px -32px;
+
+		@include for-phone-horizontal-up {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&-point {
+			padding: 0 16px 32px;
+
+			@include for-phone-horizontal-up {
+				width: 33.333%;
+				max-width: 33.333%;
+			}
+		}
+	}
+
+	&__item {
+		&-title {
+			font-size: 2.6rem;
+			font-weight: $fw_extra;
+
+			@include for-tablet {
+				font-size: 3rem;
+			}
+
+			@include for-laptop-up {
+				font-size: 3.4rem;
+			}
+		}
+
+		&-desc {
+			text-transform: uppercase;
+			font-size: 0.9rem;
+		}
+	}
+}
