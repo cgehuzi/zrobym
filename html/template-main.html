@@ -70,22 +70,6 @@
 			<div class="section__separ"></div>
 		</div>
 
-		<script async>
-			const about_more = document.querySelector('.about__more');
-			const about_more_button = document.querySelector('.about__more-button');
-			about_more_button.addEventListener('click', function() {
-				$(about_more).slideToggle();
-				about_more_button.classList.toggle('active');
-				if (about_more_button.classList.contains('active')) {
-					about_more_button.querySelector('.closed').style.display = "none";
-					about_more_button.querySelector('.opened').style.display = "block";
-				} else {
-					about_more_button.querySelector('.closed').style.display = "block";
-					about_more_button.querySelector('.opened').style.display = "none";
-				}
-			})
-		</script>
-
 		<link rel="stylesheet" href="assets/templates/zrobym/css/city.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
 		<div class="section section--dark city">
 			<div class="section__separ section__separ--bottom"></div>
@@ -111,238 +95,43 @@
 				<div class="section__body">
 					<div class="city__title">Наши представители в 13 городах:</div>
 					<div class="city__map"></div>
+					<script async>
+						const city_items_data = [{
+							name: 'Детройт'
+						}, {
+							name: 'Нью-Йорк'
+						}, {
+							name: 'Бразилиа'
+						}, {
+							name: 'Лос Анджелес'
+						}, {
+							name: 'Гданьск'
+						}, {
+							name: 'Вильнюс'
+						}, {
+							name: 'Киев'
+						}, {
+							name: 'Берлин'
+						}, {
+							name: 'Краков'
+						}, {
+							name: 'Париж'
+						}, {
+							name: 'Шанхай'
+						}, {
+							name: 'Эр-Рияд'
+						}, {
+							name: 'Москва'
+						}];
+					</script>
 				</div>
 			</div>
 			<div class="section__separ"></div>
 			<div class="section__separ section__separ--top"></div>
 		</div>
-		<script src="https://d3js.org/d3.v3.js"></script>
-		<script async>
-			var w = 960,
-				h = 500;
-
-			var circleWidth = 4;
-
-			var nodes = [{
-				"name": "Минск"
-			}, {
-				"name": "Детройт"
-			}, {
-				"name": "Нью-Йорк"
-			}, {
-				"name": "Бразилиа"
-			}, {
-				"name": "Лос Анджелес"
-			}, {
-				"name": "Гданьск"
-			}, {
-				"name": "Вильнюс"
-			}, {
-				"name": "Киев"
-			}, {
-				"name": "Берлин"
-			}, {
-				"name": "Краков"
-			}, {
-				"name": "Париж"
-			}, {
-				"name": "Шанхай"
-			}, {
-				"name": "Эр-Рияд"
-			}, {
-				"name": "Москва"
-			}, ]
-
-			var links = [{
-				source: nodes[0],
-				target: nodes[1]
-			}, {
-				source: nodes[0],
-				target: nodes[2]
-			}, {
-				source: nodes[0],
-				target: nodes[3]
-			}, {
-				source: nodes[0],
-				target: nodes[4]
-			}, {
-				source: nodes[0],
-				target: nodes[5]
-			}, {
-				source: nodes[0],
-				target: nodes[6]
-			}, {
-				source: nodes[0],
-				target: nodes[7]
-			}, {
-				source: nodes[0],
-				target: nodes[8]
-			}, {
-				source: nodes[0],
-				target: nodes[9]
-			}, {
-				source: nodes[0],
-				target: nodes[10]
-			}, {
-				source: nodes[0],
-				target: nodes[11]
-			}, {
-				source: nodes[0],
-				target: nodes[12]
-			}, {
-				source: nodes[0],
-				target: nodes[13]
-			}, ]
-
-
-			var vis = d3.select(".city__map")
-				.append("svg:svg")
-				.attr("class", "city__map-body")
-				.attr("preserveAspectRatio", "xMinYMin meet")
-				.attr("viewBox", "0 0 960 500");
-
-			var force = d3.layout.force()
-				.nodes(nodes)
-				.links([])
-				.gravity(0.06)
-				.charge(-400)
-				.size([w, h]);
-
-			var link = vis.selectAll(".link")
-				.data(links)
-				.enter().append("line")
-				.attr("class", "city__map-line")
-				.attr("stroke", "#f5f5f5")
-				.attr("fill", "#f5f5f5");
-
-			var node = vis.selectAll("circle.node")
-				.data(nodes)
-				.enter().append("g")
-				.attr("class", "city__map-node")
-
-				//MOUSEOVER
-				.on("mouseover", function(d, i) {
-					if (i > 0) {
-						//CIRCLE
-						d3.select(this).selectAll("circle")
-							.transition()
-							.duration(250)
-							.style("cursor", "grab")
-							.attr("r", circleWidth + 2)
-							.attr("fill", "#FCF4DC");
-
-						//TEXT
-						d3.select(this).select("text")
-							.transition()
-							.style("cursor", "grab")
-							.duration(250)
-							.style("cursor", "grab")
-							.attr("font-size", "1.5rem")
-							.attr("x", 25)
-							.attr("y", 5)
-					} else {
-						d3.select(this).selectAll("circle")
-							.transition()
-							.duration(250)
-							.style("cursor", "grab")
-
-					}
-				})
-
-				//MOUSEOUT
-				.on("mouseout", function(d, i) {
-					if (i > 0) {
-						//CIRCLE
-						d3.select(this).selectAll("circle")
-							.transition()
-							.duration(250)
-							.attr("r", circleWidth)
-							.attr("fill", "#f5f5f5");
-
-						//TEXT
-						d3.select(this).select("text")
-							.transition()
-							.duration(250)
-							.attr("font-size", "1rem")
-							.attr("x", 15)
-							.attr("y", 5)
-					}
-				})
-
-				.call(force.drag);
-
-
-			//CIRCLE
-			node.append("svg:circle")
-				.attr("cx", function(d) {
-					return d.x;
-				})
-				.attr("cy", function(d) {
-					return d.y;
-				})
-				.attr("r", function(d, i) {
-					if (i > 0) {
-						return circleWidth;
-					} else {
-						return circleWidth + 5;
-					}
-				})
-				.attr("fill", function(d, i) {
-					if (i > 0) {
-						return "#f5f5f5";
-					} else {
-						return "#fff7d8"
-					}
-				})
-
-			//TEXT
-			node.append("text")
-				.text(function(d, i) {
-					return d.name;
-				})
-				.attr("x", 15)
-				.attr("y", 5)
-				.attr("font-family", "Montserrat")
-				.attr("fill", function(d, i) {
-					return "#cda173";
-				})
-				.attr("font-size", function(d, i) {
-
-					if (i > 0) {
-						return "1rem";
-					} else {
-						return "2rem";
-					}
-
-				})
-				.attr("text-anchor", function(d, i) {
-					return "beginning";
-				});
-
-
-			force.on("tick", function(e) {
-				node.attr("transform", function(d, i) {
-					return "translate(" + d.x + "," + d.y + ")";
-				});
-
-				link.attr("x1", function(d) {
-						return d.source.x;
-					})
-					.attr("y1", function(d) {
-						return d.source.y;
-					})
-					.attr("x2", function(d) {
-						return d.target.x;
-					})
-					.attr("y2", function(d) {
-						return d.target.y;
-					});
-			});
-			force.start();
-		</script>
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/tabs.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
-		<div id="tabs" class="section section--dark tabs">
+		<div id="tabs" class="section section--dark tabs" data-tabs>
 			<ul class="section__body tabs__list">
 				<li class="tabs__list-point">
 					<button class="tabs__list-button" type="button" data-tab-open="#tab-1" data-tab-group="#tabs">Архитектурное проектирование</button>
@@ -442,46 +231,6 @@
 				<div class="section__separ"></div>
 			</div>
 		</div>
-
-		<script async>
-			// ====================================================
-			// Реализация блока tabs
-			// ====================================================
-			const tabInit = function(block) {
-				const TAB__BUTTONS_block = document.querySelector(block);
-				const TAB__BUTTONS = TAB__BUTTONS_block.querySelectorAll('.tabs__list-button');
-
-				for (let index = 0; index < TAB__BUTTONS.length; index++) {
-					let TAB__BUTTON = TAB__BUTTONS[index];
-					let TAB_active_class = 'active';
-					let TAB__ITEM__id = TAB__BUTTON.getAttribute('data-tab-open');
-					let TAB__ITEM__target = document.querySelector(TAB__BUTTON.getAttribute('data-tab-open'));
-					let TAB__GROUP__id = TAB__BUTTON.getAttribute('data-tab-group');
-					let TAB__GROUP__items = document.querySelectorAll(TAB__GROUP__id + ' .tabs__item');
-					let TAB__GROUP__buttons = document.querySelectorAll(TAB__GROUP__id + ' .tabs__list-button');
-
-					TAB__BUTTON.addEventListener('click', function(e) {
-						for (let index = 0; index < TAB__GROUP__items.length; index++) {
-							const TAB__GROUP__item = TAB__GROUP__items[index];
-							TAB__GROUP__item.classList.remove(TAB_active_class);
-						}
-
-						for (let index = 0; index < TAB__GROUP__buttons.length; index++) {
-							const TAB__GROUP__button = TAB__GROUP__buttons[index];
-							TAB__GROUP__button.classList.remove(TAB_active_class);
-						}
-
-						TAB__ITEM__target.classList.add(TAB_active_class);
-						TAB__BUTTON.classList.add(TAB_active_class);
-					});
-				}
-
-				const TAB__BUTTON_active = TAB__BUTTONS_block.querySelector('.tabs__list-button');
-				TAB__BUTTON_active.click();
-			};
-			tabInit("#tabs");
-			// END ------------------------
-		</script>
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/philosophy.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
 		<div class="section philosophy">
@@ -674,7 +423,7 @@
 				</div>
 				<div class="section__body-col">
 					<div class="feedback__group feedback__more-area">
-						<textarea id="feedback-comment" name="comment" class="feedback__textarea textarea" placeholder="Что вас интересует? *" onfocus="feedbackShow()" required></textarea>
+						<textarea id="feedback-comment" name="comment" class="feedback__textarea textarea" placeholder="Что вас интересует? *" onfocus="$('.feedback__more').slideDown()" required></textarea>
 					</div>
 					<div class="feedback__more" style="display: none;">
 						<button class="feedback__button button" type="submit">Отправить</button>
@@ -683,11 +432,6 @@
 			</form>
 			<div class="section__separ"></div>
 		</div>
-		<script async>
-			const feedbackShow = function() {
-				$('.feedback__more').slideDown();
-			}
-		</script>
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/footer.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
 		<div class="section footer">
@@ -755,9 +499,7 @@
 			<div class="section__separ"></div>
 		</div>
 
-		<script src="https://cdn.polyfill.io/v2/polyfill.js?features=Element.prototype.classList"></script>
-		<script src="https://unpkg.com/focus-visible"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		{{scripts}}
 		<script src="assets/templates/zrobym/plugins/cyclotron/jquery.cyclotron.min.js"></script>
 		<script>
 			$('#team').cyclotron({
