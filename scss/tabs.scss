@@ -80,7 +80,7 @@
 			display: block;
 
 			&::after {
-				animation: tabs-after 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+				animation: tabs-after 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 				animation-iteration-count: 1;
 			}
 		}

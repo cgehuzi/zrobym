@@ -10,18 +10,6 @@
 	@include for-tablet-horizontal-up {
 		padding: 5vw 0;
 		justify-content: center;
-
-		&::before {
-			content: '';
-			position: absolute;
-			z-index: 2;
-			left: 10vw;
-			right: 10vw;
-			height: 80vw;
-			border: 1px solid $border_light;
-			border-radius: 50%;
-			pointer-events: none;
-		}
 	}
 
 	&__header {
@@ -86,6 +74,21 @@
 				&::before {
 					content: '';
 					position: absolute;
+					z-index: 0;
+					left: 10vw;
+					right: 10vw;
+					top: 50%;
+					height: 80vw;
+					margin-top: -40vw;
+					border: 1px solid $border_light;
+					border-radius: 50%;
+					pointer-events: none;
+				}
+
+				&::after {
+					content: '';
+					position: absolute;
+					z-index: -1;
 					left: 0;
 					top: 0;
 					width: 50%;

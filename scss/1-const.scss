@@ -125,7 +125,7 @@ $back_light: #bebebe;
 }
 
 @mixin for-laptop {
-	@media (min-width: 1200px) and (max-width: 1999px) {
+	@media (min-width: 1200px) and (max-width: 1399px) {
 		@content;
 	}
 }
@@ -137,19 +137,19 @@ $back_light: #bebebe;
 }
 
 @mixin for-laptop-down {
-	@media (max-width: 1999px) {
+	@media (max-width: 1399px) {
 		@content;
 	}
 }
 
 @mixin for-desktop {
-	@media (min-width: 2000px) {
+	@media (min-width: 1400px) {
 		@content;
 	}
 }
 
 @mixin for-desktop-up {
-	@media (min-width: 2000px) {
+	@media (min-width: 1400px) {
 		@content;
 	}
 }

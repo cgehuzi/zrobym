@@ -1,0 +1,59 @@
+[data-scroll="title"] {
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		background-color: $gold;
+		animation-delay: 0.5s;
+	}
+
+	& > * {
+		opacity: 0;
+	}
+
+	&.scrolled {
+		&::before {
+			animation: scroll-title 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+		}
+
+		& > * {
+			animation: opacity-title 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+		}
+	}
+}
+
+
+@keyframes scroll-title {
+	0% {
+		left: 0;
+		width: 0;
+	}
+
+	50% {
+		left: 0;
+		width: 100%;
+	}
+
+	100% {
+		left: 100%;
+		width: 0;
+	}
+}
+
+@keyframes opacity-title {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

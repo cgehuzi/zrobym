@@ -22,8 +22,8 @@
 		}
 
 		@include for-tablet-horizontal-up {
-			flex-basis: 5vw;
-			height: 5vw;
+			flex-basis: 7.5vw;
+			height: 7.5vw;
 		}
 
 		&--top,
@@ -32,8 +32,8 @@
 
 			@include for-tablet-up {
 				display: block;
-				flex-basis: 5vw;
-				height: 5vw;
+				flex-basis: 7.5vw;
+				height: 7.5vw;
 			}
 
 		}
@@ -53,7 +53,7 @@
 			margin: 32px 0;
 
 			@include for-tablet-horizontal-up {
-				margin: 5vw 0;
+				margin: 7.5vw 0;
 			}
 		}
 	}

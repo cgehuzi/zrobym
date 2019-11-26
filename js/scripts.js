@@ -18,6 +18,34 @@ menu_close.addEventListener('click', function() {
 // END ------------------------
 
 // ====================================================
+// Реализация блока scroll
+// ====================================================
+const scrollInit = function() {
+	const scroll_items = document.querySelectorAll('[data-scroll]');
+	if (typeof IntersectionObserver === 'function') {
+		const scroll_window = new IntersectionObserver(function(entries) {
+			entries.forEach(function(entry) {
+				if (entry.isIntersecting) {
+					const elem = entry.target;
+					elem.classList.add('scrolled');
+					scroll_window.unobserve(elem);
+				}
+			});
+		}, {});
+
+		scroll_items.forEach(function(scroll_item) {
+			scroll_window.observe(scroll_item);
+		});
+	} else {
+		scroll_items.forEach(function(scroll_item) {
+			scroll_item.classList.add('scrolled');
+		});
+	}
+};
+scrollInit();
+// END ------------------------
+
+// ====================================================
 // Реализация блока about
 // ====================================================
 const about_more = document.querySelector('.about__more');
