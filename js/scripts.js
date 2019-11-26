@@ -27,8 +27,10 @@ const scrollInit = function() {
 			entries.forEach(function(entry) {
 				if (entry.isIntersecting) {
 					const elem = entry.target;
-					elem.classList.add('scrolled');
-					scroll_window.unobserve(elem);
+					setTimeout(function() {
+						elem.classList.add('scrolled');
+						scroll_window.unobserve(elem);
+					}, 400);
 				}
 			});
 		}, {});
