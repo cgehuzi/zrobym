@@ -1,0 +1,78 @@
+@import './1-const.scss';
+
+.worker {
+	position: relative;
+	z-index: 1;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -32px;
+		margin-right: -32px;
+		margin-bottom: -64px;
+
+		&-point {
+			flex-basis: 100%;
+			max-width: 100%;
+			padding: 0 0 64px;
+
+			@include for-phone-horizontal-up {
+				flex-basis: 50%;
+				max-width: 50%;
+				padding-right: 1px;
+				padding-left: 1px;
+			}
+
+			@include for-tablet-horizontal-up {
+				flex-basis: 33.333%;
+				max-width: 33.333%;
+			}
+
+			@include for-desktop {
+				flex-basis: 25%;
+				max-width: 25%;
+			}
+		}
+	}
+
+	&__item {
+		display: block;
+		text-align: center;
+		color: #000000;
+
+		@include for-laptop-up {
+			filter: grayscale(100%);
+
+			&:hover {
+				filter: none;
+			}
+		}
+
+		&-image {
+			display: block;
+			width: 100%;
+		}
+
+		&-title {
+			margin-top: 1.4rem;
+			font-weight: $fw_semi;
+			text-transform: uppercase;
+			font-size: 1.2rem;
+			line-height: 1.2;
+
+			@include for-phone-horizontal-up {
+				font-size: 1rem;
+			}
+		}
+
+		&-desc {
+			text-transform: uppercase;
+			line-height: 1.2;
+			margin-top: 0.6rem;
+
+			@include for-phone-horizontal-up {
+				font-size: 0.8rem;
+			}
+		}
+	}
+}

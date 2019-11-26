@@ -12,6 +12,10 @@
 		color: #ffffff;
 	}
 
+	&--light {
+		background-color: $back_light;
+	}
+
 	&__separ {
 		flex-basis: 32px;
 		height: 32px;
@@ -65,7 +69,6 @@
 	}
 
 	&__body {
-		flex-grow: 1;
 		position: relative;
 		width: 100%;
 		display: flex;
@@ -73,6 +76,10 @@
 
 		@include for-phone-horizontal-up {
 			padding: 0 10vw;
+		}
+
+		@include for-tablet-horizontal-up {
+			flex-grow: 1;
 		}
 
 		&-col {
@@ -85,6 +92,11 @@
 			@include for-tablet-horizontal-up {
 				flex-basis: 50%;
 				max-width: 50%;
+			}
+
+			&.fullwidth {
+				flex-basis: 100%;
+				max-width: 100%;
 			}
 		}
 	}
@@ -106,11 +118,15 @@
 			}
 
 			@include for-tablet {
+				font-size: 2.4rem;
+			}
+
+			@include for-laptop {
 				font-size: 2.6rem;
 			}
 
-			@include for-laptop-up {
-				font-size: 3rem;
+			@include for-desktop {
+				font-size: 2.8rem;
 			}
 
 			&::before {
@@ -154,5 +170,23 @@
 
 	&__buttons {
 		margin-top: 4rem;
+
+		.button {
+			@include for-phone {
+				width: 100%;
+			}
+		}
+
+		&-point {
+			margin-bottom: 1.6rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.button {
+				width: 100%;
+			}
+		}
 	}
 }

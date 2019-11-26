@@ -1,7 +1,7 @@
 @import './1-const.scss';
 
 .social {
-	background-color: #f5f5f5;
+	background-color: $back_light;
 
 	&__list {
 		display: flex;

@@ -4,7 +4,7 @@
 		position: absolute;
 		z-index: 1;
 		top: 0;
-		left: 0;
+		left: -32px;
 		width: 0;
 		height: 100%;
 		background-color: $gold;
@@ -29,17 +29,17 @@
 
 @keyframes scroll-title {
 	0% {
-		left: 0;
+		left: -32px;
 		width: 0;
 	}
 
 	50% {
-		left: 0;
-		width: 100%;
+		left: -32px;
+		width: calc(100% + 64px);
 	}
 
 	100% {
-		left: 100%;
+		left: calc(100% + 32px);
 		width: 0;
 	}
 }

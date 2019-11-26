@@ -4,7 +4,7 @@
 
 /*SCROLL STYLING*/
 
-@include for-laptop-up {
+@include for-tablet-horizontal-up {
 	::-webkit-scrollbar {
 		width: 6px;
 		background-color: $border_light;
@@ -45,6 +45,7 @@ body {
 	font-weight: $fw_light;
 	line-height: 1.4;
 	background-color: #ffffff;
+	overflow-x: hidden;
 }
 
 h1,

@@ -51,7 +51,6 @@
 		height: 84px;
 		min-height: 84px;
 		border-top: 1px solid $border_light;
-		color: #ffffff;
 		display: flex;
 
 
@@ -90,6 +89,7 @@
 		object-position: center;
 		margin-left: -24px;
 		animation: animation-arrow 1s forwards infinite;
+		opacity: 0.4;
 
 		@include for-tablet-vertical {
 			height: 84px;
@@ -114,16 +114,6 @@
 
 		100% {
 			padding-top: 0;
-		}
-	}
-
-	.section {
-		&__header {
-			margin-top: auto;
-
-			@include for-phone {
-				margin-bottom: auto;
-			}
 		}
 	}
 }

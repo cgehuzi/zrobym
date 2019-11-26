@@ -4,7 +4,7 @@
 	z-index: 0;
 
 	@include for-tablet-vertical-down {
-		background-color: #f5f5f5;
+		background-color: $back_light;
 	}
 
 	@include for-tablet-horizontal-up {

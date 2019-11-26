@@ -14,7 +14,8 @@ $gold_hover: #b38a5f;
 $border_light: #e5e5e5;
 $grey_light: #c8c8c8;
 
-$back_light: #bebebe;
+$back_grey: #bebebe;
+$back_light: #f5f5f5;
 
 @mixin for-phone-small {
 	@media (max-width: 359px) {

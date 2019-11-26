@@ -17,6 +17,21 @@
 			z-index: 0;
 			pointer-events: none;
 		}
+
+		.section {
+			&__header {
+				margin-top: auto;
+
+				@include for-phone {
+					margin-bottom: auto;
+					padding-bottom: 32px;
+				}
+			}
+
+			&__body {
+				flex-grow: 1;
+			}
+		}
 	}
 
 	.menu {
