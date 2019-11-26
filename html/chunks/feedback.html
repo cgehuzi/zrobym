@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="assets/templates/zrobym/css/feedback.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
+<div class="section feedback">
+	<div class="section__separ section__separ--small"></div>
+	<form class="section__body">
+		<div class="section__body-col">
+			<div class="section__content">
+				<h4>Напишите нам</h4>
+				<p>И мы ответим на любые интересующие вас вопросы о проекте.</p>
+			</div>
+			<div class="feedback__more" style="display: none;">
+				<div class="feedback__group">
+					<input id="feedback-name" name="name" class="feedback__input input" type="text" placeholder="ФИО *" required>
+				</div>
+				<div class="feedback__group">
+					<input id="feedback-city" name="city" class="feedback__input input" type="text" placeholder="город, страна *" required>
+				</div>
+				<div class="feedback__group">
+					<input id="feedback-phone" name="phone" class="feedback__input input" type="tel" placeholder="телефон">
+				</div>
+				<div class="feedback__group">
+					<input id="feedback-email" name="email" class="feedback__input input" type="email" placeholder="email *" required>
+				</div>
+			</div>
+		</div>
+		<div class="section__body-col">
+			<div class="feedback__group feedback__more-area">
+				<textarea id="feedback-comment" name="comment" class="feedback__textarea textarea" placeholder="Что вас интересует? *" onfocus="$('.feedback__more').slideDown()" required></textarea>
+			</div>
+			<div class="feedback__more" style="display: none;">
+				<button class="feedback__button button" type="submit">Отправить</button>
+			</div>
+		</div>
+	</form>
+	<div class="section__separ section__separ--small"></div>
+</div>

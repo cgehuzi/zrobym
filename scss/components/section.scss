@@ -22,8 +22,13 @@
 		}
 
 		@include for-tablet-horizontal-up {
-			flex-basis: 7.5vw;
-			height: 7.5vw;
+			flex-basis: 7.2vw;
+			height: 7.2vw;
+
+			&--small {
+				flex-basis: 3.6vw;
+				height: 3.6vw;
+			}
 		}
 
 		&--top,
@@ -32,8 +37,8 @@
 
 			@include for-tablet-up {
 				display: block;
-				flex-basis: 7.5vw;
-				height: 7.5vw;
+				flex-basis: 7.2vw;
+				height: 7.2vw;
 			}
 
 		}
@@ -49,11 +54,12 @@
 		&--center {
 			height: 0;
 			min-height: 0;
+			flex-basis: 0;
 			border-top: 1px solid $border_light;
 			margin: 32px 0;
 
 			@include for-tablet-horizontal-up {
-				margin: 7.5vw 0;
+				margin: 7.2vw 0;
 			}
 		}
 	}
@@ -95,12 +101,16 @@
 			font-weight: $fw_regular;
 			padding-bottom: 1rem;
 
+			@include for-phone-vertical {
+				padding-bottom: 0;
+			}
+
 			@include for-tablet {
-				font-size: 2.4rem;
+				font-size: 2.6rem;
 			}
 
 			@include for-laptop-up {
-				font-size: 2.8rem;
+				font-size: 3rem;
 			}
 
 			&::before {
@@ -113,7 +123,9 @@
 				background-color: $gold;
 
 				@include for-phone-vertical {
+					z-index: -1;
 					left: 50%;
+					bottom: 4px;
 					margin-left: -64px;
 				}
 			}
@@ -127,7 +139,6 @@
 		&-subtitle {
 			margin-top: 1rem;
 			text-transform: uppercase;
-			font-size: 0.9rem;
 			font-weight: $fw_medium;
 		}
 	}

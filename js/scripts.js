@@ -5,16 +5,20 @@ const menu = document.querySelector('.menu');
 const menu_open = document.querySelector('.menu-open');
 const menu_close = document.querySelector('.menu-close');
 const menu_html = document.querySelector('body');
-menu_open.addEventListener('click', function() {
-	menu.classList.add('opened');
-	menu_close.classList.add('active');
-	menu_html.classList.add('noscroll');
-});
-menu_close.addEventListener('click', function() {
-	menu.classList.remove('opened');
-	menu_close.classList.remove('active');
-	menu_html.classList.remove('noscroll');
-});
+if (menu_open) {
+	menu_open.addEventListener('click', function() {
+		menu.classList.add('opened');
+		menu_close.classList.add('active');
+		menu_html.classList.add('noscroll');
+	});
+}
+if (menu_close) {
+	menu_close.addEventListener('click', function() {
+		menu.classList.remove('opened');
+		menu_close.classList.remove('active');
+		menu_html.classList.remove('noscroll');
+	});
+}
 // END ------------------------
 
 // ====================================================
@@ -52,17 +56,19 @@ scrollInit();
 // ====================================================
 const about_more = document.querySelector('.about__more');
 const about_more_button = document.querySelector('.about__more-button');
-about_more_button.addEventListener('click', function() {
-	$(about_more).slideToggle();
-	about_more_button.classList.toggle('active');
-	if (about_more_button.classList.contains('active')) {
-		about_more_button.querySelector('.closed').style.display = 'none';
-		about_more_button.querySelector('.opened').style.display = 'block';
-	} else {
-		about_more_button.querySelector('.closed').style.display = 'block';
-		about_more_button.querySelector('.opened').style.display = 'none';
-	}
-});
+if (about_more_button) {
+	about_more_button.addEventListener('click', function() {
+		$(about_more).slideToggle();
+		about_more_button.classList.toggle('active');
+		if (about_more_button.classList.contains('active')) {
+			about_more_button.querySelector('.closed').style.display = 'none';
+			about_more_button.querySelector('.opened').style.display = 'block';
+		} else {
+			about_more_button.querySelector('.closed').style.display = 'block';
+			about_more_button.querySelector('.opened').style.display = 'none';
+		}
+	});
+}
 // END ------------------------
 
 // ====================================================

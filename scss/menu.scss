@@ -48,8 +48,8 @@
 		}
 
 		@include for-desktop {
-			height: 7.5vw;
-			min-height: 7.5vw;
+			height: 7.2vw;
+			min-height: 7.2vw;
 		}
 
 		&-link {
@@ -85,8 +85,8 @@
 		}
 
 		@include for-desktop {
-			height: 7.5vw;
-			min-height: 7.5vw;
+			height: 7.2vw;
+			min-height: 7.2vw;
 		}
 
 		&-lang {
@@ -209,7 +209,7 @@
 		}
 
 		@include for-desktop {
-			bottom: 7.5vw;
+			bottom: 7.2vw;
 		}
 
 		&-point {
@@ -374,7 +374,7 @@
 		}
 
 		@include for-desktop {
-			top: 7.5vw;
+			top: 7.2vw;
 		}
 
 		&.active {

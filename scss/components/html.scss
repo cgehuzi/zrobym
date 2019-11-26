@@ -4,18 +4,20 @@
 
 /*SCROLL STYLING*/
 
-::-webkit-scrollbar {
-	width: 6px;
-	background-color: $border_light;
-
-	&-track {
-		box-shadow: inset 0 0 6px rgba(#000000, 0.3);
+@include for-laptop-up {
+	::-webkit-scrollbar {
+		width: 6px;
 		background-color: $border_light;
-	}
 
-	&-thumb {
-		background-color: $gold;
-		border-radius: 10px;
+		&-track {
+			box-shadow: inset 0 0 6px rgba(#000000, 0.3);
+			background-color: $border_light;
+		}
+
+		&-thumb {
+			background-color: $gold;
+			border-radius: 10px;
+		}
 	}
 }
 
@@ -31,7 +33,7 @@ html {
 	}
 
 	@include for-desktop {
-		font-size: 1vw;
+		font-size: 0.95vw;
 	}
 }
 
@@ -74,7 +76,7 @@ button {
 }
 
 strong {
-	font-weight: $fw_bold;
+	font-weight: $fw_medium;
 }
 
 img {
