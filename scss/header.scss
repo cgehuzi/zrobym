@@ -12,6 +12,36 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
+
+		&-right {
+			margin: 0 -32px -32px;
+			max-width: calc(100% + 64px);
+
+			@include for-tablet-up {
+				position: absolute;
+				left: 50%;
+				top: 0;
+				width: 50%;
+				height: calc(100% + 84px + 84px + 7.2vw);
+				object-fit: cover;
+				object-position: top;
+				margin: 0;
+				margin-top: calc(-7.2vw - 84px);
+			}
+
+			@include for-tablet-horizontal-up {
+				height: 100vh;
+			}
+
+			@include for-tablet-horizontal {
+				margin-top: calc(-7.2vw - 102px);
+			}
+
+			@include for-laptop-up {
+				margin-top: -14.4vw;
+			}
+
+		}
 	}
 
 	&__header {
@@ -89,7 +119,7 @@
 		object-position: center;
 		margin-left: -24px;
 		animation: animation-arrow 1s forwards infinite;
-		opacity: 0.4;
+		opacity: 0.2;
 
 		@include for-tablet-vertical {
 			height: 84px;

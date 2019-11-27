@@ -52,21 +52,23 @@ scrollInit();
 // END ------------------------
 
 // ====================================================
-// Реализация блока about
+// Реализация блока more-button
 // ====================================================
-const about_more = document.querySelector('.about__more');
-const about_more_button = document.querySelector('.about__more-button');
-if (about_more_button) {
-	about_more_button.addEventListener('click', function() {
-		$(about_more).slideToggle();
-		about_more_button.classList.toggle('active');
-		if (about_more_button.classList.contains('active')) {
-			about_more_button.querySelector('.closed').style.display = 'none';
-			about_more_button.querySelector('.opened').style.display = 'block';
-		} else {
-			about_more_button.querySelector('.closed').style.display = 'block';
-			about_more_button.querySelector('.opened').style.display = 'none';
-		}
+const more_buttons = document.querySelectorAll('[data-more]');
+if (more_buttons) {
+	more_buttons.forEach(function(more_button) {
+		const more_target = document.querySelector(more_button.dataset.more);
+		const more_text_closed = more_button.innerHTML;
+		const more_text_opened = 'Скрыть';
+		more_button.addEventListener('click', function() {
+			$(more_target).slideToggle();
+			more_button.classList.toggle('active');
+			if (more_button.classList.contains('active')) {
+				more_button.innerHTML = more_text_opened;
+			} else {
+				more_button.innerHTML = more_text_closed;
+			}
+		});
 	});
 }
 // END ------------------------

@@ -75,4 +75,19 @@
 			}
 		}
 	}
+
+	&-more {
+		padding: 0;
+		background-color: transparent;
+		border: none;
+		color: $gold;
+		font-weight: $fw_regular;
+		margin-top: 1.5rem;
+
+		@include for-laptop-up {
+			&:hover {
+				color: $gold_hover;
+			}
+		}
+	}
 }
