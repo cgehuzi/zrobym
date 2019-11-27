@@ -66,6 +66,8 @@
 
 	.section {
 		&__body {
+			position: relative;
+
 			@include for-tablet-horizontal-up {
 				align-items: center;
 				min-height: 35vw;

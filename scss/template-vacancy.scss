@@ -1,0 +1,11 @@
+@import './1-const.scss';
+
+.template-vacancy {
+	.header {
+		.section {
+			&__body {
+				padding-bottom: 0;
+			}
+		}
+	}
+}

@@ -30,3 +30,22 @@
 		}
 	}
 }
+
+.grid-row {
+	position: relative;
+	z-index: 1;
+	display: none;
+	width: 100%;
+	max-width: 100%;
+	border: none;
+	border-top: 1px solid $border_light;
+	margin: 0;
+
+	@include for-tablet-up {
+		display: block;
+	}
+
+	&--all {
+		display: block;
+	}
+}

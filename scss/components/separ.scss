@@ -1,0 +1,23 @@
+.separ {
+	width: 100%;
+	flex-basis: $separ_phone;
+	height: $separ_phone;
+
+	@include for-tablet-up {
+		flex-basis: $separ;
+		height: $separ;
+	}
+
+	&--small {
+		@include for-tablet-up {
+			flex-basis: $separ_small;
+			height: $separ_small;
+		}
+	}
+
+	&--tablet {
+		@include for-phone {
+			display: none;
+		}
+	}
+}

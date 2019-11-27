@@ -118,11 +118,11 @@
 		.office {
 			&-gallery {
 				@include for-tablet-horizontal {
-					margin-top: calc(-7.2vw - 102px);
+					margin-top: calc(-#{$separ} - 102px);
 				}
 
 				@include for-laptop-up {
-					margin-top: -14.4vw;
+					margin-top: -#{$separ * 2};
 				}
 			}
 		}

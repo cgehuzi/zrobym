@@ -2,6 +2,11 @@
 
 .header {
 	position: relative;
+	min-height: calc(100vh - 102px + 32px);
+
+	@include for-tablet-up {
+		min-height: 100vh;
+	}
 
 	&__back {
 		position: absolute;
@@ -14,56 +19,41 @@
 		object-position: center;
 
 		&-right {
-			margin: 0 -32px -32px;
-			max-width: calc(100% + 64px);
+			margin: 0 -32px;
+			max-width: calc(100% + 32px + 32px);
+
+			@include for-phone-horizontal {
+				margin: 32px 0 0;
+				max-width: 100%;
+			}
 
 			@include for-tablet-up {
 				position: absolute;
 				left: 50%;
 				top: 0;
 				width: 50%;
-				height: calc(100% + 84px + 84px + 7.2vw);
+				height: 100%;
 				object-fit: cover;
 				object-position: top;
 				margin: 0;
-				margin-top: calc(-7.2vw - 84px);
 			}
-
-			@include for-tablet-horizontal-up {
-				height: 100vh;
-			}
-
-			@include for-tablet-horizontal {
-				margin-top: calc(-7.2vw - 102px);
-			}
-
-			@include for-laptop-up {
-				margin-top: -14.4vw;
-			}
-
 		}
 	}
 
 	&__header {
 		position: relative;
 		z-index: 1;
-		height: 84px;
-		min-height: 84px;
-		border-bottom: 1px solid $border_light;
+		height: 102px;
+		min-height: 102px;
 		pointer-events: none;
 
 		@include for-phone {
 			display: none;
 		}
 
-		@include for-tablet-horizontal-up {
-			height: 102px;
-			min-height: 102px;
-		}
-
 		@include for-desktop {
-			height: 7.2vw;
-			min-height: 7.2vw;
+			height: $separ;
+			min-height: $separ;
 		}
 
 		&-logo {
@@ -78,9 +68,8 @@
 
 	&__footer {
 		position: relative;
-		height: 84px;
-		min-height: 84px;
-		border-top: 1px solid $border_light;
+		height: 102px;
+		min-height: 102px;
 		display: flex;
 
 
@@ -88,14 +77,9 @@
 			display: none;
 		}
 
-		@include for-tablet-horizontal-up {
-			height: 102px;
-			min-height: 102px;
-		}
-
 		@include for-desktop {
-			height: 7.2vw;
-			min-height: 7.2vw;
+			height: $separ;
+			min-height: $separ;
 		}
 
 		&-lang {
@@ -119,11 +103,7 @@
 		object-position: center;
 		margin-left: -24px;
 		animation: animation-arrow 1s forwards infinite;
-		opacity: 0.2;
-
-		@include for-tablet-vertical {
-			height: 84px;
-		}
+		opacity: 0.4;
 
 		@include for-tablet-horizontal-up {
 			width: 64px;
@@ -131,7 +111,7 @@
 		}
 
 		@include for-desktop {
-			height: 7.2vw;
+			height: $separ;
 			width: 72px;
 			margin-left: -36px;
 		}
@@ -144,6 +124,16 @@
 
 		100% {
 			padding-top: 0;
+		}
+	}
+
+	.section {
+		&__body {
+			flex-grow: 1;
+
+			@include for-phone {
+				padding-bottom: 64px;
+			}
 		}
 	}
 }

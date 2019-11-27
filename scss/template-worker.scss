@@ -2,18 +2,8 @@
 
 .template-worker {
 	.header {
-		@include for-tablet-horizontal-up {
-			min-height: 100vh;
-		}
-
 		&__footer {
 			color: #ffffff;
-		}
-
-		&__arrow {
-			@include for-phone {
-				display: none;
-			}
 		}
 
 		.section {

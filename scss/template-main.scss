@@ -2,7 +2,6 @@
 
 .template-main {
 	.header {
-		min-height: 100vh;
 		color: #ffffff;
 
 		&::before {
@@ -29,7 +28,7 @@
 			}
 
 			&__body {
-				flex-grow: 1;
+				padding-bottom: 0;
 			}
 		}
 	}

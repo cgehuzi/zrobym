@@ -3,12 +3,7 @@
 .team {
 	z-index: 0;
 
-	@include for-tablet-vertical-down {
-		background-color: $back_light;
-	}
-
 	@include for-tablet-horizontal-up {
-		padding: 5vw 0;
 		justify-content: center;
 	}
 

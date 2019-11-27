@@ -10,22 +10,12 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(#000000, 0.9);
 	display: flex;
 	flex-direction: column;
+	background-color: $dark;
 
-	&::before {
-		content: '';
-		position: absolute;
-		right: 72px;
-		top: 0;
-		height: 100%;
-		width: 1px;
-		background-color: $border_light;
-
-		@include for-phone-horizontal-up {
-			display: none;
-		}
+	@include for-tablet-vertical-up {
+		background-color: rgba(#000000, 0.9);
 	}
 
 	&.opened {
@@ -34,22 +24,16 @@
 	}
 
 	&__header {
-		height: 84px;
-		min-height: 84px;
-		border-bottom: 1px solid $border_light;
+		height: 102px;
+		min-height: 102px;
 
 		@include for-phone {
 			display: none;
 		}
 
-		@include for-tablet-horizontal-up {
-			height: 102px;
-			min-height: 102px;
-		}
-
 		@include for-desktop {
-			height: 7.2vw;
-			min-height: 7.2vw;
+			height: $separ;
+			min-height: $separ;
 		}
 
 		&-link {
@@ -69,9 +53,8 @@
 	}
 
 	&__footer {
-		height: 84px;
-		min-height: 84px;
-		border-top: 1px solid $border_light;
+		height: 102px;
+		min-height: 102px;
 		color: #ffffff;
 		display: flex;
 
@@ -79,14 +62,9 @@
 			display: none;
 		}
 
-		@include for-tablet-horizontal-up {
-			height: 102px;
-			min-height: 102px;
-		}
-
 		@include for-desktop {
-			height: 7.2vw;
-			min-height: 7.2vw;
+			height: $separ;
+			min-height: $separ;
 		}
 
 		&-lang {
@@ -257,7 +235,10 @@
 		background-color: transparent;
 		border: none;
 		line-height: 1;
-		margin-bottom: -32px;
+
+		@include for-phone {
+			margin-bottom: -32px;
+		}
 
 		@include for-tablet-up {
 			position: fixed;

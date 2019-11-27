@@ -17,6 +17,10 @@ $grey_light: #c8c8c8;
 $back_grey: #bebebe;
 $back_light: #f5f5f5;
 
+$separ_phone: 32px;
+$separ: 6.8vw;
+$separ_small: 3.4vw;
+
 @mixin for-phone-small {
 	@media (max-width: 359px) {
 		@content;
