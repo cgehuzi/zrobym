@@ -45,6 +45,7 @@
 
 			&:hover {
 				filter: none;
+				color: $gold;
 			}
 		}
 
@@ -58,7 +59,7 @@
 			font-weight: $fw_semi;
 			text-transform: uppercase;
 			font-size: 1.2rem;
-			line-height: 1.2;
+			line-height: 1.4;
 
 			@include for-phone-horizontal-up {
 				font-size: 1rem;
@@ -67,8 +68,9 @@
 
 		&-desc {
 			text-transform: uppercase;
-			line-height: 1.2;
+			line-height: 1.4;
 			margin-top: 0.6rem;
+			color: #000000;
 
 			@include for-phone-horizontal-up {
 				font-size: 0.8rem;
