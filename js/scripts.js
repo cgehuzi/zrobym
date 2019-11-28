@@ -1,22 +1,51 @@
 // ====================================================
+// Реализация функции noscroll
+// ====================================================
+const noscroll = function(elem, status = true) {
+	if (status === true) $(elem).addClass('noscroll');
+	if (status === false) $(elem).removeClass('noscroll');
+	if (status === 'toggle') $(elem).toggleClass('noscroll');
+};
+// END ------------------------
+
+// ====================================================
+// Реализация функции active
+// ====================================================
+const active = function(elem, status = true) {
+	if (status === true) $(elem).addClass('active');
+	if (status === false) $(elem).removeClass('active');
+	if (status === 'toggle') $(elem).toggleClass('active');
+};
+// END ------------------------
+
+// ====================================================
+// Реализация функции opened
+// ====================================================
+const opened = function(elem, status = true) {
+	if (status === true) $(elem).addClass('opened');
+	if (status === false) $(elem).removeClass('opened');
+	if (status === 'toggle') $(elem).toggleClass('opened');
+};
+// END ------------------------
+
+// ====================================================
 // Реализация блока menu
 // ====================================================
 const menu = document.querySelector('.menu');
 const menu_open = document.querySelector('.menu-open');
 const menu_close = document.querySelector('.menu-close');
-const menu_html = document.querySelector('body');
 if (menu_open) {
 	menu_open.addEventListener('click', function() {
-		menu.classList.add('opened');
-		menu_close.classList.add('active');
-		menu_html.classList.add('noscroll');
+		opened(menu);
+		active(menu_close);
+		noscroll('body');
 	});
 }
 if (menu_close) {
 	menu_close.addEventListener('click', function() {
-		menu.classList.remove('opened');
-		menu_close.classList.remove('active');
-		menu_html.classList.remove('noscroll');
+		opened(menu, false);
+		active(menu_close, false);
+		noscroll('body', false);
 	});
 }
 // END ------------------------
@@ -52,7 +81,7 @@ scrollInit();
 // END ------------------------
 
 // ====================================================
-// Реализация блока more-button
+// Реализация блока data-more
 // ====================================================
 const more_buttons = document.querySelectorAll('[data-more]');
 if (more_buttons) {
@@ -62,7 +91,7 @@ if (more_buttons) {
 		const more_text_opened = 'Скрыть';
 		more_button.addEventListener('click', function() {
 			$(more_target).slideToggle();
-			more_button.classList.toggle('active');
+			active(more_button, 'toggle');
 			if (more_button.classList.contains('active')) {
 				more_button.innerHTML = more_text_opened;
 			} else {
@@ -248,31 +277,30 @@ if (typeof city_items_data === 'object') {
 // END ------------------------
 
 // ====================================================
-// Реализация блока tabs
+// Реализация блока data-tabs
 // ====================================================
 const tabs_blocks = document.querySelectorAll('[data-tabs]');
 if (tabs_blocks) {
 	tabs_blocks.forEach(function(tab_block) {
-		const tab_buttons = tab_block.querySelectorAll('.tabs__list-button');
+		const tab_buttons = tab_block.querySelectorAll('[data-tab-open]');
 
 		tab_buttons.forEach(function(tab__button) {
-			const tab_active_class = 'active';
 			const tab_target = document.querySelector(tab__button.getAttribute('data-tab-open'));
 			const tab_group = document.querySelector(tab__button.getAttribute('data-tab-group'));
-			const tab_items = tab_group.querySelectorAll('.tabs__item');
-			const tab_buttons = tab_group.querySelectorAll('.tabs__list-button');
+			const tab_items = tab_group.querySelectorAll('[data-tab-item]');
+			const tab_buttons = tab_group.querySelectorAll('[data-tab-open]');
 
 			tab__button.addEventListener('click', function(e) {
 				tab_items.forEach(function(tab_item) {
-					tab_item.classList.remove(tab_active_class);
+					active(tab_item, false);
 				});
 
 				tab_buttons.forEach(function(tab_button) {
-					tab_button.classList.remove(tab_active_class);
+					active(tab_button, false);
 				});
 
-				tab_target.classList.add(tab_active_class);
-				tab__button.classList.add(tab_active_class);
+				active(tab_target);
+				active(tab__button);
 			});
 		});
 

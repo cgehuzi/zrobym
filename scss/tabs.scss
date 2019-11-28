@@ -44,6 +44,7 @@
 
 			@include for-tablet-vertical-down {
 				background-color: #ffffff;
+				min-height: $separ_phone;
 			}
 
 			@include for-tablet-horizontal-up {
@@ -51,7 +52,7 @@
 				line-height: 1.2;
 				font-weight: $fw_medium;
 				padding: 16px 24px;
-				min-height: 5vw;
+				min-height: $separ;
 			}
 
 			@include for-laptop-up {
