@@ -315,7 +315,7 @@ if (tabs_blocks) {
 
 // функция создания контента в баллунах
 const getBaloonContent = function(pin) {
-	return '<div class="world-map__baloon">' + '<a class="world-map__baloon-item" href="' + pin['href'] + '">' + '<img class="world-map__baloon-image" src="' + pin['image'] + '">' + '<div class="world-map__baloon-title">' + pin['title'] + '</div>' + '<div class="world-map__baloon-desc">' + pin['desc'] + '</div>' + '</a>' + '</div>';
+	return '<div class="world-map__balloon">' + '<a class="world-map__balloon-item" href="' + pin['href'] + '">' + '<img class="world-map__balloon-image" src="' + pin['image'] + '">' + '<div class="world-map__balloon-title">' + pin['title'] + '</div>' + '<div class="world-map__balloon-desc">' + pin['desc'] + '</div>' + '</a>' + '</div>';
 };
 
 const map_init = function(map_params) {
@@ -333,16 +333,16 @@ const map_init = function(map_params) {
 				// Чтобы метки начали кластеризоваться, выставляем опцию.
 				clusterize: true,
 				// ObjectManager принимает те же опции, что и кластеризатор.
-				gridSize: 32,
+				gridSize: 8,
 				clusterDisableClickZoom: false
 			});
 
 		myMap.controls.add('zoomControl', {
 			position: {
+				top: 24,
+				right: 24,
 				bottom: 'auto',
-				left: 'auto',
-				right: 40,
-				top: 40
+				left: 'auto'
 			}
 		});
 
@@ -351,12 +351,11 @@ const map_init = function(map_params) {
 		objectManager.objects.options.set({
 			iconLayout: 'default#image',
 			iconImageHref: 'assets/templates/zrobym/images/pin.png',
-			iconImageSize: [30, 70],
-			iconImageOffset: [-15, -37]
+			iconImageSize: [34, 52],
+			iconImageOffset: [-17, -51]
 		});
 		objectManager.clusters.options.set({
-			preset: 'islands#nightClusterIcons',
-			iconColor: '#000000'
+			clusterIconColor: '#000000'
 		});
 		myMap.geoObjects.add(objectManager);
 		myMap.behaviors.disable('scrollZoom');

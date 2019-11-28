@@ -119,4 +119,14 @@
 		color: $grey_light;
 		text-decoration: none;
 	}
+
+	.section {
+		&__header {
+			&-title {
+				@include for-tablet-up {
+					font-size: 3.2rem;
+				}
+			}
+		}
+	}
 }
