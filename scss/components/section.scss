@@ -18,6 +18,43 @@
 		border-bottom: 1px solid $border_light;
 	}
 
+	&__back {
+
+		&-left,
+		&-right {
+			margin: 0 -32px;
+			max-width: calc(100% + 32px + 32px);
+
+			@include for-phone-horizontal-up {
+				margin: 0;
+				width: 100%;
+				max-width: 100%;
+			}
+
+			@include for-tablet-horizontal-up {
+				position: absolute;
+				top: 0;
+				width: 50%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				margin: 0;
+			}
+		}
+
+		&-left {
+			@include for-tablet-up {
+				left: 0;
+			}
+		}
+
+		&-right {
+			@include for-tablet-up {
+				left: 50%;
+			}
+		}
+	}
+
 	&__body {
 		display: flex;
 		flex-wrap: wrap;
@@ -43,6 +80,12 @@
 				max-width: 50%;
 			}
 
+			&.right {
+				@include for-tablet-horizontal-up {
+					margin-left: auto;
+				}
+			}
+
 			&.fullwidth {
 				flex-basis: 100%;
 				max-width: 100%;
@@ -57,13 +100,17 @@
 		&-title {
 			position: relative;
 			line-height: 1.2;
-			font-size: 2rem;
+			font-size: 1.8rem;
 			text-transform: uppercase;
 			font-weight: $fw_regular;
 			padding-bottom: 1rem;
 
 			@include for-phone-vertical {
 				padding-bottom: 0;
+			}
+
+			@include for-phone-horizontal {
+				font-size: 2rem;
 			}
 
 			@include for-tablet {
