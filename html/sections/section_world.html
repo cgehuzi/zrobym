@@ -1,0 +1,106 @@
+<link rel="stylesheet" href="assets/templates/zrobym/css/world.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
+<div class="section world">
+	<div id="world" class="world-map"></div>
+	<div class="separ"></div>
+	<div class="section__body">
+		<div class="section__body-col">
+			<div class="section__header" data-scroll="title">
+				<div class="section__header-title">
+					Места, где мы <strong>проектировали</strong>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="separ"></div>
+</div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU"></script>
+<script src="assets/templates/zrobym/js/world-map.js"></script>
+<script>
+	if (window.outerWidth > 991) {
+		const world_pins = {
+			type: 'FeatureCollection',
+			features: [{
+					type: 'Feature',
+					id: 1,
+					geometry: {
+						type: 'Point',
+						coordinates: '43.955945, -84.824856'.split(',')
+					},
+					properties: {
+						balloonContentBody: getBaloonContent({
+							href: '#',
+							image: '[[phpthumb? &input=`assets/images/design-apartment/rb-interior/1467.jpg` &options=`w=480,h=320,zc=C`]]',
+							title: 'RB INTERIOR',
+							desc: 'Дизайн квартиры'
+						}),
+						hintContent: 'RB INTERIOR'
+					}
+				},
+				{
+					type: 'Feature',
+					id: 2,
+					geometry: {
+						type: 'Point',
+						coordinates: '53.405553, 27.388693'.split(',')
+					},
+					properties: {
+						balloonContentBody: getBaloonContent({
+							href: '#',
+							image: '[[phpthumb? &input=`assets/images/design-apartment/midnight-flat/2417.jpg` &options=`w=480,h=320,zc=C`]]',
+							title: 'MIDNIGHT FLAT',
+							desc: 'Дизайн квартиры'
+						}),
+						hintContent: 'RB INTERIOR'
+					}
+				},
+				{
+					type: 'Feature',
+					id: 3,
+					geometry: {
+						type: 'Point',
+						coordinates: '53.387641, 27.461157'.split(',')
+					},
+					properties: {
+						balloonContentBody: getBaloonContent({
+							href: '#',
+							image: '[[phpthumb? &input=`assets/images/design-cottage/gallery-apartment/5284.jpg` &options=`w=480,h=320,zc=C`]]',
+							title: 'GALLERY APARTMENT',
+							desc: 'Дизайн коттеджа'
+						}),
+						hintContent: 'RB INTERIOR'
+					}
+				},
+				{
+					type: 'Feature',
+					id: 4,
+					geometry: {
+						type: 'Point',
+						coordinates: '55.618390, 27.628531'.split(',')
+					},
+					properties: {
+						balloonContentBody: getBaloonContent({
+							href: '#',
+							image: '[[phpthumb? &input=`assets/images/design-public/barberandco/1240.jpg` &options=`w=480,h=320,zc=C`]]',
+							title: 'BARBER&CO',
+							desc: 'Мультифункциональный барбершоп'
+						}),
+						hintContent: 'RB INTERIOR'
+					}
+				}
+			]
+		};
+
+		const map_options = {
+			center: '55.785135, -33.062906'.split(','),
+			zoom: 3
+		};
+
+		map_init({
+			id: 'world',
+			mapCenter: map_options['center'],
+			mapZoom: map_options['zoom'],
+			mapPins: world_pins
+		});
+	}
+</script>

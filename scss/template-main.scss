@@ -3,6 +3,7 @@
 .template-main {
 	.header {
 		color: #ffffff;
+		min-height: 100vh;
 
 		&::before {
 			content: '';

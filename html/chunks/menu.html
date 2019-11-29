@@ -18,54 +18,42 @@
 	</div>
 	<hr class="grid-row">
 	<div class="menu__body">
+
+		[[DLMenu?
+		&parents=`4`
+		&maxDepth=`2`
+		&addWhereList=`c.hidemenu=0 and c.template NOT IN (9)`
+		&orderBy=`menuindex ASC`
+		&hereClass=`active`
+		&activeClass=``
+		&firstClass=``
+		&lastClass=``
+		&levelClass=``
+		&oddClass=``
+		&evenClass=``
+		&outerTpl=`@CODE:
 		<ul class="menu__list">
-			<li class="menu__list-point">
-				<a href="[~1~]" class="menu__list-link">Главная</a>
-			</li>
-			<li class="menu__list-point">
-				<a href="[~10~]" class="menu__list-link">О нас</a>
-			</li>
-			<li class="menu__list-point">
-				<a href="[~13~]" class="menu__list-link">Реализованные проекты</a>
-			</li>
-			<li class="menu__list-point">
-				<a href="[~14~]" class="menu__list-link parent">Архитектурные проекты</a>
-				<ul class="menu__sublist">
-					<li class="menu__sublist-point">
-						<a href="#" class="menu__sublist-link">Наши проекты</a>
-					</li>
-					<li class="menu__sublist-point">
-						<a href="#" class="menu__sublist-link">Рассчитать стоимость</a>
-					</li>
-				</ul>
-			</li>
-			<li class="menu__list-point">
-				<a href="#" class="menu__list-link parent">Дизайн интерьера</a>
-				<ul class="menu__sublist">
-					<li class="menu__sublist-point">
-						<a href="#" class="menu__sublist-link">Дизайн квартиры</a>
-					</li>
-					<li class="menu__sublist-point">
-						<a href="#" class="menu__sublist-link">Дизайн коттеджей</a>
-					</li>
-					<li class="menu__sublist-point">
-						<a href="#" class="menu__sublist-link">Дизайн общественных пространств</a>
-					</li>
-					<li class="menu__sublist-point">
-						<a href="#" class="menu__sublist-link">Рассчитать стоимость</a>
-					</li>
-				</ul>
-			</li>
-			<li class="menu__list-point">
-				<a href="#" class="menu__list-link">Бренд серийной мебели</a>
-			</li>
-			<li class="menu__list-point">
-				<a href="#" class="menu__list-link">Пресса</a>
-			</li>
-			<li class="menu__list-point">
-				<a href="#" class="menu__list-link">Контакты</a>
-			</li>
-		</ul>
+			[+wrap+]
+		</ul>`
+		&rowTpl=`@CODE:
+		<li class="menu__list-point">
+			<a href="[+url+]" class="menu__list-link [+classNames+]">[+title+]</a>
+		</li>`
+		&parentRowTpl=`@CODE:
+		<li class="menu__list-point">
+			<a href="[+url+]" class="menu__list-link [+classNames+]">[+title+]</a>
+			[+wrap+]
+		</li>`
+		&innerTpl=`@CODE:
+		<ul class="menu__sublist">
+			[+wrap+]
+		</ul>`
+		&innerRowTpl=`@CODE:
+		<li class="menu__sublist-point">
+			<a href="[+url+]" class="menu__sublist-link [+classNames+]">[+title+]</a>
+		</li>`
+		]]
+
 		<ul class="menu__lang">
 			<li class="menu__lang-point">RU</li>
 			<li class="menu__lang-point">
@@ -75,6 +63,7 @@
 				<a href="#" class="menu__lang-link">BY</a>
 			</li>
 		</ul>
+
 	</div>
 	<hr class="grid-row">
 	<div class="menu__footer">
