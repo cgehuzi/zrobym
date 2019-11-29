@@ -1,0 +1,153 @@
+@import './1-const.scss';
+
+.press {
+	z-index: 1;
+
+	&__header {
+		margin-bottom: 32px;
+	}
+
+	&__list {
+		&-point {
+			padding: 16px 16px 0;
+
+			@include for-phone-horizontal {
+				padding: 32px 32px 0;
+			}
+
+			@include for-tablet-up {
+				padding: 0;
+				border-bottom: 1px solid $border_light;
+			}
+		}
+	}
+
+	&__item {
+		display: block;
+		border: 1px solid $border_light;
+		color: #000000;
+
+		@include for-tablet-up {
+			display: flex;
+			border: none;
+		}
+
+		&-header {
+			@include for-tablet-vertical {
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+
+			@include for-tablet-horizontal {
+				flex-basis: 40%;
+				max-width: 40%;
+			}
+
+			@include for-laptop-up {
+				flex-basis: 33.333%;
+				max-width: 33.333%;
+			}
+		}
+
+		&-image {
+			width: 100%;
+
+			@include for-tablet-up {
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+
+		&-body {
+			background-color: $back_light;
+			border-top: 1px solid $border_light;
+			padding: 24px;
+
+			@include for-phone-horizontal-up {
+				padding: 32px;
+			}
+
+			@include for-tablet-up {
+				flex-basis: 50%;
+				max-width: 50%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				border: none;
+				border-left: 1px solid $border_light;
+			}
+
+			@include for-tablet-horizontal {
+				flex-basis: 60%;
+				max-width: 60%;
+			}
+
+			@include for-laptop-up {
+				flex-basis: 66.666%;
+				max-width: 66.666%;
+				padding: 64px;
+			}
+		}
+
+		&-title {
+			font-weight: $fw_medium;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			line-height: 1.4;
+
+			@include for-tablet-horizontal {
+				font-size: 1rem;
+			}
+
+			@include for-laptop-up {
+				font-size: 1.1rem;
+			}
+		}
+
+		&-footer {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: baseline;
+			justify-content: center;
+			margin: 1rem -8px 0;
+
+			@include for-phone-horizontal-up {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			@include for-tablet-up {
+				margin: 1.4rem 0 0;
+			}
+
+			@include for-laptop-up {
+				font-size: 1.1rem;
+			}
+		}
+
+		&-link {
+			padding: 0 8px;
+			color: $gold;
+
+			@include for-tablet-up {
+				padding: 0;
+			}
+
+			@include for-laptop-up {
+				&:hover {
+					color: $gold_hover;
+				}
+			}
+		}
+
+		&-type {
+			color: $grey;
+			padding: 0 8px;
+
+			@include for-tablet-up {
+				padding: 0;
+			}
+		}
+	}
+}

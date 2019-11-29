@@ -1,4 +1,6 @@
 [data-scroll="title"] {
+	position: relative;
+
 	&::before {
 		content: '';
 		position: absolute;
