@@ -1,0 +1,64 @@
+@import './1-const.scss';
+
+.furniture {
+	&__list {
+		@include for-phone-horizontal-up {
+			border-bottom: 1px solid $border_light;
+		}
+
+		&-point {
+			@include for-phone-horizontal-up {
+				border-top: 1px solid $border_light;
+
+				&:nth-child(odd) {
+					.furniture {
+						&__item {
+							&-image {
+								order: 2;
+							}
+
+							&-content {
+								order: 1;
+							}
+						}
+					}
+
+					.section {
+						&__back {
+							&-left {
+								left: 50%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__item {
+		padding-bottom: 64px;
+
+		@include for-phone-horizontal {
+			padding-bottom: 32px;
+		}
+
+		@include for-tablet-up {
+			padding-top: $separ;
+			padding-bottom: $separ;
+		}
+
+		&-image {
+			padding-top: 0;
+
+			@include for-phone-horizontal-up {
+				padding: 0 0 32px;
+			}
+		}
+
+		.section {
+			&__content {
+				padding-top: 32px;
+			}
+		}
+	}
+}

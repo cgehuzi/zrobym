@@ -53,6 +53,28 @@
 				left: 50%;
 			}
 		}
+
+		&-wrapper {
+			@include for-tablet-horizontal-up {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding-left: 10vw;
+			}
+		}
+
+		&-inner {
+			width: 100%;
+			max-width: 30vw;			
+
+			@include for-tablet-horizontal {
+				max-width: 20vw;
+			}
+
+			@include for-laptop-up {
+				max-width: 15vw;
+			}
+		}
 	}
 
 	&__body {
