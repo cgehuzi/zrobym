@@ -13,6 +13,10 @@
 		&__body {
 			position: sticky;
 			top: 32px;
+
+			@include for-laptop-up {
+				top: 64px;
+			}
 		}
 
 		&__header {

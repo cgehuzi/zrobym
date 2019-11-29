@@ -2,21 +2,7 @@
 
 .template-arch {
 	.header {
-		color: #ffffff;
 		min-height: 100vh;
-
-		&::before {
-			content: '';
-			position: absolute;
-			z-index: -1;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(#000000, 0.4);
-			z-index: 0;
-			pointer-events: none;
-		}
 
 		.section {
 			&__header {

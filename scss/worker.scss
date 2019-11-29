@@ -11,6 +11,11 @@
 		margin-right: -32px;
 		margin-bottom: -64px;
 
+		@include for-laptop-up {
+			margin-left: -64px;
+			margin-right: -64px;
+		}
+
 		&-point {
 			flex-basis: 100%;
 			max-width: 100%;

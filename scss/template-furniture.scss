@@ -1,6 +1,59 @@
 @import './1-const.scss';
 
 .template-furniture {
+	.header {
+		min-height: 100vh;
+		background-color: $back_grey;
+
+		.section {
+
+			&__back {
+				z-index: 0;
+				left: auto;
+				top: auto;
+				right: 0;
+				bottom: 0;
+				width: 40%;
+				height: 100%;
+				object-fit: contain;
+				object-position: bottom;
+
+				@include for-phone-vertical {
+					width: 65%;
+				}
+			}
+
+			&__header {
+				position: sticky;
+				top: 32px;
+				margin-top: auto;
+
+				@include for-phone {
+					margin-bottom: auto;
+					padding-bottom: 32px;
+				}
+			}
+
+			&__body {
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	.menu {
+		&-open {
+			@include for-phone {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+			}
+		}
+	}
+
+	// =======================================================
+	// ЗАМЕНА $gold на $grey_dark
+	// =======================================================
 
 	[data-scroll="title"] {
 		&::before {
@@ -47,55 +100,6 @@
 	.footer {
 		&__subtitle {
 			color: $back_grey;
-		}
-	}
-
-	.header {
-		min-height: 100vh;
-		background-color: $back_grey;
-
-		&__back {
-			z-index: 0;
-			left: auto;
-			top: auto;
-			right: 0;
-			bottom: 0;
-			width: 40%;
-			height: 100%;
-			object-fit: contain;
-			object-position: bottom;
-
-			@include for-phone-vertical {
-				width: 65%;
-			}
-		}
-
-		.section {
-			&__header {
-				position: sticky;
-				top: 32px;
-				margin-top: auto;
-
-				@include for-phone {
-					margin-bottom: auto;
-					padding-bottom: 32px;
-				}
-			}
-
-			&__body {
-				padding-bottom: 0;
-			}
-		}
-	}
-
-	.menu {
-		&-open {
-			@include for-phone {
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-			}
 		}
 	}
 }
