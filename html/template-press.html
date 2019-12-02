@@ -4,6 +4,7 @@
 	<head>
 
 		{{head}}
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 		<link rel="stylesheet" href="assets/templates/zrobym/css/template-press.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
 	</head>
 
@@ -150,17 +151,110 @@
 						</li>
 					</ul>
 				</div>
+				<link rel="stylesheet" href="assets/templates/zrobym/css/pagination.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
+				<div class="pagination">
+					<div class="separ separ--small"></div>
+					<div class="grid-row"></div>
+					<div class="section__body">
+						<ul class="pagination__list">
+							<li class="pagination__list-point">
+								<div class="pagination__item active">1</div>
+							</li>
+							<li class="pagination__list-point">
+								<a href="#" class="pagination__item">2</a>
+							</li>
+							<li class="pagination__list-point">
+								<a href="#" class="pagination__item">3</a>
+							</li>
+							<li class="pagination__list-point">
+								<a href="#" class="pagination__item">4</a>
+							</li>
+							<li class="pagination__list-point">
+								<a href="#" class="pagination__item">5</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div id="press-2" class="section filter-tab" data-tab-item></div>
 			<div id="press-3" class="section filter-tab" data-tab-item></div>
 		</div>
 
-		<hr class="grid-row grid-row--all">
+		<link rel="stylesheet" href="assets/templates/zrobym/css/youtube.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
+		<div class="section youtube">
+			<div class="separ"></div>
+			<div class="section__body">
+				<div class="section__body-col">
+					<div class="section__header youtube__header" data-scroll="title">
+						<div class="section__header-title">
+							ZROBYM architects <strong>на YouTube</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="grid-row grid-row--all">
+			<div class="section__body">
+				<div id="slider-youtube" class="swiper-container youtube__swiper-container">
+					<ul class="swiper-wrapper youtube__swiper-wrapper">
+						<li class="swiper-slide youtube__swiper-slide">
+							<div class="youtube__slide">
+								<div class="youtube__slide-header">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/B8JIEsXSyF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="youtube__slide-body">
+									<div class="youtube__slide-title">Видеоблог "Дом архитектора". Часть 2</div>
+									<div class="youtube__slide-desc">Text description provided by the architects. Interior project of the production facility. The company Kitchen Coffee Roasters is engaged in the roasting coffee process in Minsk, Belarus</div>
+									<div class="youtube__slide-date">19 янв. 2017 г.</div>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide youtube__swiper-slide">
+							<div class="youtube__slide">
+								<div class="youtube__slide-header">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/B8JIEsXSyF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="youtube__slide-body">
+									<div class="youtube__slide-title">Видеоблог "Дом архитектора". Часть 2</div>
+									<div class="youtube__slide-desc">Text description provided by the architects. Interior project of the production facility. The company Kitchen Coffee Roasters is engaged in the roasting coffee process in Minsk, Belarus</div>
+									<div class="youtube__slide-date">19 янв. 2017 г.</div>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide youtube__swiper-slide">
+							<div class="youtube__slide">
+								<div class="youtube__slide-header">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/B8JIEsXSyF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="youtube__slide-body">
+									<div class="youtube__slide-title">Видеоблог "Дом архитектора". Часть 2</div>
+									<div class="youtube__slide-desc">Text description provided by the architects. Interior project of the production facility. The company Kitchen Coffee Roasters is engaged in the roasting coffee process in Minsk, Belarus</div>
+									<div class="youtube__slide-date">19 янв. 2017 г.</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<button class="youtube__arrow youtube__arrow--next" type="button"></button>
+					<button class="youtube__arrow youtube__arrow--prev" type="button"></button>
+				</div>
+			</div>
+			<hr class="grid-row grid-row--all">
+		</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const slider_youtube = new Swiper('#slider-youtube', {
+					navigation: {
+						nextEl: '.youtube__arrow--next',
+						prevEl: '.youtube__arrow--prev'
+					}
+				});
+			});
+		</script>
 
 		{{feedback}}
 		{{footer}}
 
 		{{plugins}}
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 		{{scripts}}
 
 	</body>

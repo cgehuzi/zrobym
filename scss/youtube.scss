@@ -1,0 +1,54 @@
+@import './1-const.scss';
+
+.youtube {
+	&__header {
+		@include for-phone-horizontal-up {
+			margin-bottom: 32px;
+		}
+	}
+
+	&__slide {
+		&-header {
+			iframe {
+				width: 100%;
+				height: calc(60vw - 32px);
+			}
+		}
+
+		&-body {
+			padding: 24px 0 0;
+		}
+
+		&-title {
+			font-weight: $fw_semi;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			line-height: 1.4;
+
+			@include for-tablet-horizontal {
+				font-size: 1rem;
+			}
+
+			@include for-laptop-up {
+				font-size: 1.1rem;
+			}
+		}
+
+		&-desc {
+			margin-top: 1rem;
+		}
+
+		&-date {
+			margin-top: 1rem;
+			color: $gold;
+		}
+	}
+
+	&__swiper {
+		&-slide {
+			@include for-phone-vertical {
+				padding: 16px 16px 0;
+			}
+		}
+	}
+}

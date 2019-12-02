@@ -4,7 +4,9 @@
 	z-index: 1;
 
 	&__header {
-		margin-bottom: 32px;
+		@include for-phone-horizontal-up {
+			margin-bottom: 32px;
+		}
 	}
 
 	&__list {
@@ -122,7 +124,7 @@
 			}
 
 			@include for-laptop-up {
-				font-size: 1.1rem;
+				font-size: 1rem;
 			}
 		}
 
@@ -142,7 +144,7 @@
 		}
 
 		&-type {
-			color: $grey;
+			color: $grey_dark;
 			padding: 0 8px;
 
 			@include for-tablet-up {
