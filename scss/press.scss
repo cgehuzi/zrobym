@@ -4,9 +4,7 @@
 	z-index: 1;
 
 	&__header {
-		@include for-phone-horizontal-up {
-			margin-bottom: 32px;
-		}
+		margin-bottom: 32px;
 	}
 
 	&__list {

@@ -2,21 +2,58 @@
 
 .youtube {
 	&__header {
-		@include for-phone-horizontal-up {
-			margin-bottom: 32px;
-		}
+		margin-bottom: 32px;
 	}
 
 	&__slide {
+		@include for-tablet-horizontal-up {
+			display: flex;
+		}
+
 		&-header {
+			@include for-tablet-horizontal-up {
+				flex-basis: 50%;
+				max-width: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
 			iframe {
+				border: none;
+				box-shadow: none;
+				display: block;
 				width: 100%;
-				height: calc(60vw - 32px);
+				height: 56vw;
+
+				@include for-phone-horizontal-up {
+					height: calc(65vw - 10vw - 10vw);
+				}
+
+				@include for-tablet-horizontal-up {
+					height: calc(42.5vw - 10vw - 10vw);
+				}
 			}
 		}
 
 		&-body {
-			padding: 24px 0 0;
+			padding: 24px;
+
+			@include for-tablet-vertical-up {
+				padding: 32px;
+			}
+
+			@include for-tablet-horizontal-up {
+				flex-basis: 50%;
+				max-width: 50%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			@include for-laptop-up {
+				padding: 64px;
+			}
 		}
 
 		&-title {
@@ -44,11 +81,64 @@
 		}
 	}
 
-	&__swiper {
-		&-slide {
-			@include for-phone-vertical {
-				padding: 16px 16px 0;
+	&__arrow {
+		position: absolute;
+		z-index: 1;
+		top: calc(56vw / 2);
+		width: 48px;
+		height: 48px;
+		margin-top: -24px;
+		background-color: transparent;
+		background-position: center;
+		background-size: auto 42px;
+		background-repeat: no-repeat;
+		border: none;
+		padding: 0;
+
+		@include for-phone-horizontal-up {
+			top: (65vw / 2 - 10vw);
+		}
+
+		@include for-tablet-vertical-up {
+			width: 56px;
+			height: 56px;
+			background-size: auto 48px;
+			margin-top: -28px;
+		}
+
+		@include for-tablet-horizontal-up {
+			top: (42.5vw / 2 - 10vw);
+		}
+
+		@include for-laptop-up {
+			width: 64px;
+			height: 64px;
+			background-size: auto 64px;
+			margin-top: -32px;
+		}
+
+		&--next {
+			right: 0;
+			background-image: url('../icons/white/arrow-next.svg');
+
+			@include for-tablet-horizontal-up {
+				right: 50%;
 			}
 		}
+
+		&--prev {
+			left: 0;
+			background-image: url('../icons/white/arrow-prev.svg');
+		}
+
+		&.swiper-button {
+			&-disabled {
+				opacity: 0.2;
+			}
+		}
+	}
+
+	&__swiper {
+		&-slide {}
 	}
 }
