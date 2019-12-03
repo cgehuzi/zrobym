@@ -63,8 +63,7 @@
 						<button class="button-more" type="button" data-more="#more-text">Читать больше</button>
 					</div>
 					<div class="section__buttons">
-						<a href="#" class="button">Видео о нас</a>
-						<!-- TODO: вставить fancybox видео с YouTube -->
+						<a data-fancybox href="https://www.youtube.com/watch?v=wkEmtFMKkxQ&feature=emb_logo" class="button">Видео о нас</a>
 					</div>
 				</div>
 			</div>
@@ -78,9 +77,8 @@
 			<div class="section__body">
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
-						<div class="section__header-title">
-							Новые проекты <strong>ZROBYM architects</strong>
-						</div>
+						<div class="section__header-title">Новые проекты</div>
+						<div class="section__header-subtitle">by ZROBYM architects</div>
 					</div>
 				</div>
 				<div class="section__body-col">
@@ -90,10 +88,86 @@
 					</div>
 				</div>
 			</div>
-			<div class="separ separ"></div>
+			<div class="separ"></div>
 		</div>
 
-		<!-- TODO: вставить новые проекты -->
+		<link rel="stylesheet" href="assets/templates/zrobym/css/big.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
+		<div class="big">
+			<ul class="big__list">
+				<li class="big__list-point section">
+					<div class="big__item section__body">
+						<div class="big__item-header section__body-col">
+							<img class="big__item-image" src="assets/images/design-apartment/rb-interior/1467.jpg" alt="">
+						</div>
+						<div class="big__item-body section__body-col">
+							<div class="section__header" data-scroll="title">
+								<div class="section__header-title"><strong>RB INTERIOR</strong></div>
+								<div class="section__header-subtitle">Дизайн квартиры</div>
+							</div>
+							<div class="section__buttons">
+								<a href="#" class="button">Посмотреть проект</a>
+							</div>
+						</div>
+					</div>
+					<div class="separ"></div>
+					<div class="grid-row"></div>
+				</li>
+				<li class="big__list-point section">
+					<div class="big__item section__body">
+						<div class="big__item-header section__body-col">
+							<img class="big__item-image" src="assets/images/design-apartment/midnight-flat/2417.jpg" alt="">
+						</div>
+						<div class="big__item-body section__body-col">
+							<div class="section__header" data-scroll="title">
+								<div class="section__header-title"><strong>MIDNIGHT FLAT</strong></div>
+								<div class="section__header-subtitle">Дизайн квартиры</div>
+							</div>
+							<div class="section__buttons">
+								<a href="#" class="button">Посмотреть проект</a>
+							</div>
+						</div>
+					</div>
+					<div class="separ"></div>
+					<div class="grid-row"></div>
+				</li>
+				<li class="big__list-point section">
+					<div class="big__item section__body">
+						<div class="big__item-header section__body-col">
+							<img class="big__item-image" src="assets/images/design-cottage/gallery-apartment/5284.jpg" alt="">
+						</div>
+						<div class="big__item-body section__body-col">
+							<div class="section__header" data-scroll="title">
+								<div class="section__header-title"><strong>GALLERY APARTMENT</strong></div>
+								<div class="section__header-subtitle">Дизайн коттеджа</div>
+							</div>
+							<div class="section__buttons">
+								<a href="#" class="button">Посмотреть проект</a>
+							</div>
+						</div>
+					</div>
+					<div class="separ"></div>
+					<div class="grid-row"></div>
+				</li>
+				<li class="big__list-point section">
+					<div class="big__item section__body">
+						<div class="big__item-header section__body-col">
+							<img class="big__item-image" src="assets/images/design-public/barberandco/1240.jpg" alt="">
+						</div>
+						<div class="big__item-body section__body-col">
+							<div class="section__header" data-scroll="title">
+								<div class="section__header-title"><strong>BARBER&CO</strong></div>
+								<div class="section__header-subtitle">Мультифункциональный барбершоп</div>
+							</div>
+							<div class="section__buttons">
+								<a href="#" class="button">Посмотреть проект</a>
+							</div>
+						</div>
+					</div>
+					<div class="separ"></div>
+					<div class="grid-row"></div>
+				</li>
+			</ul>
+		</div>
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/more.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
 		<div class="section more">
@@ -151,6 +225,14 @@
 		{{footer}}
 
 		{{plugins}}
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<script async>
+			$('[data-fancybox]').fancybox({
+				protect: true,
+				buttons: ["zoom", "close"]
+			});
+		</script>
 		{{scripts}}
 	</body>
 

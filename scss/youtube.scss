@@ -6,11 +6,16 @@
 	}
 
 	&__slide {
+		height: 100%;
+
 		@include for-tablet-horizontal-up {
 			display: flex;
 		}
 
 		&-header {
+			display: block;
+			position: relative;
+
 			@include for-tablet-horizontal-up {
 				flex-basis: 50%;
 				max-width: 50%;
@@ -19,20 +24,39 @@
 				justify-content: center;
 			}
 
-			iframe {
-				border: none;
-				box-shadow: none;
-				display: block;
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
 				width: 100%;
-				height: 56vw;
+				height: 100%;
+				background-color: rgba(#000000, 0.4);
+				background-image: url('../icons/white/youtube.svg');
+				background-position: center;
+				background-size: 64px auto;
+				background-repeat: no-repeat;
+				transition: $slow;
+			}
 
-				@include for-phone-horizontal-up {
-					height: calc(65vw - 10vw - 10vw);
+			@include for-laptop-up {
+				&:hover {
+					&::before {
+						background-color: rgba(#000000, 0.2);
+					}
 				}
+			}
 
-				@include for-tablet-horizontal-up {
-					height: calc(42.5vw - 10vw - 10vw);
-				}
+		}
+
+		&-image {
+			display: block;
+			width: 100%;
+
+			@include for-tablet-horizontal-up {
+				min-height: 100%;
+				object-position: center;
+				object-fit: cover;
 			}
 		}
 
@@ -107,14 +131,7 @@
 		}
 
 		@include for-tablet-horizontal-up {
-			top: (42.5vw / 2 - 10vw);
-		}
-
-		@include for-laptop-up {
-			width: 64px;
-			height: 64px;
-			background-size: auto 64px;
-			margin-top: -32px;
+			top: 50%;
 		}
 
 		&--next {
@@ -124,16 +141,29 @@
 			@include for-tablet-horizontal-up {
 				right: 50%;
 			}
+
+			@include for-laptop-up {
+				&:hover {
+					background-position: right 8px top 50%;
+				}
+			}
 		}
 
 		&--prev {
 			left: 0;
 			background-image: url('../icons/white/arrow-prev.svg');
+
+			@include for-laptop-up {
+				&:hover {
+					background-position: left 8px top 50%;
+				}
+			}
 		}
 
 		&.swiper-button {
 			&-disabled {
 				opacity: 0.2;
+				background-position: left 50% top 50%;
 			}
 		}
 	}
