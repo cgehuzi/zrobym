@@ -3,17 +3,13 @@
 .feedback {
 	background-color: $gold;
 
-	@include for-tablet-vertical-down {
-		display: none;
-	}
-
 	&__input,
 	&__textarea {
 		background-color: $gold_hover;
 
 		&:focus {
-            background-color: rgba($gold_hover, 0.6);
-            border-color: rgba(#000000, 0.1);
+			background-color: rgba($gold_hover, 0.6);
+			border-color: rgba(#000000, 0.1);
 		}
 	}
 

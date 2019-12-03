@@ -43,7 +43,7 @@ body {
 	min-height: 100vh;
 	font-family: $font;
 	font-weight: $fw_light;
-	line-height: 1.4;
+	line-height: 1.6;
 	background-color: #ffffff;
 	overflow-x: hidden;
 }
@@ -55,8 +55,8 @@ h4,
 h5 {
 	font-weight: $fw_semi;
 	text-transform: uppercase;
-	margin-bottom: 1rem;
-	margin-top: 3rem;
+	margin-bottom: 1.6rem;
+	margin-top: 3.2rem;
 
 	&:first-child {
 		margin-top: 0;

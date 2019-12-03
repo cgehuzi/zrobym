@@ -1,0 +1,32 @@
+@import './1-const.scss';
+
+.contact {
+	&__content {
+		a:not([class]) {
+			color: #000000;
+			text-decoration: none;
+			border: none;
+			padding-right: 12px;
+		}
+	}
+
+	&__road {
+		display: block;
+		width: 100%;
+		min-height: 1px;
+
+		&--desktop {
+			display: none;
+
+			@include for-phone-horizontal-up {
+				display: block;
+			}
+		}
+
+		&--mobile {
+			@include for-phone-horizontal-up {
+				display: none;
+			}
+		}
+	}
+}
