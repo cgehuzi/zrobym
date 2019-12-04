@@ -1,0 +1,23 @@
+@import './1-const.scss';
+
+.template-design-project {
+	.header {
+		min-height: initial;
+	}
+
+	.youtube {
+		&__item {
+			&::before {
+				@include for-laptop-up {
+					background-size: 72px;
+				}
+			}
+
+			&-image {
+				@include for-tablet-vertical-down {
+					width: auto;
+				}
+			}
+		}
+	}
+}
