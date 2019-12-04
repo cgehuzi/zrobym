@@ -8,15 +8,20 @@
 	background-color: $border_light;
 	padding: 12px 16px;
 	font-size: 0.9rem;
-	font-weight: $fw_regular;
+	font-weight: $fw_medium;
 	color: #000000;
+
+	&:focus {
+		background-color: rgba($border_light, 0.8);
+		border-color: rgba(#000000, 0.1);
+	}
 
 	@include for-desktop {
 		padding: 1.2vw 1.5vw;
 	}
 
 	&::placeholder {
-		color: rgba(#000000, 0.8);
+		color: rgba(#000000, 0.6);
 		font-weight: $fw_light;
 	}
 
@@ -27,4 +32,71 @@
 
 .textarea {
 	resize: vertical;
+}
+
+.checkbox {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	font-size: 1rem;
+	font-weight: $fw_light;
+	line-height: 1.4;
+	text-align: left;
+
+	&__input {
+		position: absolute;
+		left: 0;
+		width: 2rem;
+		height: 2rem;
+		margin: 0;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	&__icon {
+		display: block;
+		width: 2rem;
+		min-width: 2rem;
+		height: 2rem;
+		background-color: transparent;
+		background-image: url('../icons/unchecked.png'); // TODO: заменить на SVG
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+
+	&__body {
+		color: #000000;
+		cursor: pointer;
+		padding-left: 1.4rem;
+	}
+
+	&__desc {
+		display: block;
+		font-size: 0.8rem;
+		color: $grey_dark;
+	}
+
+	&__input.focus-visible ~ &__icon {
+		outline: 1px dotted;
+		outline: 5px auto -webkit-focus-ring-color;
+	}
+
+	&__input:checked ~ &__icon {
+		background-image: url('../icons/checked.png'); // TODO: заменить на SVG
+	}
+
+	&__input:disabled ~ &__icon {
+		cursor: default;
+	}
+
+	&__input:disabled ~ &__body {
+		cursor: default;
+	}
+
+	& + & {
+		margin-top: 1.4rem;
+	}
 }

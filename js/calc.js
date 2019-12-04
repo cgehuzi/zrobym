@@ -1,4 +1,6 @@
-// Наращивание цифры
+// ====================================================
+// наращивание цифры
+// ====================================================
 const set_number_to = function(id, from, to, duration) {
 	var element = $(id);
 	var start = new Date().getTime();
@@ -10,9 +12,11 @@ const set_number_to = function(id, from, to, duration) {
 		if (progress < 1) setTimeout(arguments.callee, 10);
 	}, 10);
 };
+// END ------------------------
 
-/* JS для расчета стоимости */
-
+// ====================================================
+// АРХИТЕКТУРА
+// ====================================================
 const calc_arch = function() {
 	// Площадь
 	const square = $('#calc-square');
@@ -29,10 +33,12 @@ const calc_arch = function() {
 
 	// АПК (архитектурно-планировочная концепция)
 	const concept = $('#calc-concept');
+	const concept_on = concept.is(':checked') ? true : false;
 	const concept_price = square_value * 21;
 
 	// Визуализация
 	const visual = $('#calc-visual');
+	const visual_on = visual.is(':checked') ? true : false;
 	const visual_price = 900;
 
 	// Макет
@@ -69,13 +75,11 @@ const calc_arch = function() {
 
 	total_price *= 0.8; // умножаем на общий коэффициент
 
-	if (maket_on && build_on && ingeneer_on && author_on && tech_on) {
+	if (concept_on && visual_on && maket_on && build_on && ingeneer_on && author_on && tech_on) {
 		total_price *= 0.85; // если отмечены все, кроме личного ведения проекта
 	}
 
-	if (self_on) {
-		total_price += total_price * 0.15; // если личное ведение проекта включено
-	}
+	if (self_on) total_price += total_price * 0.15; // если личное ведение проекта включено
 
 	total_price = Math.round(total_price);
 
@@ -83,12 +87,103 @@ const calc_arch = function() {
 	$('#calc-total').val(total_price);
 	set_number_to('#calc-total-text', 0, total_price, 1500);
 };
+// END ------------------------
 
+// ====================================================
+// ДИЗАЙН
+// ====================================================
+const calc_design = function() {
+	// Тип проекта
+	const home = $('#calc-home');
+	const home_on = home.is(':checked') ? true : false;
+	const social = $('#calc-social');
+	const social_on = social.is(':checked') ? true : false;
+	const office = $('#calc-office');
+	const office_on = office.is(':checked') ? true : false;
+
+	// Площадь
+	const square = $('#calc-square');
+	let square_min = 75; // минимальная (по умолчанию)
+	let square_value = square.val(); // текушая
+
+	if (home_on) square_min = 75; // минимальная (дом, квартира)
+	if (social_on) square_min = 100; // минимальная (общ. пространства)
+	if (office_on) square_min = 500; // минимальная (админ. помещения)
+
+	const square_value_number = Number(square_value) > 0;
+	if (square_value < square_min || !square_value_number) {
+		square.val(square_min);
+		square_value = square_min;
+	}
+
+	// Цена в зависимости от типа проекта
+	var type_price = 0;
+
+	if (home_on) {
+		// дом, квартира (плавное нарастание цены)
+		if (square_value < 100) {
+			type_price = 80;
+		} else {
+			if (square_value < 150) {
+				type_price = Math.round(80 - (square_value - 100) / 5);
+			} else {
+				type_price = 60;
+				if (square_value < 200) {
+					type_price = Math.round(70 - (square_value - 150) / 5);
+				}
+			}
+		}
+	}
+	if (social_on) type_price = 35; // общ. пространства
+	if (office_on) type_price = 20; // админ. помещения
+
+	// Дизайн-проект
+	const design = $('#calc-design');
+	const design_on = design.is(':checked') ? true : false;
+
+	// Ведомость материалов
+	const vedomost = $('#calc-vedomost');
+	const vedomost_on = vedomost.is(':checked') ? true : false;
+
+	// Авторское сопровождение
+	const author = $('#calc-author');
+	const author_on = author.is(':checked') ? true : false;
+	const author_price = author_on ? 1500 : 0;
+
+	// Служба заказчика (контроль закупок)
+	const slugba = $('#calc-slugba');
+	const slugba_on = slugba.is(':checked') ? true : false;
+	const slugba_price = slugba_on ? 2500 : 0;
+	if (slugba_on) {
+		author.prop('checked', true).prop('disabled', true);
+	} else {
+		author.prop('disabled', false);
+	}
+
+	// Личное ведение проекта основателями студии
+	const self = $('#calc-self');
+	const self_on = self.is(':checked') ? true : false;
+
+	// ИТОГО
+	let total_price = square_value * type_price + author_price + slugba_price;
+
+	if (self_on) total_price += total_price * 0.15; // если личное ведение проекта включено
+
+	total_price = Math.round(total_price);
+
+	// Подставляем ИТОГО в форму
+	$('#calc-total').val(total_price);
+	set_number_to('#calc-total-text', 0, total_price, 1500);
+};
+// END ------------------------
+
+// ====================================================
+// ВКЛЮЧАЕМ РАСЧЁТ
+// ====================================================
 const calc_square_input = document.querySelector('#calc-square');
 const calc_checkboxes = document.querySelectorAll('.calc__checkbox .checkbox__input');
 
 const calc_arch_on = document.querySelector('.calc--arch') ? true : false;
-
 if (calc_arch_on) {
 	calc_arch(); // при загрузке страницы
 	calc_checkboxes.forEach(function(calc_checkbox) {
@@ -107,113 +202,22 @@ if (calc_arch_on) {
 	});
 }
 
-/* JS для расчета стоимости интерьера */
-
-/**
- * Интерполяция
- * @param m2_ras double площадь цену которой необходимо найти
- * @param m2_min double нижняя граница площади
- * @param dol_min double цена нижней границы площади
- * @param m2_max double площадь верхней площади
- * @param dol_max double цена верхней границы площади
- * @returns {*}
- */
-function interpolation(m2_ras, m2_min, dol_min, m2_max, dol_max) {
-	return dol_min + ((m2_ras - m2_min) / (m2_max - m2_min)) * (dol_max - dol_min);
-}
-
-/**
- * Калькуляция интерьера
- * @param doc
- */
-function calculateInt(doc) {
-	var cellHome = $('#home');
-	var cellSocial = $('#social');
-	var cellOffice = $('#office');
-
-	if (cellHome.is(':checked')) {
-		var inputCellValue = 75;
-	}
-	if (cellSocial.is(':checked')) {
-		var inputCellValue = 100;
-	}
-	if (cellOffice.is(':checked')) {
-		var inputCellValue = 500;
-	}
-
-	var cellInput = $('#inputCell');
-	var cellDesign = $('#design');
-	var cellVedomost = $('#vedomost');
-	var cellAuthor = $('#author');
-	var cellSlugba = $('#slugba');
-	var cellSelf = $('#self');
-
-	// Если площадь меньше 50 устанавливаем по умолчанию 50
-	if (cellInput.val() < inputCellValue) {
-		cellInput.val(inputCellValue);
-		$('#attention').fadeIn();
-		$('#attentionInner').html(inputCellValue);
-	} else {
-		inputCellValue = cellInput.val();
-	}
-
-	var cooficient = inputCellValue < 100 ? interpolation(inputCellValue, 100, 1, 50, 1.2) : inputCellValue == 100 ? 1 : inputCellValue >= 150 ? 0.9 : interpolation(inputCellValue, 150, 0.9, 100, 1);
-
-	// СПИСОК ИСПОЛЬЗОВАННЫХ МАТЕРИАЛОВ
-	var bomCoefficient = 6;
-	// КОНЦЕПЦИЯ
-	var conceptCoefficient = 60 * cooficient;
-	// СКИДКА ПРИ ВЫБОРЕ ВСЕХ ПУНКТОВ
-	var totalCoefficient = 0.9;
-	// АВТОРСКОЕ СОПРОВОЖДЕНИЕ
-	var authorPrice = 1500;
-	var slugbaPrice = 2500;
-	var total = 0;
-
-	// Цена из суммы всех пунктов
-	var price = 0;
-
-	if (cellHome.is(':checked')) {
-		if (inputCellValue < 100) {
-			price = 80;
-		} else {
-			if (inputCellValue < 150) {
-				price = Math.round(80 - (inputCellValue - 100) / 5);
-			} else {
-				price = 60;
-				if (inputCellValue < 200) {
-					price = Math.round(70 - (inputCellValue - 150) / 5);
-				}
-			}
+const calc_design_on = document.querySelector('.calc--design') ? true : false;
+if (calc_design_on) {
+	calc_design(); // при загрузке страницы
+	calc_checkboxes.forEach(function(calc_checkbox) {
+		calc_checkbox.addEventListener('change', function() {
+			calc_design(); // при изменении отмеченных работ
+		});
+	});
+	calc_square_input.addEventListener('blur', function() {
+		calc_design(); // при расфокусировке поля площади
+	});
+	calc_square_input.addEventListener('keydown', function(event) {
+		if (event.key === 'Enter') {
+			event.preventDefault();
+			calc_square_input.blur(); // при нажатии Enter
 		}
-	}
-	if (cellSocial.is(':checked')) {
-		price = 35;
-	}
-	if (cellOffice.is(':checked')) {
-		price = 20;
-	}
-
-	// СУММА
-	total = inputCellValue * price;
-
-	// Если СЛУЖБА ЗАКАЗЧИКА включено
-	if (cellSlugba.is(':checked')) {
-		cellAuthor.prop('checked', true);
-		total = total + slugbaPrice;
-	}
-
-	// Если АВТОРСКОЕ СОПРОВОЖДЕНИЕ включено
-	if (cellAuthor.is(':checked')) {
-		total = total + authorPrice;
-	}
-
-	// Если Личное ведение проекта основателями студии включено
-	if (cellSelf.is(':checked')) {
-		total += total * 0.15;
-	}
-
-	// Вывод в поле
-	// $('#outputCell').val(Math.round(total));
-	set_number_to('#outputCell', 0, Math.round(total), 2000);
+	});
 }
+// END ------------------------

@@ -116,6 +116,10 @@
 			flex-grow: 1;
 		}
 
+		&.center {
+			align-items: center;
+		}
+
 		&-col {
 			flex-basis: 100%;
 			max-width: 100%;
@@ -162,10 +166,6 @@
 			font-weight: $fw_regular;
 			padding-bottom: 1rem;
 
-			@include for-phone-vertical {
-				padding-bottom: 0;
-			}
-
 			@include for-phone-horizontal {
 				font-size: 2rem;
 			}
@@ -190,7 +190,6 @@
 				@include for-phone-vertical {
 					z-index: -1;
 					left: 50%;
-					bottom: 4px;
 					margin-left: -64px;
 				}
 			}
