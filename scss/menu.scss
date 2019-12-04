@@ -167,7 +167,8 @@
 				}
 			}
 
-			&.active {
+			&.active,
+			&.has {
 				color: $gold;
 			}
 		}

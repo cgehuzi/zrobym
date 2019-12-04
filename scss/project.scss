@@ -9,39 +9,111 @@
 		@include for-tablet-vertical-down {
 			order: 2;
 		}
+	}
 
-		&__header {
+	&__header {
+		position: relative;
+
+		&-title {
 			position: relative;
-			flex-grow: 1;
+			top: 0;
+			margin-bottom: 64px;
 
-			&-body {
-				position: sticky;
-				top: 32px;
-
-				@include for-laptop-up {
-					top: 64px;
-				}
+			@include for-tablet-vertical-down {
+				display: none;
 			}
+		}
 
-			&-header {
-				position: relative;
-				top: 0;
-				margin-bottom: 64px;
-
-				@include for-tablet-vertical-down {
-					display: none;
-				}
-			}
-
-			&-list {
-				ul {
-					li {
-						span {
-							font-weight: $fw_medium;
-						}
+		&-list {
+			ul {
+				li {
+					span {
+						font-weight: $fw_medium;
 					}
 				}
 			}
+
+			a {
+				&:not([class]) {
+					color: #000000;
+				}
+			}
+		}
+	}
+
+	&__desc {
+		margin-top: 64px;
+	}
+
+	&__plan {
+		margin-top: 128px;
+
+		&-image {
+			max-height: 80vh;
+		}
+
+		&-desc {
+			margin-top: 64px;
+
+			.title {
+				margin-bottom: 0.2rem;
+			}
+		}
+	}
+
+	&-explication {
+		margin-top: 32px;
+
+		&__point {
+			margin-bottom: 0.6rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&__item {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			padding: 12px 16px;
+			background-color: $back_light;
+			border: 1px solid $border_light;
+			text-align: left;
+			line-height: 1.2;
+
+			@include for-laptop-up {
+				&[type="button"] {
+					&:hover {
+						background-color: transparent;
+					}
+				}
+			}
+
+			@include for-desktop {
+				padding: 1.2vw 1.5vw;
+			}
+
+			&-number {
+				flex-basis: 2rem;
+				min-width: 2rem;
+			}
+
+			&-title {
+				flex-grow: 1;
+				padding-right: 2rem;
+			}
+
+			&-square {
+				flex-basis: 5rem;
+				min-width: 5rem;
+			}
+		}
+	}
+
+	&-scheme {
+		&__point {
+			margin-top: 64px;
 		}
 	}
 
@@ -51,19 +123,18 @@
 			order: 1;
 		}
 
-		@include for-tablet-horizontal {
-			margin-top: calc(-#{$separ} - 102px);
-		}
-
 		@include for-tablet-horizontal-up {
-			padding: 0;
+			position: absolute;
+			left: 50%;
+			margin-top: calc(-#{$separ_small} - 102px - 1px);
+			height: calc(100% + 102px);
+			padding: 0 0 0 8px;
 			margin-right: -10vw;
-			flex-basis: calc(50% + 10vw);
-			max-width: calc(50% + 10vw);
 		}
 
-		@include for-laptop-up {
-			margin-top: -#{$separ * 2};
+		@include for-desktop {
+			margin-top: calc(-#{$separ_small + $separ} - 1px);
+			height: calc(100% + #{$separ_small * 2});
 		}
 
 		&__header {
@@ -98,6 +169,10 @@
 
 			@include for-tablet-horizontal-up {
 				flex-direction: column;
+
+				&::-webkit-scrollbar {
+					display: none;
+				}
 			}
 
 			&-point {

@@ -81,6 +81,19 @@ scrollInit();
 // END ------------------------
 
 // ====================================================
+// Реализация fancybox
+// ====================================================
+const fancy_items = $('[data-fancybox]');
+if (fancy_items.length) {
+	fancy_items.fancybox({
+		protect: true,
+		buttons: ['zoom', 'close'],
+		backFocus: false
+	});
+}
+// END ------------------------
+
+// ====================================================
 // Реализация блока data-more
 // ====================================================
 const more_buttons = document.querySelectorAll('[data-more]');
@@ -305,6 +318,28 @@ if (tabs_blocks) {
 		});
 
 		tab_buttons[0].click();
+	});
+}
+// END ------------------------
+
+// ====================================================
+// Реализация блока data-explication
+// ====================================================
+const explication_items = document.querySelectorAll('[data-explication-target]');
+if (explication_items) {
+	explication_items.forEach(function(explication_item) {
+		const explication_selector = '[data-explication="' + explication_item.dataset.explicationTarget + '"]';
+		const explication_caption = explication_item.dataset.explicationCaption || '';
+		document.querySelectorAll(explication_selector).forEach(function(gallery_item) {
+			gallery_item.dataset.caption = explication_caption;
+		});
+		explication_item.addEventListener('click', function() {
+			$.fancybox.open($(explication_selector), {
+				protect: true,
+				buttons: ['zoom', 'close'],
+				backFocus: false
+			});
+		});
 	});
 }
 // END ------------------------

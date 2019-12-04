@@ -36,10 +36,12 @@
 		}
 
 		@include for-tablet-horizontal-up {
-			padding: 0;
+			position: absolute;
+			left: 50%;
+			height: calc(100% + #{$separ});
+			padding: 0 0 0 8px;
+			margin-top: -#{$separ};
 			margin-right: -10vw;
-			flex-basis: calc(50% + 10vw);
-			max-width: calc(50% + 10vw);
 		}
 
 		&__header {
@@ -74,6 +76,10 @@
 
 			@include for-tablet-horizontal-up {
 				flex-direction: column;
+
+				&::-webkit-scrollbar {
+					display: none;
+				}
 			}
 
 			&-point {
@@ -121,12 +127,14 @@
 	&--zrobym {
 		.office {
 			&-gallery {
-				@include for-tablet-horizontal {
-					margin-top: calc(-#{$separ} - 102px);
+				@include for-tablet-horizontal-up {
+					margin-top: calc(-#{$separ_small} - 102px - 1px);
+					height: calc(100% + 102px);
 				}
 
-				@include for-laptop-up {
-					margin-top: -#{$separ * 2};
+				@include for-desktop {
+					margin-top: calc(-#{$separ_small + $separ} - 1px);
+					height: calc(100% + #{$separ_small * 2});
 				}
 			}
 		}

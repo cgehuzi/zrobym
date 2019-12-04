@@ -1,0 +1,47 @@
+@import './1-const.scss';
+
+.section {
+	.ya-share2 {
+		margin: auto 0;
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0;
+			margin: 0 -4px -8px;
+
+			@include for-phone-vertical {
+				justify-content: center;
+			}
+		}
+
+		&__item {
+			margin: 0;
+			padding: 0 4px 8px;
+			opacity: 1;
+		}
+
+		&__link {
+			display: block;
+			transition: none;
+		}
+
+		&__badge {
+			display: block;
+			transition: $fast;
+			border-radius: 0;
+
+			&:not(:hover) {
+				background-color: #000000;
+			}
+		}
+
+		&__icon {
+			width: 2.4rem;
+			height: 2.4rem;
+			background-size: 2rem;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+}
