@@ -1,0 +1,144 @@
+@import './1-const.scss';
+
+.project {
+	@include for-tablet-horizontal-up {
+		min-height: 100vh;
+	}
+
+	&-info {
+		@include for-tablet-vertical-down {
+			order: 2;
+		}
+
+		&__header {
+			position: relative;
+			flex-grow: 1;
+
+			&-body {
+				position: sticky;
+				top: 32px;
+
+				@include for-laptop-up {
+					top: 64px;
+				}
+			}
+
+			&-header {
+				position: relative;
+				top: 0;
+				margin-bottom: 64px;
+
+				@include for-tablet-vertical-down {
+					display: none;
+				}
+			}
+
+			&-list {
+				ul {
+					li {
+						span {
+							font-weight: $fw_medium;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&-gallery {
+
+		@include for-tablet-vertical-down {
+			order: 1;
+		}
+
+		@include for-tablet-horizontal {
+			margin-top: calc(-#{$separ} - 102px);
+		}
+
+		@include for-tablet-horizontal-up {
+			padding: 0;
+			margin-right: -10vw;
+			flex-basis: calc(50% + 10vw);
+			max-width: calc(50% + 10vw);
+		}
+
+		@include for-laptop-up {
+			margin-top: -#{$separ * 2};
+		}
+
+		&__header {
+			padding-bottom: 64px;
+
+			@include for-tablet-horizontal-up {
+				display: none;
+			}
+		}
+
+		&__list {
+			overflow: auto;
+			display: flex;
+
+			@include for-phone-vertical {
+				margin-left: -32px;
+				margin-right: -32px;
+			}
+
+			@include for-phone-horizontal-up {
+				@include for-tablet-vertical-down {
+					margin-left: calc(-10vw - 32px);
+					margin-right: calc(-10vw - 32px);
+					padding-left: 10vw;
+					padding-right: 10vw;
+
+					&::-webkit-scrollbar {
+						display: none;
+					}
+				}
+			}
+
+			@include for-tablet-horizontal-up {
+				flex-direction: column;
+			}
+
+			&-point {
+				padding: 0 8px 0 0;
+
+				@include for-tablet-horizontal-up {
+					padding: 0 0 8px 0;
+				}
+
+				&:last-child {
+					padding: 0;
+
+					@include for-phone-horizontal-up {
+						@include for-tablet-vertical-down {
+							padding-right: 10vw;
+						}
+					}
+				}
+			}
+		}
+
+		&__item {
+			display: block;
+
+			&-image {
+				height: 60vw;
+				max-width: 90vw;
+				object-fit: cover;
+				object-position: center;
+
+				@include for-phone-horizontal-up {
+					@include for-tablet-vertical-down {
+						height: 320px;
+					}
+				}
+
+				@include for-tablet-horizontal-up {
+					height: auto;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

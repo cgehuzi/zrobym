@@ -262,17 +262,12 @@
 		ol {
 			counter-reset: ol_counter;
 
-			li {
+			& > li {
 				position: relative;
 				padding-left: 1rem;
 
 				@include for-phone-vertical {
-					padding: 1.2rem 0 0;
-					margin-bottom: 1.2rem;
-
-					&:last-child {
-						margin-bottom: 0;
-					}
+					text-align: left;
 				}
 
 				&:before {
@@ -281,25 +276,11 @@
 					position: absolute;
 					color: $gold;
 					width: 1rem;
-
-					@include for-phone-vertical {
-						content: counter(ol_counter);
-						left: 50%;
-						top: 0;
-						margin-left: -0.5rem;
-						height: 1rem;
-						line-height: 1rem;
-						font-size: 1.2rem;
-						font-weight: $fw_medium;
-					}
-
-					@include for-phone-horizontal-up {
-						left: 0;
-						top: 0;
-						display: flex;
-						align-items: baseline;
-						height: 100%;
-					}
+					left: 0;
+					top: 0;
+					display: flex;
+					align-items: baseline;
+					height: 100%;
 				}
 			}
 		}
@@ -310,44 +291,20 @@
 				padding-left: 1rem;
 
 				@include for-phone-vertical {
-					padding: 0 0 1.2rem;
-					margin-bottom: 1.2rem;
-
-					&:last-child {
-						margin-bottom: 0;
-						padding-bottom: 0;
-
-						&::before {
-							display: none;
-						}
-					}
+					text-align: left;
 				}
 
 				&::before {
 					content: '–';
 					position: absolute;
-
-					@include for-phone-vertical {
-						content: '';
-						width: 24px;
-						height: 2px;
-						background-color: $gold;
-						margin-bottom: -1px;
-						left: 50%;
-						bottom: 0;
-						margin-left: -12px;
-					}
-
-					@include for-phone-horizontal-up {
-						left: 0;
-						top: 0;
-						width: 1rem;
-						height: 100%;
-						display: flex;
-						align-items: baseline;
-						color: $gold;
-						font-weight: $fw_semi;
-					}
+					left: 0;
+					top: 0;
+					width: 1rem;
+					height: 100%;
+					display: flex;
+					align-items: baseline;
+					color: $gold;
+					font-weight: $fw_semi;
 				}
 			}
 		}
