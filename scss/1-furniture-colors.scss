@@ -1,0 +1,42 @@
+// =======================================================
+// ЗАМЕНА $gold на $grey_dark
+// =======================================================
+@import './1-const.scss';
+
+body {
+
+	[data-scroll="title"] {
+		&::before {
+			background-color: $grey_dark;
+		}
+	}
+
+	.section {
+		&__header {
+			&-title {
+				&::before {
+					background-color: $grey_dark;
+				}
+			}
+		}
+	}
+
+	.feedback {
+		background-color: $back_grey;
+
+		&__input,
+		&__textarea {
+			background-color: $grey_dark;
+
+			&:focus {
+				background-color: rgba($grey_hover, 0.6);
+			}
+		}
+	}
+
+	.footer {
+		&__subtitle {
+			color: $back_grey;
+		}
+	}
+}
