@@ -343,3 +343,23 @@ if (explication_items) {
 	});
 }
 // END ------------------------
+
+// ====================================================
+// Реализация блока data-phone
+// ====================================================
+const phone_buttons = document.querySelectorAll('[data-phone]');
+if (phone_buttons) {
+	phone_buttons.forEach(function(phone_button) {
+		const phone_href = phone_button.dataset.href;
+		const phone_text = phone_button.dataset.phone;
+		phone_button.addEventListener('click', function(e) {
+			if (phone_button.hasAttribute('data-href')) {
+				e.preventDefault();
+				phone_button.innerHTML = phone_text;
+				phone_button.setAttribute('href', phone_href);
+				phone_button.removeAttribute('data-href');
+			}
+		});
+	});
+}
+// END ------------------------

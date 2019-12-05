@@ -204,6 +204,21 @@
 			margin-top: 1rem;
 			text-transform: uppercase;
 			font-weight: $fw_medium;
+
+			a {
+				&:not([class]) {
+					color: #000000;
+					display: inline;
+					border-bottom: 1px solid $gold;
+					transition: none;
+
+					@include for-laptop-up {
+						&:hover {
+							border-color: transparent;
+						}
+					}
+				}
+			}
 		}
 	}
 

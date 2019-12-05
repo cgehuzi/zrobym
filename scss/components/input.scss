@@ -47,8 +47,8 @@
 	&__input {
 		position: absolute;
 		left: 0;
-		width: 2rem;
-		height: 2rem;
+		width: 2.4rem;
+		height: 2.4rem;
 		margin: 0;
 		opacity: 0;
 		pointer-events: none;
@@ -56,11 +56,11 @@
 
 	&__icon {
 		display: block;
-		width: 2rem;
-		min-width: 2rem;
-		height: 2rem;
+		width: 2.4rem;
+		min-width: 2.4rem;
+		height: 2.4rem;
 		background-color: transparent;
-		background-image: url('../icons/unchecked.png'); // TODO: заменить на SVG
+		background-image: url('../icons/black/unchecked.svg');
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -85,7 +85,7 @@
 	}
 
 	&__input:checked ~ &__icon {
-		background-image: url('../icons/checked.png'); // TODO: заменить на SVG
+		background-image: url('../icons/black/checked.svg');
 	}
 
 	&__input:disabled ~ &__icon {

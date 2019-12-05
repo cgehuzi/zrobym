@@ -19,13 +19,60 @@
 
 	&__item {
 		display: block;
+		width: 42px;
+		height: 42px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
 
-		&-image {
-			display: block;
-			width: 32px;
-			height: 32px;
-			object-fit: contain;
-			object-position: center;
+		&--behance {
+			background-image: url('../icons/black/behance.svg');
+
+			@include for-laptop-up {
+				&:hover {
+					background-image: url('../icons/gold/behance.svg');
+				}
+			}
+		}
+
+		&--youtube {
+			background-image: url('../icons/black/youtube.svg');
+
+			@include for-laptop-up {
+				&:hover {
+					background-image: url('../icons/gold/youtube.svg');
+				}
+			}
+		}
+
+		&--instagram {
+			background-image: url('../icons/black/instagram.svg');
+
+			@include for-laptop-up {
+				&:hover {
+					background-image: url('../icons/gold/instagram.svg');
+				}
+			}
+		}
+
+		&--facebook {
+			background-image: url('../icons/black/facebook.svg');
+
+			@include for-laptop-up {
+				&:hover {
+					background-image: url('../icons/gold/facebook.svg');
+				}
+			}
+		}
+
+		&--vk {
+			background-image: url('../icons/black/vk.svg');
+
+			@include for-laptop-up {
+				&:hover {
+					background-image: url('../icons/gold/vk.svg');
+				}
+			}
 		}
 	}
 

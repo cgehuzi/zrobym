@@ -48,19 +48,36 @@
 		align-items: center;
 
 		&-point {
-			padding: 0 6px;
+			padding: 0 8px;
 		}
 	}
 
 	&__social {
 		display: block;
+		width: 24px;
+		height: 24px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
 
-		&-image {
-			display: block;
-			width: 20px;
-			height: 20px;
-			object-fit: contain;
-			object-position: center;
+		&--instagram {
+			background-image: url('../icons/black/instagram-small.svg');
+
+			@include for-laptop-up {
+				&:hover {
+					background-image: url('../icons/gold/instagram-small.svg');
+				}
+			}
+		}
+
+		&--facebook {
+			background-image: url('../icons/black/facebook-small.svg');
+
+			@include for-laptop-up {
+				&:hover {
+					background-image: url('../icons/gold/facebook-small.svg');
+				}
+			}
 		}
 	}
 
