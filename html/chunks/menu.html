@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="assets/templates/zrobym/css/menu.css?[!DocInfo? &docid=`3` &field=`last_mod`!]">
+<link rel="stylesheet" href="assets/templates/zrobym/css/menu.css?[%last_mod%]">
 <button class="menu-open" type="button">
 	<div class="menu-open__text">Меню</div>
 	<div class="menu-open__icon">
@@ -20,7 +20,7 @@
 	<div class="menu__body">
 
 		[[DLMenu?
-		&parents=`4`
+		&parents=`[[UltimateParent? &topLevel=`1`]]`
 		&maxDepth=`2`
 		&addWhereList=`c.hidemenu=0 and c.template NOT IN (9,21,22,23,24)`
 		&orderBy=`menuindex ASC`
@@ -54,20 +54,12 @@
 		</li>`
 		]]
 
-		<ul class="menu__lang">
-			<li class="menu__lang-point">RU</li>
-			<li class="menu__lang-point">
-				<a href="#" class="menu__lang-link">ENG</a>
-			</li>
-			<li class="menu__lang-point">
-				<a href="#" class="menu__lang-link">BY</a>
-			</li>
-		</ul>
+		[+switchLang+]
 
 	</div>
 	<hr class="grid-row">
 	<div class="menu__footer">
-		<div class="menu__footer-lang">[[DocInfo? &docid=`[[UltimateParent? &toplevel=`1`]]`]]</div>
+		<div class="menu__footer-lang">[+activeLang+]</div>
 	</div>
 	<button class="menu-close" type="button"></button>
 </div>
