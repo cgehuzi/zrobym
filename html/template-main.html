@@ -28,9 +28,9 @@
 				<div class="section__body-col fullwidth">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							Архитектура <strong>со смыслом</strong>
+							[%Архитектура со смыслом%]
 						</div>
-						<div class="section__header-subtitle">zrobym architects</div>
+						<div class="section__header-subtitle">ZROBYM architects</div>
 					</div>
 				</div>
 			</div>
@@ -48,22 +48,23 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							Zrobym <strong>architects</strong>
+							ZROBYM <strong>architects</strong>
 						</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<h4>Немного информации о нашей компании</h4>
-						<p>Аритектурное бюро "ЗРОБIМ" всегда стремится применять в своих проектах новейшие достижения мировой архитектуры и дизайна. Проектируя для конкретных людей, мы материализуем их собственное видение идеального пространства, их мечты и желания.</p>
-						<p>Проекты нашей студии - это итог творческого союза архитекторов с заказчиком, итог совместного размышления. И поэтому среди наших работ Вы не найдете двух одинаковых зданий или интерьеров. Создавая различные проекты для людей, мы меняем их жизнь к лучшему.</p>
+						[[Typo? &breakline=`off` &text=`[*main_about_content*]`]]
+						[[Switch? &switch=`[*main_about_more*]` &case:=``
+						&default=`
 						<div id="more-text" style="display: none;">
-							<p>При выборе дизайн студии, каждому заказчику нужно знать, каким образом осуществляется работа над проектом. Моделируя пространство, мы используем самые продвинутые графические редакторы. Наши проекты проходят путь от концепции на листе бумаги до сложнейшей BIM-модели на компьютере, обеспечивающей высокую точность в чертежах. Получая точные чертежи, заказчик может рассчитывать на успех в реализации проекта.</p>
+							[[Typo? &breakline=`off` &text=`[*main_about_more*]`]]
 						</div>
-						<button class="button-more" type="button" data-more="#more-text">Читать больше</button>
+						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-text">[%Читать больше%]</button>
+						`]]
 					</div>
 					<div class="section__buttons">
-						<a href="[~[%id_team%]~]" class="button">Узнать больше</a>
+						<a href="[~[%id_team%]~]" class="button">[%Узнать больше%]</a>
 					</div>
 				</div>
 			</div>
@@ -79,17 +80,16 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							<strong>Мы проектируем</strong> по всему миру
+							[%Мы проектируем по всему миру%]
 						</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<h4>Мы говорим на одном языке с вами!</h4>
-						<p>При выборе дизайн студии, каждому заказчику нужно знать, каким образом осуществляется работа над проектом. Моделируя пространство, мы используем самые продвинутые графические редакторы.</p>
+						[[Typo? &breakline=`off` &text=`[*main_world_content*]`]]
 					</div>
 					<div class="section__buttons">
-						<a href="[~[%id_office%]~]" class="button button--white">Наш офис | Шоурум</a>
+						<a href="[~[%id_office%]~]" class="button button--white">[%Наш офис | Шоурум%]</a>
 					</div>
 				</div>
 			</div>
@@ -97,37 +97,18 @@
 			<hr class="grid-row">
 			<div class="separ separ--small separ--tablet"></div>
 			<div class="section__body city__block">
-				<div class="city__title">Наши представители в 13 городах:</div>
+				<div class="city__title">
+					[[Typo? &breakline=`off` &text=`[*main_world_subtitle*]`]]
+				</div>
 				<div class="city__map"></div>
-				<script async>
-					const city_items_data = [{
-						name: 'Детройт'
-					}, {
-						name: 'Нью-Йорк'
-					}, {
-						name: 'Бразилиа'
-					}, {
-						name: 'Лос Анджелес'
-					}, {
-						name: 'Гданьск'
-					}, {
-						name: 'Вильнюс'
-					}, {
-						name: 'Киев'
-					}, {
-						name: 'Берлин'
-					}, {
-						name: 'Краков'
-					}, {
-						name: 'Париж'
-					}, {
-						name: 'Шанхай'
-					}, {
-						name: 'Эр-Рияд'
-					}, {
-						name: 'Москва'
-					}];
-				</script>
+
+				[[multiTV?
+				&tvName=`main_world_cities`
+				&outerTpl=`main_world_cities--outerTpl`
+				&rowTpl=`@CODE: { name: '((city))' },`
+				&display=`all`
+				]]
+
 			</div>
 			<div class="separ separ--small separ--tablet"></div>
 			<hr class="grid-row">

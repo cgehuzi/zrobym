@@ -101,7 +101,7 @@ if (more_buttons) {
 	more_buttons.forEach(function(more_button) {
 		const more_target = document.querySelector(more_button.dataset.more);
 		const more_text_closed = more_button.innerHTML;
-		const more_text_opened = 'Скрыть';
+		const more_text_opened = more_button.dataset.closeText;
 		more_button.addEventListener('click', function() {
 			$(more_target).slideToggle();
 			active(more_button, 'toggle');
@@ -123,8 +123,6 @@ if (typeof city_items_data === 'object') {
 		city_height = 500;
 
 	const city_circle_width = 4;
-
-	const city_items_center = [{ name: 'Минск' }];
 
 	const city_links_data = [];
 	city_items_data.forEach(function(elem, index) {
