@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="assets/templates/zrobym/css/menu.css?[%last_mod%]">
+<link rel="stylesheet" href="assets/templates/zrobym/css/menu.css?[%config_last_mod%]">
 <button class="menu-open" type="button">
 	<div class="menu-open__text">Меню</div>
 	<div class="menu-open__icon">
@@ -20,7 +20,7 @@
 	<div class="menu__body">
 
 		[[DLMenu?
-		&parents=`[[UltimateParent? &topLevel=`1`]]`
+		&parents=`[%Корневая папка%]`
 		&maxDepth=`2`
 		&addWhereList=`c.hidemenu=0 and c.template NOT IN (9,21,22,23,24)`
 		&orderBy=`menuindex ASC`
