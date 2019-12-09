@@ -117,112 +117,24 @@
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/pride.css?[%config_last_mod%]">
 		<div id="pride" class="section section--dark pride" data-tabs>
+
+			[[multiTV?
+			&tvName=`main_pride_items`
+			&outerTpl=`@CODE:
 			<ul class="section__body pride__list" data-scroll="title">
-				<li class="pride__list-point">
-					<button class="pride__list-button" type="button" data-tab-open="#pride-1" data-tab-group="#pride">Архитектурное проектирование</button>
-				</li>
-				<li class="pride__list-point">
-					<button class="pride__list-button" type="button" data-tab-open="#pride-2" data-tab-group="#pride">Дизайн интерьера</button>
-				</li>
-				<li class="pride__list-point">
-					<button class="pride__list-button" type="button" data-tab-open="#pride-3" data-tab-group="#pride">Свой бренд серийной мебели</button>
-				</li>
-				<li class="pride__list-point">
-					<button class="pride__list-button" type="button" data-tab-open="#pride-4" data-tab-group="#pride">Магазин готовых проектов</button>
-				</li>
-			</ul>
-			<div id="pride-1" class="pride__item" style="background-image: url('assets/images/tab-1.jpg');" data-tab-item>
-				<div class="separ"></div>
-				<div class="section__body">
-					<div class="section__body-col">
-						<div class="section__header">
-							<div class="section__header-title">
-								То, чем мы <strong>гордимся</strong>
-							</div>
-						</div>
-					</div>
-					<div class="section__body-col pride__item-content">
-						<div class="section__content">
-							<h4>Architectual projects by ZROBYM architects</h4>
-							<p>Команда студии ZROBYM architects любит архитектуру любого размера и назначения: от частных домов до административных, общественных зданий и торговых центров, от жилых кварталов до малых архитектурных форм и благоустройства. Создавая архитектуру, мы делаем не просто проект и все его стадии, мы думаем о сценариях жизни человека, который там будет жить, работать, отдыхать, учиться.</p>
-							<p>Создание архитектуры — это многослойный процесс, начинается он с концепции и с каждой стадией уточняется, детализируется. Мы считаем путь от общего к частному и аналитический подход к процессу создания формы опорными точками своего метода проектирования.</p>
-						</div>
-						<div class="section__buttons">
-							<a href="[~[%id_arch%]~]" class="button button--white">Узнать больше</a>
-						</div>
-					</div>
-				</div>
-				<div class="separ"></div>
-			</div>
-			<div id="pride-2" class="pride__item" style="background-image: url('assets/images/tab-2.jpg');" data-tab-item>
-				<div class="separ"></div>
-				<div class="section__body">
-					<div class="section__body-col">
-						<div class="section__header">
-							<div class="section__header-title">
-								То, чем мы <strong>гордимся</strong>
-							</div>
-						</div>
-					</div>
-					<div class="section__body-col pride__item-content">
-						<div class="section__content">
-							<h4>Interior design by ZROBYM architects</h4>
-							<p>Современный дизайн интерьера – это решение задач. Задач бюджета, функциональности, красоты и много другого. В создании дизайна интерьера мы используем аналитический подход, он позволяет нам проектировать, как частное жилье, так и офисы, кафе, рестораны, бары, галереи, музеи и т.д.</p>
-							<p>Мы исходим из тех задач, которые перед нами ставит клиент и пространство интерьера. Думаем о том, как рационально использовать бюджет на реализацию и создать уникальный дизайн под конкретную задачу.</p>
-						</div>
-						<div class="section__buttons">
-							<a href="[~[%id_design%]~]" class="button button--white">Узнать больше</a>
-						</div>
-					</div>
-				</div>
-				<div class="separ"></div>
-			</div>
-			<div id="pride-3" class="pride__item" style="background-image: url('assets/images/tab-3.JPG');" data-tab-item>
-				<div class="separ"></div>
-				<div class="section__body">
-					<div class="section__body-col">
-						<div class="section__header">
-							<div class="section__header-title">
-								То, чем мы <strong>гордимся</strong>
-							</div>
-						</div>
-					</div>
-					<div class="section__body-col pride__item-content">
-						<div class="section__content">
-							<h4>BY Furniture brand </h4>
-							<p>Предметы в интерьере должны быть эстетичными и удобными. Каждый предмет вашего личного пространства должен приносить радость. Мебель должна быть красивой сама по себе, она является законченным произведением, продуктом мыслительного процесса конкретного дизайнера, конструктора, сборщика и т.д.</p>
-							<p>Мы думаем о каждом предмете, который создаем, думаем об эргономике, функционале, эстетике, мы любим каждый наш предмет мебели. Наши объекты дизайна можно приобрести в наших брендовых шоурумах, расположенных в г. Минске.</p>
-						</div>
-						<div class="section__buttons">
-							<a href="[~[%id_furniture%]~]" class="button button--white">Узнать больше</a>
-						</div>
-					</div>
-				</div>
-				<div class="separ"></div>
-			</div>
-			<div id="pride-4" class="pride__item" style="background-image: url('assets/images/tab-4.jpg');" data-tab-item>
-				<div class="separ"></div>
-				<div class="section__body">
-					<div class="section__body-col">
-						<div class="section__header">
-							<div class="section__header-title">
-								То, чем мы <strong>гордимся</strong>
-							</div>
-						</div>
-					</div>
-					<div class="section__body-col pride__item-content">
-						<div class="section__content">
-							<h4>Shop ready projects by ZROBYM architects</h4>
-							<p>На определенном этапе жизни, человек приходит к решению построить себе дом. Во всем мире, процесс проектирования индивидуального жилья занимает долгий период времени и стоит достаточно дорого. Если у вас нет времени и бюджета на создание индивидуального проекта дома, мы даём возможность купить у нас готовый проект.</p>
-							<p>Каждый из проектов, которые мы предлагаем, был разработан нашей компанией. Это не типовой польский или литовский проект, это дома уже адаптированные под материалы и нормативы стран СНГ. Все, что вам нужно, это взять готовый проект, привязать дом к участку и построить его. Вы можете выбрать конструктивную систему дома, планировку, материалы фасада, кровли, а поможем вам адаптировать проект под ваш бюджет.</p>
-						</div>
-						<div class="section__buttons">
-							<a href="http://modular-house.by/" target="_blank" class="button button--white">Узнать больше</a>
-						</div>
-					</div>
-				</div>
-				<div class="separ"></div>
-			</div>
+				((wrapper))
+			</ul>`
+			&rowTpl=`pride_button--rowTpl`
+			&display=`all`
+			]]
+
+			[[multiTV?
+			&tvName=`main_pride_items`
+			&outerTpl=`@CODE:((wrapper))`
+			&rowTpl=`pride_item--rowTpl`
+			&display=`all`
+			]]
+
 		</div>
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/philosophy.css?[%config_last_mod%]">
@@ -233,42 +145,28 @@
 					<div class="philosophy__header">
 						<div class="section__header" data-scroll="title">
 							<div class="section__header-title">
-								<strong>Философия</strong> Zrobym Architects
+								[%Философия ZROBYM architects%]
 							</div>
 						</div>
 					</div>
+
+					[[multiTV?
+					&tvName=`main_philosophy_items`
+					&outerTpl=`@CODE:
 					<ul class="philosophy__list" data-scroll="title">
-						<li class="philosophy__list-point">
-							<div class="philosophy__item">
-								<div class="philosophy__item-title">630</div>
-								<div class="philosophy__item-desc">Объектов<br> всего</div>
-							</div>
-						</li>
-						<li class="philosophy__list-point">
-							<div class="philosophy__item">
-								<div class="philosophy__item-title">94</div>
-								<div class="philosophy__item-desc">Объектов<br> реализовано</div>
-							</div>
-						</li>
-						<li class="philosophy__list-point">
-							<div class="philosophy__item">
-								<div class="philosophy__item-title">227</div>
-								<div class="philosophy__item-desc">Публикаций<br> в прессе</div>
-							</div>
-						</li>
-					</ul>
+						((wrapper))
+					</ul>`
+					&rowTpl=`philosophy_item--rowTpl`
+					&display=`all`
+					]]
+
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<h4>Архитектура с идеей</h4>
-						<p>Предметы в интерьере должны быть эстетичными и удобными. Каждый предмет вашего личного пространства должен приносить радость.</p>
-						<p>Мебель должна быть красивой сама по себе, она является законченным произведением, продуктом мыслительного процесса конкретного дизайнера, конструктора, сборщика и т.д.</p>
-						<h4>Проект - это только начало</h4>
-						<p>Мы думаем о каждом предмете, который создаем, думаем об эргономике, функционале, эстетике, мы любим каждый наш предмет мебели.</p>
-						<p>Наши объекты дизайна можно приобрести в наших брендовых шоурумах, расположенных в г. Минске.</p>
+						[[Typo? &breakline=`off` &text=`[*main_philosophy_content*]`]]
 					</div>
 					<div class="section__buttons">
-						<a href="[~[%id_contact%]~]" class="button">Начнем проект вместе</a>
+						<a href="[~[%id_contact%]~]" class="button">[%Начнем проект вместе%]</a>
 					</div>
 				</div>
 			</div>
@@ -282,18 +180,17 @@
 					<div class="team__header">
 						<div class="section__header" data-scroll="title">
 							<div class="section__header-title">
-								<strong>Главное</strong>
+								[%Главное%]
 							</div>
 						</div>
 					</div>
 					<div class="team__content">
 						<div class="section__content">
-							<h4>Профессиональная команда</h4>
-							<p>У нас высокопрофессиональная команда архитекторов, дизайнеров, смежников</p>
+							[[Typo? &breakline=`off` &text=`[*main_team_content*]`]]
 						</div>
-						<div id="team" class="team__slider" style="background-image: url('assets/images/team.jpg');"></div>
+						<div id="team" class="team__slider" style="background-image: url('[*main_team_image*]');"></div>
 						<div class="section__buttons">
-							<a href="[~[%id_team%]~]" class="button">Вся команда</a>
+							<a href="[~[%id_team%]~]" class="button">[%Вся команда%]</a>
 						</div>
 					</div>
 				</div>
@@ -305,36 +202,36 @@
 			<div class="separ"></div>
 			<div class="section__body">
 				<div class="section__body-col">
-					<img class="chief__image" src="assets/images/chiefs.jpg" alt="">
+					<img class="chief__image" src="[*main_chief_image*]" alt="">
 				</div>
 				<div class="section__body-col">
 					<div class="chief__item">
-						<div class="chief__title">Andrus Bezdar</div>
+						<div class="chief__title">[%Андрусь Bezdar%]</div>
 						<ul class="chief__list">
 							<li class="chief__list-point">
-								<a href="#" class="chief__social chief__social--instagram"></a>
+								<a href="https://www.instagram.com/andrusbezdar/" target="_blank" class="chief__social chief__social--instagram"></a>
 							</li>
 							<li class="chief__list-point">
-								<a href="#" class="chief__social chief__social--facebook"></a>
+								<a href="https://www.facebook.com/profile.php?id=100006874392599" target="_blank" class="chief__social chief__social--facebook"></a>
 							</li>
 						</ul>
 					</div>
 					<div class="chief__item">
-						<div class="chief__title">Алексей Кораблев</div>
+						<div class="chief__title">[%Алексей Кораблев%]</div>
 						<ul class="chief__list">
 							<li class="chief__list-point">
-								<a href="#" class="chief__social chief__social--instagram"></a>
+								<a href="https://www.instagram.com/bykorablove/" target="_blank" class="chief__social chief__social--instagram"></a>
 							</li>
 							<li class="chief__list-point">
-								<a href="#" class="chief__social chief__social--facebook"></a>
+								<a href="https://www.facebook.com/Alexeykorablove" target="_blank" class="chief__social chief__social--facebook"></a>
 							</li>
 						</ul>
 					</div>
 					<div class="section__content">
-						<p>«Для нас проект – это не итог работы, а всего лишь маленькая ступенька большой лестницы, которая ведет к полной реализации объекта»</p>
+						[[Typo? &breakline=`off` &text=`[*main_chief_content*]`]]
 					</div>
 					<div class="section__buttons">
-						<a href="[~[%id_contact%]~]" class="button">Работать с нами</a>
+						<a href="[~[%id_contact%]~]" class="button">[%Работать с нами%]</a>
 					</div>
 				</div>
 			</div>
@@ -348,31 +245,26 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							<strong>Блог</strong> новостей
+							[%Блог новостей%]
 						</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<p>Следите за нашими новостями в самых популярных социальных сетях.</p>
+						[[Typo? &breakline=`off` &text=`[*main_blog_content*]`]]
 					</div>
+
+					[[multiTV?
+					&docid=`[%id_static%]`
+					&tvName=`static_social_items`
+					&outerTpl=`@CODE:
 					<ul class="social__list">
-						<li class="social__list-point">
-							<a href="#" class="social__item social__item--behance"></a>
-						</li>
-						<li class="social__list-point">
-							<a href="#" class="social__item social__item--youtube"></a>
-						</li>
-						<li class="social__list-point">
-							<a href="#" class="social__item social__item--instagram"></a>
-						</li>
-						<li class="social__list-point">
-							<a href="#" class="social__item social__item--facebook"></a>
-						</li>
-						<li class="social__list-point">
-							<a href="#" class="social__item social__item--vk"></a>
-						</li>
-					</ul>
+						((wrapper))
+					</ul>`
+					&rowTpl=`social_item--rowTpl`
+					&display=`all`
+					]]
+
 				</div>
 			</div>
 			<div class="separ"></div>
