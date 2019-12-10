@@ -25,32 +25,23 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							Ищем <strong>сотрудника</strong>
+							[%Ищем сотрудника%]
 						</div>
-						<div class="section__header-subtitle">zrobym architects</div>
+						<div class="section__header-subtitle">ZROBYM architects</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<p>Ищем суперпрофессионала, архитектурного фанатика, гения дизайна с КПД 200% в команду архитекторов ZROBYM!</p>
-						<p>Предлагаем как удаленную работу, так и работу в офисе студии, высокую ЗП, ведение проектов и реализацию Вашего творческого потенциала!</p>
-						<h4>Обязательные критерии отбора:</h4>
-						<ul>
-							<li>Опыт работы с заказчиками, ответственность</li>
-							<li>Мотивация в создании качественных проектов</li>
-							<li>Владение программами 3d-Max, Revit, AutoCad, Photoshop</li>
-							<li>Умение хорошо рисовать руками и быстро генерировать идеи</li>
-							<li>Владение белорусским языком</li>
-							<li>Отсутствие творческих кризисов</li>
-							<li>Желание творчески расти и развиваться</li>
-						</ul>
+						[[Typo? &breakline=`off` &text=`
+						<h1>[*pagetitle*]</h1>
+						[*vacancy_header_content*]`]]
+						[[Switch? &switch=`[*vacancy_header_more*]` &case:=``
+						&default=`
 						<div id="more-text" style="display: none;">
-							<p>Если Вы разделяете взгляды студии и подходите по нашим критериям, присылайте свое портфолио на наш е-мейл: <a href="mailto:zrobym@gmail.com">zrobym@gmail.com</a></p>
-							<p>Тем, кто нас заинтересует, мы высылаем пробное задание.</p>
-							<p><strong>Успехов!</strong></p>
-							<p>Zrobym architects.</p>
+							[[Typo? &breakline=`off` &text=`[*vacancy_header_more*]`]]
 						</div>
-						<button class="button-more" type="button" data-close-text="Скрыть" data-more="#more-text">Читать больше</button>
+						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-text">[%Читать больше%]</button>
+						`]]
 					</div>
 				</div>
 			</div>
