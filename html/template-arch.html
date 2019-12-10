@@ -28,9 +28,9 @@
 				<div class="section__body-col fullwidth">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							Архитектурные <strong>проекты</strong>
+							[%Архитектурные проекты%]
 						</div>
-						<div class="section__header-subtitle">by zrobym architects</div>
+						<div class="section__header-subtitle">by ZROBYM architects</div>
 					</div>
 				</div>
 			</div>
@@ -48,23 +48,29 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							Проектирование: <strong>что вы знаете об этом?</strong>
+							[%Что вы знаете об этом?%]
 						</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<h4>Как проходит архитектурное проектирование в нашей студии</h4>
-						<p>Первое и, пожалуй, самое важное для постройки собственного дома - идея. Без смелой идеи не будет и оригинальной реализации проекта. Многие люди не заказывают индивидуальное проектирование зданий с авторским замыслом и интересной идей, а идут по белее простому пути - покупка типового проекта.</p>
-						<p>Минимум вложений, минимум затрат и минимум сложностей - по крайней мере, на первоначальном этапе. Такому решению сегодня верны многие домовладельцы, и вариант имеет право на жизнь.</p>
+						[[Typo? &breakline=`off` &text=`
+						<h1>[*pagetitle*]</h1>
+						[*arch_about_content*]`]]
+						[[Switch? &switch=`[*arch_about_more*]` &case:=``
+						&default=`
 						<div id="more-text" style="display: none;">
-							<p>Нельзя упустить из виду тот факт, что типовой проект обойдется заказчику примерно втрое дешевле, чем услуги архитектурной студии, которая постарается до мелочей продумать индивидуальный проект нового дома.</p>
+							[[Typo? &breakline=`off` &text=`[*arch_about_more*]`]]
 						</div>
-						<button class="button-more" type="button" data-close-text="Скрыть" data-more="#more-text">Читать больше</button>
+						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-text">[%Читать больше%]</button>
+						`]]
 					</div>
+					[[Switch? &switch=`[*arch_about_video*]` &case:=``
+					&default=`
 					<div class="section__buttons">
-						<a data-fancybox href="https://www.youtube.com/watch?v=wkEmtFMKkxQ&feature=emb_logo" class="button">Видео о нас</a>
+						<a data-fancybox href="[*arch_about_video*]" class="button">[%Видео о нас%]</a>
 					</div>
+					`]]
 				</div>
 			</div>
 			<div class="separ"></div>
@@ -77,14 +83,13 @@
 			<div class="section__body">
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
-						<div class="section__header-title">Новые проекты</div>
+						<div class="section__header-title">[%Новые проекты%]</div>
 						<div class="section__header-subtitle">by ZROBYM architects</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<h4>Новые проекты на сайте</h4>
-						<p>Новые архитектурные проекты, недавно добавленные на сайт</p>
+						[[Typo? &breakline=`off` &text=`[*arch_new_content*]`]]
 					</div>
 				</div>
 			</div>
@@ -175,17 +180,16 @@
 			<div class="section__body">
 				<div class="section__body-col">
 					<div class="section__content more__content">
-						<h3>Еще больше проектов</h3>
-						<p>Перейдите в наше портфолио, чтобы посмотреть реализованные, а также все наши проекты</p>
+						[[Typo? &breakline=`off` &text=`[*arch_more_content*]`]]
 					</div>
 				</div>
 				<div class="section__body-col">
 					<ul class="section__buttons more__buttons">
 						<li class="section__buttons-point">
-							<a href="[~[%id_realize%]~]" class="button">Реализованные проекты</a>
+							<a href="[~[%id_realize%]~]" class="button">[[DocInfo? &docid=`[%id_realize%]` &field=`menutitle`]]</a>
 						</li>
 						<li class="section__buttons-point">
-							<a href="[~[%id_arch_list%]~]" class="button">Все проекты студии</a>
+							<a href="[~[%id_arch_list%]~]" class="button">[[DocInfo? &docid=`[%id_arch_list%]` &field=`menutitle`]]</a>
 						</li>
 					</ul>
 				</div>
@@ -199,17 +203,19 @@
 		<div class="section">
 			<div class="separ separ--small separ--tablet"></div>
 			<div class="section__body">
-				<img class="section__back-left" src="assets/images/architect.gif" alt="">
+				<img class="section__back-left" src="[*arch_individual_image*]" alt="[*pagetitle*]">
 				<div class="section__body-col right">
 					<div class="section__content">
-						<h4>Индивидуальное проектирование дома</h4>
-						<p>При индивидуальном проектировании вашего дома мы раскроем всю красоту участка, рационально и с учётом всех предпочтений распланируем пространство и прилегающую к дому территорию. Создадим уникальный проект дома с учетом всех особенностей и пожеланий клиента.</p>
-						<div id="more-text-2" style="display: none;">
-							<p>А также поможем создать приятную уютную атмосферу в доме. Проектирование домов от студии ZROBYM architects - это именно то, что вам нужно!</p>
+						[[Typo? &breakline=`off` &text=`[*arch_individual_content*]`]]
+						[[Switch? &switch=`[*arch_individual_more*]` &case:=``
+						&default=`
+						<div id="more-individual" style="display: none;">
+							[[Typo? &breakline=`off` &text=`[*arch_individual_more*]`]]
 						</div>
-						<button class="button-more" type="button" data-close-text="Скрыть" data-more="#more-text-2">Читать больше</button>
+						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-individual">[%Читать больше%]</button>
+						`]]
 						<div class="section__buttons">
-							<a href="[~[%id_arch_calc%]~]" class="button">Рассчитать стоимость</a>
+							<a href="[~[%id_arch_calc%]~]" class="button">[[DocInfo? &docid=`[%id_arch_calc%]` &field=`menutitle`]]</a>
 						</div>
 					</div>
 				</div>
