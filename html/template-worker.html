@@ -25,12 +25,15 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							<strong>Алексей</strong> Кораблев
+							<strong>[*worker_name*]</strong> [*worker_secondname*]
 						</div>
-						<div class="section__header-subtitle">CEO & Founder</div>
+						[[Switch? &switch=`[*worker_profile*]` &case:=``
+						&default=`
+						<div class="section__header-subtitle">[[Typo? &text=`[*worker_profile*]`]]</div>
+						`]]
 					</div>
 				</div>
-				<img class="section__back-right" src="assets/images/team/Aleksey_Korablev_color.jpg" alt="">
+				<img class="section__back-right" src="[*worker_image*]" alt="[*pagetitle*]">
 			</div>
 			<div class="separ separ--small"></div>
 			<hr class="grid-row">
@@ -43,28 +46,30 @@
 		<hr class="grid-row grid-row--all">
 
 		<div class="section">
-				<div class="separ separ--small"></div>
+			<div class="separ separ--small"></div>
 			<div class="section__body">
 				<div class="section__body-col">
 					<div class="section__content">
-						<h4>Алексей Кораблев</h4>
-						<p>Окончил Белорусский национальный технический университет г. Минск. Архитектурный факультет, специальность архитектура.</p>
-						<p>Участник Студенческого Архитектурного форума "АРХ.ПРО.СВЕТ"(2016), участник международной школы архитектуры "SESAM"(2016), участник Шестого Минского архитектурного форума "Чему равно площадь"(2017).</p>
+						[[Typo? &breakline=`off` &text=`
+						<h1>[*pagetitle*]</h1>
+						[*worker_about_content*]`]]
+						[[Switch? &switch=`[*worker_about_more*]` &case:=``
+						&default=`
 						<div id="more-text" style="display: none;">
-							<p>Как правило, грамотный проект и авторское сопровождение позволяют заказчику сэкономить больше средств на реализации здания, чем он потратил на услуги архитектурной студии.</p>
-							<p>Поэтому к выбору архитекторов, которые будут заниматься разработкой и реализацией вашего проекта, следует подходить исходя из их профессионализма (портфолио + опыт реализации проекта + творческие достижения). Не забывайте это!</p>
+							[[Typo? &breakline=`off` &text=`[*worker_about_more*]`]]
 						</div>
-						<button class="button-more" type="button" data-close-text="Скрыть" data-more="#more-text">Читать полностью</button>
+						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-text">[%Читать больше%]</button>
+						`]]
 					</div>
+					[[Switch? &switch=`[*worker_activities*]` &case:=``
+					&default=`
 					<div class="section__content">
-						<h4>Направление деятельности:</h4>
+						<h4>[%Направление деятельности%]</h4>
 						<ul>
-							<li>Архитектурное проектирование</li>
-							<li>Дизайн интерьера</li>
-							<li>Модульное строительство</li>
-							<li>Энергоэффективные дома</li>
+							[[WorkerActivitiesList? &list=`[*worker_activities*]`]]
 						</ul>
 					</div>
+					`]]
 				</div>
 			</div>
 			<div class="separ"></div>
