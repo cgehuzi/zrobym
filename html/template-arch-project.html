@@ -29,15 +29,18 @@
 				<div class="section__body-col project-info">
 					<div class="project__header">
 						<div class="section__header project__header-title" data-scroll="title">
-							<div class="section__header-title">
+							<h1 class="section__header-title">
 								<strong>[*pagetitle*]</strong>
-							</div>
-							<div class="section__header-subtitle">Дизайн квартиры</div>
+							</h1>
+							[[Switch? &switch=`[*project_label*]` &case:=``
+							&default=`
+							<div class="section__header-subtitle">[*project_label*]</div>
+							`]]
 						</div>
 						<div class="section__content project__header-list">
 							<ul>
-								<li><span>Студия:</span> ZROBYM architects</li>
-								<li><span>Архитекторы:</span> <a href="#">Алексей Кораблев</a>, Екатерина Рулинская</li>
+								<li><span>[%param Студия%]:</span> [*project_studio*]</li>
+								<li><span>[%param Архитекторы%]:[[WorkersList? &list=`[*project_workers*]`]]</span> <a href="#">Алексей Кораблев</a>, Екатерина Рулинская</li>
 								<li><span>Видео:</span> Дмитрий Логан</li>
 								<li><span>Фото:</span> Александра Кононченко</li>
 								<li><span>Расположение:</span> пр-т Победителей 135, Минск, Беларусь</li>
