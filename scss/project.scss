@@ -37,6 +37,21 @@
 				&:not([class]) {
 					color: #000000;
 				}
+
+				&:not([href]) {
+					border: none;
+				}
+
+				&::after {
+					content: ', ';
+					border: none;
+				}
+
+				&:last-child {
+					&::after {
+						display: none;
+					}
+				}
 			}
 		}
 	}
