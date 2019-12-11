@@ -40,7 +40,16 @@
 						<div class="section__content project__header-list">
 							<ul>
 								<li><span>[%param Студия%]:</span> [*project_studio*]</li>
-								<li><span>[%param Архитекторы%]:[[WorkersList? &list=`[*project_workers*]`]]</span> <a href="#">Алексей Кораблев</a>, Екатерина Рулинская</li>
+								<li>
+									<span>[%param Архитекторы%]:</span>
+									[[WorkersList? &list=`[*project_workers*]`]]
+									[[multiTV?
+									&tvName=`project_workers_more`
+									&outerTpl=`@CODE:((wrapper))`
+									&rowTpl=`@CODE: <a>((name))</a>`
+									&display=`all`
+									]]
+								</li>
 								<li><span>Видео:</span> Дмитрий Логан</li>
 								<li><span>Фото:</span> Александра Кононченко</li>
 								<li><span>Расположение:</span> пр-т Победителей 135, Минск, Беларусь</li>
