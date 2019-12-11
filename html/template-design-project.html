@@ -27,144 +27,166 @@
 			<div class="separ separ--small"></div>
 			<div class="section__body">
 				<div class="section__body-col project-info">
+
 					<div class="project__header">
 						<div class="section__header project__header-title" data-scroll="title">
-							<div class="section__header-title">
+							<h1 class="section__header-title">
 								<strong>[*pagetitle*]</strong>
-							</div>
-							<div class="section__header-subtitle">Дизайн квартиры</div>
+							</h1>
+							[[Switch? &switch=`[*project_subtitle*]` &case:=``
+							&default=`<div class="section__header-subtitle">[*project_subtitle*]</div>`]]
 						</div>
 						<div class="section__content project__header-list">
 							<ul>
-								<li><span>Студия:</span> ZROBYM architects</li>
-								<li><span>Архитекторы:</span> <a href="#">Алексей Кораблев</a>, Екатерина Рулинская</li>
-								<li><span>Видео:</span> Дмитрий Логан</li>
-								<li><span>Фото:</span> Александра Кононченко</li>
-								<li><span>Расположение:</span> пр-т Победителей 135, Минск, Беларусь</li>
-								<li><span>Площадь:</span> 60 м.кв.</li>
-								<li><span>Год:</span> 2018</li>
+								<li><strong>[%param Студия%]:</strong> [*project_studio*]</li>
+
+								<li>
+									<strong>[%param Архитекторы%]:</strong>
+									[[WorkersList? &list=`[*project_workers*]`]]
+									[[multiTV?
+									&tvName=`project_workers_more`
+									&outerTpl=`@CODE:((wrapper))`
+									&rowTpl=`@CODE: <a><span>((name))</span></a>`
+									&display=`all`
+									]]
+								</li>
+
+								[[Switch? &switch=`[*project_video_worker*]` &case:=``
+								&default=`<li><strong>[%param Видео%]:</strong> [*project_video_worker*]</li>`]]
+
+								[[Switch? &switch=`[*project_gallery_worker*]` &case:=``
+								&default=`<li><strong>[%param Фото%]:</strong> [*project_gallery_worker*]</li>`]]
+
+								[[Switch? &switch=`[*project_map_address*]` &case:=``
+								&default=`<li><strong>[%param Расположение%]:</strong> [[Typo? &text=`[*project_map_address*]`]]</li>`]]
+
+								[[Switch? &switch=`[*project_square*]` &case:=``
+								&default=`<li><strong>[%param Площадь%]:</strong> [*project_square*] м<sup>2</sup> </li>`]]
+
+								[[Switch? &switch=`[*project_year*]` &case:=``
+								&default=`<li><strong>[%param Год%]:</strong> [*project_year*]</li>`]]
 							</ul>
 						</div>
 					</div>
+
+					[[Switch? &switch=`[*project_desc_content*]` &case:=``
+					&default=`
 					<div class="section__content project__desc">
-						<h4>Описание проекта</h4>
-						<p>Хозяин квартиры из Италии, поэтому она предназначена для временного пребывания. Этим обусловлено полное отсутствие шкафов и небольшая кухня. Она имеет систему поворотно-сдвижных фасадов. Таким образом, в закрытом виде кухня становится полноценной частью гостиной.</p>
-						<p>По просьбе хозяина, мы старались максимально избегать ярких тонов и не выходить за рамки монохромной гаммы. Другим его пожеланием было использование только локального и направленного освещения. В итоге, каждая зона приобрела свою атмосферу.</p>
-						<p>Для этого проекта был специально разработан светильник Alpha and Omega (разные по диаметру круги на стене в гостиной, которые за счет своей подсветки сзади будто бы оторваны от стены и парят в воздухе. Они напоминают планеты на фоне градиентной стены (переход от глубоко-синего к серому символизирует глубины космоса). Освещение и цветовая гамма вместе образовали таинственную, космическую атмосферу.</p>
+						<h4>[%Описание проекта%]</h4>
+						[*project_desc_content*]
 					</div>
+					`]]
+
+					[[Switch? &switch=`[*project_plan1_image*]` &case:=``
+					&default=`
 					<div class="project__plan">
-						<img class="project__plan-image" src="assets/images/design-apartment/midnight-flat/plan.jpg" alt="">
+						<img class="project__plan-image" src="[*project_plan1_image*]" alt="План 1">
+
+						[[multiTV?
+						&tvName=`project_plan1_explication`
+						&outerTpl=`@CODE:
 						<div class="section__content project__plan-desc">
-							<h4 class="title">Экспликация плана</h4>
-							<p>Нажмите на помещение, чтобы посмотреть его дизайн</p>
+							<h4 class="title">[%Экспликация плана%]</h4>
+							<p>[%Нажмите на помещение%]</p>
 						</div>
 						<ul class="project-explication">
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Холл" data-explication-caption="Холл - 6,2 м2">
-									<div class="project-explication__item-number">1</div>
-									<div class="project-explication__item-title">Холл</div>
-									<div class="project-explication__item-square">6,2 м2</div>
-								</button>
-							</li>
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Санузел" data-explication-caption="Санузел - 3,6 м2">
-									<div class="project-explication__item-number">2</div>
-									<div class="project-explication__item-title">Санузел</div>
-									<div class="project-explication__item-square">3,6 м2</div>
-								</button>
-							</li>
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Кухня-гостиная" data-explication-caption="Кухня-гостиная - 31,7 м2">
-									<div class="project-explication__item-number">3</div>
-									<div class="project-explication__item-title">Кухня-гостиная</div>
-									<div class="project-explication__item-square">31,7 м2</div>
-								</button>
-							</li>
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Спальня" data-explication-caption="Спальня - 9 м2">
-									<div class="project-explication__item-number">4</div>
-									<div class="project-explication__item-title">Спальня</div>
-									<div class="project-explication__item-square">9 м2</div>
-								</button>
-							</li>
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Лоджия 1" data-explication-caption="Лоджия 1 - 4,4 м2">
-									<div class="project-explication__item-number">5</div>
-									<div class="project-explication__item-title">Лоджия 1</div>
-									<div class="project-explication__item-square">4,4 м2</div>
-								</button>
-							</li>
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Лоджия 2" data-explication-caption="Лоджия 2 - 4,5 м2">
-									<div class="project-explication__item-number">6</div>
-									<div class="project-explication__item-title">Лоджия 2</div>
-									<div class="project-explication__item-square">4,5 м2</div>
-								</button>
-							</li>
-						</ul>
-					</div>
+							((wrapper))
+						</ul>`
+						&rowTpl=`project_explication--rowTpl`
+						&display=`all`
+						&firstClass=``
+						&lastClass=``
+						&evenClass=`1`
+						&oddClass=`1`
+						]]
+
+					</div>`]]
+
+					[[Switch? &switch=`[*project_plan2_image*]` &case:=``
+					&default=`
 					<div class="project__plan">
-						<img class="project__plan-image" src="assets/images/design-apartment/midnight-flat/plan.jpg" alt="">
+						<img class="project__plan-image" src="[*project_plan2_image*]" alt="План 2">
+
+						[[multiTV?
+						&tvName=`project_plan2_explication`
+						&outerTpl=`@CODE:
 						<div class="section__content project__plan-desc">
-							<h4 class="title">Экспликация плана</h4>
-							<p>Нажмите на помещение, чтобы посмотреть его дизайн</p>
+							<h4 class="title">[%Экспликация плана%]</h4>
+							<p>[%Нажмите на помещение%]</p>
 						</div>
 						<ul class="project-explication">
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Холл" data-explication-caption="Холл - 6,2 м2">
-									<div class="project-explication__item-number">1</div>
-									<div class="project-explication__item-title">Холл</div>
-									<div class="project-explication__item-square">6,2 м2</div>
-								</button>
-							</li>
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Санузел" data-explication-caption="Санузел - 3,6 м2">
-									<div class="project-explication__item-number">2</div>
-									<div class="project-explication__item-title">Санузел</div>
-									<div class="project-explication__item-square">3,6 м2</div>
-								</button>
-							</li>
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Кухня-гостиная" data-explication-caption="Кухня-гостиная - 31,7 м2">
-									<div class="project-explication__item-number">3</div>
-									<div class="project-explication__item-title">Кухня-гостиная</div>
-									<div class="project-explication__item-square">31,7 м2</div>
-								</button>
-							</li>
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Спальня" data-explication-caption="Спальня - 9 м2">
-									<div class="project-explication__item-number">4</div>
-									<div class="project-explication__item-title">Спальня</div>
-									<div class="project-explication__item-square">9 м2</div>
-								</button>
-							</li>
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Лоджия 1" data-explication-caption="Лоджия 1 - 4,4 м2">
-									<div class="project-explication__item-number">5</div>
-									<div class="project-explication__item-title">Лоджия 1</div>
-									<div class="project-explication__item-square">4,4 м2</div>
-								</button>
-							</li>
-							<li class="project-explication__point">
-								<button class="project-explication__item" type="button" data-explication-target="1 - Лоджия 2" data-explication-caption="Лоджия 2 - 4,5 м2">
-									<div class="project-explication__item-number">6</div>
-									<div class="project-explication__item-title">Лоджия 2</div>
-									<div class="project-explication__item-square">4,5 м2</div>
-								</button>
-							</li>
-						</ul>
-					</div>
+							((wrapper))
+						</ul>`
+						&rowTpl=`project_explication--rowTpl`
+						&display=`all`
+						&firstClass=``
+						&lastClass=``
+						&evenClass=`2`
+						&oddClass=`2`
+						]]
+
+					</div>`]]
+
+					[[Switch? &switch=`[*project_plan3_image*]` &case:=``
+					&default=`
+					<div class="project__plan">
+						<img class="project__plan-image" src="[*project_plan3_image*]" alt="План 3">
+
+						[[multiTV?
+						&tvName=`project_plan3_explication`
+						&outerTpl=`@CODE:
+						<div class="section__content project__plan-desc">
+							<h4 class="title">[%Экспликация плана%]</h4>
+							<p>[%Нажмите на помещение%]</p>
+						</div>
+						<ul class="project-explication">
+							((wrapper))
+						</ul>`
+						&rowTpl=`project_explication--rowTpl`
+						&display=`all`
+						&firstClass=``
+						&lastClass=``
+						&evenClass=`3`
+						&oddClass=`3`
+						]]
+
+					</div>`]]
+
+					[[Switch? &switch=`[*project_plan4_image*]` &case:=``
+					&default=`
+					<div class="project__plan">
+						<img class="project__plan-image" src="[*project_plan4_image*]" alt="План 4">
+
+						[[multiTV?
+						&tvName=`project_plan4_explication`
+						&outerTpl=`@CODE:
+						<div class="section__content project__plan-desc">
+							<h4 class="title">[%Экспликация плана%]</h4>
+							<p>[%Нажмите на помещение%]</p>
+						</div>
+						<ul class="project-explication">
+							((wrapper))
+						</ul>`
+						&rowTpl=`project_explication--rowTpl`
+						&display=`all`
+						&firstClass=``
+						&lastClass=``
+						&evenClass=`4`
+						&oddClass=`4`
+						]]
+
+					</div>`]]
+
+					[[multiTV?
+					&tvName=`project_schemes`
+					&outerTpl=`@CODE:
 					<ul class="project-scheme">
-						<li class="project-scheme__point">
-							<img class="project-scheme__item" src="assets/images/design-apartment/midnight-flat/scheme-1.jpg" alt="">
-						</li>
-						<li class="project-scheme__point">
-							<img class="project-scheme__item" src="assets/images/design-apartment/midnight-flat/scheme-2.jpg" alt="">
-						</li>
-						<li class="project-scheme__point">
-							<img class="project-scheme__item" src="assets/images/design-apartment/midnight-flat/scheme-3.jpg" alt="">
-						</li>
-					</ul>
+						((wrapper))
+					</ul>`
+					&rowTpl=`project_scheme--rowTpl`
+					&display=`all`
+					]]
+
 				</div>
 				<div class="section__body-col project-gallery">
 					<div class="project-gallery__header">
@@ -172,162 +194,35 @@
 							<div class="section__header-title">
 								<strong>[*pagetitle*]</strong>
 							</div>
-							<div class="section__header-subtitle">Дизайн квартиры</div>
+							[[Switch? &switch=`[*project_subtitle*]` &case:=``
+							&default=`<div class="section__header-subtitle">[*project_subtitle*]</div>`]]
 						</div>
 					</div>
 
 					<link rel="stylesheet" href="assets/templates/zrobym/css/youtube.css?[%config_last_mod%]">
 					<ul class="project-gallery__list">
+						[[Switch? &switch=`[*project_video_main*]` &case:=``
+						&default=`
 						<li class="project-gallery__list-point">
-							<a data-fancybox data-caption="MIDNIGHT FLAT INTERIOR DESIGN" class="project-gallery__item youtube__item" href="https://www.youtube.com/watch?v=4n3IJqJARJg&feature=emb_logo">
-								<img class="project-gallery__item-image youtube__item-image" src="assets/images/design-apartment/midnight-flat/youtube-1.jpg" alt="">
+							<a data-fancybox data-caption="[[Typo? &text=`[*pagetitle*]`]]" class="project-gallery__item youtube__item" href="[*project_video_main*]">
+								<img class="project-gallery__item-image youtube__item-image" src="[*project_video_image*]" alt="[[Typo? &text=`[*pagetitle*]`]]">
 							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2417.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2417.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2418.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2418.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2419.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2419.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2420.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2420.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2421.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2421.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2422.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2422.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2423.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Лоджия 1">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2423.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2424.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Спальня">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2424.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2425.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Спальня">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2425.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2426.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Спальня">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2426.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2427.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Спальня">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2427.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2428.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2428.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2429.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Спальня">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2429.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2430.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Спальня">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2430.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2431.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Спальня">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2431.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2432.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Спальня">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2432.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2433.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Лоджия 2">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2433.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2434.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Санузел">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2434.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2435.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Санузел">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2435.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2436.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2436.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2437.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2437.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2438.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Холл">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2438.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2439.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2439.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2440.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2440.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2441.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Кухня-гостиная">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2441.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a href="assets/images/design-apartment/midnight-flat/2442.jpg" class="project-gallery__item" data-fancybox="project-gallery" data-explication="1 - Холл">
-								<img class="project-gallery__item-image" src="assets/images/design-apartment/midnight-flat/2442.jpg">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a data-fancybox data-caption="MIDNIGHT FLAT INTERIOR DESIGN" class="project-gallery__item youtube__item" href="https://www.youtube.com/watch?v=4n3IJqJARJg&feature=emb_logo">
-								<img class="project-gallery__item-image youtube__item-image" src="assets/images/design-apartment/midnight-flat/youtube-1.jpg" alt="">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a data-fancybox data-caption="MIDNIGHT FLAT INTERIOR DESIGN" class="project-gallery__item youtube__item" href="https://www.youtube.com/watch?v=4n3IJqJARJg&feature=emb_logo">
-								<img class="project-gallery__item-image youtube__item-image" src="assets/images/design-apartment/midnight-flat/youtube-1.jpg" alt="">
-							</a>
-						</li>
-						<li class="project-gallery__list-point">
-							<a data-fancybox data-caption="MIDNIGHT FLAT INTERIOR DESIGN" class="project-gallery__item youtube__item" href="https://www.youtube.com/watch?v=4n3IJqJARJg&feature=emb_logo">
-								<img class="project-gallery__item-image youtube__item-image" src="assets/images/design-apartment/midnight-flat/youtube-1.jpg" alt="">
-							</a>
-						</li>
+						</li>`]]
+
+						[[multiTV?
+						&tvName=`project_gallery`
+						&outerTpl=`@CODE: ((wrapper))`
+						&rowTpl=`project_gallery--rowTpl`
+						&display=`all`
+						]]
+
+						[[multiTV?
+						&tvName=`project_video_list`
+						&outerTpl=`@CODE: ((wrapper))`
+						&rowTpl=`project_video--rowTpl`
+						&display=`all`
+						]]
+
 					</ul>
 				</div>
 			</div>
@@ -341,8 +236,8 @@
 			<div class="section__body">
 				<div class="section__body-col">
 					<div class="section__content more__content">
-						<h4>Поделиться проектом</h4>
-						<p>Поделитесь понравившимся проектом в социальных сетях!</p>
+						<h4>[%Поделиться проектом%]</h4>
+						<p>[%Поделитесь понравившимся проектом%]</p>
 					</div>
 				</div>
 				<div class="section__body-col">
