@@ -32,14 +32,13 @@
 							<h1 class="section__header-title">
 								<strong>[*pagetitle*]</strong>
 							</h1>
-							[[Switch? &switch=`[*project_label*]` &case:=``
-							&default=`
-							<div class="section__header-subtitle">[*project_label*]</div>
-							`]]
+							[[Switch? &switch=`[*project_subtitle*]` &case:=``
+							&default=`<div class="section__header-subtitle">[*project_subtitle*]</div>`]]
 						</div>
 						<div class="section__content project__header-list">
 							<ul>
 								<li><strong>[%param Студия%]:</strong> [*project_studio*]</li>
+
 								<li>
 									<strong>[%param Архитекторы%]:</strong>
 									[[WorkersList? &list=`[*project_workers*]`]]
@@ -50,20 +49,28 @@
 									&display=`all`
 									]]
 								</li>
-								<li><strong>Видео:</strong> Дмитрий Логан</li>
-								<li><strong>Фото:</strong> Александра Кононченко</li>
-								<li><strong>Расположение:</strong> пр-т Победителей 135, Минск, Беларусь</li>
-								<li><strong>Площадь:</strong> 60 м.кв.</li>
-								<li><strong>Год:</strong> 2018</li>
+
+								<li><strong>[%param Видео%]:</strong> Дмитрий Логан</li>
+								<li><strong>[%param Фото%]:</strong> Александра Кононченко</li>
+
+								[[Switch? &switch=`[*project_map_address*]` &case:=``
+								&default=`<li><strong>[%param Расположение%]:</strong> [[Typo? &text=`[*project_map_address*]`]]</li>`]]
+
+								[[Switch? &switch=`[*project_square*]` &case:=``
+								&default=`<li><strong>[%param Площадь%]:</strong> [*project_square*] m<sup>2</sup> </li>`]]
+
+								[[Switch? &switch=`[*project_year*]` &case:=``
+								&default=`<li><strong>[%param Год%]:</strong> [*project_year*]</li>`]]
 							</ul>
 						</div>
 					</div>
+					[[Switch? &switch=`[*project_desc_content*]` &case:=``
+					&default=`
 					<div class="section__content project__desc">
-						<h4>Описание проекта</h4>
-						<p>Хозяин квартиры из Италии, поэтому она предназначена для временного пребывания. Этим обусловлено полное отсутствие шкафов и небольшая кухня. Она имеет систему поворотно-сдвижных фасадов. Таким образом, в закрытом виде кухня становится полноценной частью гостиной.</p>
-						<p>По просьбе хозяина, мы старались максимально избегать ярких тонов и не выходить за рамки монохромной гаммы. Другим его пожеланием было использование только локального и направленного освещения. В итоге, каждая зона приобрела свою атмосферу.</p>
-						<p>Для этого проекта был специально разработан светильник Alpha and Omega (разные по диаметру круги на стене в гостиной, которые за счет своей подсветки сзади будто бы оторваны от стены и парят в воздухе. Они напоминают планеты на фоне градиентной стены (переход от глубоко-синего к серому символизирует глубины космоса). Освещение и цветовая гамма вместе образовали таинственную, космическую атмосферу.</p>
+						<h4>[%Описание проекта%]</h4>
+						[*project_desc_content*]
 					</div>
+					`]]
 					<div class="project__plan">
 						<img class="project__plan-image" src="assets/images/design-apartment/midnight-flat/plan.jpg" alt="">
 						<div class="section__content project__plan-desc">
