@@ -5,7 +5,7 @@ $settings['fields'] = array(
     '_________' => array(
         'caption' => '_________<br><span class="comment">_________</span>',
         'type' => 'text',
-        'width' => '70%'
+        'width' => '60%'
     ),
     // TEXTAREA
     '_________' => array(
@@ -23,7 +23,7 @@ $settings['fields'] = array(
     '_________' => array(
         'caption' => '_________<br><span class="comment">_________</span>',
         'type' => 'dropdown',
-        'width' => '70%',
+        'width' => '60%',
         'elements' => '@SELECT `pagetitle`, `id` FROM `bu0o_site_content` WHERE parent = ______ ORDER BY `menuindex` ASC'
     ),
     // ИЗОБРАЖЕНИЕ
@@ -35,6 +35,6 @@ $settings['fields'] = array(
     'image' => array(
         'caption' => '_________<br><span class="comment">_________</span>',
         'type' => 'image',
-        'width' => '35%'
+        'width' => '30%'
     )
 );

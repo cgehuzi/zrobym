@@ -4,6 +4,6 @@ $settings['fields'] = array(
     'name' => array(
         'caption' => 'Имя Фамилия',
         'type' => 'text',
-        'width' => '70%'
+        'width' => '60%'
     )
 );

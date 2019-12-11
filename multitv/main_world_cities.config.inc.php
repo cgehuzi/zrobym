@@ -4,7 +4,7 @@ $settings['fields'] = array(
     'city' => array(
         'caption' => 'Город',
         'type' => 'text',
-        'width' => '70%'
+        'width' => '60%'
     )
 );
 ?>

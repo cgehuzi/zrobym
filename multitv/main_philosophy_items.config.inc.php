@@ -4,12 +4,12 @@ $settings['fields'] = array(
     'number' => array(
         'caption' => 'Цифра',
         'type' => 'text',
-        'width' => '70%'
+        'width' => '60%'
     ),
     'title' => array(
         'caption' => 'Пояснение',
         'type' => 'text',
-        'width' => '70%'
+        'width' => '60%'
     )
 );
 ?>

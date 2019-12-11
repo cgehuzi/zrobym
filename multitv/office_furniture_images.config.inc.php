@@ -9,6 +9,6 @@ $settings['fields'] = array(
     'image' => array(
         'caption' => 'Фотография<br><span class="comment">Мин. ширина: 1000 px</span>',
         'type' => 'image',
-        'width' => '35%'
+        'width' => '30%'
     )
 );
