@@ -27,7 +27,7 @@
 		&-list {
 			ul {
 				li {
-					span {
+					strong {
 						font-weight: $fw_medium;
 					}
 				}
@@ -36,15 +36,22 @@
 			a {
 				&:not([class]) {
 					color: #000000;
+					border: none;
+					padding-right: 4px;
+
+					span {
+						border-bottom: 1px solid $gold;
+					}
 				}
 
 				&:not([href]) {
-					border: none;
+					span {
+						border: none;
+					}
 				}
 
 				&::after {
-					content: ', ';
-					border: none;
+					content: ',';
 				}
 
 				&:last-child {
