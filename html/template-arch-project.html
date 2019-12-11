@@ -27,6 +27,7 @@
 			<div class="separ separ--small"></div>
 			<div class="section__body">
 				<div class="section__body-col project-info">
+
 					<div class="project__header">
 						<div class="section__header project__header-title" data-scroll="title">
 							<h1 class="section__header-title">
@@ -64,6 +65,7 @@
 							</ul>
 						</div>
 					</div>
+
 					[[Switch? &switch=`[*project_desc_content*]` &case:=``
 					&default=`
 					<div class="section__content project__desc">
@@ -71,6 +73,7 @@
 						[*project_desc_content*]
 					</div>
 					`]]
+
 					<div class="project__plan">
 						<img class="project__plan-image" src="assets/images/design-apartment/midnight-flat/plan.jpg" alt="">
 						<div class="section__content project__plan-desc">
@@ -122,6 +125,7 @@
 							</li>
 						</ul>
 					</div>
+
 					<div class="project__plan">
 						<img class="project__plan-image" src="assets/images/design-apartment/midnight-flat/plan.jpg" alt="">
 						<div class="section__content project__plan-desc">
@@ -173,6 +177,14 @@
 							</li>
 						</ul>
 					</div>
+
+					[[multiTV?
+					&tvName=`project_schemes`
+					&outerTpl=`@CODE:((wrapper))`
+					&rowTpl=`@CODE: <a><span>((name))</span></a>`
+					&display=`all`
+					]]
+
 					<ul class="project-scheme">
 						<li class="project-scheme__point">
 							<img class="project-scheme__item" src="assets/images/design-apartment/midnight-flat/scheme-1.jpg" alt="">
