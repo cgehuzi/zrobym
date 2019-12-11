@@ -199,6 +199,8 @@
 			}
 
 			@include for-tablet-horizontal-up {
+				position: sticky;
+				top: 0;
 				flex-direction: column;
 
 				&::-webkit-scrollbar {
