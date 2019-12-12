@@ -55,26 +55,28 @@ if (menu_close) {
 // ====================================================
 const scrollInit = function() {
 	const scroll_items = document.querySelectorAll('[data-scroll]');
-	if (typeof IntersectionObserver === 'function') {
-		const scroll_window = new IntersectionObserver(function(entries) {
-			entries.forEach(function(entry) {
-				if (entry.isIntersecting) {
-					const elem = entry.target;
-					setTimeout(function() {
-						elem.classList.add('scrolled');
-						scroll_window.unobserve(elem);
-					}, 400);
-				}
-			});
-		}, {});
+	if (scroll_items) {
+		if (typeof IntersectionObserver === 'function') {
+			const scroll_window = new IntersectionObserver(function(entries) {
+				entries.forEach(function(entry) {
+					if (entry.isIntersecting) {
+						const elem = entry.target;
+						setTimeout(function() {
+							elem.classList.add('scrolled');
+							scroll_window.unobserve(elem);
+						}, 400);
+					}
+				});
+			}, {});
 
-		scroll_items.forEach(function(scroll_item) {
-			scroll_window.observe(scroll_item);
-		});
-	} else {
-		scroll_items.forEach(function(scroll_item) {
-			scroll_item.classList.add('scrolled');
-		});
+			scroll_items.forEach(function(scroll_item) {
+				scroll_window.observe(scroll_item);
+			});
+		} else {
+			scroll_items.forEach(function(scroll_item) {
+				scroll_item.classList.add('scrolled');
+			});
+		}
 	}
 };
 scrollInit();
