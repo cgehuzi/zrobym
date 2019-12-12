@@ -354,7 +354,9 @@ if (filter_sections) {
 
 						const filter_group_items = filter_group.querySelectorAll('[data-filter-item]');
 						filter_group_items.forEach(function(filter_group_item) {
-							console.log(filter_group_item.classList.contains('active'));
+							if (filter_group_item.classList.contains('active')) {
+								active(filter_group, true);
+							}
 						});
 					});
 				});
