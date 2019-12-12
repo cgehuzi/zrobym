@@ -241,38 +241,7 @@
 			<div class="separ"></div>
 		</div>
 
-		<link rel="stylesheet" href="assets/templates/zrobym/css/social.css?[%config_last_mod%]">
-		<div class="section section--light social">
-			<div class="separ"></div>
-			<div class="section__body">
-				<div class="section__body-col">
-					<div class="section__header" data-scroll="title">
-						<div class="section__header-title">
-							[%Блог новостей%]
-						</div>
-					</div>
-				</div>
-				<div class="section__body-col">
-					<div class="section__content">
-						[[Typo? &breakline=`off` &text=`[*main_blog_content*]`]]
-					</div>
-
-					[[multiTV?
-					&docid=`[%id_static%]`
-					&tvName=`static_social_items`
-					&outerTpl=`@CODE:
-					<ul class="social__list">
-						((wrapper))
-					</ul>`
-					&rowTpl=`social_item--rowTpl`
-					&display=`all`
-					]]
-
-				</div>
-			</div>
-			<div class="separ"></div>
-		</div>
-
+		{{section_social}}
 		{{feedback}}
 		{{footer}}
 
