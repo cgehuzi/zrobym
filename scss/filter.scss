@@ -1,5 +1,12 @@
 @import './1-const.scss';
 
+[data-filter-group],
+[data-filter-item] {
+	&:not(.active) {
+		display: none !important;
+	}
+}
+
 .filter {
 	margin-bottom: -1px;
 
@@ -72,14 +79,6 @@
 				opacity: 1;
 				color: #000000;
 			}
-		}
-	}
-
-	&-tab {
-		display: none;
-
-		&.active {
-			display: block;
 		}
 	}
 }
