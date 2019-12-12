@@ -325,7 +325,7 @@ if (tabs_blocks) {
 // ====================================================
 // Реализация блока data-filter
 // ====================================================
-const filter_sections = document.querySelectorAll('[data-filter]');
+const filter_sections = document.querySelectorAll('[data-filters]');
 if (filter_sections) {
 	filter_sections.forEach(function(filter_section) {
 		const filter_buttons = filter_section.querySelectorAll('[data-filter-show]');
