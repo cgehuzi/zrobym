@@ -28,9 +28,9 @@
 				<div class="section__body-col fullwidth">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							<strong>Дизайн</strong> интерьера
+							[%Дизайн интерьера%]
 						</div>
-						<div class="section__header-subtitle">by zrobym architects</div>
+						<div class="section__header-subtitle">by ZROBYM architects</div>
 					</div>
 				</div>
 			</div>
@@ -48,22 +48,29 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							Дизайн интерьера – <strong>ювелирная работа с пространством</strong>
+							[%Ювелирная работа%]
 						</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<h4>Качественный и желаемый результат: в чем секрет?</h4>
-						<p>Строительство дома – важный и ответственный шаг в жизни каждого клиента, но не меньшее значение имеет выбор подрядчиков для реализации внутреннего оформления вашего жилья. От того, насколько грамотно вы подойдете к выбору будущей креативной команды по воплощению ваших представлений об идеальном пространстве в жизнь, зависит, насколько вас будет радовать результат.</p>
+						[[Typo? &breakline=`off` &text=`
+						<h1>[*pagetitle*]</h1>
+						[*design_about_content*]`]]
+						[[Switch? &switch=`[*design_about_more*]` &case:=``
+						&default=`
 						<div id="more-text" style="display: none;">
-							<p>Мы на протяжении более чем пяти лет занимаемся разработкой и воплощением в жизнь проектов дизайна квартир, домов и коммерческих помещений различного уровня сложности, дизайна интерьера. Поэтому быть уверенными в качестве наших интерьеров и доверять нашим решениям вы можете без сомнения.</p>
+							[[Typo? &breakline=`off` &text=`[*design_about_more*]`]]
 						</div>
-						<button class="button-more" type="button" data-close-text="Скрыть" data-more="#more-text">Читать больше</button>
+						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-text">[%Читать больше%]</button>
+						`]]
 					</div>
+					[[Switch? &switch=`[*design_about_video*]` &case:=``
+					&default=`
 					<div class="section__buttons">
-						<a data-fancybox href="https://www.youtube.com/watch?v=wkEmtFMKkxQ&feature=emb_logo" class="button">Видео о нас</a>
+						<a data-fancybox href="[*design_about_video*]" class="button">[%Видео о нас%]</a>
 					</div>
+					`]]
 				</div>
 			</div>
 			<div class="separ"></div>
@@ -76,97 +83,36 @@
 			<div class="section__body">
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
-						<div class="section__header-title">Новые проекты</div>
+						<div class="section__header-title">[%Новые проекты%]</div>
 						<div class="section__header-subtitle">by ZROBYM architects</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<h4>Новые проекты на сайте</h4>
-						<p>Новые дизайн проекты, недавно добавленные на сайт</p>
+						[[Typo? &breakline=`off` &text=`[*design_new_content*]`]]
 					</div>
 				</div>
 			</div>
 			<div class="separ separ"></div>
 		</div>
 
+		[[DocLister?
+		&parents=`[%id_design_appartment%],[%id_design_cottage%],[%id_design_social%]`
+		&addWhereList=`c.template=22`
+		&tvList=`project_image, project_subtitle`
+		&display=`6`
+		&orderBy=`createdon DESC`
+		&tpl=`big_list--tpl`
+		&ownerTPL=`@CODE:
 		<link rel="stylesheet" href="assets/templates/zrobym/css/big.css?[%config_last_mod%]">
 		<div class="big">
 			<ul class="big__list">
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/design-apartment/rb-interior/1467.jpg" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>RB INTERIOR</strong></div>
-								<div class="section__header-subtitle">Дизайн квартиры</div>
-							</div>
-							<div class="section__buttons">
-								<a href="[~26~]" class="button">Посмотреть проект</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/design-apartment/midnight-flat/2417.jpg" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>MIDNIGHT FLAT</strong></div>
-								<div class="section__header-subtitle">Дизайн квартиры</div>
-							</div>
-							<div class="section__buttons">
-								<a href="[~26~]" class="button">Посмотреть проект</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/design-cottage/gallery-apartment/5284.jpg" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>GALLERY APARTMENT</strong></div>
-								<div class="section__header-subtitle">Дизайн коттеджа</div>
-							</div>
-							<div class="section__buttons">
-								<a href="[~26~]" class="button">Посмотреть проект</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/design-public/barberandco/1240.jpg" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>BARBER&CO</strong></div>
-								<div class="section__header-subtitle">Мультифункциональный барбершоп</div>
-							</div>
-							<div class="section__buttons">
-								<a href="[~26~]" class="button">Посмотреть проект</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
+				[+dl.wrap+]
 			</ul>
-		</div>
+		</div>`
+		&noneTPL=``
+		&noneWrapOuter=`0`
+		]]
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/more.css?[%config_last_mod%]">
 		<div class="section more">
@@ -174,23 +120,22 @@
 			<div class="section__body">
 				<div class="section__body-col">
 					<div class="section__content more__content">
-						<h3>Еще больше проектов</h3>
-						<p>Перейдите в наше портфолио, чтобы посмотреть реализованные, а также все наши проекты</p>
+						[[Typo? &breakline=`off` &text=`[*design_more_content*]`]]
 					</div>
 				</div>
 				<div class="section__body-col">
 					<ul class="section__buttons more__buttons">
 						<li class="section__buttons-point">
-							<a href="[~[%id_realize%]~]" class="button">Реализованные проекты</a>
+							<a href="[~[%id_realize%]~]" class="button">[[DocInfo? &docid=`[%id_realize%]` &field=`menutitle`]]</a>
 						</li>
 						<li class="section__buttons-point">
-							<a href="[~[%id_design_appartment%]~]" class="button">Дизайн квартир</a>
+							<a href="[~[%id_design_appartment%]~]" class="button">[[DocInfo? &docid=`[%id_design_appartment%]` &field=`menutitle`]]</a>
 						</li>
 						<li class="section__buttons-point">
-							<a href="[~[%id_design_cottage%]~]" class="button">Дизайн коттеджей</a>
+							<a href="[~[%id_design_cottage%]~]" class="button">[[DocInfo? &docid=`[%id_design_cottage%]` &field=`menutitle`]]</a>
 						</li>
 						<li class="section__buttons-point">
-							<a href="[~[%id_design_social%]~]" class="button">Дизайн общественных пространств</a>
+							<a href="[~[%id_design_social%]~]" class="button">[[DocInfo? &docid=`[%id_design_social%]` &field=`menutitle`]]</a>
 						</li>
 					</ul>
 				</div>
@@ -204,17 +149,19 @@
 		<div class="section">
 			<div class="separ separ--small separ--tablet"></div>
 			<div class="section__body">
-				<img class="section__back-left" src="assets/images/architect.gif" alt="">
+				<img class="section__back-left" src="[*design_individual_image*]" alt="[*pagetitle*]">
 				<div class="section__body-col right">
 					<div class="section__content">
-						<h4>Индивидуальное проектирование дома</h4>
-						<p>При индивидуальном проектировании вашего дома мы раскроем всю красоту участка, рационально и с учётом всех предпочтений распланируем пространство и прилегающую к дому территорию. Создадим уникальный проект дома с учетом всех особенностей и пожеланий клиента.</p>
-						<div id="more-text-2" style="display: none;">
-							<p>А также поможем создать приятную уютную атмосферу в доме. Проектирование домов от студии ZROBYM architects - это именно то, что вам нужно!</p>
+						[[Typo? &breakline=`off` &text=`[*design_individual_content*]`]]
+						[[Switch? &switch=`[*design_individual_more*]` &case:=``
+						&default=`
+						<div id="more-individual" style="display: none;">
+							[[Typo? &breakline=`off` &text=`[*design_individual_more*]`]]
 						</div>
-						<button class="button-more" type="button" data-close-text="Скрыть" data-more="#more-text-2">Читать больше</button>
+						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-individual">[%Читать больше%]</button>
+						`]]
 						<div class="section__buttons">
-							<a href="[~[%id_design_calc%]~]" class="button">Рассчитать стоимость</a>
+							<a href="[~[%id_design_calc%]~]" class="button">[[DocInfo? &docid=`[%id_design_calc%]` &field=`menutitle`]]</a>
 						</div>
 					</div>
 				</div>

@@ -96,83 +96,23 @@
 			<div class="separ"></div>
 		</div>
 
+		[[DocLister?
+		&parents=`[%id_arch_list%]`
+		&addWhereList=`c.template=21`
+		&tvList=`project_image, project_subtitle`
+		&display=`6`
+		&orderBy=`createdon DESC`
+		&tpl=`big_list--tpl`
+		&ownerTPL=`@CODE:
 		<link rel="stylesheet" href="assets/templates/zrobym/css/big.css?[%config_last_mod%]">
 		<div class="big">
 			<ul class="big__list">
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/design-apartment/rb-interior/1467.jpg" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>RB INTERIOR</strong></div>
-								<div class="section__header-subtitle">Дизайн квартиры</div>
-							</div>
-							<div class="section__buttons">
-								<a href="[~25~]" class="button">Посмотреть проект</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/design-apartment/midnight-flat/2417.jpg" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>MIDNIGHT FLAT</strong></div>
-								<div class="section__header-subtitle">Дизайн квартиры</div>
-							</div>
-							<div class="section__buttons">
-								<a href="[~25~]" class="button">Посмотреть проект</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/design-cottage/gallery-apartment/5284.jpg" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>GALLERY APARTMENT</strong></div>
-								<div class="section__header-subtitle">Дизайн коттеджа</div>
-							</div>
-							<div class="section__buttons">
-								<a href="[~25~]" class="button">Посмотреть проект</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/design-public/barberandco/1240.jpg" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>BARBER&CO</strong></div>
-								<div class="section__header-subtitle">Мультифункциональный барбершоп</div>
-							</div>
-							<div class="section__buttons">
-								<a href="[~25~]" class="button">Посмотреть проект</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
+				[+dl.wrap+]
 			</ul>
-		</div>
+		</div>`
+		&noneTPL=``
+		&noneWrapOuter=`0`
+		]]
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/more.css?[%config_last_mod%]">
 		<div class="section more">
