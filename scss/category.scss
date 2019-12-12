@@ -33,7 +33,6 @@
 		overflow: hidden;
 
 		@include for-phone-horizontal-up {
-			box-shadow: inset 0 0 0 1px $border_light;
 			border-top: 1px solid $border_light;
 		}
 

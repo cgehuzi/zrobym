@@ -27,7 +27,7 @@
 						<div class="section__header-title">
 							[%Реализованные проекты%]
 						</div>
-						<div class="section__header-subtitle">ZROBYM architects</div>
+						<div class="section__header-subtitle">by ZROBYM architects</div>
 					</div>
 				</div>
 				<div class="section__body-col">
@@ -55,22 +55,32 @@
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/filter.css?[%config_last_mod%]">
 		<link rel="stylesheet" href="assets/templates/zrobym/css/category.css?[%config_last_mod%]">
-		<div class="category" id="category" data-filters>
+		<div class="category" data-filters>
 			<div class="section filter">
 				<hr class="grid-row grid-row--all">
 				<ul class="section__body filter__list" data-scroll="title">
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-filter-show="all" data-filter-section="#category">Все проекты</button>
+						<button class="filter__list-button" type="button" data-filter-show="all">[%filter_all%]</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-filter-show="arch" data-filter-section="#category">Архитектура</button>
+						<button class="filter__list-button" type="button" data-filter-show="arch">[%filter_arch%]</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-filter-show="interior" data-filter-section="#category">Интерьер</button>
+						<button class="filter__list-button" type="button" data-filter-show="interior">[%filter_interior%]</button>
 					</li>
 				</ul>
 				<hr class="grid-row grid-row--all">
 			</div>
+
+			[[DocLister?
+			&parents=`[%id_arch_list%],[%id_design_appartment%],[%id_design_cottage%],[%id_design_social%]`
+			&addWhereList=`c.template IN (21,22)`
+			&tvList=`project_image, project_subtitle, project_year, project_type, project_realize`
+			&filters=`AND( tvd:project_year:=:2019 ; tvd:project_realize:=:1 )`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
 			<div class="section category__year" data-filter-group>
 				<div class="separ separ--small"></div>
 				<div class="section__body">
@@ -82,37 +92,23 @@
 						</div>
 					</div>
 					<ul class="category__list">
-						<li class="category__list-point" data-filter-item="all,arch">
-							<a href="#" class="category__item">
-								<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-apartment/rb-interior/1467.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-								<div class="category__item-title">RB INTERIOR</div>
-								<div class="category__item-desc">Дизайн квартиры</div>
-							</a>
-						</li>
-						<li class="category__list-point" data-filter-item="all,arch,interior">
-							<a href="#" class="category__item">
-								<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-apartment/midnight-flat/2417.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-								<div class="category__item-title">MIDNIGHT FLAT</div>
-								<div class="category__item-desc">Дизайн квартиры</div>
-							</a>
-						</li>
-						<li class="category__list-point" data-filter-item="all,arch">
-							<a href="#" class="category__item">
-								<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-cottage/gallery-apartment/5284.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-								<div class="category__item-title">GALLERY APARTMENT</div>
-								<div class="category__item-desc">Дизайн коттеджа</div>
-							</a>
-						</li>
-						<li class="category__list-point" data-filter-item="all,interior">
-							<a href="#" class="category__item">
-								<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-public/barberandco/1240.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-								<div class="category__item-title">BARBER&CO</div>
-								<div class="category__item-desc">Мультифункциональный барбершоп</div>
-							</a>
-						</li>
+						[+dl.wrap+]
 					</ul>
 				</div>
-			</div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
+			[[DocLister?
+			&parents=`[%id_arch_list%],[%id_design_appartment%],[%id_design_cottage%],[%id_design_social%]`
+			&addWhereList=`c.template IN (21,22)`
+			&tvList=`project_image, project_subtitle, project_year, project_type, project_realize`
+			&filters=`AND( tvd:project_year:=:2018 ; tvd:project_realize:=:1 )`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
 			<div class="section category__year" data-filter-group>
 				<div class="separ separ--small"></div>
 				<div class="section__body">
@@ -124,37 +120,126 @@
 						</div>
 					</div>
 					<ul class="category__list">
-						<li class="category__list-point" data-filter-item="all,arch">
-							<a href="#" class="category__item">
-								<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-apartment/rb-interior/1467.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-								<div class="category__item-title">RB INTERIOR</div>
-								<div class="category__item-desc">Дизайн квартиры</div>
-							</a>
-						</li>
-						<li class="category__list-point" data-filter-item="all,arch">
-							<a href="#" class="category__item">
-								<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-apartment/midnight-flat/2417.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-								<div class="category__item-title">MIDNIGHT FLAT</div>
-								<div class="category__item-desc">Дизайн квартиры</div>
-							</a>
-						</li>
-						<li class="category__list-point" data-filter-item="all,arch">
-							<a href="#" class="category__item">
-								<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-cottage/gallery-apartment/5284.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-								<div class="category__item-title">GALLERY APARTMENT</div>
-								<div class="category__item-desc">Дизайн коттеджа</div>
-							</a>
-						</li>
-						<li class="category__list-point" data-filter-item="all,arch">
-							<a href="#" class="category__item">
-								<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-public/barberandco/1240.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-								<div class="category__item-title">BARBER&CO</div>
-								<div class="category__item-desc">Мультифункциональный барбершоп</div>
-							</a>
-						</li>
+						[+dl.wrap+]
 					</ul>
 				</div>
-			</div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
+			[[DocLister?
+			&parents=`[%id_arch_list%],[%id_design_appartment%],[%id_design_cottage%],[%id_design_social%]`
+			&addWhereList=`c.template IN (21,22)`
+			&tvList=`project_image, project_subtitle, project_year, project_type, project_realize`
+			&filters=`AND( tvd:project_year:=:2017 ; tvd:project_realize:=:1 )`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
+			<div class="section category__year" data-filter-group>
+				<div class="separ separ--small"></div>
+				<div class="section__body">
+					<div class="category__year-title">
+						<div class="section__header">
+							<div class="section__header-title">
+								<strong>2017</strong>
+							</div>
+						</div>
+					</div>
+					<ul class="category__list">
+						[+dl.wrap+]
+					</ul>
+				</div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
+			[[DocLister?
+			&parents=`[%id_arch_list%],[%id_design_appartment%],[%id_design_cottage%],[%id_design_social%]`
+			&addWhereList=`c.template IN (21,22)`
+			&tvList=`project_image, project_subtitle, project_year, project_type, project_realize`
+			&filters=`AND( tvd:project_year:=:2016 ; tvd:project_realize:=:1 )`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
+			<div class="section category__year" data-filter-group>
+				<div class="separ separ--small"></div>
+				<div class="section__body">
+					<div class="category__year-title">
+						<div class="section__header">
+							<div class="section__header-title">
+								<strong>2016</strong>
+							</div>
+						</div>
+					</div>
+					<ul class="category__list">
+						[+dl.wrap+]
+					</ul>
+				</div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
+			[[DocLister?
+			&parents=`[%id_arch_list%],[%id_design_appartment%],[%id_design_cottage%],[%id_design_social%]`
+			&addWhereList=`c.template IN (21,22)`
+			&tvList=`project_image, project_subtitle, project_year, project_type, project_realize`
+			&filters=`AND( tvd:project_year:=:2015 ; tvd:project_realize:=:1 )`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
+			<div class="section category__year" data-filter-group>
+				<div class="separ separ--small"></div>
+				<div class="section__body">
+					<div class="category__year-title">
+						<div class="section__header">
+							<div class="section__header-title">
+								<strong>2015</strong>
+							</div>
+						</div>
+					</div>
+					<ul class="category__list">
+						[+dl.wrap+]
+					</ul>
+				</div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
+			[[DocLister?
+			&parents=`[%id_arch_list%],[%id_design_appartment%],[%id_design_cottage%],[%id_design_social%]`
+			&addWhereList=`c.template IN (21,22)`
+			&tvList=`project_image, project_subtitle, project_year, project_type, project_realize`
+			&filters=`AND( tvd:project_year:=:2014 ; tvd:project_realize:=:1 )`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
+			<div class="section category__year" data-filter-group>
+				<div class="separ separ--small"></div>
+				<div class="section__body">
+					<div class="category__year-title">
+						<div class="section__header">
+							<div class="section__header-title">
+								<strong>2014</strong>
+							</div>
+						</div>
+					</div>
+					<ul class="category__list">
+						[+dl.wrap+]
+					</ul>
+				</div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
 		</div>
 
 		<hr class="grid-row grid-row--all">

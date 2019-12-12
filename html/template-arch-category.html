@@ -25,21 +25,23 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							Авторское архитектурное <strong>проектирование</strong>
+							[%Авторское архитектурное проектирование%]
 						</div>
-						<div class="section__header-subtitle">Портфолио проектов</div>
+						<div class="section__header-subtitle">[%Портфолио проектов%]</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<h4>Индивидуальное архитектурное проектирование от ZROBYM architects</h4>
-						<p>Для многих понятие об идеальном проекте дома состоит из уже сформировавшихся взглядов на собственное понимание комфорта и организацию быта. Для проектирования домов под конкретных людей, наша архитектурная студия берёт за основу их привычный образ жизни и профессионально организует для них пространство. Реализовав некоторые архитектурные проектов домов в Минске и Беларуси, мы получили бесценный опыт, который и применяем в своей работе.</p>
-						<p>В своих проектах архитекторы показывают взгляд на доверенное им пространство. Наш подход отличается своей индивидуальностью.</p>
+						[[Typo? &breakline=`off` &text=`
+						<h1>[*pagetitle*]</h1>
+						[*arch_category_content*]`]]
+						[[Switch? &switch=`[*arch_category_more*]` &case:=``
+						&default=`
 						<div id="more-text" style="display: none;">
-							<p>Из большого количества проектов домов и коттеджей в нашем портфолио нельзя найти два похожих. Каждый человек хочет заказать индивидуальный архитектурный проект частного дома, чтобы в Минске и других регионах Беларуси он оставался уникальным.</p>
-							<p>Поэтому архитектурное проектирование любого здания от нашего бюро отличается не только креативом и творческим подходом, но и нестандартными решениями!</p>
+							[[Typo? &breakline=`off` &text=`[*arch_category_more*]`]]
 						</div>
-						<button class="button-more" type="button" data-close-text="Скрыть" data-more="#more-text">Читать больше</button>
+						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-text">[%Читать больше%]</button>
+						`]]
 					</div>
 				</div>
 			</div>
@@ -53,28 +55,29 @@
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/filter.css?[%config_last_mod%]">
 		<link rel="stylesheet" href="assets/templates/zrobym/css/category.css?[%config_last_mod%]">
-		<div class="category" id="category" data-filters>
+		<div class="category" data-filters>
 
 			<div class="section filter">
 				<hr class="grid-row grid-row--all">
 				<ul class="section__body filter__list" data-scroll="title">
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-filter-show="all" data-filter-section="#category">Все проекты</button>
+						<button class="filter__list-button" type="button" data-filter-show="all">[%filter_all%]</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-filter-show="personal" data-filter-section="#category">Частные дома</button>
+						<button class="filter__list-button" type="button" data-filter-show="personal">[%filter_personal%]</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-filter-show="social" data-filter-section="#category">Общественные здания</button>
+						<button class="filter__list-button" type="button" data-filter-show="social">[%filter_social%]</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-filter-show="massive" data-filter-section="#category">Квартальная застройка</button>
+						<button class="filter__list-button" type="button" data-filter-show="massive">[%filter_massive%]</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-filter-show="reconstruction" data-filter-section="#category">Реконструкция</button>
+						<button class="filter__list-button" type="button" data-filter-show="reconstruction">[%filter_reconstruction%]</button>
 					</li>
 				</ul>
 				<hr class="grid-row grid-row--all">
+
 			</div>
 
 			[[DocLister?
