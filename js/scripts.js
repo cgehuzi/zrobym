@@ -334,18 +334,28 @@ if (filter_sections) {
 
 		if (filter_buttons) {
 			filter_buttons.forEach(function(filter_button) {
-				const filter_link_names = filter_button.dataset.filterShow;
-				const filter_links = filter_link_names.split(',');
+				const filter_show = filter_button.dataset.filterShow;
 
 				filter_button.addEventListener('click', function() {
+					active(filter_buttons, false);
+					active(filter_button, true);
+
 					filter_items.forEach(function(filter_item) {
 						active(filter_item, false);
+						const filter_item_links = filter_item.dataset.filterItem;
+						const filter_item_links_array = filter_item_links.split(',');
+						if (filter_item_links_array.includes(filter_show)) {
+							active(filter_item, true);
+						}
 					});
+
 					filter_groups.forEach(function(filter_group) {
 						active(filter_group, false);
 
 						const filter_group_items = filter_group.querySelectorAll('[data-filter-item]');
-						console.log(filter_group_items);
+						filter_group_items.forEach(function(filter_group_item) {
+							console.log(filter_group_item.classList.contains('active'));
+						});
 					});
 				});
 			});
