@@ -25,21 +25,23 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							Архитектурное <strong>проектирование</strong>
+							[*arch_calc_title*]
 						</div>
-						<div class="section__header-subtitle">Расчёт стоимости</div>
+						<div class="section__header-subtitle">[%Расчёт стоимости%]</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<h4>Рассчитайте стоимость вашего проекта</h4>
-						<p>Мы считаем большим заблуждением, когда клиенты выбирают архитектурную студию по стоимости проектирования. В частном жилом строительстве есть правило: стоимость проекта составляет 5-10% от стоимости его реализации.</p>
-						<p>В то же время, качественно разработанный проект уменьшает количество переделок в процессе строительства здания и экономит деньги заказчика за счёт рационального использования материалов, указания поставщиков с наименьшей наценкой, предоставления партнёрских скидок клиентам и т.д.</p>
+						[[Typo? &breakline=`off` &text=`
+						<h1>[*pagetitle*]</h1>
+						[*arch_calc_content*]`]]
+						[[Switch? &switch=`[*arch_calc_more*]` &case:=``
+						&default=`
 						<div id="more-text" style="display: none;">
-							<p>Как правило, грамотный проект и авторское сопровождение позволяют заказчику сэкономить больше средств на реализации здания, чем он потратил на услуги архитектурной студии.</p>
-							<p>Поэтому к выбору архитекторов, которые будут заниматься разработкой и реализацией вашего проекта, следует подходить исходя из их профессионализма (портфолио + опыт реализации проекта + творческие достижения). Не забывайте это!</p>
+							[[Typo? &breakline=`off` &text=`[*arch_calc_more*]`]]
 						</div>
-						<button class="button-more" type="button" data-close-text="Скрыть" data-more="#more-text">Читать больше</button>
+						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-text">[%Читать больше%]</button>
+						`]]
 					</div>
 				</div>
 			</div>
@@ -59,67 +61,67 @@
 				<div class="section__body">
 					<div class="section__body-col">
 						<div class="section__content">
-							<h4>1. Выберите состав работы студии</h4>
+							<h4>1. [%calc Выберите работы%]</h4>
 						</div>
 					</div>
 					<div class="section__body-col">
 						<label class="calc__checkbox checkbox" for="calc-concept">
-							<input class="checkbox__input" type="checkbox" id="calc-concept" name="calc-works" value="Архитектурно-планировочная концепция" checked disabled>
+							<input class="checkbox__input" type="checkbox" id="calc-concept" name="calc-works" value="[%calc_concept%]" checked disabled>
 							<div class="checkbox__icon"></div>
 							<div class="checkbox__body">
-								<div class="checkbox__title">Архитектурно-планировочная концепция</div>
-								<a href="assets/files/calc/arhitekturno-planirovochnaya-koncepciya.pdf" class="checkbox__desc calc__checkbox-desc" target="_blank">Пример</a>
+								<div class="checkbox__title">[%calc_concept%]</div>
+								<a href="assets/files/calc/arhitekturno-planirovochnaya-koncepciya.pdf" class="checkbox__desc calc__checkbox-desc" target="_blank">[%Пример%]</a>
 							</div>
 						</label>
 						<label class="calc__checkbox checkbox" for="calc-visual">
-							<input class="checkbox__input" type="checkbox" id="calc-visual" name="calc-works" value="Визуализация" checked disabled>
+							<input class="checkbox__input" type="checkbox" id="calc-visual" name="calc-works" value="[%calc_visual%]" checked disabled>
 							<div class="checkbox__icon"></div>
 							<div class="checkbox__body">
-								<div class="checkbox__title">Визуализация</div>
-								<a href="assets/files/calc/vizualizaciya.pdf" class="checkbox__desc calc__checkbox-desc" target="_blank">Пример</a>
+								<div class="checkbox__title">[%calc_visual%]</div>
+								<a href="assets/files/calc/vizualizaciya.pdf" class="checkbox__desc calc__checkbox-desc" target="_blank">[%Пример%]</a>
 							</div>
 						</label>
 						<label class="calc__checkbox checkbox" for="calc-maket">
-							<input class="checkbox__input" type="checkbox" id="calc-maket" name="calc-works" value="Макет">
+							<input class="checkbox__input" type="checkbox" id="calc-maket" name="calc-works" value="[%calc_maket%]">
 							<div class="checkbox__icon"></div>
 							<div class="checkbox__body">
-								<div class="checkbox__title">Макет</div>
+								<div class="checkbox__title">[%calc_maket%]</div>
 							</div>
 						</label>
 						<label class="calc__checkbox checkbox" for="calc-build">
-							<input class="checkbox__input" type="checkbox" id="calc-build" name="calc-works" value="Строительный проект">
+							<input class="checkbox__input" type="checkbox" id="calc-build" name="calc-works" value="[%calc_build%]">
 							<div class="checkbox__icon"></div>
 							<div class="checkbox__body">
-								<div class="checkbox__title">Строительный проект</div>
-								<a href="assets/files/calc/stroitelnyi-proekt.pdf" class="checkbox__desc calc__checkbox-desc" target="_blank">Пример</a>
+								<div class="checkbox__title">[%calc_build%]</div>
+								<a href="assets/files/calc/stroitelnyi-proekt.pdf" class="checkbox__desc calc__checkbox-desc" target="_blank">[%Пример%]</a>
 							</div>
 						</label>
 						<label class="calc__checkbox checkbox" for="calc-ingeneer">
-							<input class="checkbox__input" type="checkbox" id="calc-ingeneer" name="calc-works" value="Инженерные сети">
+							<input class="checkbox__input" type="checkbox" id="calc-ingeneer" name="calc-works" value="[%calc_ingeneer%]">
 							<div class="checkbox__icon"></div>
 							<div class="checkbox__body">
-								<div class="checkbox__title">Инженерные сети</div>
+								<div class="checkbox__title">[%calc_ingeneer%]</div>
 							</div>
 						</label>
 						<label class="calc__checkbox checkbox" for="calc-author">
-							<input class="checkbox__input" type="checkbox" id="calc-author" name="calc-works" value="Авторский надзор">
+							<input class="checkbox__input" type="checkbox" id="calc-author" name="calc-works" value="[%calc_author%]">
 							<div class="checkbox__icon"></div>
 							<div class="checkbox__body">
-								<div class="checkbox__title">Авторский надзор</div>
+								<div class="checkbox__title">[%calc_author%]</div>
 							</div>
 						</label>
 						<label class="calc__checkbox checkbox" for="calc-tech">
-							<input class="checkbox__input" type="checkbox" id="calc-tech" name="calc-works" value="Технический надзор">
+							<input class="checkbox__input" type="checkbox" id="calc-tech" name="calc-works" value="[%calc_tech%]">
 							<div class="checkbox__icon"></div>
 							<div class="checkbox__body">
-								<div class="checkbox__title">Технический надзор</div>
+								<div class="checkbox__title">[%calc_tech%]</div>
 							</div>
 						</label>
 						<label class="calc__checkbox checkbox" for="calc-self">
-							<input class="checkbox__input" type="checkbox" id="calc-self" name="calc-works" value="Личное ведение проекта основателями студии">
+							<input class="checkbox__input" type="checkbox" id="calc-self" name="calc-works" value="[%calc_self%]">
 							<div class="checkbox__icon"></div>
 							<div class="checkbox__body">
-								<div class="checkbox__title">Личное ведение проекта основателями студии</div>
+								<div class="checkbox__title">[%calc_self%]</div>
 							</div>
 						</label>
 					</div>
@@ -132,7 +134,7 @@
 				<div class="section__body center">
 					<div class="section__body-col">
 						<div class="section__content">
-							<h4>2. Укажите площадь объекта</h4>
+							<h4>2. [%calc Укажите площадь%]</h4>
 						</div>
 					</div>
 					<div class="section__body-col">
@@ -150,13 +152,13 @@
 				<div class="section__body center">
 					<div class="section__body-col">
 						<div class="section__content">
-							<h4>Итоговая стоимость проекта</h4>
+							<h4>[%calc Итоговая стоимость%]</h4>
 						</div>
 					</div>
 					<div class="section__body-col">
 						<div class="section__header">
 							<div class="section__header-title calc__total">
-								<span id="calc-total-text" class="calc__total-price">0</span> $, США
+								<span id="calc-total-text" class="calc__total-price">0</span> [%calc $%]
 								<input type="hidden" id="calc-total" name="calc-total" placeholder="ИТОГО">
 							</div>
 						</div>
@@ -170,24 +172,24 @@
 				<div class="section__body">
 					<div class="section__body-col">
 						<div class="section__content">
-							<h4>Ваши контактные данные</h4>
+							<h4>[%calc Контактные данные%]</h4>
 						</div>
 					</div>
 					<div class="section__body-col">
 						<div class="calc__group">
-							<input id="calc-name" name="name" class="calc__input input" type="text" placeholder="ФИО *" required>
+							<input id="calc-name" name="name" class="calc__input input" type="text" placeholder="[%feedback_name%] *" required>
 						</div>
 						<div class="calc__group">
-							<input id="calc-phone" name="phone" class="calc__input input" type="tel" placeholder="телефон">
+							<input id="calc-phone" name="phone" class="calc__input input" type="tel" placeholder="[%feedback_phone%]">
 						</div>
 						<div class="calc__group">
-							<input id="calc-email" name="email" class="calc__input input" type="email" placeholder="email *" required>
+							<input id="calc-email" name="email" class="calc__input input" type="email" placeholder="[%feedback_email%] *" required>
 						</div>
 						<div class="calc__group">
-							<textarea id="calc-comment" name="comment" class="calc__textarea textarea" placeholder="сообщение"></textarea>
+							<textarea id="calc-comment" name="comment" class="calc__textarea textarea" placeholder="[%feedback_message%]"></textarea>
 						</div>
 						<div class="section__buttons calc__submit">
-							<button class="calc__submit-button button" type="submit">Сделать заказ</button>
+							<button class="calc__submit-button button" type="submit">[%feedback_order%]</button>
 						</div>
 					</div>
 				</div>
