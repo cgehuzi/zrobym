@@ -53,118 +53,198 @@
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/filter.css?[%config_last_mod%]">
 		<link rel="stylesheet" href="assets/templates/zrobym/css/category.css?[%config_last_mod%]">
-		<div class="category" id="category" data-tabs>
+		<div class="category" id="category" data-filter>
+
 			<div class="section filter">
 				<hr class="grid-row grid-row--all">
 				<ul class="section__body filter__list" data-scroll="title">
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-tab-open="#category-1" data-tab-group="#category">Все проекты</button>
+						<button class="filter__list-button" type="button" data-filter-show="all" data-filter-section="#category">Все проекты</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-tab-open="#category-2" data-tab-group="#category">Частные дома</button>
+						<button class="filter__list-button" type="button" data-filter-show="personal" data-filter-section="#category">Частные дома</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-tab-open="#category-3" data-tab-group="#category">Общественные здания</button>
+						<button class="filter__list-button" type="button" data-filter-show="social" data-filter-section="#category">Общественные здания</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-tab-open="#category-4" data-tab-group="#category">Квартальная застройка</button>
+						<button class="filter__list-button" type="button" data-filter-show="massive" data-filter-section="#category">Квартальная застройка</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-tab-open="#category-5" data-tab-group="#category">Реконструкция</button>
+						<button class="filter__list-button" type="button" data-filter-show="reconstruction" data-filter-section="#category">Реконструкция</button>
 					</li>
 				</ul>
 				<hr class="grid-row grid-row--all">
 			</div>
-			<div id="category-1" class="section filter-tab" data-tab-item>
-				<div class="category__year">
-					<div class="separ separ--small"></div>
-					<div class="section__body">
-						<div class="category__year-title">
-							<div class="section__header">
-								<div class="section__header-title">
-									<strong>2019</strong>
-								</div>
+
+			[[DocLister?
+			&parents=`[*id*]`
+			&addWhereList=`c.template=21`
+			&tvList=`project_image, project_subtitle, project_year, project_type`
+			&filters=`AND(tvd:project_year:=:2019)`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
+			<div class="section category__year" data-filter-group>
+				<div class="separ separ--small"></div>
+				<div class="section__body">
+					<div class="category__year-title">
+						<div class="section__header">
+							<div class="section__header-title">
+								<strong>2019</strong>
 							</div>
 						</div>
-						<ul class="category__list">
-							<li class="category__list-point">
-								<a href="[~25~]" class="category__item">
-									<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-apartment/rb-interior/1467.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-									<div class="category__item-title">RB INTERIOR</div>
-									<div class="category__item-desc">Дизайн квартиры</div>
-								</a>
-							</li>
-							<li class="category__list-point">
-								<a href="[~25~]" class="category__item">
-									<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-apartment/midnight-flat/2417.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-									<div class="category__item-title">MIDNIGHT FLAT</div>
-									<div class="category__item-desc">Дизайн квартиры</div>
-								</a>
-							</li>
-							<li class="category__list-point">
-								<a href="[~25~]" class="category__item">
-									<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-cottage/gallery-apartment/5284.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-									<div class="category__item-title">GALLERY APARTMENT</div>
-									<div class="category__item-desc">Дизайн коттеджа</div>
-								</a>
-							</li>
-							<li class="category__list-point">
-								<a href="[~25~]" class="category__item">
-									<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-public/barberandco/1240.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-									<div class="category__item-title">BARBER&CO</div>
-									<div class="category__item-desc">Мультифункциональный барбершоп</div>
-								</a>
-							</li>
-						</ul>
 					</div>
+					<ul class="category__list">
+						[+dl.wrap+]
+					</ul>
 				</div>
-				<div class="category__year">
-					<div class="separ separ--small"></div>
-					<div class="section__body">
-						<div class="category__year-title">
-							<div class="section__header">
-								<div class="section__header-title">
-									<strong>2018</strong>
-								</div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
+			[[DocLister?
+			&parents=`[*id*]`
+			&addWhereList=`c.template=21`
+			&tvList=`project_image, project_subtitle, project_year, project_type`
+			&filters=`AND(tvd:project_year:=:2018)`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
+			<div class="section category__year" data-filter-group>
+				<div class="separ separ--small"></div>
+				<div class="section__body">
+					<div class="category__year-title">
+						<div class="section__header">
+							<div class="section__header-title">
+								<strong>2018</strong>
 							</div>
 						</div>
-						<ul class="category__list">
-							<li class="category__list-point">
-								<a href="[~25~]" class="category__item">
-									<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-apartment/rb-interior/1467.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-									<div class="category__item-title">RB INTERIOR</div>
-									<div class="category__item-desc">Дизайн квартиры</div>
-								</a>
-							</li>
-							<li class="category__list-point">
-								<a href="[~25~]" class="category__item">
-									<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-apartment/midnight-flat/2417.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-									<div class="category__item-title">MIDNIGHT FLAT</div>
-									<div class="category__item-desc">Дизайн квартиры</div>
-								</a>
-							</li>
-							<li class="category__list-point">
-								<a href="[~25~]" class="category__item">
-									<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-cottage/gallery-apartment/5284.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-									<div class="category__item-title">GALLERY APARTMENT</div>
-									<div class="category__item-desc">Дизайн коттеджа</div>
-								</a>
-							</li>
-							<li class="category__list-point">
-								<a href="[~25~]" class="category__item">
-									<img class="category__item-image" src="[[phpthumb? &input=`assets/images/design-public/barberandco/1240.jpg` &options=`w=480,h=320,zc=C`]]" alt="">
-									<div class="category__item-title">BARBER&CO</div>
-									<div class="category__item-desc">Мультифункциональный барбершоп</div>
-								</a>
-							</li>
-						</ul>
 					</div>
+					<ul class="category__list">
+						[+dl.wrap+]
+					</ul>
 				</div>
-			</div>
-			<div id="category-2" class="section filter-tab" data-tab-item></div>
-			<div id="category-3" class="section filter-tab" data-tab-item></div>
-			<div id="category-4" class="section filter-tab" data-tab-item></div>
-			<div id="category-5" class="section filter-tab" data-tab-item></div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
+			[[DocLister?
+			&parents=`[*id*]`
+			&addWhereList=`c.template=21`
+			&tvList=`project_image, project_subtitle, project_year, project_type`
+			&filters=`AND(tvd:project_year:=:2017)`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
+			<div class="section category__year" data-filter-group>
+				<div class="separ separ--small"></div>
+				<div class="section__body">
+					<div class="category__year-title">
+						<div class="section__header">
+							<div class="section__header-title">
+								<strong>2017</strong>
+							</div>
+						</div>
+					</div>
+					<ul class="category__list">
+						[+dl.wrap+]
+					</ul>
+				</div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
+			[[DocLister?
+			&parents=`[*id*]`
+			&addWhereList=`c.template=21`
+			&tvList=`project_image, project_subtitle, project_year, project_type`
+			&filters=`AND(tvd:project_year:=:2016)`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
+			<div class="section category__year" data-filter-group>
+				<div class="separ separ--small"></div>
+				<div class="section__body">
+					<div class="category__year-title">
+						<div class="section__header">
+							<div class="section__header-title">
+								<strong>2016</strong>
+							</div>
+						</div>
+					</div>
+					<ul class="category__list">
+						[+dl.wrap+]
+					</ul>
+				</div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
+			[[DocLister?
+			&parents=`[*id*]`
+			&addWhereList=`c.template=21`
+			&tvList=`project_image, project_subtitle, project_year, project_type`
+			&filters=`AND(tvd:project_year:=:2015)`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
+			<div class="section category__year" data-filter-group>
+				<div class="separ separ--small"></div>
+				<div class="section__body">
+					<div class="category__year-title">
+						<div class="section__header">
+							<div class="section__header-title">
+								<strong>2015</strong>
+							</div>
+						</div>
+					</div>
+					<ul class="category__list">
+						[+dl.wrap+]
+					</ul>
+				</div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
+			[[DocLister?
+			&parents=`[*id*]`
+			&addWhereList=`c.template=21`
+			&tvList=`project_image, project_subtitle, project_year, project_type`
+			&filters=`AND(tvd:project_year:=:2014)`
+			&display=`all`
+			&orderBy=`createdon DESC`
+			&tpl=`category_project--tpl`
+			&ownerTPL=`@CODE:
+			<div class="section category__year" data-filter-group>
+				<div class="separ separ--small"></div>
+				<div class="section__body">
+					<div class="category__year-title">
+						<div class="section__header">
+							<div class="section__header-title">
+								<strong>2014</strong>
+							</div>
+						</div>
+					</div>
+					<ul class="category__list">
+						[+dl.wrap+]
+					</ul>
+				</div>
+			</div>`
+			&noneTPL=``
+			&noneWrapOuter=`0`
+			]]
+
 		</div>
 
 		<hr class="grid-row grid-row--all">

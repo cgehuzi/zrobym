@@ -323,6 +323,40 @@ if (tabs_blocks) {
 // END ------------------------
 
 // ====================================================
+// Реализация блока data-filter
+// ====================================================
+const filter_sections = document.querySelectorAll('[data-filter]');
+if (filter_sections) {
+	filter_sections.forEach(function(filter_section) {
+		const filter_buttons = filter_section.querySelectorAll('[data-filter-show]');
+		const filter_groups = filter_section.querySelectorAll('[data-filter-group]');
+		const filter_items = filter_section.querySelectorAll('[data-filter-item]');
+
+		if (filter_buttons) {
+			filter_buttons.forEach(function(filter_button) {
+				const filter_link_names = filter_button.dataset.filterShow;
+				const filter_links = filter_link_names.split(',');
+
+				filter_button.addEventListener('click', function() {
+					filter_items.forEach(function(filter_item) {
+						active(filter_item, false);
+					});
+					filter_groups.forEach(function(filter_group) {
+						active(filter_group, false);
+
+						const filter_group_items = filter_group.querySelectorAll('[data-filter-item]');
+						console.log(filter_group_items);
+					});
+				});
+			});
+
+			filter_buttons[0].click();
+		}
+	});
+}
+// END ------------------------
+
+// ====================================================
 // Реализация блока data-explication
 // ====================================================
 const explication_items = document.querySelectorAll('[data-explication-target]');
