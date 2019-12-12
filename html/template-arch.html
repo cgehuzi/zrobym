@@ -78,23 +78,7 @@
 
 		<hr class="grid-row">
 
-		<div class="section">
-			<div class="separ"></div>
-			<div class="section__body">
-				<div class="section__body-col">
-					<div class="section__header" data-scroll="title">
-						<div class="section__header-title">[%Новые проекты%]</div>
-						<div class="section__header-subtitle">by ZROBYM architects</div>
-					</div>
-				</div>
-				<div class="section__body-col">
-					<div class="section__content">
-						[[Typo? &breakline=`off` &text=`[*arch_new_content*]`]]
-					</div>
-				</div>
-			</div>
-			<div class="separ"></div>
-		</div>
+		{{section_new_arch}}
 
 		[[DocLister?
 		&parents=`[%id_arch_list%]`
@@ -114,56 +98,11 @@
 		&noneWrapOuter=`0`
 		]]
 
-		<link rel="stylesheet" href="assets/templates/zrobym/css/more.css?[%config_last_mod%]">
-		<div class="section more">
-			<div class="separ"></div>
-			<div class="section__body">
-				<div class="section__body-col">
-					<div class="section__content more__content">
-						[[Typo? &breakline=`off` &text=`[*arch_more_content*]`]]
-					</div>
-				</div>
-				<div class="section__body-col">
-					<ul class="section__buttons more__buttons">
-						<li class="section__buttons-point">
-							<a href="[~[%id_realize%]~]" class="button">[[DocInfo? &docid=`[%id_realize%]` &field=`menutitle`]]</a>
-						</li>
-						<li class="section__buttons-point">
-							<a href="[~[%id_arch_list%]~]" class="button">[[DocInfo? &docid=`[%id_arch_list%]` &field=`menutitle`]]</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="separ"></div>
-		</div>
+		{{section_more_arch}}
 
 		<hr class="grid-row">
 
-		<div class="separ"></div>
-		<div class="section">
-			<div class="separ separ--small separ--tablet"></div>
-			<div class="section__body">
-				<img class="section__back-left" src="[*arch_individual_image*]" alt="[*pagetitle*]">
-				<div class="section__body-col right">
-					<div class="section__content">
-						[[Typo? &breakline=`off` &text=`[*arch_individual_content*]`]]
-						[[Switch? &switch=`[*arch_individual_more*]` &case:=``
-						&default=`
-						<div id="more-individual" style="display: none;">
-							[[Typo? &breakline=`off` &text=`[*arch_individual_more*]`]]
-						</div>
-						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-individual">[%Читать больше%]</button>
-						`]]
-						<div class="section__buttons">
-							<a href="[~[%id_arch_calc%]~]" class="button">[[DocInfo? &docid=`[%id_arch_calc%]` &field=`menutitle`]]</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="separ separ--small separ--tablet"></div>
-		</div>
-		<div class="separ"></div>
-
+		{{section_individual_arch}}
 		{{section_world}}
 		{{section_our_arch}}
 
