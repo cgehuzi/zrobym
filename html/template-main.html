@@ -28,7 +28,7 @@
 				<div class="section__body-col fullwidth">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							[%Архитектура со смыслом%]
+							[%main_header_title%]
 						</div>
 						<div class="section__header-subtitle">ZROBYM architects</div>
 					</div>
@@ -48,9 +48,9 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							ZROBYM <strong>architects</strong>
+							[%main_about_title%]
 						</div>
-						<div class="section__header-subtitle">[%Немного информации о нас%]</div>
+						<div class="section__header-subtitle">[%main_about_subtitle%]</div>
 					</div>
 				</div>
 				<div class="section__body-col">
@@ -58,13 +58,12 @@
 						[[Typo? &breakline=`off` &text=`
 						<h1>[*pagetitle*]</h1>
 						[*main_about_content*]`]]
-						[[Switch? &switch=`[*main_about_more*]` &case:=``
-						&default=`
+
+						[[Switch? &switch=`[*main_about_more*]` &case:=`` &default=`
 						<div id="more-text" style="display: none;">
 							[[Typo? &breakline=`off` &text=`[*main_about_more*]`]]
 						</div>
-						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-text">[%Читать больше%]</button>
-						`]]
+						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-text">[%Читать больше%]</button>`]]
 					</div>
 					<div class="section__buttons">
 						<a href="[~[%id_team%]~]" class="button">[%Узнать больше%]</a>
@@ -83,7 +82,7 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							[%Мы проектируем по всему миру%]
+							[%main_world_title%]
 						</div>
 					</div>
 				</div>
@@ -101,7 +100,7 @@
 			<div class="separ separ--small separ--tablet"></div>
 			<div class="section__body city__block">
 				<div class="city__title">
-					[[Typo? &breakline=`off` &text=`[*main_world_subtitle*]`]]
+					[[Typo? &breakline=`off` &text=`[%main_world_subtitle%]`]]
 				</div>
 				<div class="city__map"></div>
 
@@ -148,7 +147,7 @@
 					<div class="philosophy__header">
 						<div class="section__header" data-scroll="title">
 							<div class="section__header-title">
-								[%Философия ZROBYM architects%]
+								[%main_philosophy_title%]
 							</div>
 						</div>
 					</div>
@@ -183,7 +182,7 @@
 					<div class="team__header">
 						<div class="section__header" data-scroll="title">
 							<div class="section__header-title">
-								[%Главное%]
+								[%main_team_title%]
 							</div>
 						</div>
 					</div>
@@ -209,7 +208,7 @@
 				</div>
 				<div class="section__body-col">
 					<div class="chief__item">
-						<div class="chief__title">[%Андрусь Bezdar%]</div>
+						<div class="chief__title">[%main_chief_1%]</div>
 						<ul class="chief__list">
 							<li class="chief__list-point">
 								<a href="https://www.instagram.com/andrusbezdar/" target="_blank" class="chief__social chief__social--instagram"></a>
@@ -220,7 +219,7 @@
 						</ul>
 					</div>
 					<div class="chief__item">
-						<div class="chief__title">[%Алексей Кораблев%]</div>
+						<div class="chief__title">[%main_chief_2%]</div>
 						<ul class="chief__list">
 							<li class="chief__list-point">
 								<a href="https://www.instagram.com/bykorablove/" target="_blank" class="chief__social chief__social--instagram"></a>

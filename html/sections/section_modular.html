@@ -4,20 +4,19 @@
 		<div class="section__body-col">
 			<div class="section__header" data-scroll="title">
 				<div class="section__header-title">
-					[%Готовые проекты домов%]
+					[%section_modular_title%]
 				</div>
 			</div>
 		</div>
 		<div class="section__body-col">
 			<div class="section__content">
 				[[Typo? &breakline=`off` &text=`[[DocInfo? &docid=`[%id_static%]` &field=`static_modular_content`]]`]]
-				[!Switch? &switch=`[[DocInfo? &docid=`[%id_static%]` &field=`static_modular_more`]]` &case:=``
-				&default=`
+
+				[!Switch? &switch=`[[DocInfo? &docid=`[%id_static%]` &field=`static_modular_more`]]` &case:=`` &default=`
 				<div id="more-modular" style="display: none;">
 					[[Typo? &breakline=`off` &text=`[[DocInfo? &docid=`[%id_static%]` &field=`static_modular_more`]]`]]
 				</div>
-				<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-modular">[%Читать больше%]</button>
-				`!]
+				<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-modular">[%Читать больше%]</button>`!]
 			</div>
 			<div class="section__buttons">
 				<a href="http://modular-house.by/" class="button">[%Наши модульные дома%]</a>
