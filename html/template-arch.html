@@ -48,29 +48,18 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							[%Что вы знаете об этом?%]
+							[*header_title*]
 						</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						[[Typo? &breakline=`off` &text=`
-						<h1>[*pagetitle*]</h1>
-						[*arch_about_content*]`]]
-						[[Switch? &switch=`[*arch_about_more*]` &case:=``
-						&default=`
-						<div id="more-text" style="display: none;">
-							[[Typo? &breakline=`off` &text=`[*arch_about_more*]`]]
-						</div>
-						<button class="button-more" type="button" data-close-text="[%Скрыть%]" data-more="#more-text">[%Читать больше%]</button>
-						`]]
+						{{header_content}}
 					</div>
-					[[Switch? &switch=`[*arch_about_video*]` &case:=``
-					&default=`
+					[[Switch? &switch=`[*header_video*]` &case:=`` &default=`
 					<div class="section__buttons">
-						<a data-fancybox href="[*arch_about_video*]" class="button">[%Видео о нас%]</a>
-					</div>
-					`]]
+						<a data-fancybox href="[*header_video*]" class="button">[%Видео о нас%]</a>
+					</div>`]]
 				</div>
 			</div>
 			<div class="separ"></div>
