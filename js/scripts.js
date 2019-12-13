@@ -343,7 +343,7 @@ if (filter_sections) {
 					filter_items.forEach(function(filter_item) {
 						active(filter_item, false);
 						const filter_item_links = filter_item.dataset.filterItem;
-						const filter_item_links_array = filter_item_links.split(',');
+						const filter_item_links_array = filter_item_links.split('||');
 						if (filter_item_links_array.includes(filter_show)) {
 							active(filter_item, true);
 						}
