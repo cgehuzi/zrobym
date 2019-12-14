@@ -304,6 +304,7 @@ if (tabs_blocks) {
 			const tab_buttons = tab_group.querySelectorAll('[data-tab-open]');
 
 			tab__button.addEventListener('click', function(e) {
+				sessionStorage.setItem('tab_was', tab__button.getAttribute('data-tab-open'));
 				tab_items.forEach(function(tab_item) {
 					active(tab_item, false);
 				});
@@ -317,7 +318,18 @@ if (tabs_blocks) {
 			});
 		});
 
-		tab_buttons[0].click();
+		const tab_was_selector = sessionStorage.getItem('tab_was');
+		if (tab_was_selector) {
+			const tab_button_was = document.querySelector('[data-tab-open="' + tab_was_selector + '"]');
+			if (tab_button_was) {
+				tab_button_was.click();
+				$('html, body').animate({ scrollTop: $(tab_buttons[0]).offset.top }, 600);
+			} else {
+				tab_buttons[0].click();
+			}
+		} else {
+			tab_buttons[0].click();
+		}
 	});
 }
 // END ------------------------
