@@ -32,7 +32,15 @@
 							<div class="section__header-title">
 								<strong>[*pagetitle*]</strong>
 							</div>
-							<div class="section__header-subtitle">by <a href="#">Маруся Сивицкая</a></div>
+							<div class="section__header-subtitle furniture__workers">
+								by [[WorkersList? &list=`[*item_workers*]`]]
+								[[multiTV?
+								&tvName=`item_workers_more`
+								&outerTpl=`@CODE:((wrapper))`
+								&rowTpl=`@CODE: <a><span>((name))</span></a>`
+								&display=`all`
+								]]
+							</div>
 						</div>
 						<ul class="furniture__color">
 							<li class="furniture__color-point">
@@ -47,7 +55,7 @@
 						</ul>
 					</div>
 					<div class="section__buttons">
-						<a data-href="tel:+375293032540" class="button" data-phone="+375 29 3032540 | Маруся">Контактный телефон</a>
+						<a href="tel:+375293032540" data-href="tel:+375293032540" class="button" data-phone="+375 29 3032540">Контактный телефон</a>
 					</div>
 					<div class="section__content furniture__desc">
 						<p>Стул R-CHAIR по-настоящему практичен и комфортен с точки зрения потребителя. Стул имеет четыре ножки, раздельные спинку и сиденье, между которыми есть соединитель, он же несущий каркас (металлическая труба, что образует замкнутую линию).</p>
