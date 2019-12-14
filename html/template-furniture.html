@@ -49,6 +49,11 @@
 					</div>
 				</div>
 				<div class="section__body-col right">
+					<div class="section__header" data-scroll="title">
+						<div class="section__header-title">
+							[%furniture_brand_title%]
+						</div>
+					</div>
 					<div class="section__content">
 						{{header_content}}
 					</div>
@@ -57,121 +62,23 @@
 			<div class="separ"></div>
 		</div>
 
+		[[DocLister?
+		&parents=`[*id*]`
+		&addWhereList=`c.template=23`
+		&tvList=`header_title, furniture_image, furniture_promo`
+		&display=`all`
+		&orderBy=`menuindex ASC`
+		&tpl=`big_furniture--tpl`
+		&ownerTPL=`@CODE:
 		<link rel="stylesheet" href="assets/templates/zrobym/css/big.css?[%config_last_mod%]">
 		<div class="big">
 			<ul class="big__list">
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/furniture/lights.png" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>Свет</strong></div>
-								<div class="section__header-subtitle">BY furniture</div>
-							</div>
-							<div class="section__content">
-								<p>Создание осветительных приборов - это особая задача, требующая специальных знаний и умений.</p>
-								<p>Создавая светильники, мы консультируемся со множеством партнёров, которые являются экспертами в этой области. Наши архитекторы и дизайнеры стремятся применять простые и понятные формы светильников в сочетании с современной светодиодной начинкой.</p>
-							</div>
-							<div class="section__buttons">
-								<a href="[~27~]" class="button">Перейти в раздел</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/furniture/sofas.png" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>Диваны, кровати</strong></div>
-								<div class="section__header-subtitle">BY furniture</div>
-							</div>
-							<div class="section__content">
-								<p>В этом разделе Вы сможете подобрать для себя мягкую мебель. Мы используем металлические и деревянные каркасы, раздвижные и модульные системы, различные типы наполнителей и самые разнообразные ткани. Отсюда и большое разнообразие дизайна и функционального назначения мягкой мебели.</p>
-								<p>Мы надеемся, что тут каждый найдёт себе что-нибудь по вкусу.</p>
-							</div>
-							<div class="section__buttons">
-								<a href="[~27~]" class="button">Перейти в раздел</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/furniture/chairs.png" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>Стулья, кресла, лавки</strong></div>
-								<div class="section__header-subtitle">BY furniture</div>
-							</div>
-							<div class="section__content">
-								<p>Стул - один из самых интересных предметов мебели, с точки зрения возможностей для творчества. В мире существует огромное количество стульев различного дизайна. Придумать свой уникальный, не похожий ни на что стул - чрезвычайно сложная задача. Тем не менее, мы активно работаем над её решением.</p>
-								<p>Переходите в раздел и оцените различные по дизайну и назначению стулья и табуреты BY furniture.</p>
-							</div>
-							<div class="section__buttons">
-								<a href="[~27~]" class="button">Перейти в раздел</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/furniture/tables.png" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>Столы</strong></div>
-								<div class="section__header-subtitle">BY furniture</div>
-							</div>
-							<div class="section__content">
-								<p>В этом разделе можно подобрать себе письменные и журнальные столы. Мы используем различные материалы столешницы начиная с обработанной фанеры и заканчивая натуральным камнем и шлифованным бетоном. Ножки тоже самые различные по форме и материалу исполнения.</p>
-								<p>Так же в этом разделе можно найти решения рабочих столов и ресепшенов для общественных арт-пространств.</p>
-							</div>
-							<div class="section__buttons">
-								<a href="[~27~]" class="button">Перейти в раздел</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
-				<li class="big__list-point section">
-					<div class="big__item section__body">
-						<div class="big__item-header section__body-col">
-							<img class="big__item-image" src="assets/images/furniture/cabinet.png" alt="">
-						</div>
-						<div class="big__item-body section__body-col">
-							<div class="section__header" data-scroll="title">
-								<div class="section__header-title"><strong>Корпусная мебель</strong></div>
-								<div class="section__header-subtitle">BY furniture</div>
-							</div>
-							<div class="section__content">
-								<p>У людей есть естественная потребность в хранении вещей. В этом разделе можно увидеть различного вида системы хранения: стеллажи, комоды, полки, модульные системы. Проектируя корпусную мебель, мы стремимся использовать недорогие и качественные материалы и создать уникальный образ с ярко выраженной уникальной идеей. В то же время, очень важное значение мы придаём фурнитуре, используемой в нашей корпусной мебели.</p>
-							</div>
-							<div class="section__buttons">
-								<a href="[~27~]" class="button">Перейти в раздел</a>
-							</div>
-						</div>
-					</div>
-					<div class="separ"></div>
-					<div class="grid-row"></div>
-				</li>
+				[+dl.wrap+]
 			</ul>
-			<div class="separ separ--tablet"></div>
-		</div>
+		</div>`
+		&noneTPL=``
+		&noneWrapOuter=`0`
+		]]
 
 		<div class="section section--back">
 			<video autoplay muted loop class="section__back">
