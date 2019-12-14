@@ -292,9 +292,9 @@ if (typeof city_items_data === 'object') {
 // ====================================================
 // Реализация блока data-tabs
 // ====================================================
-const tabs_blocks = document.querySelectorAll('[data-tabs]');
-if (tabs_blocks) {
-	tabs_blocks.forEach(function(tab_block) {
+const tab_blocks = document.querySelectorAll('[data-tabs]');
+if (tab_blocks) {
+	tab_blocks.forEach(function(tab_block) {
 		const tab_buttons = tab_block.querySelectorAll('[data-tab-open]');
 
 		tab_buttons.forEach(function(tab__button) {
@@ -323,7 +323,7 @@ if (tabs_blocks) {
 			const tab_button_was = document.querySelector('[data-tab-open="' + tab_was_selector + '"]');
 			if (tab_button_was) {
 				tab_button_was.click();
-				$('html, body').animate({ scrollTop: $(tab_buttons[0]).offset.top }, 600);
+				$('html, body').animate({ scrollTop: $(tab_buttons[0]).offset().top }, 600);
 			} else {
 				tab_buttons[0].click();
 			}
