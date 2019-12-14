@@ -26,16 +26,14 @@
 				<div class="section__body-col">
 					<div class="section__header" data-scroll="title">
 						<div class="section__header-title">
-							<strong>Пресса</strong> о ZROBYM architects
+							{{header_title}}
 						</div>
-						<div class="section__header-subtitle">В видео и журналах</div>
+						<div class="section__header-subtitle">[%press_header_subtitle%]</div>
 					</div>
 				</div>
 				<div class="section__body-col">
 					<div class="section__content">
-						<h4>Самые свежие новости о проектах студии на YouTube, в прессе и сайтах</h4>
-						<p>Для многих понятие об идеальном проекте дома состоит из уже сформировавшихся взглядов на собственное понимание комфорта и организацию быта. Для проектирования домов под конкретных людей, наша архитектурная студия берёт за основу их привычный образ жизни и профессионально организует для них пространство.</p>
-						<p>Реализовав некоторые архитектурные проекты домов в Минске и Беларуси, мы получили бесценный опыт, который и применяем в своей работе.</p>
+						{{header_content}}
 					</div>
 				</div>
 			</div>
@@ -49,6 +47,7 @@
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/filter.css?[%config_last_mod%]">
 		<link rel="stylesheet" href="assets/templates/zrobym/css/press.css?[%config_last_mod%]">
+		<link rel="stylesheet" href="assets/templates/zrobym/css/pagination.css?[%config_last_mod%]">
 		<div class="press" id="press" data-tabs>
 			<div class="section filter">
 				<hr class="grid-row grid-row--all">
@@ -57,7 +56,7 @@
 					<div class="section__body-col">
 						<div class="section__header press__header" data-scroll="title">
 							<div class="section__header-title">
-								ZROBYM architects <strong>публикации</strong>
+								[%press_publications_title%]
 							</div>
 						</div>
 					</div>
@@ -65,119 +64,71 @@
 				<hr class="grid-row grid-row--all">
 				<ul class="section__body filter__list" data-scroll="title">
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-tab-open="#press-1" data-tab-group="#press">Все публикации</button>
+						<button class="filter__list-button" type="button" data-tab-open="#press-all" data-tab-group="#press">[%Все публикации%]</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-tab-open="#press-2" data-tab-group="#press">Журналы</button>
+						<button class="filter__list-button" type="button" data-tab-open="#press-magazine" data-tab-group="#press">[%Журналы%]</button>
 					</li>
 					<li class="filter__list-point">
-						<button class="filter__list-button" type="button" data-tab-open="#press-3" data-tab-group="#press">Web</button>
+						<button class="filter__list-button" type="button" data-tab-open="#press-web" data-tab-group="#press">[%Web%]</button>
 					</li>
 				</ul>
 				<hr class="grid-row grid-row--all">
 			</div>
-			<div id="press-1" class="section filter-tab" data-tab-item>
+
+			[[multiTV?
+			&tvName=`press_publications`
+			&display=`1`
+			&paginate=`1`
+			&offsetKey=`press-all`
+			&outerTpl=`@CODE:
+			<div id="press-all" class="section filter-tab" data-tab-item>
 				<div class="section__body">
 					<ul class="press__list">
-						<li class="press__list-point">
-							<a href="#" class="press__item">
-								<div class="press__item-header">
-									<img class="press__item-image" src="assets/images/logos/press/Tut.jpg" alt="">
-								</div>
-								<div class="press__item-body">
-									<div class="press__item-title">«Посчитал, что стены из бетона — дорого». Архитектор рассказывает, как строит свой дом под Минском</div>
-									<div class="press__item-footer">
-										<div class="press__item-link">Читать публикацию</div>
-										<div class="press__item-type">Web</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="press__list-point">
-							<a href="#" class="press__item">
-								<div class="press__item-header">
-									<img class="press__item-image" src="assets/images/logos/press/Probusiness.jpg" alt="">
-								</div>
-								<div class="press__item-body">
-									<div class="press__item-title">«Офис должен заменить сотруднику и дом, и девушку» — посмотрите, как этого добиться</div>
-									<div class="press__item-footer">
-										<div class="press__item-link">Читать публикацию</div>
-										<div class="press__item-type">Web</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="press__list-point">
-							<a href="#" class="press__item">
-								<div class="press__item-header">
-									<img class="press__item-image" src="assets/images/logos/press/Elledecoration.jpg" alt="">
-								</div>
-								<div class="press__item-body">
-									<div class="press__item-title">ВЕЧЕРНЕЕ НАСТРОЕНИЕ</div>
-									<div class="press__item-footer">
-										<div class="press__item-link">Читать публикацию</div>
-										<div class="press__item-type">Журнал</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="press__list-point">
-							<a href="#" class="press__item">
-								<div class="press__item-header">
-									<img class="press__item-image" src="assets/images/logos/press/Village.jpg" alt="">
-								</div>
-								<div class="press__item-body">
-									<div class="press__item-title">«На ремонт потратили 60 тысяч долларов»: Новый офис архитектурного бюро в историческом центре</div>
-									<div class="press__item-footer">
-										<div class="press__item-link">Читать публикацию</div>
-										<div class="press__item-type">Web</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="press__list-point">
-							<a href="#" class="press__item">
-								<div class="press__item-header">
-									<img class="press__item-image" src="assets/images/logos/press/Highqualityroom.jpg" alt="">
-								</div>
-								<div class="press__item-body">
-									<div class="press__item-title">Кафе-пекарня Let it be в Минске</div>
-									<div class="press__item-footer">
-										<div class="press__item-link">Читать публикацию</div>
-										<div class="press__item-type">Web</div>
-									</div>
-								</div>
-							</a>
-						</li>
+						((wrapper))
 					</ul>
 				</div>
-				<link rel="stylesheet" href="assets/templates/zrobym/css/pagination.css?[%config_last_mod%]">
-				<div class="pagination">
-					<div class="separ separ--small"></div>
-					<div class="grid-row"></div>
-					<div class="section__body">
-						<ul class="pagination__list">
-							<li class="pagination__list-point">
-								<div class="pagination__item active">1</div>
-							</li>
-							<li class="pagination__list-point">
-								<a href="#" class="pagination__item">2</a>
-							</li>
-							<li class="pagination__list-point">
-								<a href="#" class="pagination__item">3</a>
-							</li>
-							<li class="pagination__list-point">
-								<a href="#" class="pagination__item">4</a>
-							</li>
-							<li class="pagination__list-point">
-								<a href="#" class="pagination__item">5</a>
-							</li>
-						</ul>
-					</div>
+				((pagination))
+			</div>`
+			&rowTpl=`press_publication--rowTpl`
+			]]
+
+			[[multiTV?
+			&tvName=`press_publications`
+			&display=`1`
+			&paginate=`1`
+			&offsetKey=`press-magazine`
+			&where=`{"type":"magazine"}`
+			&outerTpl=`@CODE:
+			<div id="press-magazine" class="section filter-tab" data-tab-item>
+				<div class="section__body">
+					<ul class="press__list">
+						((wrapper))
+					</ul>
 				</div>
-			</div>
-			<div id="press-2" class="section filter-tab" data-tab-item></div>
-			<div id="press-3" class="section filter-tab" data-tab-item></div>
+				((pagination))
+			</div>`
+			&rowTpl=`press_publication--rowTpl`
+			]]
+
+			[[multiTV?
+			&tvName=`press_publications`
+			&display=`1`
+			&paginate=`1`
+			&offsetKey=`press-web`
+			&where=`{"type":"web"}`
+			&outerTpl=`@CODE:
+			<div id="press-web" class="section filter-tab" data-tab-item>
+				<div class="section__body">
+					<ul class="press__list">
+						((wrapper))
+					</ul>
+				</div>
+				((pagination))
+			</div>`
+			&rowTpl=`press_publication--rowTpl`
+			]]
+
 		</div>
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/youtube.css?[%config_last_mod%]">
@@ -187,7 +138,7 @@
 				<div class="section__body-col">
 					<div class="section__header youtube__header" data-scroll="title">
 						<div class="section__header-title">
-							ZROBYM architects <strong>на YouTube</strong>
+							[%press_youtube_title%]
 						</div>
 					</div>
 				</div>

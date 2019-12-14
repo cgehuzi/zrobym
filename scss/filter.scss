@@ -1,7 +1,8 @@
 @import './1-const.scss';
 
 [data-filter-group],
-[data-filter-item] {
+[data-filter-item],
+[data-tab-item] {
 	&:not(.active) {
 		display: none !important;
 	}
