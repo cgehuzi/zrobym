@@ -113,7 +113,9 @@
 	}
 
 	&-scheme {
-		margin-top: 64px;
+		&__point {
+			margin-top: 64px;
+		}
 	}
 
 	&-gallery {

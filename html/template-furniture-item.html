@@ -42,36 +42,70 @@
 								]]
 							</div>
 						</div>
+						[[Switch? &switch=`[*item_color1*][*item_color2*][*item_color3*][*item_color4*][*item_color5*]`
+						&case:=`` &default=`
 						<ul class="furniture__color">
+							[[Switch? &switch=`[*item_color1*]`
+							&case:=`` &default=`
 							<li class="furniture__color-point">
-								<button class="furniture__color-item" type="button" style="background-color: #adbdbd;" data-tab-open="#color-1" data-tab-group="#colors"></button>
-							</li>
+								<button class="furniture__color-item" type="button" style="background-color: [*item_color1*];" data-tab-open="#color-1" data-tab-group="#colors"></button>
+							</li>`]]
+							[[Switch? &switch=`[*item_color2*]`
+							&case:=`` &default=`
 							<li class="furniture__color-point">
-								<button class="furniture__color-item" type="button" style="background-color: #a2402d;" data-tab-open="#color-2" data-tab-group="#colors"></button>
-							</li>
+								<button class="furniture__color-item" type="button" style="background-color: [*item_color2*];" data-tab-open="#color-2" data-tab-group="#colors"></button>
+							</li>`]]
+							[[Switch? &switch=`[*item_color3*]`
+							&case:=`` &default=`
 							<li class="furniture__color-point">
-								<button class="furniture__color-item" type="button" style="background-color: #e0aa57;" data-tab-open="#color-3" data-tab-group="#colors"></button>
-							</li>
-						</ul>
+								<button class="furniture__color-item" type="button" style="background-color: [*item_color3*];" data-tab-open="#color-3" data-tab-group="#colors"></button>
+							</li>`]]
+							[[Switch? &switch=`[*item_color4*]`
+							&case:=`` &default=`
+							<li class="furniture__color-point">
+								<button class="furniture__color-item" type="button" style="background-color: [*item_color4*];" data-tab-open="#color-4" data-tab-group="#colors"></button>
+							</li>`]]
+							[[Switch? &switch=`[*item_color5*]`
+							&case:=`` &default=`
+							<li class="furniture__color-point">
+								<button class="furniture__color-item" type="button" style="background-color: [*item_color5*];" data-tab-open="#color-5" data-tab-group="#colors"></button>
+							</li>`]]
+						</ul>`]]
 					</div>
 					<div class="section__buttons">
-						<a href="tel:+375293032540" data-href="tel:+375293032540" class="button" data-phone="+375 29 3032540">Контактный телефон</a>
+						<a href="tel:+375293032540" data-href="tel:+375293032540" class="button" data-phone="+375 29 3032540">[%Контактный телефон%]</a>
 					</div>
+
+					[[Switch? &switch=`[*item_desc*]`
+					&case:=`` &default=`
 					<div class="section__content furniture__desc">
-						<p>Стул R-CHAIR по-настоящему практичен и комфортен с точки зрения потребителя. Стул имеет четыре ножки, раздельные спинку и сиденье, между которыми есть соединитель, он же несущий каркас (металлическая труба, что образует замкнутую линию).</p>
-					</div>
-					<img class="furniture-scheme" src="assets/images/furniture/chairs/r-chair/5.jpg" alt="">
+						[[Typo? &breakline=`off` &text=`[*item_desc*]`]]
+					</div>`]]
+
+					[[multiTV?
+					&tvName=`item_schemes`
+					&outerTpl=`@CODE:
+					<ul class="furniture-scheme">
+						((wrapper))
+					</ul>`
+					&rowTpl=`furniture_scheme--rowTpl`
+					&display=`all`
+					]]
+
+
+					[[Switch? &switch=`[*item_materials*]`
+					&case:=`` &default=`
 					<div class="section__content furniture__material">
-						<h4>Используемые материалы</h4>
-						<ul>
-							<li>Несущий каркас - металлическая труба, диаметр 20мм. Полимерное окрашивание.</li>
-							<li>Мягкие элементы: ткань по утвержденным с клиентам образцу.</li>
-							<li>Наполнение: поролон.</li>
-						</ul>
-					</div>
+						[[Typo? &breakline=`off` &text=`
+						<h4>[%Используемые материалы%]</h4>
+						[*item_materials*]`]]
+					</div>`]]
+
+					[[Switch? &switch=`[*item_3d*]`
+					&case:=`` &default=`
 					<div class="section__buttons">
-						<a href="#" class="button">Скачать 3D-модель</a>
-					</div>
+						<a href="[*item_3d*]" class="button" download>[%Скачать 3D-модель%]</a>
+					</div>`]]
 				</div>
 				<div class="section__body-col furniture-gallery">
 					<div class="furniture-gallery__header">
@@ -79,75 +113,88 @@
 							<div class="section__header-title">
 								<strong>[*pagetitle*]</strong>
 							</div>
-							<div class="section__header-subtitle">by <a href="#">Маруся Сивицкая</a></div>
+							<div class="section__header-subtitle furniture__workers">
+								by [[WorkersList? &list=`[*item_workers*]`]]
+								[[multiTV?
+								&tvName=`item_workers_more`
+								&outerTpl=`@CODE:((wrapper))`
+								&rowTpl=`@CODE: <a><span>((name))</span></a>`
+								&display=`all`
+								]]
+							</div>
 						</div>
 					</div>
+
+					[[multiTV?
+					&tvName=`item_color1_gallery`
+					&outerTpl=`@CODE:
 					<ul class="furniture-gallery__list" id="color-1" data-tab-item>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/1b.jpg" class="furniture-gallery__item" data-fancybox="color-1" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/1b.jpg">
-							</a>
-						</li>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/2b.jpg" class="furniture-gallery__item" data-fancybox="color-1" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/2b.jpg">
-							</a>
-						</li>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/3b.jpg" class="furniture-gallery__item" data-fancybox="color-1" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/3b.jpg">
-							</a>
-						</li>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/4b.jpg" class="furniture-gallery__item" data-fancybox="color-1" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/4b.jpg">
-							</a>
-						</li>
-					</ul>
+						((wrapper))
+					</ul>`
+					&rowTpl=`furniture_gallery--rowTpl`
+					&display=`all`
+					&firstClass=``
+					&lastClass=``
+					&evenClass=`color 1`
+					&oddClass=`color 1`
+					]]
+
+					[[multiTV?
+					&tvName=`item_color2_gallery`
+					&outerTpl=`@CODE:
 					<ul class="furniture-gallery__list" id="color-2" data-tab-item>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/1r.jpg" class="furniture-gallery__item" data-fancybox="color-2" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/1r.jpg">
-							</a>
-						</li>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/2r.jpg" class="furniture-gallery__item" data-fancybox="color-2" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/2r.jpg">
-							</a>
-						</li>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/3r.jpg" class="furniture-gallery__item" data-fancybox="color-2" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/3r.jpg">
-							</a>
-						</li>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/4r.jpg" class="furniture-gallery__item" data-fancybox="color-2" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/4r.jpg">
-							</a>
-						</li>
-					</ul>
+						((wrapper))
+					</ul>`
+					&rowTpl=`furniture_gallery--rowTpl`
+					&display=`all`
+					&firstClass=``
+					&lastClass=``
+					&evenClass=`color 2`
+					&oddClass=`color 2`
+					]]
+
+					[[multiTV?
+					&tvName=`item_color3_gallery`
+					&outerTpl=`@CODE:
 					<ul class="furniture-gallery__list" id="color-3" data-tab-item>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/1y.jpg" class="furniture-gallery__item" data-fancybox="color-3" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/1y.jpg">
-							</a>
-						</li>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/2y.jpg" class="furniture-gallery__item" data-fancybox="color-3" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/2y.jpg">
-							</a>
-						</li>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/3y.jpg" class="furniture-gallery__item" data-fancybox="color-3" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/3y.jpg">
-							</a>
-						</li>
-						<li class="furniture-gallery__list-point">
-							<a href="assets/images/furniture/chairs/r-chair/4y.jpg" class="furniture-gallery__item" data-fancybox="color-3" data-caption="R-CHAIR">
-								<img class="furniture-gallery__item-image" src="assets/images/furniture/chairs/r-chair/4y.jpg">
-							</a>
-						</li>
-					</ul>
+						((wrapper))
+					</ul>`
+					&rowTpl=`furniture_gallery--rowTpl`
+					&display=`all`
+					&firstClass=``
+					&lastClass=``
+					&evenClass=`color 3`
+					&oddClass=`color 3`
+					]]
+
+					[[multiTV?
+					&tvName=`item_color4_gallery`
+					&outerTpl=`@CODE:
+					<ul class="furniture-gallery__list" id="color-4" data-tab-item>
+						((wrapper))
+					</ul>`
+					&rowTpl=`furniture_gallery--rowTpl`
+					&display=`all`
+					&firstClass=``
+					&lastClass=``
+					&evenClass=`color 4`
+					&oddClass=`color 4`
+					]]
+
+					[[multiTV?
+					&tvName=`item_color5_gallery`
+					&outerTpl=`@CODE:
+					<ul class="furniture-gallery__list" id="color-5" data-tab-item>
+						((wrapper))
+					</ul>`
+					&rowTpl=`furniture_gallery--rowTpl`
+					&display=`all`
+					&firstClass=``
+					&lastClass=``
+					&evenClass=`color 5`
+					&oddClass=`color 5`
+					]]
+
 				</div>
 			</div>
 			<div class="separ"></div>
@@ -160,8 +207,8 @@
 			<div class="section__body">
 				<div class="section__body-col">
 					<div class="section__content more__content">
-						<h4>Поделиться страницей</h4>
-						<p>Поделитесь понравившимся изделием в социальных сетях!</p>
+						<h4>[%section_more_furniture_title%]</h4>
+						<p>[%section_more_furniture_subtitle%]</p>
 					</div>
 				</div>
 				<div class="section__body-col">
