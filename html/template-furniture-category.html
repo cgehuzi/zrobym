@@ -44,44 +44,29 @@
 			<img class="header__arrow" src="assets/templates/zrobym/icons/black/arrow.svg" alt="">
 		</div>
 
+
+		[[DocLister?
+		&parents=`[*id*]`
+		&addWhereList=`c.template=24`
+		&tvList=`item_image, item_workers, item_workers_more`
+		&display=`all`
+		&orderBy=`createdon DESC`
+		&tpl=`category_furniture--tpl`
+		&ownerTPL=`@CODE:
 		<link rel="stylesheet" href="assets/templates/zrobym/css/category.css?[%config_last_mod%]">
 		<div class="category section">
 			<hr class="grid-row">
 			<div class="separ"></div>
 			<div class="section__body">
 				<ul class="category__list">
-					<li class="category__list-point">
-						<a href="[~28~]" class="category__item">
-							<img class="category__item-image" src="[[phpthumb? &input=`assets/images/furniture/chairs/r-barchair/1r.jpg` &options=`w=480,h=480,zc=C`]]" alt="">
-							<div class="category__item-title">R-BARCHAIR</div>
-							<div class="category__item-desc">by Маруся Сивицкая</div>
-						</a>
-					</li>
-					<li class="category__list-point">
-						<a href="[~28~]" class="category__item">
-							<img class="category__item-image" src="[[phpthumb? &input=`assets/images/furniture/chairs/r-chair/1b.jpg` &options=`w=480,h=480,zc=C`]]" alt="">
-							<div class="category__item-title">R-CHAIR</div>
-							<div class="category__item-desc">by Маруся Сивицкая</div>
-						</a>
-					</li>
-					<li class="category__list-point">
-						<a href="[~28~]" class="category__item">
-							<img class="category__item-image" src="[[phpthumb? &input=`assets/images/furniture/chairs/stingray-chair/1.jpg` &options=`w=480,h=480,zc=C`]]" alt="">
-							<div class="category__item-title">STINGRAY CHAIR</div>
-							<div class="category__item-desc">by Маруся Сивицкая</div>
-						</a>
-					</li>
-					<li class="category__list-point">
-						<a href="[~28~]" class="category__item">
-							<img class="category__item-image" src="[[phpthumb? &input=`assets/images/furniture/chairs/flamingo-chair/01.jpg` &options=`w=480,h=480,zc=C`]]" alt="">
-							<div class="category__item-title">FLAMINGO CHAIR</div>
-							<div class="category__item-desc">by Маруся Сивицкая</div>
-						</a>
-					</li>
+					[+dl.wrap+]
 				</ul>
 			</div>
 			<div class="separ"></div>
-		</div>
+		</div>`
+		&noneTPL=``
+		&noneWrapOuter=`0`
+		]]
 
 		{{section_our_furniture}}
 
