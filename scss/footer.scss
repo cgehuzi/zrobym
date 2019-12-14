@@ -112,6 +112,10 @@
 			color: $grey_light;
 			font-size: 0.9rem;
 			line-height: 1.6;
+
+			& + & {
+				margin-top: 16px;
+			}
 		}
 	}
 
