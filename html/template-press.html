@@ -78,7 +78,7 @@
 
 			[[multiTV?
 			&tvName=`press_publications`
-			&display=`1`
+			&display=`12`
 			&paginate=`1`
 			&offsetKey=`press-all`
 			&outerTpl=`@CODE:
@@ -95,7 +95,7 @@
 
 			[[multiTV?
 			&tvName=`press_publications`
-			&display=`1`
+			&display=`12`
 			&paginate=`1`
 			&offsetKey=`press-magazine`
 			&where=`{"type":"magazine"}`
@@ -113,7 +113,7 @@
 
 			[[multiTV?
 			&tvName=`press_publications`
-			&display=`1`
+			&display=`12`
 			&paginate=`1`
 			&offsetKey=`press-web`
 			&where=`{"type":"web"}`
@@ -145,72 +145,46 @@
 			</div>
 			<hr class="grid-row grid-row--all">
 			<div class="section__body">
+
+				[[multiTV?
+				&tvName=`press_youtube`
+				&display=`all`
+				&outerTpl=`@CODE:
 				<div id="slider-youtube" class="swiper-container youtube__swiper-container">
 					<ul class="swiper-wrapper youtube__swiper-wrapper">
-						<li class="swiper-slide youtube__swiper-slide">
-							<div class="youtube__slide">
-								<a data-fancybox data-caption="Видеоблог «Дом архитектора». Часть 2" class="youtube__slide-header youtube__item" href="https://www.youtube.com/watch?v=B8JIEsXSyF8&feature=emb_logo">
-									<img class="youtube__slide-image youtube__item-image" src="assets/images/blog/blog-video.jpg" alt="">
-								</a>
-								<div class="youtube__slide-body">
-									<div class="youtube__slide-title">Видеоблог "Дом архитектора". Часть 2</div>
-									<div class="youtube__slide-desc">Text description provided by the architects. Interior project of the production facility. The company Kitchen Coffee Roasters is engaged in the roasting coffee process in Minsk, Belarus</div>
-									<div class="youtube__slide-date">19 янв. 2017 г.</div>
-								</div>
-							</div>
-						</li>
-						<li class="swiper-slide youtube__swiper-slide">
-							<div class="youtube__slide">
-								<a data-fancybox data-caption="Видеоблог «Дом архитектора». Часть 2" class="youtube__slide-header youtube__item" href="https://www.youtube.com/watch?v=B8JIEsXSyF8&feature=emb_logo">
-									<img class="youtube__slide-image youtube__item-image" src="assets/images/blog/blog-video.jpg" alt="">
-								</a>
-								<div class="youtube__slide-body">
-									<div class="youtube__slide-title">Видеоблог "Дом архитектора". Часть 2</div>
-									<div class="youtube__slide-desc">Text description provided by the architects. Interior project of the production facility. The company Kitchen Coffee Roasters is engaged in the roasting coffee process in Minsk, Belarus Text description provided by the architects. Interior project of the production facility. The company Kitchen Coffee Roasters is engaged in the roasting coffee process in Minsk, Belarus</div>
-									<div class="youtube__slide-date">19 янв. 2017 г.</div>
-								</div>
-							</div>
-						</li>
-						<li class="swiper-slide youtube__swiper-slide">
-							<div class="youtube__slide">
-								<a data-fancybox data-caption="Видеоблог «Дом архитектора». Часть 2" class="youtube__slide-header youtube__item" href="https://www.youtube.com/watch?v=B8JIEsXSyF8&feature=emb_logo">
-									<img class="youtube__slide-image youtube__item-image" src="assets/images/blog/blog-video.jpg" alt="">
-								</a>
-								<div class="youtube__slide-body">
-									<div class="youtube__slide-title">Видеоблог "Дом архитектора". Часть 2</div>
-									<div class="youtube__slide-desc">Text description provided by the architects. Interior project of the production facility. The company Kitchen Coffee Roasters is engaged in the roasting coffee process in Minsk, Belarus</div>
-									<div class="youtube__slide-date">19 янв. 2017 г.</div>
-								</div>
-							</div>
-						</li>
+						((wrapper))
 					</ul>
 					<button class="youtube__arrow youtube__arrow--next" type="button"></button>
 					<button class="youtube__arrow youtube__arrow--prev" type="button"></button>
 				</div>
+				<script>
+					document.addEventListener('DOMContentLoaded', function() {
+						const slider_youtube = new Swiper('#slider-youtube', {
+							autoHeight: true,
+							loop: true,
+							navigation: {
+								nextEl: '.youtube__arrow--next',
+								prevEl: '.youtube__arrow--prev'
+							}
+						});
+					});
+				</script>`
+				&rowTpl=`press_youtube--rowTpl`
+				]]
+
 			</div>
 			<hr class="grid-row grid-row--all">
 		</div>
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-				const slider_youtube = new Swiper('#slider-youtube', {
-					autoHeight: true,
-					navigation: {
-						nextEl: '.youtube__arrow--next',
-						prevEl: '.youtube__arrow--prev'
-					}
-				});
-			});
-		</script>
 
 		<div class="section">
 			<div class="separ separ--small"></div>
 			<div class="header__body section__body">
 				<div class="section__body-col right">
 					<div class="section__content">
-						<p>Смотрите наши последние видео на YouTube</p>
+						<p>[%press_youtube_subtitle%]</p>
 					</div>
 					<div class="section__buttons">
-						<a href="https://www.youtube.com/channel/UCxc3agJ3TIg4H0dilD-yBlQ" class="button" target="_blank">Посмотреть на YouTube</a>
+						<a href="https://www.youtube.com/channel/UCxc3agJ3TIg4H0dilD-yBlQ" class="button" target="_blank">[%Посмотреть на YouTube%]</a>
 					</div>
 				</div>
 			</div>

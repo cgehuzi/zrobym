@@ -31,5 +31,5 @@ $settings['fields'] = array(
         'caption' => 'Файл для просмотра<br><span class="comment">Если тип - Журнал</span>',
         'type' => 'file',
         'width' => '30%'
-    ),
+    )
 );

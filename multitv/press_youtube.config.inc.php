@@ -6,6 +6,21 @@ $settings['fields'] = array(
         'type' => 'thumb',
         'thumbof' => 'image'
     ),
+    'title' => array(
+        'caption' => 'Заголовок публикации',
+        'type' => 'text',
+        'width' => '60%'
+    ),
+    'desc' => array(
+        'caption' => 'Описание публикации<br><span class="comment">Не более 200 символов</span>',
+        'type' => 'textarea',
+        'width' => '60%'
+    ),
+    'date' => array(
+        'caption' => 'Дата публикации',
+        'type' => 'date',
+        'width' => '60%'
+    ),
     'video' => array(
         'caption' => 'Ссылка на видео<br><span class="comment">Видео с YouTube</span>',
         'type' => 'text',
