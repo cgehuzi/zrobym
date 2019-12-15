@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="[%config_lang_code%]">
+
+	<head>
+
+		{{head}}
+		<link rel="stylesheet" href="assets/templates/zrobym/css/template-success.css?[%config_last_mod%]">
+	</head>
+
+	<body class="template-success">
+		<hr class="grid-line grid-line--left">
+		<hr class="grid-line grid-line--center">
+		<hr class="grid-line grid-line--right">
+
+		{{menu}}
+
+		<link rel="stylesheet" href="assets/templates/zrobym/css/header.css?[%config_last_mod%]">
+		<div class="header section">
+			<div class="header__header">
+				<img class="header__header-logo" src="assets/templates/zrobym/images/logo-full-black.svg" alt="logo">
+			</div>
+			<hr class="grid-row">
+			<div class="separ separ--small"></div>
+			<div class="header__body section__body">
+				<div class="section__body-col">
+					<div class="section__header" data-scroll="title">
+						<div class="section__header-title">
+							{{header_title}}
+						</div>
+					</div>
+				</div>
+				<div class="section__body-col">
+					<div class="section__content">
+						{{header_content}}
+					</div>
+					<div class="section__buttons">
+						<a href="[~[%id_main%]~]" class="button">[%Вернуться на главную%]</a>
+					</div>
+				</div>
+			</div>
+			<div class="separ separ--small"></div>
+			<hr class="grid-row">
+			<div class="header__footer">
+				<div class="header__footer-lang">[+activeLang+]</div>
+			</div>
+		</div>
+
+		{{plugins}}
+		{{scripts}}
+
+	</body>
+
+</html>

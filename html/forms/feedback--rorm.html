@@ -1,0 +1,38 @@
+<form method="post" class="section__body">
+	<input type="text" name="formid" value="feedback" style="display: none;">
+
+	[+form.messages+]
+
+	<div class="section__body-col">
+		<div class="section__content">
+			<h4>[%feedback_title%]</h4>
+			<p>[%feedback_subtitle%]</p>
+		</div>
+		<div class="feedback__more" style="display: none;">
+			<div class="feedback__group">
+				<input id="feedback-name" name="name" value="[+name.value+]" type="text" placeholder="[%feedback_name%] *" class="feedback__input input [+name.classname+]" required>
+				[+name.error+]
+			</div>
+			<div class="feedback__group">
+				<input id="feedback-city" name="city" value="[+city.value+]" type="text" placeholder="[%feedback_city%] *" class="feedback__input input [+city.classname+]" required>
+				[+city.error+]
+			</div>
+			<div class="feedback__group">
+				<input id="feedback-phone" name="phone" value="[+phone.value+]" type="tel" placeholder="[%feedback_phone%]" class="feedback__input input">
+			</div>
+			<div class="feedback__group">
+				<input id="feedback-email" name="email" value="[+email.value+]" type="email" placeholder="[%feedback_email%] *" class="feedback__input input [+email.classname+]" required>
+				[+email.error+]
+			</div>
+		</div>
+	</div>
+	<div class="section__body-col">
+		<div class="feedback__group feedback__more-area">
+			<textarea id="feedback-comment" name="comment" placeholder="[%feedback_comment%] *" class="feedback__textarea textarea" onfocus="$('.feedback__more').slideDown()" required>[+comment.value+]</textarea>
+			[+comment.error+]
+		</div>
+		<div class="feedback__more" style="display: none;">
+			<button class="feedback__button button" type="submit">[%feedback_send%]</button>
+		</div>
+	</div>
+</form>

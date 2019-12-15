@@ -1,0 +1,27 @@
+@import './1-const.scss';
+
+.template-success {
+	.header {
+		@include for-phone {
+			min-height: calc(100vh - 70px);
+		}
+
+		.section {
+			&__header {
+				@include for-phone {
+					margin-top: auto;
+				}
+			}
+
+			&__body {
+				padding-bottom: 0;
+			}
+
+			&__content {
+				@include for-phone {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}

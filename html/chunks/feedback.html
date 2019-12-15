@@ -1,36 +1,43 @@
 <link rel="stylesheet" href="assets/templates/zrobym/css/feedback.css?[%config_last_mod%]">
-<div class="section feedback">
+<div id="form-feedback" class="section feedback">
 	<div class="separ separ--small"></div>
-	<form class="section__body">
-		<div class="section__body-col">
-			<div class="section__content">				
-				[[Typo? &breakline=`off` &text=`
-				<h4>[%feedback_title%]</h4>
-				<p>[%feedback_subtitle%]</p>`]]
-			</div>
-			<div class="feedback__more" style="display: none;">
-				<div class="feedback__group">
-					<input id="feedback-name" name="name" class="feedback__input input" type="text" placeholder="[%feedback_name%] *" required>
-				</div>
-				<div class="feedback__group">
-					<input id="feedback-city" name="city" class="feedback__input input" type="text" placeholder="[%feedback_city%] *" required>
-				</div>
-				<div class="feedback__group">
-					<input id="feedback-phone" name="phone" class="feedback__input input" type="tel" placeholder="[%feedback_phone%]">
-				</div>
-				<div class="feedback__group">
-					<input id="feedback-email" name="email" class="feedback__input input" type="email" placeholder="[%feedback_email%] *" required>
-				</div>
-			</div>
-		</div>
-		<div class="section__body-col">
-			<div class="feedback__group feedback__more-area">
-				<textarea id="feedback-comment" name="comment" class="feedback__textarea textarea" placeholder="[%feedback_comment%] *" onfocus="$('.feedback__more').slideDown()" required></textarea>
-			</div>
-			<div class="feedback__more" style="display: none;">
-				<button class="feedback__button button" type="submit">[%feedback_send%]</button>
+
+	[!FormLister?
+	&controller=`Form`
+	&formMethod=`post`
+	&formid=`feedback`
+	&formTpl=`feedback--formTpl`
+	&rules=`{
+	"name": { "required":"[%rules_required%]" },
+	"city": { "required":"[%rules_required%]" },
+	"comment": { "required":"[%rules_required%]" },
+	"email": { "required":"[%rules_required%]", "email":"[%rules_email%]" }
+	}`
+	&prepare=`AntiSpam`
+	&subject=`Сообщение с формы "Напишите нам"`
+	&to=`[%config_send_to%]`
+	&from=`site-admin@zrobym.by`
+	&reportTpl=`feedback--reportTpl`
+	&messagesTpl=`@CODE:
+	<div class="section__body">
+		<div class="section__body-col fullwidth">
+			<div class="section__content feedback__error">
+				<p>[+messages+]</p>
 			</div>
 		</div>
-	</form>
+	</div>`
+	&errorTpl=`@CODE:
+	<div class="feedback__group-error">[+message+]</div>`
+	&parseDocumentSource=`1`
+	&protectSubmit=`0`
+	&submitLimit=`0`
+	&redirectTo=`[%config_thanks_page%]`
+	!]
+
 	<div class="separ separ--small"></div>
 </div>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		checkSpam('#form-feedback', 'feedback-spam');
+	});
+</script>

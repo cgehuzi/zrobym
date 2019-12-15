@@ -423,3 +423,13 @@ if (phone_buttons) {
 	});
 }
 // END ------------------------
+
+// ====================================================
+// Реализация проверки AntiSpam
+// ====================================================
+const checkSpam = function(form_id, name, time = 5000) {
+	setTimeout(function() {
+		$(form_id + ' form').append('<input type="text" name="' + name + '" value="unvisible" style="display:none;">');
+	}, time);
+};
+// END ------------------------
