@@ -22,10 +22,7 @@
 &default=`[*meta_key*]`
 ]]">
 [*meta_noindex*]
-<link rel="alternate" href="http://zrobim.by/eng/[~[*id*]~]" hreflang="en">
-<link rel="alternate" href="http://zrobim.by/by/[~[*id*]~]" hreflang="by">
-<link rel="alternate" href="http://zrobim.by/[~[*id*]~]" hreflang="ru">
-<link rel="alternate" href="http://zrobim.by/[~[*id*]~]" hreflang="x-default">
+[[alternate? &use_default=`1` &tv=`[*relation*]`]]
 
 <!-- SMM -->
 <meta property="og:type" content="website">
@@ -53,12 +50,26 @@
 ]]">
 <meta property="og:image" content="[[Switch?
 &switch=`[*smm_image*]`
-&case:=`[(site_url)]assets/templates/zrobym/images/share.jpg`
+&case:=`[(site_url)][[Switch? &switch=`[*template*]`
+&default=`assets/templates/zrobym/images/zrobym_share.jpg`
+&case:9=`[*worker_image*]`
+&case:21=`[*project_image*]`
+&case:22=`[*project_image*]`
+&case:14=`assets/templates/zrobym/images/furniture_share.jpg`
+&case:23=`assets/templates/zrobym/images/furniture_share.jpg`
+&case:24=`[*item_image*]`]]`
 &default=`[*smm_image*]`
 ]]">
 <meta name="twitter:image" content="[[Switch?
 &switch=`[*smm_image*]`
-&case:=`[(site_url)]assets/templates/zrobym/images/share.jpg`
+&case:=`[(site_url)][[Switch? &switch=`[*template*]`
+&default=`assets/templates/zrobym/images/zrobym_share.jpg`
+&case:9=`[*worker_image*]`
+&case:21=`[*project_image*]`
+&case:22=`[*project_image*]`
+&case:14=`assets/templates/zrobym/images/furniture_share.jpg`
+&case:23=`assets/templates/zrobym/images/furniture_share.jpg`
+&case:24=`[*item_image*]`]]`
 &default=`[*smm_image*]`
 ]]">
 
