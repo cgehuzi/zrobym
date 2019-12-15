@@ -32,6 +32,8 @@
 				@include for-phone {
 					margin-bottom: auto;
 					padding-bottom: 32px;
+					position: relative;
+					top: 0;
 				}
 			}
 
@@ -68,6 +70,22 @@
 
 		&__content {
 			padding-top: 64px;
+		}
+
+		&--back {
+			.section {
+				&__header {
+					position: sticky;
+					top: 32px;
+
+					@include for-phone {
+						margin-top: auto;
+						margin-bottom: auto;
+						position: relative;
+						top: 0;
+					}
+				}
+			}
 		}
 	}
 }
