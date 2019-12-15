@@ -46,6 +46,18 @@
 		object-fit: cover;
 		object-position: center;
 
+		&--image {
+			@include for-tablet-up {
+				display: none;
+			}
+		}
+
+		&--video {
+			@include for-phone {
+				display: none;
+			}
+		}
+
 		&-left,
 		&-right {
 			margin: 0 -32px;

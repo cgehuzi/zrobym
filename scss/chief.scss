@@ -33,6 +33,10 @@
 		font-weight: $fw_bold;
 		font-size: 1.2rem;
 
+		@include for-phone-vertical {
+			font-size: 1.1rem;
+		}
+
 		@include for-phone-horizontal-up {
 			justify-content: flex-start;
 		}
