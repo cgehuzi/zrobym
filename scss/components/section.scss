@@ -47,13 +47,13 @@
 		object-position: center;
 
 		&--image {
-			@include for-tablet-up {
+			@include for-tablet-horizontal-up {
 				display: none;
 			}
 		}
 
 		&--video {
-			@include for-phone {
+			@include for-tablet-vertical-down {
 				display: none;
 			}
 		}
