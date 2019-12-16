@@ -46,147 +46,44 @@
 		</div>
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/calc.css?[%config_last_mod%]">
-		<form class="calc calc--arch">
-			<div class="section">
-				<div class="separ separ--small"></div>
-				<div class="section__body">
-					<div class="section__body-col">
-						<div class="section__content">
-							<h4>1. [%calc Выберите работы%]</h4>
-						</div>
-					</div>
-					<div class="section__body-col">
-						<label class="calc__checkbox checkbox" for="calc-concept">
-							<input class="checkbox__input" type="checkbox" id="calc-concept" name="calc-works" value="Архитектурно-планировочная концепция" checked disabled>
-							<div class="checkbox__icon"></div>
-							<div class="checkbox__body">
-								<div class="checkbox__title">[%calc_concept%]</div>
-								<a href="assets/files/calc/arhitekturno-planirovochnaya-koncepciya.pdf" class="checkbox__desc calc__checkbox-desc" target="_blank">[%Пример%]</a>
-							</div>
-						</label>
-						<label class="calc__checkbox checkbox" for="calc-visual">
-							<input class="checkbox__input" type="checkbox" id="calc-visual" name="calc-works" value="Визуализация" checked disabled>
-							<div class="checkbox__icon"></div>
-							<div class="checkbox__body">
-								<div class="checkbox__title">[%calc_visual%]</div>
-								<a href="assets/files/calc/vizualizaciya.pdf" class="checkbox__desc calc__checkbox-desc" target="_blank">[%Пример%]</a>
-							</div>
-						</label>
-						<label class="calc__checkbox checkbox" for="calc-maket">
-							<input class="checkbox__input" type="checkbox" id="calc-maket" name="calc-works" value="Макет">
-							<div class="checkbox__icon"></div>
-							<div class="checkbox__body">
-								<div class="checkbox__title">[%calc_maket%]</div>
-							</div>
-						</label>
-						<label class="calc__checkbox checkbox" for="calc-build">
-							<input class="checkbox__input" type="checkbox" id="calc-build" name="calc-works" value="Строительный проект">
-							<div class="checkbox__icon"></div>
-							<div class="checkbox__body">
-								<div class="checkbox__title">[%calc_build%]</div>
-								<a href="assets/files/calc/stroitelnyi-proekt.pdf" class="checkbox__desc calc__checkbox-desc" target="_blank">[%Пример%]</a>
-							</div>
-						</label>
-						<label class="calc__checkbox checkbox" for="calc-ingeneer">
-							<input class="checkbox__input" type="checkbox" id="calc-ingeneer" name="calc-works" value="Инженерные сети">
-							<div class="checkbox__icon"></div>
-							<div class="checkbox__body">
-								<div class="checkbox__title">[%calc_ingeneer%]</div>
-							</div>
-						</label>
-						<label class="calc__checkbox checkbox" for="calc-author">
-							<input class="checkbox__input" type="checkbox" id="calc-author" name="calc-works" value="Авторский надзор">
-							<div class="checkbox__icon"></div>
-							<div class="checkbox__body">
-								<div class="checkbox__title">[%calc_author%]</div>
-							</div>
-						</label>
-						<label class="calc__checkbox checkbox" for="calc-tech">
-							<input class="checkbox__input" type="checkbox" id="calc-tech" name="calc-works" value="Технический надзор">
-							<div class="checkbox__icon"></div>
-							<div class="checkbox__body">
-								<div class="checkbox__title">[%calc_tech%]</div>
-							</div>
-						</label>
-						<label class="calc__checkbox checkbox" for="calc-self">
-							<input class="checkbox__input" type="checkbox" id="calc-self" name="calc-works" value="Личное ведение проекта основателями студии">
-							<div class="checkbox__icon"></div>
-							<div class="checkbox__body">
-								<div class="checkbox__title">[%calc_self%]</div>
-							</div>
-						</label>
+
+		<div id="form-calc_arch">
+			[!FormLister?
+			&controller=`Form`
+			&formMethod=`post`
+			&formid=`calc_arch`
+			&formTpl=`calc_arch--formTpl`
+			&rules=`{
+			"name": { "required":"[%rules_required%]" },
+			"email": { "required":"[%rules_required%]", "email":"[%rules_email%]" }
+			}`
+			&formControls=`works`
+			&prepare=`AntiSpam`
+			&subject=`Заказ архитектурного проекта с сайта [(site_name)]`
+			&to=`[%config_send_to%]`
+			&from=`site-admin@zrobym.by`
+			&reportTpl=`calc_arch--reportTpl`
+			&messagesTpl=`@CODE:
+			<div class="section__body">
+				<div class="section__body-col fullwidth">
+					<div class="section__content calc__error">
+						<p>[+messages+]</p>
 					</div>
 				</div>
-				<div class="separ separ--small"></div>
-			</div>
-			<hr class="grid-row grid-row--all">
-			<div class="section">
-				<div class="separ separ--small"></div>
-				<div class="section__body center">
-					<div class="section__body-col">
-						<div class="section__content">
-							<h4>2. [%calc Укажите площадь%]</h4>
-						</div>
-					</div>
-					<div class="section__body-col">
-						<div class="calc__group">
-							<input id="calc-square" name="calc-square" class="calc__group-input calc__input input" type="text" placeholder="50" required>
-							<div class="calc__group-unit">M<sup>2</sup></div>
-						</div>
-					</div>
-				</div>
-				<div class="separ separ--small"></div>
-			</div>
-			<hr class="grid-row grid-row--all">
-			<div class="section">
-				<div class="separ separ--small"></div>
-				<div class="section__body center">
-					<div class="section__body-col">
-						<div class="section__content">
-							<h4>[%calc Итоговая стоимость%]</h4>
-						</div>
-					</div>
-					<div class="section__body-col">
-						<div class="section__header">
-							<div class="section__header-title calc__total">
-								<span id="calc-total-text" class="calc__total-price">0</span> [%calc $%]
-								<input type="hidden" id="calc-total" name="calc-total" placeholder="ИТОГО">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="separ separ--small"></div>
-			</div>
-			<hr class="grid-row grid-row--all">
-			<div class="section">
-				<div class="separ separ--small"></div>
-				<div class="section__body">
-					<div class="section__body-col">
-						<div class="section__content">
-							<h4>[%calc Контактные данные%]</h4>
-						</div>
-					</div>
-					<div class="section__body-col">
-						<div class="calc__group">
-							<input id="calc-name" name="name" class="calc__input input" type="text" placeholder="[%feedback_name%] *" required>
-						</div>
-						<div class="calc__group">
-							<input id="calc-phone" name="phone" class="calc__input input" type="tel" placeholder="[%feedback_phone%]">
-						</div>
-						<div class="calc__group">
-							<input id="calc-email" name="email" class="calc__input input" type="email" placeholder="[%feedback_email%] *" required>
-						</div>
-						<div class="calc__group">
-							<textarea id="calc-comment" name="comment" class="calc__textarea textarea" placeholder="[%feedback_message%]"></textarea>
-						</div>
-						<div class="section__buttons calc__submit">
-							<button class="calc__submit-button button" type="submit">[%feedback_order%]</button>
-						</div>
-					</div>
-				</div>
-				<div class="separ"></div>
-			</div>
-		</form>
+			</div>`
+			&errorTpl=`@CODE:
+			<div class="calc__group-error">[+message+]</div>`
+			&parseDocumentSource=`1`
+			&protectSubmit=`0`
+			&submitLimit=`0`
+			&redirectTo=`[%config_thanks_page%]`
+			!]
+		</div>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				checkSpam('#form-calc_arch', 'calc_arch-spam');
+			});
+		</script>
 
 		{{feedback}}
 		{{footer}}

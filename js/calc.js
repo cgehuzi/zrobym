@@ -33,11 +33,13 @@ const calc_arch = function() {
 
 	// АПК (архитектурно-планировочная концепция)
 	const concept = $('#calc-concept');
+	concept.prop('checked', true);
 	const concept_on = concept.is(':checked') ? true : false;
 	const concept_price = square_value * 21;
 
 	// Визуализация
 	const visual = $('#calc-visual');
+	visual.prop('checked', true);
 	const visual_on = visual.is(':checked') ? true : false;
 	const visual_price = 900;
 
@@ -139,10 +141,12 @@ const calc_design = function() {
 
 	// Дизайн-проект
 	const design = $('#calc-design');
+	design.prop('checked', true);
 	const design_on = design.is(':checked') ? true : false;
 
 	// Ведомость материалов
 	const vedomost = $('#calc-vedomost');
+	vedomost.prop('checked', true);
 	const vedomost_on = vedomost.is(':checked') ? true : false;
 
 	// Авторское сопровождение
@@ -155,9 +159,7 @@ const calc_design = function() {
 	const slugba_on = slugba.is(':checked') ? true : false;
 	const slugba_price = slugba_on ? 2500 : 0;
 	if (slugba_on) {
-		author.prop('checked', true).prop('disabled', true);
-	} else {
-		author.prop('disabled', false);
+		author.prop('checked', true);
 	}
 
 	// Личное ведение проекта основателями студии
