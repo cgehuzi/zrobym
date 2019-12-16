@@ -323,8 +323,10 @@ if (tab_blocks) {
 			const tab_button_was = document.querySelector('[data-tab-open="' + tab_was_selector + '"]');
 			if (tab_button_was) {
 				tab_button_was.click();
-				if (window.location.href.split('?')[1].indexOf('-page=') > 0) {
-					$('html, body').animate({ scrollTop: $(tab_buttons[0]).offset().top }, 600);
+				if (window.location.href.split('?').length > 0) {
+					if (window.location.href.split('?')[1].indexOf('-page=') > 1) {
+						$('html, body').animate({ scrollTop: $(tab_buttons[0]).offset().top }, 600);
+					}
 				}
 			} else {
 				tab_buttons[0].click();

@@ -1,7 +1,7 @@
 <center style="font-family: Arial, sans-serif; color: #080808;">
 	<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
 		<tr>
-			<td align="left" style="font-size:17px; font-weight:bold; padding-bottom: 24px;">Заказ архитектурного проекта с сайта <a href="[(site_url)]" target="_blank" style="color: #080808; text-decoration: underline;">[(site_name)]</a></td>
+			<td align="left" style="font-size:17px; font-weight:bold; padding-bottom: 24px;">Заказ дизайна интерьера с сайта <a href="[(site_url)]" target="_blank" style="color: #080808; text-decoration: underline;">[(site_name)]</a></td>
 		</tr>
 		<tr>
 			<td align="left" valign="top">
@@ -15,21 +15,21 @@
 											<td colspan="2" align="left" style="padding-top: 0; font-size: 15px; font-weight: bold;">О проекте</td>
 										</tr>
 										<tr>
+											<td align="left" style="border: 1px solid #c8c8c8; font-size: 13px; background: #ffffff; font-weight: bold;">Тип объекта</td>
+											<td align="left" style="border: 1px solid #c8c8c8; font-size: 13px; background: #ffffff;">[+type.value+]</td>
+										</tr>
+										<tr>
 											<td align="left" style="border: 1px solid #c8c8c8; font-size: 13px; background: #ffffff; font-weight: bold;">Состав работы</td>
 											<td align="left" style="border: 1px solid #c8c8c8; font-size: 13px; background: #ffffff;">
 												<ul style="padding-left: 16px; margin: 0;">
-													[[Switch? &switch=`[+c.works.Архитектурно-планировочная концепция+]`
-													&case:=`` &default=`<li>Архитектурно-планировочная концепция</li>`]]
-													[[Switch? &switch=`[+c.works.Макет+]`
-													&case:=`` &default=`<li>Макет</li>`]]
-													[[Switch? &switch=`[+c.works.Строительный проект+]`
-													&case:=`` &default=`<li>Строительный проект</li>`]]
-													[[Switch? &switch=`[+c.works.Инженерные сети+]`
-													&case:=`` &default=`<li>Инженерные сети</li>`]]
-													[[Switch? &switch=`[+c.works.Авторский надзор+]`
-													&case:=`` &default=`<li>Авторский надзор</li>`]]
-													[[Switch? &switch=`[+c.works.Технический надзор+]`
-													&case:=`` &default=`<li>Технический надзор</li>`]]
+													[[Switch? &switch=`[+c.works.Дизайн-проект+]`
+													&case:=`` &default=`<li>Дизайн-проект</li>`]]
+													[[Switch? &switch=`[+c.works.Ведомость материалов+]`
+													&case:=`` &default=`<li>Ведомость материалов</li>`]]
+													[[Switch? &switch=`[+c.works.Авторское сопровождение+]`
+													&case:=`` &default=`<li>Авторское сопровождение</li>`]]
+													[[Switch? &switch=`[+c.works.Служба заказчика (контроль закупок)+]`
+													&case:=`` &default=`<li>Служба заказчика (контроль закупок)</li>`]]
 													[[Switch? &switch=`[+c.works.Личное ведение проекта основателями студии+]`
 													&case:=`` &default=`<li>Личное ведение проекта основателями студии</li>`]]
 												</ul>
