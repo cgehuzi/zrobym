@@ -43,7 +43,8 @@
 							</div>
 						</div>
 						[[Switch? &switch=`[*item_color1*][*item_color2*][*item_color3*][*item_color4*][*item_color5*]`
-						&case:=`` &default=`
+						&case:=`<button data-tab-open="#color-1" data-tab-group="#colors" style="display: none;"></button>`
+						&default=`
 						<ul class="furniture__color">
 							[[Switch? &switch=`[*item_color1*]`
 							&case:=`` &default=`
@@ -82,6 +83,14 @@
 						[[Typo? &breakline=`off` &text=`[*item_desc*]`]]
 					</div>`]]
 
+					[[Switch? &switch=`[*item_materials*]`
+					&case:=`` &default=`
+					<div class="section__content furniture__material">
+						[[Typo? &breakline=`off` &text=`
+						<h4>[%Используемые материалы%]</h4>
+						[*item_materials*]`]]
+					</div>`]]
+
 					[[multiTV?
 					&tvName=`item_schemes`
 					&outerTpl=`@CODE:
@@ -91,15 +100,6 @@
 					&rowTpl=`furniture_scheme--rowTpl`
 					&display=`all`
 					]]
-
-
-					[[Switch? &switch=`[*item_materials*]`
-					&case:=`` &default=`
-					<div class="section__content furniture__material">
-						[[Typo? &breakline=`off` &text=`
-						<h4>[%Используемые материалы%]</h4>
-						[*item_materials*]`]]
-					</div>`]]
 
 					[[Switch? &switch=`[*item_3d*]`
 					&case:=`` &default=`
