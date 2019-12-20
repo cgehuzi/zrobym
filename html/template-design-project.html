@@ -205,7 +205,11 @@
 						&default=`
 						<li class="project-gallery__list-point">
 							<a data-fancybox data-caption="[[Typo? &text=`[*pagetitle*]`]]" class="project-gallery__item youtube__item" href="[*project_video_main*]">
-								<img class="project-gallery__item-image youtube__item-image" src="[*project_video_image*]" alt="[[Typo? &text=`[*pagetitle*]`]]">
+								<img class="project-gallery__item-image youtube__item-image" src="[[Switch?
+								&switch=`[*project_video_image*]`
+								&case:=`[*project_image*]`
+								&default=`[*project_video_image*]`
+								]]" alt="[[Typo? &text=`[*pagetitle*]`]]">
 							</a>
 						</li>`]]
 
