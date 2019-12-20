@@ -1,5 +1,2168 @@
 [
 	{
+		"category": "Наши проекты",
+		"createdon": 1569934407,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/energohouse.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2752",
+
+		"pagetitle": "ENERGOHOUSE",
+		"Папка с фото": 190,
+		"Основное изображение": "http://zrobym.by/images/projects/energohouse/own2.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Да",
+		"info": {
+			"Студия": "Zrobym architects, Level80 architects",
+			"Архитекторы": "Андрусь Bezdar, Кирилл Скорынин",
+			"Расположение": "п. Гонолес, Беларусь.",
+			"Площадь": "180 м.кв.",
+			"Год реализации": "2014",
+			"Фото": "Алексей Наумчик, Андрусь Bezdar"
+		},
+		"Координаты": "53.981194, 27.333928",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2014,
+		"Описание проекта": "<p>Энергоэффективный эксподом с минималистичным скандинавским дизайном. Дом построен по каркасной технологии, отделка фасада выполнена при помощи плит ЦСП. Дом отапливается за счёт геотермального насоса и системы рекуперации. Электричество получает от солнечных батарей. Управляется с через систему &quot;умный дом&quot;.</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/energohouse/12!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/images/projects/energohouse/13!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/energohouse/4192.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/energohouse/4199.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/energohouse/4200.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/energohouse/4201.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/energohouse/4202.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/energohouse/4203.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/energohouse/4204.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/energohouse/4205.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/energohouse/4206.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/energohouse/4193.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/energohouse/4194.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569934400,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/dom-rectanglehouse.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2751",
+
+		"pagetitle": "ДОМ RECTANGLE HOUSE",
+		"Папка с фото": 189,
+		"Основное изображение": "http://zrobym.by/images/projects/rectangular-house/recanglehouse.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Архитектура||Частные дома",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Андрусь Bezdar, Алексей Кораблев ",
+			"Расположение": "г. Заславль, Беларусь",
+			"Площадь": "270 м.кв.",
+			"Год": "2014"
+		},
+		"Координаты": "54.004485, 27.291241",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2014,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/rectangular-house/4!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/rectangle-house/4186.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/rectangle-house/4187.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/rectangle-house/4188.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569934372,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/poligonal-house.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2750",
+
+		"pagetitle": "POLIGONAL HOUSE",
+		"Папка с фото": 188,
+		"Основное изображение": "http://zrobym.by//images/projects/polygonal-house/1.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Дмитрий Киселев, Дмитрий Шелег, Андрусь Bezdar",
+			"Расположение": "г. Дзержинск, Беларусь",
+			"Площадь": "184.7 м.кв.",
+			"Год": "2016"
+		},
+		"Координаты": "53.685209, 27.131493",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2016,
+		"Описание проекта": "<p>Наш проект полигонального дома в Дзержинске</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by//images/projects/polygonal-house/5!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by//images/projects/polygonal-house/6!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4173.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4175.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4176.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4177.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4182.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4183.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4184.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4168.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4169.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4170.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4171.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4172.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/poligonal-house/4174.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {
+			"video": "https://www.youtube.com/embed/STXaoKYI17g"
+		}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569934363,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/dom-28-house.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2749",
+
+		"pagetitle": "ДОМ 28 HOUSE",
+		"Папка с фото": 187,
+		"Основное изображение": "http://zrobym.by//images/projects/28house-a/1.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Валерия Королева, Алексей Кораблев",
+			"Расположение": "Минский район, Беларусь",
+			"Площадь": "94,6 м.кв.",
+			"Год": "2016"
+		},
+		"Координаты": "54.002003, 27.523311",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2016,
+		"Описание проекта": "<p>Модульный дом с панорамным остеклением. Главной задачей которой было создание максимальной связи с окружающей природой.</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by//images/projects/28house-a/9!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by//images/projects/28house-a/10!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/28-house/4153.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/28-house/4156.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/28-house/4159.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/28-house/4160.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/28-house/4161.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/28-house/4162.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/28-house/4163.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/28-house/4166.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/28-house/4167.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569934351,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/dom-balthouse.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2748",
+
+		"pagetitle": "ДОМ BALTHOUSE",
+		"Папка с фото": 186,
+		"Основное изображение": "http://zrobym.by/images/projects/balthouse/balthouse.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Екатерина Плакса, Андрусь Bezdar",
+			"Расположение": "п. Ратомка, Беларусь.",
+			"Площадь": "226 м.кв.",
+			"Год": "2014"
+		},
+		"Координаты": "53.939052, 27.335168",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2014,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/balthouse/5!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/images/projects/balthouse/6!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/balthouse/4144.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/balthouse/4145.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/balthouse/4146.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/balthouse/4147.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569934339,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/modulnyij-poselok-holmy.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2747",
+
+		"pagetitle": "HOLMY",
+		"Папка с фото": 185,
+		"Основное изображение": "http://zrobym.by/images/projects/holmy/HOLMY.jpg",
+		"Краткое описание": "Модульный поселок",
+		"Тип проекта": "Архитектура||Квартальная застройка",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Дмитрий Шелег, Алексей Кораблев",
+			"Расположение": "д. Перхурово, Минская обл., Беларусь",
+			"Площадь": "5 га",
+			"Год": "2016"
+		},
+		"Координаты": "53.862064, 27.204859",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2016,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/holmy/4136.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/holmy/4137.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/holmy/4138.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/holmy/4139.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/holmy/4140.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/holmy/4141.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/holmy/4142.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569934331,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/dom-longhouse.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2746",
+
+		"pagetitle": "ДОМ LONGHOUSE",
+		"Папка с фото": 184,
+		"Основное изображение": "http://zrobym.by/images/projects/longhouse/3.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Андрей Лычковский, Тютюнник Артем, Андрусь Bezdar",
+			"Расположение": "д. Кучкуны, Воложинский р-н, Беларусь.",
+			"Площадь": "83 м.кв.",
+			"Год": "2015"
+		},
+		"Координаты": "53.997795, 27.101094",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2015,
+		"Описание проекта": "<p>Проект типового модульного дома с возможностью заказывать различные комплектации и достраивать дом в будущем. Модули собираются из панелей (стеновые, перекрытия, панели-двери, панели-окна). Домокомплект приходит с чистовой отделкой внутри и частично с наружной отделкой. Модуль, как конструктор, собирается на участке.</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/longhouse/5!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/images/projects/longhouse/6!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/longhouse/4123.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/longhouse/4124.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/longhouse/4125.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/longhouse/4126.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/longhouse/4133.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/longhouse/4134.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/longhouse/4135.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569934267,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/dom-bird-house.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2745",
+
+		"pagetitle": "ДОМ BIRD HOUSE",
+		"Папка с фото": 183,
+		"Основное изображение": "http://zrobym.by/images/projects/bird-house/3.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Плакса Екатерина, Андрусь Bezdar",
+			"Визуализация": "Тютюнник Артем",
+			"Площадь": "150 м.кв.",
+			"Год": "2015"
+		},
+		"Координаты": "",
+		"Показывать на карте?": "Нет",
+		"Год реализации": 2015,
+		"Описание проекта": "<p>Типовой проект модульного дома, имеющий несколько стадий развития.</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/bird-house/4!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/images/projects/bird-house/5!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/images/projects/bird-house/6!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/bird-house/4110.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bird-house/4111.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bird-house/4112.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bird-house/4121.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bird-house/4122.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bird-house/6.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569934253,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/dom-baranavichi-2.0.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2744",
+
+		"pagetitle": "ДОМ BARANAVICHI 2.0",
+		"Папка с фото": 182,
+		"Основное изображение": "http://zrobym.by/images/projects/baranovichi2/BARANOVICHI-2.0.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Андрей Лычковский, Александр Жаловский, Андрусь Bezdar",
+			"Расположение": "Барановичи, Брестская область, Беларусь",
+			"Площадь": "213 м2",
+			"Год": "2017"
+		},
+		"Координаты": "53.132368, 26.017609",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/baranovichi2/7!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/images/projects/baranovichi2/8!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/baranavichi-2.0/4096.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/baranavichi-2.0/4097.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/baranavichi-2.0/4098.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/baranavichi-2.0/4099.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/baranavichi-2.0/4100.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/baranavichi-2.0/4108.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/baranavichi-2.0/4109.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569934244,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/velga-4.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2743",
+
+		"pagetitle": "VELGA 4",
+		"Папка с фото": 181,
+		"Основное изображение": "http://zrobym.by/images/projects/velga-4/VELGA-4.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Архитектура||Квартальная застройка",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Андрей Лычковский, Саша Гамолин, Алексей Кораблев, Андрусь Bezdar",
+			"Расположение": "Вильнюс, Литва",
+			"Площадь": "18047 м.кв.",
+			"Год": "2016"
+		},
+		"Координаты": "54.672487, 25.235572",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2016,
+		"Описание проекта": "<p>Тендерный проект застройки квартала в Вильнюсе</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by//images/projects/velga-4/9.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/velga-4/4086.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/velga-4/4087.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/velga-4/4088.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/velga-4/4089.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/velga-4/4090.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/velga-4/4091.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/velga-4/4092.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/velga-4/4093.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569934236,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/dom-bathhouse.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2742",
+
+		"pagetitle": "ДОМ BATHHOUSE",
+		"Папка с фото": 180,
+		"Основное изображение": "http://zrobym.by/images/projects/bathhouse/own.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Александр Жаловский, Андрусь Bezdar",
+			"Расположение": "аг. Чуриловичи, Минский р-н, Минская обл., Беларусь",
+			"Площадь": "42,62 кв. м.",
+			"Год": "2017"
+		},
+		"Координаты": "53.747027, 27.569844",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/bathhouse/5!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/bathhouse/4079.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bathhouse/4080.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bathhouse/4081.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bathhouse/4082.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933966,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/ecopark.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2741",
+
+		"pagetitle": "ECOPARK",
+		"Папка с фото": 179,
+		"Основное изображение": "http://zrobym.by//images/projects/ecopark/ecopark.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Архитектура||Квартальная застройка",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Александр Жаловский, Андрусь Bezdar",
+			"Застройщик": "Группа компаний &quot;Зубр&quot;",
+			"Типовая серия домов": "МАПиД м111-90",
+			"Размещение": "ул. Анненки, Калуга, Калужская обл., Россия",
+			"Начало и окончание строительства": "1 квартал 2017 г. – 1 квартал 2018 г.",
+			"Площадь застройки": "Площадь территории - 2,23 га",
+			"Число квартир": "504 (126х4)"
+		},
+		"Координаты": "54.532965, 36.167350",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "<p>Квартал из четырёх домов расположен на въезде в город и получил название Экопарк. Это четыре 19-этажных дома с окнами на все стороны света, светящимися маяками на крышах и козырьками подъездов из просечного металла. За основу был взят типовой дом серии МАПиД м111-90. Наша студия занималась разработкой общей концепции квартала, фасадами, внутренним дизайном, генпланом и благоустройством территории.</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4065.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4069.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4070.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4071.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4072.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4073.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4074.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4075.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4076.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4066.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4067.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/ecopark/4068.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933962,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/vesninka-2.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2740",
+
+		"pagetitle": "VESNINKA #2",
+		"Папка с фото": 178,
+		"Основное изображение": "http://zrobym.by//images/projects/vesninka/1.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Архитектура||Частные дома",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Александр Жаловский, Алексей Кораблев, Андрусь Bezdar",
+			"Расположение": "Минск, Беларусь",
+			"Площадь": "482,25 кв. м.",
+			"Год": "2017"
+		},
+		"Координаты": "53.943260, 27.476797",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by//images/projects/vesninka/5!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by//images/projects/vesninka/6!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/vesninka-2/4053.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/vesninka-2/4054.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/vesninka-2/4055.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/vesninka-2/4056.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933823,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/leo-house.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2739",
+
+		"pagetitle": "LEO-HOUSE",
+		"Папка с фото": 177,
+		"Основное изображение": "http://zrobym.by/images/projects/L-HOUSE/превью.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Архитектура||Частные дома",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Роман Мохаммад, Андрусь Bezdar",
+			"Расположение": "Вильнюс, Литва",
+			"Год": "2017"
+		},
+		"Координаты": "54.709136, 25.241255",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/leo-house/4047.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/leo-house/4048.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/leo-house/4049.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/leo-house/4050.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/leo-house/4051.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933811,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/brvlny.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2738",
+
+		"pagetitle": "BRVLNY",
+		"Папка с фото": 176,
+		"Основное изображение": "http://zrobym.by//images/projects/brvlny/previu.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Саша Гамолин, Алексей Кораблев",
+			"Расположение": "г. Боровляны, Беларусь",
+			"Год": "2017"
+		},
+		"Координаты": "53.994429, 27.672530",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/brvlny/4038.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/brvlny/4039.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/brvlny/4040.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/brvlny/4041.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/brvlny/4042.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/brvlny/4043.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/brvlny/4044.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/brvlny/4045.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933609,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/baths-i-workshop.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2734",
+
+		"pagetitle": "BATHS&WORKSHOP",
+		"Папка с фото": 175,
+		"Основное изображение": "http://zrobym.by//images/projects/bania-i-masterskaia/previu.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Дмитрий Шелег, Андрусь Bezdar",
+			"Расположение": "д. Грицковщина, Дзержинский район, Беларусь",
+			"Площадь": "128 м.кв.",
+			"Год": "2016"
+		},
+		"Координаты": "53.708032, 27.036910",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2016,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by//images/projects/bania-i-masterskaia/6!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/bathsandworkshop/4030.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bathsandworkshop/4031.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bathsandworkshop/4032.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bathsandworkshop/4033.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/bathsandworkshop/4034.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933580,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/dom-smuga.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2733",
+
+		"pagetitle": "ДОМ SMUGA",
+		"Папка с фото": 174,
+		"Основное изображение": "http://zrobym.by/images/projects/smuga/smuga.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Да",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Бобров Артем, Алексей Кораблев",
+			"Расположение": "Минский р-н, дачный кооператив «Узгорье»",
+			"Площадь": "68 м.кв.",
+			"Год": "2015"
+		},
+		"Координаты": "53.713094, 27.686934",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2015,
+		"Описание проекта": "<p>Проект небольшого модульного дома, имеющий несколько стадий развития.</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/smuga/19!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/images/projects/smuga/20!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/images/projects/smuga/21!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/images/projects/smuga/22!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4002.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4014.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4022.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4023.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4024.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4025.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4026.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4027.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4028.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4003.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4004.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4005.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4006.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4007.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4008.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4009.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4010.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4011.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/smuga/4021.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "https://www.youtube.com/embed/0yrAepDnt7A",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933571,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/dom-tresk-house.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2732",
+
+		"pagetitle": "ДОМ TRESK-HOUSE",
+		"Папка с фото": 173,
+		"Основное изображение": "http://zrobym.by//images/projects/tresk-house/own.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитектор": "Егор Парафенюк, Андрусь Bezdar",
+			"Расположение": "Тресковщина, Минская область, Беларусь",
+			"Площадь": "176 м2",
+			"Год": "2017"
+		},
+		"Координаты": "53.912733, 27.095641",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by//images/projects/tresk-house/6!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by//images/projects/tresk-house/7!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/tresk-house/3958.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/tresk-house/3959.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/tresk-house/3960.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/tresk-house/3961.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/tresk-house/3962.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/tresk-house/3972.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/tresk-house/3973.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933565,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/project-18.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2731",
+
+		"pagetitle": "PROJECT 18",
+		"Папка с фото": 172,
+		"Основное изображение": "http://zrobym.by/images/projects/2.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Валерия Королева, Андрусь Bezdar, Алексей Кораблев",
+			" Расположение": "мк. Лебяжий, ул. Баторинская 18, Беларусь",
+			"Площадь": "673 кв.м",
+			"Год": "2017"
+		},
+		"Координаты": "53.531205, 28.030985",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/project 18/6!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/images/projects/project 18/7!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/images/projects/project 18/8!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/images/projects/project 18/9!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3947.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3948.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3949.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3950.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3951.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3945.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3946.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3943.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3936.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3937.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3938.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3939.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3930.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3931.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3932.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3933.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3934.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/project-18/3935.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {
+			"video": "https://www.youtube.com/embed/aDuvnd6YSCA"
+		}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933531,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/arxitekturnyij-proekt-doma-marily-house.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2730",
+
+		"pagetitle": "MARILY HOUSE",
+		"Папка с фото": 171,
+		"Основное изображение": "http://zrobym.by/images/projects/MARYALIVA/превью!.jpg",
+		"Краткое описание": "Архитектурный проект дома ",
+		"Тип проекта": "Архитектура||Частные дома",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Станислав Болотников, Святослав Болотников, Андрусь Bezdar",
+			"Расположение": "д. Марьяливо, Минская область, Беларусь",
+			"Площадь": "256 м.кв.",
+			"Год": "2017"
+		},
+		"Координаты": "54.041575, 27.661445",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "<p>С незапамятных времен, когда дизайн еще только начал зарождаться в Беларуси, господин Александр Трусов начинал проектировать один прекрасный дом. И вот, совсем недавно к нам обратился клиент, чтобы реконструировать недостроенный дом в соответствии с его пожеланиями. В проекте реконструкции мы старались учесть желания как первого архитектора, так и нашего клиента. В результате получился проект MARILY HOUSE.</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/MARYALIVA/12!!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/images/projects/MARYALIVA/13!!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/images/projects/MARYALIVA/marialivo.gif",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3905.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3914.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3918.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3919.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3920.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3922.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3923.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3924.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3925.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3906.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3913.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3915.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3916.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/marily-house/3917.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933526,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/mythological-museum.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2729",
+
+		"pagetitle": "MYTHOLOGICAL MUSEUM",
+		"Папка с фото": 170,
+		"Основное изображение": "http://zrobym.by/images/projects/MYTHOLOGICAL MUSEUM/превью.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Архитектура||Общественные здания",
+		"Реализован?": "Да",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Роман Мохаммад, Алексей Кораблев",
+			"Фотограф": "Александра Кононченко",
+			"Видеосъемка": "Александра Кононченко и Александр Мошкин",
+			"Расположение": "Березинский заповедник, Беларусь",
+			"Площадь": "68 м.кв.",
+			"Год": "2017"
+		},
+		"Координаты": "54.762231, 28.321806",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "<p>Это проект о дохристианской культуре. О том, как видели мир наши предки, во что они верили, как жили. Поскольку в наше время о язычестве сохранилось немного информации, и еще меньше музеев и мест где про него рассказывают, наш проект оказался действительно уникальным. Как основа музея стал старый дом лесничего в Березинском заповеднике в Беларуси. Поскольку дохристианские люди жили чаще всего хуторами или маленькими деревнями, образ одинокого дома в лесу как нельзя лучше подходил для музея. Во время реконструкции мы зашили все окна у дома, чтобы снаружи не было понятно, что находиться в стенах сооружения; это отсылка к тому, что сегодня о дохристианской эпохе мало кто знает и такую информацию получить нелегко, поэтому она закрыта от постороннего и у нас, создавая интригу того, что находиться внутри. Далее мы достроили входную часть музея <span>–</span> это своеобразный каркас-скелет свода, напоминающий силуэтом сакральные сооружения. Он показывает, что это история про умершую религию, от которой остались только воспоминания. Стены пристройки имеют систему обратной перспективы, это вызывает диссонанс у входящего человека и говорит о том, что мир людей того времени был наполнен множеством мифических и удивительных вещей. По средине пристройки находится дерево - это главный символ дохристианских людей. В понимании языческой религии, дерево соединяло три мира: мир подземный, мир людей и мир неба. В нашем случае оно срублено и стоит уже мертвым, поскольку эта религия уже почти забыта в наше время. Об этом же нам говорит и цвет всей постройки. Мы выкрасили все конструкции, включая крышу, фундамент и стены в один темно-антрацитовый цвет. Создается впечатление дома после пожара, именно так происходил отказ от язычества у нас на земле. С приходом христианства многих людей насильственно крестили и заставляли отрекаться от прошлой веры. </p><p>В интерьере музея вся площадь была поделена на три тематические комнаты, как уже написано ранее: мир подземный, людей и неба. Каждый из них оформлен в представлении древним человеком этого мира. Существует множество сказок и преданий, которые рассказывают о мифических существах и событиях, в которые верили наши предки и которыми они пытались объяснить логику происходящих событий вокруг них.</p><p>Перед музеем располагается входная табличка с легендой в виде развернутой книги, где текст можно прочитать только в отражении зеркала, находящемся на другом развороте. Рядом располагаются лавки, выполненные в виде созвездий, поскольку множество мифов связанны именно со звездами и рассказами о них, и в большинстве своем о самых знакомых нам созвездиях – большой и малой медведице. Чуть дальше находиться мифологическая тропа, это дорожка вдоль всего заповедника, которая проходит через густые леса, болота, поляны. На протяжении тропы располагаются разные скульптуры мифических существ из сказок и преданий, с которыми может ознакомиться путешественник. Входная арка на тропу имеет две зеркальные стены, выполненные из листов полированного металла. Перед ними расположены стволы деревьев. Проходящий между зеркалами человек, погружается в эффект рекурсии, видя вокруг себя бесконечный лес, который удаляется вдаль, это означает переход в зону леса, где он может встретить разные чудеса. </p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/MYTHOLOGICAL MUSEUM/план!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3881.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3890.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3891.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3892.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3893.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3894.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3895.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3896.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3897.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3882.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3883.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3884.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3885.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3886.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3887.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3888.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3889.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3899.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3898.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3900.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/mythological-museum/3901.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "https://www.youtube.com/embed/-iTYDzkyj3Y",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933518,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/arxitekturnyij-proekt-doma-summer-house.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2728",
+
+		"pagetitle": "АРХИТЕКТУРНЫЙ ПРОЕКТ ДОМА SUMMER HOUSE",
+		"Папка с фото": 169,
+		"Основное изображение": "http://zrobym.by/images/projects/sho/превью!.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Архитектура||Частные дома",
+		"Реализован?": "Да",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитектор": "Андрусь Bezdar",
+			"Фотограф": "Александра Кононченко",
+			"Видеосъемка": "Александра Кононченко и Александр Мошкин",
+			"Расположение": "д. Вязынка, Молодеченский р-н, Беларусь",
+			"Площадь": "35 м.кв.",
+			"Год": "2017"
+		},
+		"Координаты": "54.099149, 27.195013",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/sho/59!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3871.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3870.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3869.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3868.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3867.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3865.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3864.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3823.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3834.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3845.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3857.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3866.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3875.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3876.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3877.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3878.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3824.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3825.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3826.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3827.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3828.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3829.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3830.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3831.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3832.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3833.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3835.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3836.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3837.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3838.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3839.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3840.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3841.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3842.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3843.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3844.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3846.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3847.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3848.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3849.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3850.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3851.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3852.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3853.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3854.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3855.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3856.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3858.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3859.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3860.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3861.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3862.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/summer-house/3863.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "https://www.youtube.com/embed/GVOUxiw2IQg",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933513,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/arxitekturnyij-proekt-doma-teeny-house.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2727",
+
+		"pagetitle": "АРХИТЕКТУРНЫЙ Проект дома TEENY HOUSE",
+		"Папка с фото": 168,
+		"Основное изображение": "http://zrobym.by/images/projects/TEENY HOUSE/превью.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Дарья Семёнова, Андрусь Bezdar, Алексей Кораблев",
+			"Расположение": "8 Железнодорожный переулок, Минск, Беларусь",
+			"Площадь": "110 м.кв. ",
+			"Год": "2017"
+		},
+		"Координаты": "53.879121, 27.515280",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/TEENY HOUSE/6!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/images/projects/TEENY HOUSE/7!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/teeny-house/3813.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/teeny-house/3814.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/teeny-house/3815.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/teeny-house/3816.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/teeny-house/3817.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933492,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/babycenter.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2726",
+
+		"pagetitle": "BABYCENTER",
+		"Папка с фото": 167,
+		"Основное изображение": "http://zrobym.by/images/projects/BABYCENTER/превью1.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Архитектура||Общественные здания",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Станислав Болотников, Святослав Болотников, Алексей Кораблев, Андрусь Bezdar",
+			"Расположение": "пр-т Дзержинского, Минск, Беларусь",
+			"Площадь": "870 м.кв.",
+			"Год проектирования": "2017",
+			"Планируемый год реализации": "2018"
+		},
+		"Координаты": "53.874508, 27.495607",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "<p>Реконструкция детского садика.</p><p>Дети должны жить в мире красоты, игры, сказки, фантазии, творчества. Детский сад - это неотъемлемая часть жизни каждого ребенка. Поэтому в садике ребенку должно быть интересно и увлекательно. В экстерьере этого детского сада мы попытались максимально разработать не только сами фасады, но и площадку. Большой упор был сделан именно на игровую часть, чтобы малыши не только могли поиграть, но и развивать мышление и творчество. Даже сами фасады состоят из части игровой зоны: на стенах можно рисовать мелом, что безусловно понравится детям. Мы стремимся сделать их мир ярче, даже в детском саду. Хотим отметить, что это был уже существующее здание, которое заказалаи у нас для модернизации. А так как бюджет был минимальным, то мы использовали недорогие, но креативные материалы.</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/BABYCENTER/13!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3789.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3791.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3800.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3802.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3804.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3806.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3807.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3808.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3809.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3810.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3792.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3793.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3794.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3799.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3801.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3803.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/babycenter/3805.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Наши проекты",
+		"createdon": 1569933478,
+		"Ссылка": "http://zrobym.by/nashi-proekty-domov/lyaskouka.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2725",
+
+		"pagetitle": "LYASKOUKA",
+		"Папка с фото": 166,
+		"Основное изображение": "http://zrobym.by/images/projects/LYASKOUKA/превью.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Частные дома||Архитектура",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Александр Жаловский, Андрусь Bezdar",
+			"Расположение": "п. Лесковка, Минская область, Беларусь",
+			"Площадь": "452 кв.м.",
+			"Год": "2017"
+		},
+		"Координаты": "53.999431, 27.720141",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2017,
+		"Описание проекта": "",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by/images/projects/LYASKOUKA/6!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/images/projects/LYASKOUKA/7!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/images/projects/LYASKOUKA/8!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/architecture/lyaskouka/3777.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/lyaskouka/3778.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/lyaskouka/3779.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/lyaskouka/3780.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/architecture/lyaskouka/3781.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Дизайн общественных пространств",
+		"createdon": 1569926091,
+		"Ссылка": "http://zrobym.by/dizajn-obshchestvennykh-prostranstv/creative-space.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2703",
+
+		"pagetitle": "CREATIVE SPACE",
+		"Папка с фото": 149,
+		"Основное изображение": "http://zrobym.by//images/projects/azs/7.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Интерьер",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Дмитрий Шелег, Андрусь Bezdar",
+			"Расположение": "Минск, Беларусь",
+			"Площадь": "960 кв. м.",
+			"Год реализации": "2016"
+		},
+		"Координаты": "53.902496, 27.561481",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2016,
+		"Описание проекта": "<p>Креативное пространство для А-100.</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by//images/projects/azs/13!.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3554.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3560.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3561.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3562.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3563.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3564.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3565.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3566.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3567.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3555.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3556.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/creative-space/3557.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
+		"category": "Дизайн общественных пространств",
+		"createdon": 1569925929,
+		"Ссылка": "http://zrobym.by/dizajn-obshchestvennykh-prostranstv/maserati.html",
+		"Менеджер": "http://zrobym.by/manager/?a=resource/update&id=2702",
+
+		"pagetitle": "MASERATI",
+		"Папка с фото": 148,
+		"Основное изображение": "http://zrobym.by//images/projects/mazerati/2.jpg",
+		"Краткое описание": "",
+		"Тип проекта": "Интерьер",
+		"Реализован?": "Нет",
+		"info": {
+			"Студия": "Zrobym architects",
+			"Архитекторы": "Роман Мохаммад, Алексей Кораблев",
+			"Расположение": "г. Минск, пр. Независимости 169",
+			"Площадь": "402 кв. м.",
+			"Год реализации": "2016"
+		},
+		"Координаты": "53.944108, 27.665946",
+		"Показывать на карте?": "Да",
+		"Год реализации": 2016,
+		"Описание проекта": "<p>Разработка и адаптация проекта автосалона Maserati. Работа проходила совместно с итальянской студией Fortebis group.</p>",
+		"План 1": {
+			"Изображение плана": "http://zrobym.by//images/projects/mazerati/10.jpg",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 2": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 3": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"План 4": {
+			"Изображение плана": "http://zrobym.by/",
+			"Экспликация плана": {
+				"fieldValue": [],
+				"fieldSettings": { "autoincrement": 1 }
+			}
+		},
+		"Фото-галерея": {
+			"fieldValue": [
+				{ "thumb": "", "image": "assets/images/design-public/maserati/3539.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/maserati/3541.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/maserati/3542.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/maserati/3543.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/maserati/3544.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/maserati/3546.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/maserati/3548.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/maserati/3550.jpg", "plan": "1", "title": "" },
+
+				{ "thumb": "", "image": "assets/images/design-public/maserati/3552.jpg", "plan": "1", "title": "" }
+			],
+			"fieldSettings": { "autoincrement": 1 }
+		},
+		"Основное видео": "",
+		"Другие видео": {}
+	},
+	{
 		"category": "Дизайн общественных пространств",
 		"createdon": 1569925867,
 		"Ссылка": "http://zrobym.by/dizajn-obshchestvennykh-prostranstv/tomography.html",
