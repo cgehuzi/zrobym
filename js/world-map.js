@@ -47,7 +47,7 @@ const map_init = function(map_params) {
 			clusterIconColor: '#000000'
 		});
 		myMap.geoObjects.add(objectManager);
-		myMap.behaviors.disable('scrollZoom');
+		// myMap.behaviors.disable('scrollZoom');
 		objectManager.add(map_params['mapPins']);
 	});
 };

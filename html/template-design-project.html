@@ -60,6 +60,15 @@
 
 								[[Switch? &switch=`[*project_year*]` &case:=``
 								&default=`<li><strong>[%param Год%]:</strong> [*project_year*]</li>`]]
+
+								[[multiTV?
+								&tvName=`project_more`
+								&outerTpl=`@CODE:((wrapper))`
+								&rowTpl=`@CODE:
+								<li><strong>((title)):</strong> ((value))</li>`
+								&display=`all`
+								]]
+
 							</ul>
 						</div>
 					</div>
@@ -189,7 +198,8 @@
 							<div class="section__header-title">
 								<strong>[*pagetitle*]</strong>
 							</div>
-							[[Switch? &switch=`[*project_subtitle*]` &case:=``
+							[[Switch? &switch=`[*project_subtitle*]`
+							&case:=`<div class="section__header-subtitle">[[DocInfo? &docid=`[*parent*]` &field=`projects_subtitle`]]</div>`
 							&default=`<div class="section__header-subtitle">[*project_subtitle*]</div>`]]
 						</div>
 					</div>

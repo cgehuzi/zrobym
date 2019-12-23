@@ -120,10 +120,8 @@
 				font-size: 0.9rem;
 			}
 
-			@include for-laptop-up {
-				&:hover {
-					color: $gold;
-				}
+			&:hover {
+				color: $gold;
 			}
 
 			&.parent {
@@ -154,10 +152,8 @@
 				font-size: 0.9rem;
 			}
 
-			@include for-laptop-up {
-				&:hover {
-					color: $gold;
-				}
+			&:hover {
+				color: $gold;
 			}
 
 			&.active,
@@ -217,10 +213,8 @@
 				height: 100%;
 			}
 
-			@include for-laptop-up {
-				&:hover {
-					color: $gold;
-				}
+			&:hover {
+				color: $gold;
 			}
 		}
 	}
