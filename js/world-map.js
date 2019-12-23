@@ -22,7 +22,7 @@ const map_init = function(map_params) {
 				// Чтобы метки начали кластеризоваться, выставляем опцию.
 				clusterize: true,
 				// ObjectManager принимает те же опции, что и кластеризатор.
-				gridSize: 8,
+				gridSize: 32,
 				clusterDisableClickZoom: false
 			});
 
