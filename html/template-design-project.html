@@ -33,7 +33,8 @@
 							<h1 class="section__header-title">
 								<strong>[*pagetitle*]</strong>
 							</h1>
-							[[Switch? &switch=`[*project_subtitle*]` &case:=``
+							[[Switch? &switch=`[*project_subtitle*]`
+							&case:=`<div class="section__header-subtitle">[[DocInfo? &docid=`[*parent*]` &field=`projects_subtitle`]]</div>`
 							&default=`<div class="section__header-subtitle">[*project_subtitle*]</div>`]]
 						</div>
 						<div class="section__content project__header-list">
@@ -42,13 +43,7 @@
 
 								<li>
 									<strong>[%param Архитекторы%]:</strong>
-									[[WorkersList? &list=`[*project_workers*]`]]
-									[[multiTV?
-									&tvName=`project_workers_more`
-									&outerTpl=`@CODE:((wrapper))`
-									&rowTpl=`@CODE: <a><span>((name))</span></a>`
-									&display=`all`
-									]]
+									[[WorkersList? &list=`[*project_workers*]` &multi=`1`]]
 								</li>
 
 								[[Switch? &switch=`[*project_video_worker*]` &case:=``

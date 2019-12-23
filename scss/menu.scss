@@ -120,10 +120,6 @@
 				font-size: 0.9rem;
 			}
 
-			@include for-desktop {
-				font-size: 1rem;
-			}
-
 			@include for-laptop-up {
 				&:hover {
 					color: $gold;
@@ -156,10 +152,6 @@
 			@include for-tablet-horizontal-up {
 				padding: 4px 4px 4px 36px;
 				font-size: 0.9rem;
-			}
-
-			@include for-desktop {
-				font-size: 1rem;
 			}
 
 			@include for-laptop-up {

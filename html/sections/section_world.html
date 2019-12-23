@@ -1,8 +1,8 @@
 [[DocLister?
 &parents=`[%id_arch_list%],[%id_design_appartment%],[%id_design_cottage%],[%id_design_social%]`
 &addWhereList=`c.template IN (21,22)`
-&tvList=`project_image, project_subtitle, project_map_coordinates, project_map_yes`
-&filters=`AND(tvd:project_map_yes:=:1 ; tvd:project_map_coordinates:!=:)`
+&tvList=`project_image, project_subtitle, project_map_coordinates`
+&filters=`AND(tvd:project_map_coordinates:!=:)`
 &display=`all`
 &orderBy=`createdon DESC`
 &tpl=`world_pin--tpl`

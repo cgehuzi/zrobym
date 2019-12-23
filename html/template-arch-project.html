@@ -42,13 +42,7 @@
 
 								<li>
 									<strong>[%param Архитекторы%]:</strong>
-									[[WorkersList? &list=`[*project_workers*]`]]
-									[[multiTV?
-									&tvName=`project_workers_more`
-									&outerTpl=`@CODE:((wrapper))`
-									&rowTpl=`@CODE: <a><span>((name))</span></a>`
-									&display=`all`
-									]]
+									[[WorkersList? &list=`[*project_workers*]` &multi=`1`]]
 								</li>
 
 								[[Switch? &switch=`[*project_video_worker*]` &case:=``
