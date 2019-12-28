@@ -2,7 +2,7 @@
 
 .header {
 	position: relative;
-	min-height: calc(100vh - 102px + 32px);
+	// min-height: calc(100vh - 102px + 32px);
 
 	@include for-tablet-up {
 		min-height: 100vh;

@@ -18,7 +18,8 @@
 				[+city.error+]
 			</div>
 			<div class="feedback__group">
-				<input id="feedback-phone" name="phone" value="[+phone.value+]" type="tel" placeholder="[%feedback_phone%]" class="feedback__input input">
+				<input id="feedback-phone" name="phone" value="[+phone.value+]" type="tel" placeholder="[%feedback_phone%] *" class="feedback__input input" required>
+				[+phone.error+]
 			</div>
 			<div class="feedback__group">
 				<input id="feedback-email" name="email" value="[+email.value+]" type="email" placeholder="[%feedback_email%] *" class="feedback__input input [+email.classname+]" required>

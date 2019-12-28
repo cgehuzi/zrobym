@@ -10,8 +10,9 @@
 	&rules=`{
 	"name": { "required":"[%rules_required%]" },
 	"city": { "required":"[%rules_required%]" },
-	"comment": { "required":"[%rules_required%]" },
-	"email": { "required":"[%rules_required%]", "email":"[%rules_email%]" }
+	"phone": { "required":"[%rules_required%]", "phone":"[%rules_phone%]" },
+	"email": { "required":"[%rules_required%]", "email":"[%rules_email%]" },
+	"comment": { "required":"[%rules_required%]" }
 	}`
 	&prepare=`AntiSpam`
 	&subject=`Сообщение от посетителя сайта [(site_name)]`
