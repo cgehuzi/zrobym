@@ -62,11 +62,11 @@
 		&-right {
 			margin: 0 -32px;
 			width: calc(100% + 32px + 32px);
+			max-width: none;
 
 			@include for-phone-horizontal-up {
 				margin: 0;
 				width: 100%;
-				max-width: 100%;
 			}
 
 			@include for-tablet-horizontal-up {
