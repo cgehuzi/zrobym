@@ -62,6 +62,7 @@
 		&-right {
 			margin: 0 -32px;
 			max-width: calc(100% + 32px);
+			height: auto;
 
 			@include for-phone-horizontal-up {
 				margin: 0;
