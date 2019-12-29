@@ -42,12 +42,12 @@
 			border: none;
 			font-size: 0;
 
-			@include for-tablet-vertical-down {
+			@include for-phone {
 				background-color: #ffffff;
 				min-height: #{$separ_phone * 0.75};
 			}
 
-			@include for-tablet-horizontal-up {
+			@include for-tablet-vertical-up {
 				font-size: 0.9rem;
 				line-height: 1.2;
 				font-weight: $fw_medium;
@@ -64,7 +64,7 @@
 			&.active {
 				background-color: $gold;
 
-				@include for-tablet-horizontal-up {
+				@include for-tablet-vertical-up {
 					background-color: #ffffff;
 				}
 			}
