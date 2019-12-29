@@ -120,7 +120,7 @@
 		</div>
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/pride.css?[%config_last_mod%]">
-		<div id="pride" class="section section--dark pride" data-tabs>
+		<div id="pride" class="section section--dark pride pride--desktop" data-tabs>
 
 			[[multiTV?
 			&tvName=`main_pride_items`
@@ -139,7 +139,34 @@
 			&display=`all`
 			]]
 
+		</div>	
+
+		[[multiTV?
+		&tvName=`main_pride_items`
+		&display=`all`
+		&outerTpl=`@CODE:
+		<div class="pride pride--mobile"></div>
+		<div id="slider-pride" class="swiper-container pride__swiper-container section section--dark">
+			<ul class="swiper-wrapper pride__swiper-wrapper">
+				((wrapper))
+			</ul>
+			<button class="pride__arrow pride__arrow--next" type="button"></button>
+			<button class="pride__arrow pride__arrow--prev" type="button"></button>
 		</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const slider_pride = new Swiper('#slider-pride', {
+					autoHeight: true,
+					loop: true,
+					navigation: {
+						nextEl: '.pride__arrow--next',
+						prevEl: '.pride__arrow--prev'
+					}
+				});
+			});
+		</script>`
+		&rowTpl=`pride_slide--rowTpl`
+		]]
 
 		<link rel="stylesheet" href="assets/templates/zrobym/css/philosophy.css?[%config_last_mod%]">
 		<div class="section philosophy">

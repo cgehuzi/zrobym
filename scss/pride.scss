@@ -14,6 +14,18 @@
 
 .pride {
 
+	&--mobile {
+		@include for-tablet-up {
+			display: none;
+		}
+	}
+
+	&--desktop {
+		@include for-phone {
+			display: none;
+		}
+	}
+
 	&__list {
 		flex-wrap: nowrap;
 		background-color: $back_grey;
