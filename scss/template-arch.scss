@@ -18,6 +18,12 @@
 
 			&__body {
 				padding-bottom: 0;
+
+				&-col {
+					@include for-phone-vertical {
+						padding-top: 82px;
+					}
+				}
 			}
 		}
 	}
