@@ -9,8 +9,8 @@
 				margin-top: auto;
 
 				@include for-phone {
-					margin-bottom: auto;
-					padding-bottom: 32px;
+					margin-top: 48px;
+					padding-bottom: 48px;
 					position: relative;
 					top: 0;
 				}
