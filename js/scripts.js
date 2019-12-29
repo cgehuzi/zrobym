@@ -141,7 +141,7 @@ const numberToInit = function() {
 						const elem = entry.target;
 						const elem_number_to = elem.dataset.numberTo;
 						setTimeout(function() {
-							number_to(elem, 0, +elem_number_to, 2500);
+							number_to(elem, 0, +elem_number_to, 3000);
 							scroll_window.unobserve(elem);
 						}, 400);
 					}
@@ -154,7 +154,7 @@ const numberToInit = function() {
 		} else {
 			number_to_items.forEach(function(scroll_item) {
 				const scroll_item_number_to = scroll_item.dataset.numberTo;
-				number_to(elem, 0, +scroll_item_number_to, 2500);
+				number_to(elem, 0, +scroll_item_number_to, 3000);
 			});
 		}
 	}
