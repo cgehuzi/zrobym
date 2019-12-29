@@ -200,7 +200,7 @@
 				width: 128px;
 				background-color: $gold;
 
-				@include for-phone-vertical {
+				@include for-phone {
 					z-index: -1;
 					left: 50%;
 					margin-left: -64px;
@@ -290,7 +290,7 @@
 				position: relative;
 				padding-left: 1rem;
 
-				@include for-phone-vertical {
+				@include for-phone {
 					text-align: left;
 				}
 
@@ -314,7 +314,7 @@
 				position: relative;
 				padding-left: 1rem;
 
-				@include for-phone-vertical {
+				@include for-phone {
 					text-align: left;
 				}
 
