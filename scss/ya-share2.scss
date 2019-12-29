@@ -10,7 +10,7 @@
 			padding: 0;
 			margin: 0 -4px -8px;
 
-			@include for-phone-vertical {
+			@include for-phone {
 				justify-content: center;
 			}
 		}
