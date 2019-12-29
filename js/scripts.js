@@ -118,6 +118,51 @@ if (more_buttons) {
 // END ------------------------
 
 // ====================================================
+// Реализация блока data-number-to
+// ====================================================
+const number_to = function(element, from, to, duration) {
+	var start = new Date().getTime();
+	setTimeout(function() {
+		var now = new Date().getTime() - start;
+		var progress = now / duration;
+		var result = Math.floor((to - from) * progress + from);
+		element.innerHtml = progress < 1 ? result : to;
+		if (progress < 1) setTimeout(arguments.callee, 10);
+	}, 10);
+};
+
+const numberToInit = function() {
+	const number_to_items = document.querySelectorAll('[data-number-to]');
+	if (number_to_items) {
+		if (typeof IntersectionObserver === 'function') {
+			const scroll_window = new IntersectionObserver(function(entries) {
+				entries.forEach(function(entry) {
+					if (entry.isIntersecting) {
+						const elem = entry.target;
+						const elem_number_to = elem.dataset.numberTo;
+						setTimeout(function() {
+							number_to(elem, 0, +elem_number_to, 1500);
+							scroll_window.unobserve(elem);
+						}, 400);
+					}
+				});
+			}, {});
+
+			number_to_items.forEach(function(scroll_item) {
+				scroll_window.observe(scroll_item);
+			});
+		} else {
+			number_to_items.forEach(function(scroll_item) {
+				const scroll_item_number_to = scroll_item.dataset.numberTo;
+				number_to(elem, 0, +scroll_item_number_to, 1500);
+			});
+		}
+	}
+};
+numberToInit();
+// END ------------------------
+
+// ====================================================
 // Реализация блока city
 // ====================================================
 if (typeof city_items_data === 'object') {
