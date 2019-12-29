@@ -140,6 +140,7 @@ const numberToInit = function() {
 					if (entry.isIntersecting) {
 						const elem = entry.target;
 						const elem_number_to = elem.dataset.numberTo;
+						console.log(elem_number_to);
 						setTimeout(function() {
 							number_to(elem, 0, +elem_number_to, 1500);
 							scroll_window.unobserve(elem);
