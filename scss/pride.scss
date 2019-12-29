@@ -21,7 +21,7 @@
 		&-point {
 			width: 100%;
 
-			@include for-tablet-vertical-down {
+			@include for-phone {
 				border-right: 2px solid $dark;
 			}
 
