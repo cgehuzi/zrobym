@@ -49,6 +49,7 @@
 
 		@include for-tablet-horizontal-up {
 			display: flex;
+			align-items: center;
 		}
 
 		&-header {

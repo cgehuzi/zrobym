@@ -8,6 +8,15 @@
 		min-height: 100vh;
 	}
 
+	&__logo {
+		margin-top: auto;
+		margin-bottom: 32px;
+
+		@include for-phone-horizontal-up {
+			display: none;
+		}
+	}
+
 	&__back {
 		position: absolute;
 		z-index: -2;
