@@ -1,5 +1,6 @@
+---
 deployment:
-  tasks:
-    - export REPOPATH=/home/zrobymby/public_html/assets/templates/zrobym/*
-    - export SITEPATH=/home/zrobymby/public_html/assets/templates/zrobym/
-    - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
+tasks:
+  - export REPOPATH=/home/zrobymby/public_html/assets/templates/zrobym/*
+  - export SITEPATH=/home/zrobymby/public_html/assets/templates/zrobym/
+  - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
