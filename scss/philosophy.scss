@@ -23,7 +23,6 @@
 			text-align: center;
 
 			@include for-phone-horizontal-up {
-				min-width: 128px;
 				max-width: 33.333%;
 
 				&:nth-child(3n + 1) {
