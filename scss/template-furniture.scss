@@ -99,4 +99,21 @@
 			}
 		}
 	}
+
+	.big {
+		&__item {
+			&-header {
+				@include for-phone {
+					display: none;
+				}
+
+				@include for-tablet-vertical {
+					padding: 32px;
+					height: 0;
+					overflow: hidden;
+					opacity: 0;
+				}
+			}
+		}
+	}
 }

@@ -62,23 +62,43 @@
 			<div class="separ"></div>
 		</div>
 
-		[[DocLister?
-		&parents=`[*id*]`
-		&addWhereList=`c.template=23`
-		&tvList=`header_title, furniture_image, furniture_promo`
-		&display=`all`
-		&orderBy=`menuindex ASC`
-		&tpl=`big_furniture--tpl`
-		&ownerTPL=`@CODE:
 		<link rel="stylesheet" href="assets/templates/zrobym/css/big.css?[%config_last_mod%]">
 		<div class="big">
 			<ul class="big__list">
-				[+dl.wrap+]
+				<li class="big__list-point ig__list-point--double section">
+					<div class="big__item section__body">
+						<div class="big__item-header section__body-col">
+							<img class="big__item-image" src="assets/images/furniture/first-image.jpg" alt="">
+						</div>
+						<div class="big__item-body section__body-col">
+							[[DocLister?
+							&documents=`[%id_furniture_light%],[%id_furniture_sofa%]`
+							&tvList=`header_title, furniture_promo`
+							&display=`all`
+							&orderBy=`menuindex ASC`
+							&tpl=`double_furniture--tpl`
+							&ownerTPL=`@CODE: [+dl.wrap+]`
+							&noneTPL=``
+							&noneWrapOuter=`0`
+							]]
+						</div>
+					</div>
+					<div class="separ"></div>
+					<div class="grid-row"></div>
+				</li>
+				[[DocLister?
+				&parents=`[*id*]`
+				&addWhereList=`c.template=23 and c.id NOT IN ([%id_furniture_light%],[%id_furniture_sofa%])`
+				&tvList=`header_title, furniture_image, furniture_promo`
+				&display=`all`
+				&orderBy=`menuindex ASC`
+				&tpl=`big_furniture--tpl`
+				&ownerTPL=`@CODE: [+dl.wrap+]`
+				&noneTPL=``
+				&noneWrapOuter=`0`
+				]]
 			</ul>
-		</div>`
-		&noneTPL=``
-		&noneWrapOuter=`0`
-		]]
+		</div>
 
 		<div class="section section--back">
 			<video autoplay muted loop class="section__back section__back--video">
