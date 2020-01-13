@@ -78,7 +78,7 @@
 					position: sticky;
 					top: 32px;
 
-					@include for-phone {
+					@include for-tablet-vertical-down {
 						margin-top: auto;
 						position: relative;
 						top: 0;
@@ -92,7 +92,7 @@
 				&__buttons {
 					margin-bottom: auto;
 
-					@include for-tablet-vertical-up {
+					@include for-tablet-horizontal-up {
 						display: none;
 					}
 				}
