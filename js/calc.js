@@ -149,18 +149,18 @@ const calc_design = function() {
 	vedomost.prop('checked', true);
 	const vedomost_on = vedomost.is(':checked') ? true : false;
 
+	// Служба заказчика (контроль закупок)
+	const slugba = $('#calc-slugba');
+	const slugba_on = slugba.is(':checked') ? true : false;
+	const slugba_price = slugba_on ? 4500 : 0;
+	if (slugba_on) {
+		author.prop('checked', true);
+	}
+
 	// Авторское сопровождение
 	const author = $('#calc-author');
 	const author_on = author.is(':checked') ? true : false;
 	const author_price = author_on ? 1500 : 0;
-
-	// Служба заказчика (контроль закупок)
-	const slugba = $('#calc-slugba');
-	const slugba_on = slugba.is(':checked') ? true : false;
-	const slugba_price = slugba_on ? 2500 : 0;
-	if (slugba_on) {
-		author.prop('checked', true);
-	}
 
 	// Личное ведение проекта основателями студии
 	const self = $('#calc-self');
