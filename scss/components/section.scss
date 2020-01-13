@@ -242,6 +242,20 @@
 			margin-top: 3.6rem;
 		}
 
+		&-h1 {
+			margin-top: 3.2rem;
+
+			@include for-tablet-horizontal-up {
+				display: none;
+			}
+		}
+
+		h1 {
+			@include for-tablet-vertical-down {
+				display: none;
+			}
+		}
+
 		p,
 		ol,
 		ul,
