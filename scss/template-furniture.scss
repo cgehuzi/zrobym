@@ -80,7 +80,6 @@
 
 					@include for-phone {
 						margin-top: auto;
-						margin-bottom: auto;
 						position: relative;
 						top: 0;
 					}
@@ -88,6 +87,14 @@
 
 				&__body {
 					flex-grow: 1;
+				}
+
+				&__buttons {
+					margin-bottom: auto;
+
+					@include for-tablet-vertical-up {
+						display: none;
+					}
 				}
 			}
 		}
