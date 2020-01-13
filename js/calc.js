@@ -153,12 +153,12 @@ const calc_design = function() {
 	const slugba = $('#calc-slugba');
 	const slugba_on = slugba.is(':checked') ? true : false;
 	const slugba_price = slugba_on ? 4500 : 0;
-	if (slugba_on) {
-		author.prop('checked', true);
-	}
 
 	// Авторское сопровождение
 	const author = $('#calc-author');
+	if (slugba_on) {
+		author.prop('checked', true);
+	}
 	const author_on = author.is(':checked') ? true : false;
 	const author_price = author_on ? 1500 : 0;
 
