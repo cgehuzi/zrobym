@@ -102,6 +102,14 @@
 
 	.big {
 		&__item {
+			&-separ {
+				height: calc(#{$separ_phone} + 64px);
+
+				@include for-tablet-horizontal-up {
+					height: 64px;
+				}
+			}
+
 			&-header {
 				@include for-phone {
 					display: none;
