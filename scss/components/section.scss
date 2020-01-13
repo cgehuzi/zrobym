@@ -243,7 +243,9 @@
 		}
 
 		&-h1 {
-			margin-top: 3.2rem;
+			&:first-child {
+				margin-top: 3.2rem;
+			}
 
 			@include for-tablet-horizontal-up {
 				display: none;
