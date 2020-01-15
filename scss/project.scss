@@ -1,5 +1,23 @@
 @import './1-const.scss';
 
+@keyframes swiped {
+	0% {
+		background-position: left 50% center
+	}
+
+	15% {
+		background-position: left 90% center
+	}
+
+	85% {
+		background-position: left 10% center
+	}
+
+	100% {
+		background-position: left 50% center
+	}
+}
+
 .project {
 	@include for-tablet-horizontal-up {
 		min-height: 100vh;
@@ -177,12 +195,37 @@
 		}
 
 		&__list {
+			position: relative;
 			overflow: auto;
 			display: flex;
 
 			@include for-phone-vertical {
 				margin-left: -32px;
 				margin-right: -32px;
+			}
+
+			@include for-tablet-vertical-down {
+				&::before {
+					content: '';
+					position: absolute;
+					right: 0;
+					top: 0;
+					height: 100%;
+					width: 64px;
+					background-image: url("../icons/white/arrow-next.svg");
+					background-color: transparent;
+					background-position: left 50% center;
+					background-size: auto 42px;
+					background-repeat: no-repeat;
+					animation: swiped cubic-bezier(0.68, -0.55, 0.27, 1.55) 1.8s;
+				}
+
+				&.off {
+					&::before {
+						opacity: 0;
+						visibility: hidden;
+					}
+				}
 			}
 
 			@include for-phone-horizontal-up {
@@ -231,8 +274,8 @@
 			display: block;
 
 			&-image {
-				height: 68vw;
-				max-width: 94vw;
+				height: 75vw;
+				max-width: none;
 				object-fit: cover;
 				object-position: center;
 
