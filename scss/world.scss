@@ -83,6 +83,35 @@
 			&[class*="copyrights"] {
 				display: none;
 			}
+
+			&[class*="cluster-content"] {
+				height: auto !important;
+			}
+
+			&[class*="cluster-content__header"] {
+				display: none !important;
+			}
+
+			&[class*="cluster-tabs__menu-item-text"] {
+				color: $dark !important;
+				display: block !important;
+				line-height: 1.4 !important;
+				padding: 6px 12px !important;
+			}
+
+			&[class*="cluster-tabs__section_type_nav"] {
+				padding-right: 2px !important;
+				border: none !important;
+			}
+
+			&[class*="cluster-tabs__menu-item"] {
+				padding: 0 !important;
+			}
+
+			&[class*="cluster-tabs__menu-item_current_yes"] {
+				background-color: $border_light !important;
+				border-radius: 0 !important;
+			}
 		}
 	}
 
