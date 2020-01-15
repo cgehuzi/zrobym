@@ -2,19 +2,15 @@
 
 @keyframes swiped {
 	0% {
-		background-position: left 50% center
+		background-position: left 20% center
 	}
 
-	15% {
-		background-position: left 90% center
-	}
-
-	85% {
-		background-position: left 10% center
+	50% {
+		background-position: left 80% center
 	}
 
 	100% {
-		background-position: left 50% center
+		background-position: left 20% center
 	}
 }
 
@@ -214,10 +210,10 @@
 					width: 64px;
 					background-image: url("../icons/white/arrow-next.svg");
 					background-color: transparent;
-					background-position: left 50% center;
-					background-size: auto 42px;
+					background-position: left 20% center;
+					background-size: auto 48px;
 					background-repeat: no-repeat;
-					animation: swiped cubic-bezier(0.68, -0.55, 0.27, 1.55) 1.8s;
+					animation: swiped ease-in-out 1.5s infinite;
 				}
 
 				&.off {

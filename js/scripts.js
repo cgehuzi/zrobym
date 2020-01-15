@@ -480,3 +480,14 @@ const checkSpam = function(form_id, name, time = 5000) {
 	}, time);
 };
 // END ------------------------
+
+// ====================================================
+// Реализация блока project-gallery
+// ====================================================
+const project_gallery = document.querySelector('.project-gallery__list');
+if (project_gallery) {
+	project_gallery.addEventListener('scroll', function () {
+		project_gallery.classList.add('off');
+	})
+}
+// END ------------------------
