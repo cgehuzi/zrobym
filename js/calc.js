@@ -61,12 +61,12 @@ const calc_arch = function() {
 	// Авторский надзор
 	const author = $('#calc-author');
 	const author_on = author.is(':checked') ? true : false;
-	const author_price = author_on ? 1500 : 0;
+	const author_price = author_on ? 3000 : 0;
 
-	// Технический надзор
+	// Служба заказчика
 	const tech = $('#calc-tech');
 	const tech_on = tech.is(':checked') ? true : false;
-	const tech_price = tech_on ? 1500 : 0;
+	const tech_price = tech_on ? 6000 : 0;
 
 	// Личное ведение проекта основателями студии
 	const self = $('#calc-self');
@@ -75,7 +75,7 @@ const calc_arch = function() {
 	// ИТОГО
 	let total_price = concept_price + visual_price + maket_price + build_price + ingeneer_price + author_price + tech_price;
 
-	total_price *= 0.8; // умножаем на общий коэффициент
+	// total_price *= 0.8; // умножаем на общий коэффициент
 
 	if (concept_on && visual_on && maket_on && build_on && ingeneer_on && author_on && tech_on) {
 		total_price *= 0.85; // если отмечены все, кроме личного ведения проекта
