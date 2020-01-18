@@ -33,9 +33,11 @@ const opened = function(elem, status = true) {
 // ====================================================
 const preloader = document.querySelector('.preloader');
 if (preloader) {
-	setTimeout(function(){
-		$(preloader).fadeOut(1000);
-	}, 3500);
+	document.addEventListener('DOMContentLoaded', function() {
+		setTimeout(function() {
+			$(preloader).fadeOut(1000);
+		}, 2500);
+	});
 }
 // END ------------------------
 
@@ -497,8 +499,8 @@ const checkSpam = function(form_id, name, time = 5000) {
 // ====================================================
 const project_gallery = document.querySelector('.project-gallery__list');
 if (project_gallery) {
-	project_gallery.addEventListener('scroll', function () {
+	project_gallery.addEventListener('scroll', function() {
 		project_gallery.classList.add('off');
-	})
+	});
 }
 // END ------------------------
