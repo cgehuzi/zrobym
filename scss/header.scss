@@ -82,6 +82,14 @@
 			width: 10vw;
 			min-width: 10vw;
 			font-weight: $fw_medium;
+
+			&:hover {Î
+				.lang {
+					opacity: 1;
+					visibility: visible;
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 
@@ -131,5 +139,13 @@
 
 	.lang {
 		display: none;
+
+		@include for-tablet-vertical-up {
+			display: block;
+			opacity: 0;
+			visibility: hidden;
+			transition: $slow;
+			margin-bottom: -24px;
+		}
 	}
 }
