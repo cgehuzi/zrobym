@@ -1,0 +1,51 @@
+.lang {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 72px;
+	padding: 10px 0;
+	line-height: 1.4;
+
+	@include for-phone-horizontal-up {
+		width: 10vw;
+		padding: 24px 0;
+	}
+
+	@include for-tablet-vertical-up {
+		bottom: 102px;
+	}
+
+    @include for-desktop {
+        bottom: $separ;
+    }
+
+	&__point {
+		position: relative;
+		color: $gold;
+		text-align: center;
+		padding: 12px;
+		line-height: 1;
+
+		@include for-tablet-horizontal-up {
+			font-size: 0.9rem;
+		}
+	}
+
+	&__link {
+		display: block;
+		color: #ffffff;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		&:hover {
+			color: $gold;
+		}
+	}
+}

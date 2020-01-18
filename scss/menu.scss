@@ -186,16 +186,12 @@
 			padding: 24px 0;
 		}
 
-		@include for-tablet-vertical {
-			bottom: 84px;
-		}
-
-		@include for-tablet-horizontal-up {
+		@include for-tablet-vertical-up {
 			bottom: 102px;
 		}
-
+	
 		@include for-desktop {
-			bottom: 7.2vw;
+			bottom: $separ;
 		}
 
 		&-point {
