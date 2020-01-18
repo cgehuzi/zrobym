@@ -200,10 +200,6 @@
 			text-align: center;
 			padding: 12px;
 			line-height: 1;
-
-			@include for-tablet-horizontal-up {
-				font-size: 0.9rem;
-			}
 		}
 
 		&-link {
