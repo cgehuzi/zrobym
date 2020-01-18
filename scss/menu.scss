@@ -173,59 +173,6 @@
 		}
 	}
 
-	&__lang {
-		position: fixed;
-		right: 0;
-		bottom: 0;
-		width: 72px;
-		padding: 10px 0;
-		line-height: 1.4;
-
-		@include for-phone-horizontal-up {
-			width: 10vw;
-			padding: 24px 0;
-		}
-
-		@include for-tablet-vertical-up {
-			bottom: 102px;
-		}
-
-		@include for-desktop {
-			bottom: $separ;
-		}
-
-		&-point {
-			position: relative;
-			text-align: center;
-			line-height: 1;
-
-			span {
-				display: block;
-				color: $gold;
-				padding: 14px 0;
-			}
-		}
-
-		&-link {
-			display: block;
-			color: #ffffff;
-			padding: 14px 0;
-
-			&::before {
-				content: '';
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-				height: 100%;
-			}
-
-			&:hover {
-				color: $gold;
-			}
-		}
-	}
-
 	&-open {
 		position: relative;
 		z-index: 3;
@@ -374,5 +321,10 @@
 				}
 			}
 		}
+	}
+
+	.lang {
+		color: #ffffff;
+		position: fixed;
 	}
 }

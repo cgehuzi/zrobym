@@ -9,10 +9,10 @@ if (!defined('MODX_BASE_PATH')) {
 $activeLang = '[+name+]';
 
 //активный язык в списке
-$activeRow = '<li class="menu__lang-point"><span>[+name+]</span></li>';
+$activeRow = '<li class="lang__point"><span>[+name+]</span></li>';
 
 //неактивный язык списка
-$unactiveRow = '<li class="menu__lang-point"><a href="[+url+]" class="menu__lang-link">[+name+]</a></li>';
+$unactiveRow = '<li class="lang__point"><a href="[+url+]" class="lang__link">[+name+]</a></li>';
 
 //обертка списка языков
-$langOuter = '<ul class="menu__lang">[+wrapper+]</ul>';
+$langOuter = '<ul class="lang">[+wrapper+]</ul>';

@@ -1,10 +1,11 @@
 .lang {
-	position: fixed;
+	position: absolute;
 	right: 0;
 	bottom: 0;
 	width: 72px;
 	padding: 10px 0;
 	line-height: 1.4;
+	color: $dark;
 
 	@include for-phone-horizontal-up {
 		width: 10vw;
@@ -15,9 +16,9 @@
 		bottom: 102px;
 	}
 
-    @include for-desktop {
-        bottom: $separ;
-    }
+	@include for-desktop {
+		bottom: $separ;
+	}
 
 	&__point {
 		position: relative;
@@ -29,7 +30,7 @@
 
 	&__link {
 		display: block;
-		color: #ffffff;
+		color: inherit;
 
 		&::before {
 			content: '';
