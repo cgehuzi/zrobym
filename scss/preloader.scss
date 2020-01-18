@@ -11,8 +11,16 @@
 
 	&__spinner {
 		margin: 27vh auto;
-		max-width: 34%;
+		max-width: 35%;
 		position: relative;
+
+		@include for-tablet-vertical-down {
+			max-width: 45%;
+		}
+
+		@include for-phone-vertical {
+			max-width: 100%;
+		}
 	}
 
 	&__image {

@@ -1,1 +1,1 @@
-.preloader{background:#fdfdfd;position:fixed;top:0;left:0;width:100%;height:100%;z-index:999}.preloader__spinner{margin:27vh auto;max-width:34%;position:relative}.preloader__image{display:block;max-height:100%;max-width:100%}
+.preloader{background:#fdfdfd;position:fixed;top:0;left:0;width:100%;height:100%;z-index:999}.preloader__spinner{margin:27vh auto;max-width:35%;position:relative}@media (max-width: 991px){.preloader__spinner{max-width:45%}}@media (max-width: 575px){.preloader__spinner{max-width:100%}}.preloader__image{display:block;max-height:100%;max-width:100%}

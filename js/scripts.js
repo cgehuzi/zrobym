@@ -29,6 +29,17 @@ const opened = function(elem, status = true) {
 // END ------------------------
 
 // ====================================================
+// Реализация блока preloader
+// ====================================================
+const preloader = document.querySelector('.preloader');
+if (preloader) {
+	setTimeout(function(){
+		$(preloader).fadeOut(1000);
+	}, 3500);
+}
+// END ------------------------
+
+// ====================================================
 // Реализация блока menu
 // ====================================================
 const menu = document.querySelector('.menu');
