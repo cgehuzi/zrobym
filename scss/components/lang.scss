@@ -34,7 +34,8 @@
 
 	&__link {
 		display: block;
-		color: inherit;
+        color: inherit;
+        padding: 14px 0;
 
 		&::before {
 			content: '';
