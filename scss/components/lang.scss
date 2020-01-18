@@ -22,10 +22,15 @@
 
 	&__point {
 		position: relative;
-		color: $gold;
 		text-align: center;
-		padding: 12px;
+		padding: 14px 0;
 		line-height: 1;
+
+		span {
+			color: $gold;
+			display: block;
+			padding: 14px 0;
+		}
 	}
 
 	&__link {
