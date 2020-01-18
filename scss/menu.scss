@@ -189,22 +189,27 @@
 		@include for-tablet-vertical-up {
 			bottom: 102px;
 		}
-	
+
 		@include for-desktop {
 			bottom: $separ;
 		}
 
 		&-point {
 			position: relative;
-			color: $gold;
 			text-align: center;
-			padding: 12px;
 			line-height: 1;
+
+			span {
+				display: block;
+				color: $gold;
+				padding: 14px 0;
+			}
 		}
 
 		&-link {
 			display: block;
 			color: #ffffff;
+			padding: 14px 0;
 
 			&::before {
 				content: '';
