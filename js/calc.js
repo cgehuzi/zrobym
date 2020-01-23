@@ -57,14 +57,43 @@ const calc_arch = function() {
 	// АПК (архитектурно-планировочная концепция)
 	const concept = $('#calc-concept');
 	concept.prop('checked', true);
-	const concept_on = concept.is(':checked') ? true : false;
-	const concept_price = square_value * 21;
 
 	// Визуализация
 	const visual = $('#calc-visual');
 	visual.prop('checked', true);
-	const visual_on = visual.is(':checked') ? true : false;
-	const visual_price = 900;
+
+	const start_square_ranges = [
+		[0, 100],
+		[100, 200],
+		[200, 250],
+		[250, 350],
+		[350, 500],
+		[500, 1000],
+		[1000, 1500],
+		[1500, 3000],
+		[3000, 6000],
+		[6000, 12000],
+		[12000, 24000],
+		[24000, 35000],
+		[35000, Infinity]
+	];
+	const start_price_ranges = [
+		[30, 30],
+		[30, 4500 / 200],
+		[4500 / 200, 5100 / 250],
+		[5100 / 250, 5800 / 350],
+		[5800 / 350, 6600 / 500],
+		[6600 / 500, 7500 / 1000],
+		[7500 / 1000, 8000 / 1500],
+		[8000 / 1500, 9000 / 3000],
+		[9000 / 3000, 11000 / 6000],
+		[11000 / 6000, 14000 / 12000],
+		[14000 / 12000, 16000 / 24000],
+		[16000 / 24000, 0.5],
+		[0.5, 0.5]
+	];
+
+	const start_price = getPriceOfRange(start_square_ranges, start_price_ranges, square_value);
 
 	// Макет
 	const maket = $('#calc-maket');
@@ -96,7 +125,7 @@ const calc_arch = function() {
 	const self_on = self.is(':checked') ? true : false;
 
 	// ИТОГО
-	let total_price = concept_price + visual_price + maket_price + build_price + ingeneer_price + author_price + tech_price;
+	let total_price = start_price + maket_price + build_price + ingeneer_price + author_price + tech_price;
 
 	if (self_on) total_price += total_price * 0.15; // если личное ведение проекта включено
 
