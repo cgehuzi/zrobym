@@ -171,6 +171,13 @@ const calc_design = function() {
 
 	if (self_on) total_price += total_price * 0.15; // если личное ведение проекта включено
 
+	console.log('design_on = ' + design_on);
+	console.log('vedomost_on = ' + vedomost_on);
+	console.log('slugba_on = ' + slugba_on);
+	console.log('author_on = ' + author_on);
+	console.log('self_on = ' + self_on);
+	console.log('total_price = ' + total_price);
+
 	total_price = Math.round(total_price);
 
 	// Подставляем ИТОГО в форму
