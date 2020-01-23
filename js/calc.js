@@ -177,6 +177,7 @@ const calc_design = function() {
 	console.log('author_on = ' + author_on);
 	console.log('self_on = ' + self_on);
 	console.log('total_price = ' + total_price);
+	console.log('type_price = ' + type_price);
 
 	total_price = Math.round(total_price);
 
