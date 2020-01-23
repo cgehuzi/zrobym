@@ -98,12 +98,6 @@ const calc_arch = function() {
 	// ИТОГО
 	let total_price = concept_price + visual_price + maket_price + build_price + ingeneer_price + author_price + tech_price;
 
-	// total_price *= 0.8; // умножаем на общий коэффициент
-
-	if (concept_on && visual_on && maket_on && build_on && ingeneer_on && author_on && tech_on) {
-		total_price *= 0.85; // если отмечены все, кроме личного ведения проекта
-	}
-
 	if (self_on) total_price += total_price * 0.15; // если личное ведение проекта включено
 
 	total_price = Math.round(total_price);
