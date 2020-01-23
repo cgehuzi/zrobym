@@ -146,7 +146,7 @@ const calc_design = function() {
 					console.log('price_end : ' + price_end);
 					console.log('square_start : ' + square_start);
 					console.log('square_end : ' + square_end);
-					return price_end + (price_start - price_end) / (square_end - square_start);
+					return price_end + ((price_start - price_end) / (square_end - square_start)) * (square_end - square);
 				} else {
 					return price_range;
 				}
