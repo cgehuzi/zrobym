@@ -103,12 +103,80 @@ const calc_arch = function() {
 	// Строительный проект
 	const build = $('#calc-build');
 	const build_on = build.is(':checked') ? true : false;
-	const build_price = build_on ? square_value * 30 : 0;
+
+	const build_square_ranges = [
+		[0, 100],
+		[100, 150],
+		[150, 200],
+		[200, 250],
+		[250, 350],
+		[350, 500],
+		[500, 1000],
+		[1000, 1500],
+		[1500, 3000],
+		[3000, 6000],
+		[6000, 12000],
+		[12000, 24000],
+		[24000, 35000],
+		[35000, Infinity]
+	];
+	const build_price_ranges = [
+		[30, 30],
+		[30, 3500 / 150],
+		[3500 / 150, 4000 / 200],
+		[4000 / 200, 5000 / 250],
+		[5000 / 250, 6000 / 350],
+		[6000 / 350, 7000 / 500],
+		[7000 / 500, 8000 / 1000],
+		[8000 / 1000, 9000 / 1500],
+		[9000 / 1500, 10000 / 3000],
+		[10000 / 3000, 13000 / 6000],
+		[13000 / 6000, 16000 / 12000],
+		[16000 / 12000, 20000 / 24000],
+		[20000 / 24000, 0.7],
+		[0.7, 0.7]
+	];
+
+	const build_price = build_on ? square_value * getPriceOfRange(build_square_ranges, build_price_ranges, square_value) : 0;
 
 	// Инженерные сети
 	const ingeneer = $('#calc-ingeneer');
 	const ingeneer_on = ingeneer.is(':checked') ? true : false;
-	const ingeneer_price = ingeneer_on ? square_value * 28 : 0;
+
+	const ingeneer_square_ranges = [
+		[0, 100],
+		[100, 150],
+		[150, 200],
+		[200, 250],
+		[250, 350],
+		[350, 500],
+		[500, 1000],
+		[1000, 1500],
+		[1500, 3000],
+		[3000, 6000],
+		[6000, 12000],
+		[12000, 24000],
+		[24000, 35000],
+		[35000, Infinity]
+	];
+	const ingeneer_price_ranges = [
+		[28, 28],
+		[28, 3300 / 150],
+		[3300 / 150, 3800 / 200],
+		[3800 / 200, 4800 / 250],
+		[4800 / 250, 5800 / 350],
+		[5800 / 350, 6700 / 500],
+		[6700 / 500, 7700 / 1000],
+		[7700 / 1000, 8700 / 1500],
+		[8700 / 1500, 9600 / 3000],
+		[9600 / 3000, 12500 / 6000],
+		[12500 / 6000, 15000 / 12000],
+		[15000 / 12000, 19000 / 24000],
+		[19000 / 24000, 0.6],
+		[0.6, 0.6]
+	];
+
+	const ingeneer_price = ingeneer_on ? square_value * getPriceOfRange(ingeneer_square_ranges, ingeneer_price_ranges, square_value) : 0;
 
 	// Авторский надзор
 	const author = $('#calc-author');
