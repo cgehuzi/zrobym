@@ -119,7 +119,38 @@ const calc_design = function() {
 	}
 
 	// Цена в зависимости от типа проекта
-	var type_price = 0;
+	let type_price = 0;
+	const home_square_ranges = [
+		[0, 150],
+		[150, 300],
+		[300, 600],
+		[600, 1200],
+		[1200, 2400],
+		[2400, 4800],
+		[4800, 6500],
+		[6500, Infinity]
+	];
+	const home_price_ranges = [70, [70, 140 / 3], [140 / 3, 30], [30, 70 / 3], [70 / 3, 16.25], [16.25, 11], [11, 9], 9];
+
+	const getPriceOfRange = function(square_ranges, price_ranges, square) {
+		for (let i = 0; i < square_ranges.length; i++) {
+			const square_range = square_ranges[i];
+			const square_start = square_range[0];
+			const square_end = square_range[1];
+			if (square >= square_start && square < square_end) {
+				const price_range = price_ranges[i];
+				if (Array.isArray(price_range)) {
+					const price_start = price_range[0];
+					const price_end = price_range[1];
+					return price_end + ((price_start - price_end) / (square_end - square_start));
+				} else {
+					return price_range;
+				}
+			}
+		}
+	};
+
+	console.log(getPriceOfRange(home_price_ranges, home_square_ranges, square_value));
 
 	if (home_on) {
 		// дом, квартира (плавное нарастание цены)
@@ -130,8 +161,8 @@ const calc_design = function() {
 				type_price = Math.round(80 - (square_value - 100) / 5);
 			} else {
 				type_price = 60;
-				if (square_value < 200) {
-					type_price = Math.round(70 - (square_value - 150) / 5);
+				if (square_value < 300) {
+					type_price = Math.round(46.667 - (square_value - 150) / 5);
 				}
 			}
 		}
@@ -170,14 +201,6 @@ const calc_design = function() {
 	let total_price = square_value * type_price + author_price + slugba_price;
 
 	if (self_on) total_price += total_price * 0.15; // если личное ведение проекта включено
-
-	console.log('design_on = ' + design_on);
-	console.log('vedomost_on = ' + vedomost_on);
-	console.log('slugba_on = ' + slugba_on);
-	console.log('author_on = ' + author_on);
-	console.log('self_on = ' + self_on);
-	console.log('total_price = ' + total_price);
-	console.log('type_price = ' + type_price);
 
 	total_price = Math.round(total_price);
 
