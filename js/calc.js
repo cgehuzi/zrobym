@@ -137,10 +137,12 @@ const calc_design = function() {
 			const square_range = square_ranges[i];
 			const square_start = square_range[0];
 			const square_end = square_range[1];
+
+			console.log(square_start);
 			if (square >= square_start && square < square_end) {
 				const price_range = price_ranges[i];
+
 				console.log(square_start);
-				console.log(square_end);
 				if (Array.isArray(price_range)) {
 					const price_start = price_range[0];
 					const price_end = price_range[1];
