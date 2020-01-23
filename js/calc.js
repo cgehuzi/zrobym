@@ -78,8 +78,8 @@ const calc_arch = function() {
 		[35000, Infinity]
 	];
 	const start_price_ranges = [
-		[square_value * 30, square_value * 30],
-		[square_value * 30, 4500 / 200],
+		[30, 30],
+		[30, 4500 / 200],
 		[4500 / 200, 5100 / 250],
 		[5100 / 250, 5800 / 350],
 		[5800 / 350, 6600 / 500],
@@ -89,11 +89,11 @@ const calc_arch = function() {
 		[9000 / 3000, 11000 / 6000],
 		[11000 / 6000, 14000 / 12000],
 		[14000 / 12000, 16000 / 24000],
-		[16000 / 24000, square_value * 0.5],
-		[square_value * 0.5, square_value * 0.5]
+		[16000 / 24000, 0.5],
+		[0.5, 0.5]
 	];
 
-	const start_price = getPriceOfRange(start_square_ranges, start_price_ranges, square_value);
+	const start_price = square_value * getPriceOfRange(start_square_ranges, start_price_ranges, square_value);
 
 	// Макет
 	const maket = $('#calc-maket');
