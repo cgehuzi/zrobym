@@ -15,6 +15,29 @@ const set_number_to = function(id, from, to, duration) {
 // END ------------------------
 
 // ====================================================
+// определение цены из промежутков
+// ====================================================
+const getPriceOfRange = function(square_ranges, price_ranges, square) {
+	for (let i = 0; i < square_ranges.length; i++) {
+		const square_range = square_ranges[i];
+		const square_start = square_range[0];
+		const square_end = square_range[1];
+		if (square >= square_start && square < square_end) {
+			const price_range = price_ranges[i];
+			const price_start = price_range[0];
+			const price_end = price_range[1];
+			if (price_start === price_end) {
+				return price_start;
+			}
+			const price_of_one_range = (price_start - price_end) / (square_end - square_start);
+			const square_diff = square_end - square;
+			return price_end + price_of_one_range * square_diff;
+		}
+	}
+};
+// END ------------------------
+
+// ====================================================
 // АРХИТЕКТУРА
 // ====================================================
 const calc_arch = function() {
@@ -120,59 +143,87 @@ const calc_design = function() {
 
 	// Цена в зависимости от типа проекта
 	let type_price = 0;
-	const home_square_ranges = [
-		[0, 150],
-		[150, 300],
-		[300, 600],
-		[600, 1200],
-		[1200, 2400],
-		[2400, 4800],
-		[4800, 6500],
-		[6500, Infinity]
-	];
-	const home_price_ranges = [70, [70, 140 / 3], [140 / 3, 30], [30, 70 / 3], [70 / 3, 16.25], [16.25, 11], [11, 9], 9];
-
-	const getPriceOfRange = function(square_ranges, price_ranges, square) {
-		for (let i = 0; i < square_ranges.length; i++) {
-			const square_range = square_ranges[i];
-			const square_start = square_range[0];
-			const square_end = square_range[1];
-			if (square >= square_start && square < square_end) {
-				const price_range = price_ranges[i];
-				if (Array.isArray(price_range)) {
-					const price_start = price_range[0];
-					const price_end = price_range[1];
-					console.log('price_start : ' + price_start);
-					console.log('price_end : ' + price_end);
-					console.log('square_start : ' + square_start);
-					console.log('square_end : ' + square_end);
-					return price_end + ((price_start - price_end) / (square_end - square_start)) * (square_end - square);
-				} else {
-					return price_range;
-				}
-			}
-		}
-	};
-
-	console.log(getPriceOfRange(home_square_ranges, home_price_ranges, square_value));
 
 	if (home_on) {
 		// дом, квартира (плавное нарастание цены)
-		if (square_value < 100) {
-			type_price = 80;
-		} else {
-			if (square_value < 150) {
-				type_price = Math.round(80 - (square_value - 100) / 5);
-			} else {
-				type_price = 60;
-				if (square_value < 300) {
-					type_price = Math.round(46.667 - (square_value - 150) / 5);
-				}
-			}
-		}
+		const home_square_ranges = [
+			[0, 100],
+			[100, 150],
+			[150, 300],
+			[300, 600],
+			[600, 1200],
+			[1200, 2400],
+			[2400, 4800],
+			[4800, 6500],
+			[6500, Infinity]
+		];
+		const home_price_ranges = [
+			[80, 80],
+			[80, 10500 / 150],
+			[10500 / 150, 14000 / 300],
+			[14000 / 300, 18000 / 600],
+			[18000 / 600, 28000 / 1200],
+			[28000 / 1200, 39000 / 2400],
+			[39000 / 2400, 53000 / 4800],
+			[53000 / 4800, 9],
+			[9, 9]
+		];
+		type_price = getPriceOfRange(home_square_ranges, home_price_ranges, square_value);
 	}
-	if (social_on) type_price = 35; // общ. пространства
-	if (office_on) type_price = 20; // админ. помещения
+
+	if (social_on) {
+		// общ. пространства
+		const social_square_ranges = [
+			[0, 200],
+			[200, 350],
+			[350, 400],
+			[400, 500],
+			[500, 750],
+			[750, 1000],
+			[1000, 1200],
+			[1200, 2400],
+			[2400, 4800],
+			[4800, 6500],
+			[6500, Infinity]
+		];
+		const social_price_ranges = [
+			[35, 35],
+			[35, 11000 / 350],
+			[11000 / 350, 12500 / 400],
+			[12500 / 400, 14000 / 500],
+			[14000 / 500, 18000 / 750],
+			[18000 / 750, 19000 / 1000],
+			[19000 / 1000, 20000 / 1200],
+			[20000 / 1200, 26000 / 2400],
+			[26000 / 2400, 32000 / 4800],
+			[32000 / 4800, 6],
+			[6, 6]
+		];
+		type_price = getPriceOfRange(social_square_ranges, social_price_ranges, square_value);
+	}
+
+	if (office_on) {
+		// админ. помещения
+		const office_square_ranges = [
+			[0, 750],
+			[750, 1000],
+			[1000, 2000],
+			[2000, 3000],
+			[3000, 6000],
+			[6000, 8000],
+			[8000, Infinity]
+		];
+		const office_price_ranges = [
+			[20, 20],
+			[20, 15000 / 1000],
+			[15000 / 1000, 24000 / 2000],
+			[24000 / 2000, 28000 / 3000],
+			[28000 / 3000, 36000 / 6000],
+			[36000 / 6000, 5],
+			[5, 5]
+		];
+		type_price = getPriceOfRange(office_square_ranges, office_price_ranges, square_value);
+	}
 
 	// Дизайн-проект
 	const design = $('#calc-design');
