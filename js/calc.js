@@ -142,6 +142,10 @@ const calc_design = function() {
 				if (Array.isArray(price_range)) {
 					const price_start = price_range[0];
 					const price_end = price_range[1];
+					console.log('price_start : ' + price_start);
+					console.log('price_end : ' + price_end);
+					console.log('square_start : ' + square_start);
+					console.log('square_end : ' + square_end);
 					return price_end + (price_start - price_end) / (square_end - square_start);
 				} else {
 					return price_range;
