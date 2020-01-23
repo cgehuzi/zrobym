@@ -137,12 +137,8 @@ const calc_design = function() {
 			const square_range = square_ranges[i];
 			const square_start = square_range[0];
 			const square_end = square_range[1];
-
-			console.log(square_start);
 			if (square >= square_start && square < square_end) {
 				const price_range = price_ranges[i];
-
-				console.log(square_start);
 				if (Array.isArray(price_range)) {
 					const price_start = price_range[0];
 					const price_end = price_range[1];
@@ -154,7 +150,7 @@ const calc_design = function() {
 		}
 	};
 
-	console.log(getPriceOfRange(home_price_ranges, home_square_ranges, square_value));
+	console.log(getPriceOfRange(home_square_ranges, home_price_ranges, square_value));
 
 	if (home_on) {
 		// дом, квартира (плавное нарастание цены)
