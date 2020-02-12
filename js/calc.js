@@ -329,7 +329,7 @@ const calc_design = function() {
 	// Служба заказчика (контроль закупок)
 	const slugba = $('#calc-slugba');
 	const slugba_on = slugba.is(':checked') ? true : false;
-	const slugba_price = slugba_on ? 4500 : 0;
+	const slugba_price = slugba_on ? 8000 : 0;
 
 	// Авторское сопровождение
 	const author = $('#calc-author');
