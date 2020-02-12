@@ -186,7 +186,7 @@ const calc_arch = function() {
 	// Служба заказчика
 	const tech = $('#calc-tech');
 	const tech_on = tech.is(':checked') ? true : false;
-	const tech_price = tech_on ? 6000 : 0;
+	const tech_price = tech_on ? 8000 : 0;
 
 	// Личное ведение проекта основателями студии
 	const self = $('#calc-self');
@@ -337,7 +337,7 @@ const calc_design = function() {
 		author.prop('checked', true);
 	}
 	const author_on = author.is(':checked') ? true : false;
-	const author_price = author_on ? 1500 : 0;
+	const author_price = author_on ? 3000 : 0;
 
 	// Личное ведение проекта основателями студии
 	const self = $('#calc-self');
