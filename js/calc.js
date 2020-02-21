@@ -182,22 +182,25 @@ const calc_arch = function() {
     ? square_value * getPriceOfRange(ingeneer_square_ranges, ingeneer_price_ranges, square_value)
     : 0;
 
-  // Авторский надзор
+  // Служба заказчика
+  const slugba = $('#calc-tech');
+  const slugba_on = slugba.is(':checked') ? true : false;
+  const slugba_price = slugba_on ? 5000 : 0;
+
+  // Авторское сопровождение
   const author = $('#calc-author');
+  if (slugba_on) {
+    author.prop('checked', true);
+  }
   const author_on = author.is(':checked') ? true : false;
   const author_price = author_on ? 4000 : 0;
-
-  // Служба заказчика
-  const tech = $('#calc-tech');
-  const tech_on = tech.is(':checked') ? true : false;
-  const tech_price = tech_on ? 9000 : 0;
 
   // Личное ведение проекта основателями студии
   const self = $('#calc-self');
   const self_on = self.is(':checked') ? true : false;
 
   // ИТОГО
-  let total_price = start_price + maket_price + build_price + ingeneer_price + author_price + tech_price;
+  let total_price = start_price + maket_price + build_price + ingeneer_price + author_price + slugba_price;
 
   if (self_on) total_price += total_price * 0.15; // если личное ведение проекта включено
 
@@ -333,7 +336,7 @@ const calc_design = function() {
   // Служба заказчика (контроль закупок)
   const slugba = $('#calc-slugba');
   const slugba_on = slugba.is(':checked') ? true : false;
-  const slugba_price = slugba_on ? 8000 : 0;
+  const slugba_price = slugba_on ? 5000 : 0;
 
   // Авторское сопровождение
   const author = $('#calc-author');
