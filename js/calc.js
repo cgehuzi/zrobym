@@ -265,7 +265,8 @@ const calc_design = function() {
 	if (social_on) {
 		// общ. пространства
 		const social_square_ranges = [
-			[0, 200],
+			[0, 100],
+			[100, 200],
 			[200, 350],
 			[350, 400],
 			[400, 500],
@@ -278,7 +279,8 @@ const calc_design = function() {
 			[6500, Infinity]
 		];
 		const social_price_ranges = [
-			[35, 35],
+			[50, 50],
+			[50, 35],
 			[35, 11000 / 350],
 			[11000 / 350, 12500 / 400],
 			[12500 / 400, 14000 / 500],
