@@ -1,263 +1,290 @@
 <!DOCTYPE html>
 <html lang="[%config_lang_code%]">
 
-	<head>
+    <head>
 
-		{{head}}
-		<link rel="stylesheet" href="assets/templates/zrobym/css/template-design-category.css?[%config_last_mod%]">
-	</head>
+        {{head}}
+        <link rel="stylesheet" href="assets/templates/zrobym/css/template-design-category.css?[%config_last_mod%]">
+    </head>
 
-	<body class="template-design-category">
-		<hr class="grid-line grid-line--left">
-		<hr class="grid-line grid-line--center">
-		<hr class="grid-line grid-line--right">
+    <body class="template-design-category">
+        <hr class="grid-line grid-line--left">
+        <hr class="grid-line grid-line--center">
+        <hr class="grid-line grid-line--right">
 
-		{{menu}}
+        {{menu}}
 
-		<link rel="stylesheet" href="assets/templates/zrobym/css/header.css?[%config_last_mod%]">
-		<div class="header section">
-			<div class="header__header">
-				<img class="header__header-logo" src="assets/templates/zrobym/images/logo-full-black.svg" alt="logo">
-			</div>
-			<hr class="grid-row">
-			<div class="separ separ--small"></div>
-			<div class="header__body section__body">
-				<div class="section__body-col">
-					<div class="section__header" data-scroll="title">
-						<div class="section__header-title">
-							{{header_title}}
-						</div>
-						<div class="section__header-subtitle">[%category_header_subtitle%]</div>
-					</div>
-				</div>
-				<div class="section__body-col">
-					<div class="section__content">
-						{{header_content}}
-					</div>
-				</div>
-			</div>
-			<div class="separ separ--small"></div>
-			<hr class="grid-row">
-			<div class="header__footer">
-				<div class="header__footer-lang">[+switchLang+][+activeLang+]</div>
-			</div>
-			<img class="header__arrow" src="assets/templates/zrobym/icons/black/arrow-grey.svg" alt="">
-			<hr class="grid-row grid-row--all">
-		</div>
+        <link rel="stylesheet" href="assets/templates/zrobym/css/header.css?[%config_last_mod%]">
+        <div class="header section">
+            <div class="header__header">
+                <img class="header__header-logo" src="assets/templates/zrobym/images/logo-full-black.svg" alt="logo">
+            </div>
+            <hr class="grid-row">
+            <div class="separ separ--small"></div>
+            <div class="header__body section__body">
+                <div class="section__body-col">
+                    <div class="section__header" data-scroll="title">
+                        <div class="section__header-title">
+                            {{header_title}}
+                        </div>
+                        <div class="section__header-subtitle">[%category_header_subtitle%]</div>
+                    </div>
+                </div>
+                <div class="section__body-col">
+                    <div class="section__content">
+                        {{header_content}}
+                    </div>
+                </div>
+            </div>
+            <div class="separ separ--small"></div>
+            <hr class="grid-row">
+            <div class="header__footer">
+                <div class="header__footer-lang">[+switchLang+][+activeLang+]</div>
+            </div>
+            <img class="header__arrow" src="assets/templates/zrobym/icons/black/arrow-grey.svg" alt="">
+            <hr class="grid-row grid-row--all">
+        </div>
 
-		<link rel="stylesheet" href="assets/templates/zrobym/css/category.css?[%config_last_mod%]">
-		<div class="category">
+		<link rel="stylesheet" href="assets/templates/zrobym/css/filter.css?[%config_last_mod%]">
+        <link rel="stylesheet" href="assets/templates/zrobym/css/category.css?[%config_last_mod%]">
+        <div class="category" data-filters>
 
-			[[DocLister?
-			&parents=`[*id*]`
-			&addWhereList=`c.template=22`
-			&tvList=`project_image, project_subtitle, project_year, project_type`
-			&filters=`AND(tvd:project_year:=:2020)`
-			&display=`all`
-			&orderBy=`menuindex ASC`
-			&tpl=`category_project--tpl`
-			&ownerTPL=`@CODE:
-			<div class="section category__year" data-filter-group>
-				<div class="separ separ--small"></div>
-				<div class="section__body">
-					<div class="category__year-title">
-						<div class="section__header">
-							<div class="section__header-title">
-								<strong>2020</strong>
-							</div>
-						</div>
-					</div>
-					<ul class="category__list">
-						[+dl.wrap+]
-					</ul>
-				</div>
-			</div>`
-			&noneTPL=``
-			&noneWrapOuter=`0`
-			]]
+            [[Switch? &switch=`[*id*]`
+            &case:[%id_design_social%]=`
+            <div class="section filter">
 
-			[[DocLister?
-			&parents=`[*id*]`
-			&addWhereList=`c.template=22`
-			&tvList=`project_image, project_subtitle, project_year, project_type`
-			&filters=`AND(tvd:project_year:=:2019)`
-			&display=`all`
-			&orderBy=`menuindex ASC`
-			&tpl=`category_project--tpl`
-			&ownerTPL=`@CODE:
-			<div class="section category__year" data-filter-group>
-				<div class="separ separ--small"></div>
-				<div class="section__body">
-					<div class="category__year-title">
-						<div class="section__header">
-							<div class="section__header-title">
-								<strong>2019</strong>
-							</div>
-						</div>
-					</div>
-					<ul class="category__list">
-						[+dl.wrap+]
-					</ul>
-				</div>
-			</div>`
-			&noneTPL=``
-			&noneWrapOuter=`0`
-			]]
+                <hr class="grid-row grid-row--all">
+                <ul class="section__body filter__list" data-scroll="title">
+                    <li class="filter__list-point">
+                        <button class="filter__list-button" type="button" data-filter-show="all">[%filter_all%]</button>
+                    </li>
+                    <li class="filter__list-point">
+                        <button class="filter__list-button" type="button" data-filter-show="office">[%filter_office%]</button>
+                    </li>
+                    <li class="filter__list-point">
+                        <button class="filter__list-button" type="button" data-filter-show="horeca">[%filter_horeca%]</button>
+                    </li>
+                    <li class="filter__list-point">
+                        <button class="filter__list-button" type="button" data-filter-show="medical">[%filter_medical%]</button>
+                    </li>
+                    <li class="filter__list-point">
+                        <button class="filter__list-button" type="button" data-filter-show="other">[%filter_other%]</button>
+                    </li>
+                </ul>
+                <hr class="grid-row grid-row--all">
 
-			[[DocLister?
-			&parents=`[*id*]`
-			&addWhereList=`c.template=22`
-			&tvList=`project_image, project_subtitle, project_year, project_type`
-			&filters=`AND(tvd:project_year:=:2018)`
-			&display=`all`
-			&orderBy=`menuindex ASC`
-			&tpl=`category_project--tpl`
-			&ownerTPL=`@CODE:
-			<div class="section category__year" data-filter-group>
-				<div class="separ separ--small"></div>
-				<div class="section__body">
-					<div class="category__year-title">
-						<div class="section__header">
-							<div class="section__header-title">
-								<strong>2018</strong>
-							</div>
-						</div>
-					</div>
-					<ul class="category__list">
-						[+dl.wrap+]
-					</ul>
-				</div>
-			</div>`
-			&noneTPL=``
-			&noneWrapOuter=`0`
-			]]
+            </div>`]]
 
-			[[DocLister?
-			&parents=`[*id*]`
-			&addWhereList=`c.template=22`
-			&tvList=`project_image, project_subtitle, project_year, project_type`
-			&filters=`AND(tvd:project_year:=:2017)`
-			&display=`all`
-			&orderBy=`menuindex ASC`
-			&tpl=`category_project--tpl`
-			&ownerTPL=`@CODE:
-			<div class="section category__year" data-filter-group>
-				<div class="separ separ--small"></div>
-				<div class="section__body">
-					<div class="category__year-title">
-						<div class="section__header">
-							<div class="section__header-title">
-								<strong>2017</strong>
-							</div>
-						</div>
-					</div>
-					<ul class="category__list">
-						[+dl.wrap+]
-					</ul>
-				</div>
-			</div>`
-			&noneTPL=``
-			&noneWrapOuter=`0`
-			]]
+            [[DocLister?
+            &parents=`[*id*]`
+            &addWhereList=`c.template=22`
+            &tvList=`project_image, project_subtitle, project_year, project_type`
+            &filters=`AND(tvd:project_year:=:2020)`
+            &display=`all`
+            &orderBy=`menuindex ASC`
+            &tpl=`category_project--tpl`
+            &ownerTPL=`@CODE:
+            <div class="section category__year" data-filter-group>
+                <div class="separ separ--small"></div>
+                <div class="section__body">
+                    <div class="category__year-title">
+                        <div class="section__header">
+                            <div class="section__header-title">
+                                <strong>2020</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="category__list">
+                        [+dl.wrap+]
+                    </ul>
+                </div>
+            </div>`
+            &noneTPL=``
+            &noneWrapOuter=`0`
+            ]]
 
-			[[DocLister?
-			&parents=`[*id*]`
-			&addWhereList=`c.template=22`
-			&tvList=`project_image, project_subtitle, project_year, project_type`
-			&filters=`AND(tvd:project_year:=:2016)`
-			&display=`all`
-			&orderBy=`menuindex ASC`
-			&tpl=`category_project--tpl`
-			&ownerTPL=`@CODE:
-			<div class="section category__year" data-filter-group>
-				<div class="separ separ--small"></div>
-				<div class="section__body">
-					<div class="category__year-title">
-						<div class="section__header">
-							<div class="section__header-title">
-								<strong>2016</strong>
-							</div>
-						</div>
-					</div>
-					<ul class="category__list">
-						[+dl.wrap+]
-					</ul>
-				</div>
-			</div>`
-			&noneTPL=``
-			&noneWrapOuter=`0`
-			]]
+            [[DocLister?
+            &parents=`[*id*]`
+            &addWhereList=`c.template=22`
+            &tvList=`project_image, project_subtitle, project_year, project_type`
+            &filters=`AND(tvd:project_year:=:2019)`
+            &display=`all`
+            &orderBy=`menuindex ASC`
+            &tpl=`category_project--tpl`
+            &ownerTPL=`@CODE:
+            <div class="section category__year" data-filter-group>
+                <div class="separ separ--small"></div>
+                <div class="section__body">
+                    <div class="category__year-title">
+                        <div class="section__header">
+                            <div class="section__header-title">
+                                <strong>2019</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="category__list">
+                        [+dl.wrap+]
+                    </ul>
+                </div>
+            </div>`
+            &noneTPL=``
+            &noneWrapOuter=`0`
+            ]]
 
-			[[DocLister?
-			&parents=`[*id*]`
-			&addWhereList=`c.template=22`
-			&tvList=`project_image, project_subtitle, project_year, project_type`
-			&filters=`AND(tvd:project_year:=:2015)`
-			&display=`all`
-			&orderBy=`menuindex ASC`
-			&tpl=`category_project--tpl`
-			&ownerTPL=`@CODE:
-			<div class="section category__year" data-filter-group>
-				<div class="separ separ--small"></div>
-				<div class="section__body">
-					<div class="category__year-title">
-						<div class="section__header">
-							<div class="section__header-title">
-								<strong>2015</strong>
-							</div>
-						</div>
-					</div>
-					<ul class="category__list">
-						[+dl.wrap+]
-					</ul>
-				</div>
-			</div>`
-			&noneTPL=``
-			&noneWrapOuter=`0`
-			]]
+            [[DocLister?
+            &parents=`[*id*]`
+            &addWhereList=`c.template=22`
+            &tvList=`project_image, project_subtitle, project_year, project_type`
+            &filters=`AND(tvd:project_year:=:2018)`
+            &display=`all`
+            &orderBy=`menuindex ASC`
+            &tpl=`category_project--tpl`
+            &ownerTPL=`@CODE:
+            <div class="section category__year" data-filter-group>
+                <div class="separ separ--small"></div>
+                <div class="section__body">
+                    <div class="category__year-title">
+                        <div class="section__header">
+                            <div class="section__header-title">
+                                <strong>2018</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="category__list">
+                        [+dl.wrap+]
+                    </ul>
+                </div>
+            </div>`
+            &noneTPL=``
+            &noneWrapOuter=`0`
+            ]]
 
-			[[DocLister?
-			&parents=`[*id*]`
-			&addWhereList=`c.template=22`
-			&tvList=`project_image, project_subtitle, project_year, project_type`
-			&filters=`AND(tvd:project_year:=:2014)`
-			&display=`all`
-			&orderBy=`menuindex ASC`
-			&tpl=`category_project--tpl`
-			&ownerTPL=`@CODE:
-			<div class="section category__year" data-filter-group>
-				<div class="separ separ--small"></div>
-				<div class="section__body">
-					<div class="category__year-title">
-						<div class="section__header">
-							<div class="section__header-title">
-								<strong>2014</strong>
-							</div>
-						</div>
-					</div>
-					<ul class="category__list">
-						[+dl.wrap+]
-					</ul>
-				</div>
-			</div>`
-			&noneTPL=``
-			&noneWrapOuter=`0`
-			]]
+            [[DocLister?
+            &parents=`[*id*]`
+            &addWhereList=`c.template=22`
+            &tvList=`project_image, project_subtitle, project_year, project_type`
+            &filters=`AND(tvd:project_year:=:2017)`
+            &display=`all`
+            &orderBy=`menuindex ASC`
+            &tpl=`category_project--tpl`
+            &ownerTPL=`@CODE:
+            <div class="section category__year" data-filter-group>
+                <div class="separ separ--small"></div>
+                <div class="section__body">
+                    <div class="category__year-title">
+                        <div class="section__header">
+                            <div class="section__header-title">
+                                <strong>2017</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="category__list">
+                        [+dl.wrap+]
+                    </ul>
+                </div>
+            </div>`
+            &noneTPL=``
+            &noneWrapOuter=`0`
+            ]]
 
-		</div>
+            [[DocLister?
+            &parents=`[*id*]`
+            &addWhereList=`c.template=22`
+            &tvList=`project_image, project_subtitle, project_year, project_type`
+            &filters=`AND(tvd:project_year:=:2016)`
+            &display=`all`
+            &orderBy=`menuindex ASC`
+            &tpl=`category_project--tpl`
+            &ownerTPL=`@CODE:
+            <div class="section category__year" data-filter-group>
+                <div class="separ separ--small"></div>
+                <div class="section__body">
+                    <div class="category__year-title">
+                        <div class="section__header">
+                            <div class="section__header-title">
+                                <strong>2016</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="category__list">
+                        [+dl.wrap+]
+                    </ul>
+                </div>
+            </div>`
+            &noneTPL=``
+            &noneWrapOuter=`0`
+            ]]
 
-		<hr class="grid-row grid-row--all">
+            [[DocLister?
+            &parents=`[*id*]`
+            &addWhereList=`c.template=22`
+            &tvList=`project_image, project_subtitle, project_year, project_type`
+            &filters=`AND(tvd:project_year:=:2015)`
+            &display=`all`
+            &orderBy=`menuindex ASC`
+            &tpl=`category_project--tpl`
+            &ownerTPL=`@CODE:
+            <div class="section category__year" data-filter-group>
+                <div class="separ separ--small"></div>
+                <div class="section__body">
+                    <div class="category__year-title">
+                        <div class="section__header">
+                            <div class="section__header-title">
+                                <strong>2015</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="category__list">
+                        [+dl.wrap+]
+                    </ul>
+                </div>
+            </div>`
+            &noneTPL=``
+            &noneWrapOuter=`0`
+            ]]
 
-		{{section_modular}}
-		{{section_world}}
-		{{section_our_design}}
+            [[DocLister?
+            &parents=`[*id*]`
+            &addWhereList=`c.template=22`
+            &tvList=`project_image, project_subtitle, project_year, project_type`
+            &filters=`AND(tvd:project_year:=:2014)`
+            &display=`all`
+            &orderBy=`menuindex ASC`
+            &tpl=`category_project--tpl`
+            &ownerTPL=`@CODE:
+            <div class="section category__year" data-filter-group>
+                <div class="separ separ--small"></div>
+                <div class="section__body">
+                    <div class="category__year-title">
+                        <div class="section__header">
+                            <div class="section__header-title">
+                                <strong>2014</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="category__list">
+                        [+dl.wrap+]
+                    </ul>
+                </div>
+            </div>`
+            &noneTPL=``
+            &noneWrapOuter=`0`
+            ]]
 
-		{{feedback}}
-		{{footer}}
+        </div>
 
-		{{plugins}}
-		{{scripts}}
+        <hr class="grid-row grid-row--all">
 
-	</body>
+        {{section_modular}}
+        {{section_world}}
+        {{section_our_design}}
+
+        {{feedback}}
+        {{footer}}
+
+        {{plugins}}
+        {{scripts}}
+
+    </body>
 
 </html>
