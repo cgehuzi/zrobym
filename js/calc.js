@@ -1,10 +1,10 @@
 // ====================================================
 // наращивание цифры
 // ====================================================
-const set_number_to = function(id, from, to, duration) {
+const set_number_to = function (id, from, to, duration) {
   var element = $(id);
   var start = new Date().getTime();
-  setTimeout(function() {
+  setTimeout(function () {
     var now = new Date().getTime() - start;
     var progress = now / duration;
     var result = Math.floor((to - from) * progress + from);
@@ -17,7 +17,7 @@ const set_number_to = function(id, from, to, duration) {
 // ====================================================
 // определение цены из промежутков
 // ====================================================
-const getPriceOfRange = function(square_ranges, price_ranges, square) {
+const getPriceOfRange = function (square_ranges, price_ranges, square) {
   for (let i = 0; i < square_ranges.length; i++) {
     const square_range = square_ranges[i];
     const square_start = square_range[0];
@@ -40,7 +40,7 @@ const getPriceOfRange = function(square_ranges, price_ranges, square) {
 // ====================================================
 // АРХИТЕКТУРА
 // ====================================================
-const calc_arch = function() {
+const calc_arch = function () {
   // Площадь
   const square = $('#calc-square');
   const square_min = 50; // минимальная
@@ -75,7 +75,7 @@ const calc_arch = function() {
     [6000, 12000],
     [12000, 24000],
     [24000, 35000],
-    [35000, Infinity]
+    [35000, Infinity],
   ];
   const start_price_ranges = [
     [30, 30],
@@ -90,7 +90,7 @@ const calc_arch = function() {
     [11000 / 6000, 14000 / 12000],
     [14000 / 12000, 16000 / 24000],
     [16000 / 24000, 0.5],
-    [0.5, 0.5]
+    [0.5, 0.5],
   ];
 
   const start_price = square_value * getPriceOfRange(start_square_ranges, start_price_ranges, square_value);
@@ -118,7 +118,7 @@ const calc_arch = function() {
     [6000, 12000],
     [12000, 24000],
     [24000, 35000],
-    [35000, Infinity]
+    [35000, Infinity],
   ];
   const build_price_ranges = [
     [30, 30],
@@ -134,7 +134,7 @@ const calc_arch = function() {
     [13000 / 6000, 16000 / 12000],
     [16000 / 12000, 20000 / 24000],
     [20000 / 24000, 0.7],
-    [0.7, 0.7]
+    [0.7, 0.7],
   ];
 
   const build_price = build_on
@@ -159,7 +159,7 @@ const calc_arch = function() {
     [6000, 12000],
     [12000, 24000],
     [24000, 35000],
-    [35000, Infinity]
+    [35000, Infinity],
   ];
   const ingeneer_price_ranges = [
     [28, 28],
@@ -175,7 +175,7 @@ const calc_arch = function() {
     [12500 / 6000, 15000 / 12000],
     [15000 / 12000, 19000 / 24000],
     [19000 / 24000, 0.6],
-    [0.6, 0.6]
+    [0.6, 0.6],
   ];
 
   const ingeneer_price = ingeneer_on
@@ -215,7 +215,7 @@ const calc_arch = function() {
 // ====================================================
 // ДИЗАЙН
 // ====================================================
-const calc_design = function() {
+const calc_design = function () {
   // Тип проекта
   const home = $('#calc-home');
   const home_on = home.is(':checked') ? true : false;
@@ -253,7 +253,7 @@ const calc_design = function() {
       [1200, 2400],
       [2400, 4800],
       [4800, 6500],
-      [6500, Infinity]
+      [6500, Infinity],
     ];
     const home_price_ranges = [
       [80, 80],
@@ -261,10 +261,10 @@ const calc_design = function() {
       [10500 / 150, 14000 / 300],
       [14000 / 300, 18000 / 600],
       [18000 / 600, 28000 / 1200],
-      [28000 / 1200, 39000 / 2400],
-      [39000 / 2400, 53000 / 4800],
-      [53000 / 4800, 9],
-      [9, 9]
+      [28000 / 1200, 43000 / 2400],
+      [43000 / 2400, 59000 / 4800],
+      [59000 / 4800, 11],
+      [11, 11],
     ];
     type_price = getPriceOfRange(home_square_ranges, home_price_ranges, square_value);
   }
@@ -278,12 +278,11 @@ const calc_design = function() {
       [350, 400],
       [400, 500],
       [500, 750],
-      [750, 1000],
-      [1000, 1200],
+      [750, 1200],
       [1200, 2400],
       [2400, 4800],
       [4800, 6500],
-      [6500, Infinity]
+      [6500, Infinity],
     ];
     const social_price_ranges = [
       [50, 50],
@@ -292,12 +291,11 @@ const calc_design = function() {
       [11000 / 350, 12500 / 400],
       [12500 / 400, 14000 / 500],
       [14000 / 500, 18000 / 750],
-      [18000 / 750, 19000 / 1000],
-      [19000 / 1000, 20000 / 1200],
-      [20000 / 1200, 26000 / 2400],
-      [26000 / 2400, 32000 / 4800],
-      [32000 / 4800, 6],
-      [6, 6]
+      [18000 / 750, 22000 / 1200],
+      [22000 / 1200, 32000 / 2400],
+      [32000 / 2400, 48000 / 4800],
+      [48000 / 4800, 9],
+      [9, 9],
     ];
     type_price = getPriceOfRange(social_square_ranges, social_price_ranges, square_value);
   }
@@ -311,16 +309,16 @@ const calc_design = function() {
       [2000, 3000],
       [3000, 6000],
       [6000, 8000],
-      [8000, Infinity]
+      [8000, Infinity],
     ];
     const office_price_ranges = [
       [20, 20],
       [20, 15000 / 1000],
       [15000 / 1000, 24000 / 2000],
-      [24000 / 2000, 28000 / 3000],
-      [28000 / 3000, 36000 / 6000],
-      [36000 / 6000, 5],
-      [5, 5]
+      [27000 / 2000, 36000 / 3000],
+      [36000 / 3000, 48000 / 6000],
+      [48000 / 6000, 8],
+      [8, 8],
     ];
     type_price = getPriceOfRange(office_square_ranges, office_price_ranges, square_value);
   }
@@ -374,15 +372,15 @@ const calc_checkboxes = document.querySelectorAll('.calc__checkbox .checkbox__in
 const calc_arch_on = document.querySelector('.calc--arch') ? true : false;
 if (calc_arch_on) {
   calc_arch(); // при загрузке страницы
-  calc_checkboxes.forEach(function(calc_checkbox) {
-    calc_checkbox.addEventListener('change', function() {
+  calc_checkboxes.forEach(function (calc_checkbox) {
+    calc_checkbox.addEventListener('change', function () {
       calc_arch(); // при изменении отмеченных работ
     });
   });
-  calc_square_input.addEventListener('blur', function() {
+  calc_square_input.addEventListener('blur', function () {
     calc_arch(); // при расфокусировке поля площади
   });
-  calc_square_input.addEventListener('keydown', function(event) {
+  calc_square_input.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
       event.preventDefault();
       calc_square_input.blur(); // при нажатии Enter
@@ -393,15 +391,15 @@ if (calc_arch_on) {
 const calc_design_on = document.querySelector('.calc--design') ? true : false;
 if (calc_design_on) {
   calc_design(); // при загрузке страницы
-  calc_checkboxes.forEach(function(calc_checkbox) {
-    calc_checkbox.addEventListener('change', function() {
+  calc_checkboxes.forEach(function (calc_checkbox) {
+    calc_checkbox.addEventListener('change', function () {
       calc_design(); // при изменении отмеченных работ
     });
   });
-  calc_square_input.addEventListener('blur', function() {
+  calc_square_input.addEventListener('blur', function () {
     calc_design(); // при расфокусировке поля площади
   });
-  calc_square_input.addEventListener('keydown', function(event) {
+  calc_square_input.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
       event.preventDefault();
       calc_square_input.blur(); // при нажатии Enter
