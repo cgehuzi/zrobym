@@ -101,14 +101,14 @@
       margin-top: 48px;
 
       .title {
-        margin-bottom: 0.2rem;
+				margin-bottom: 0;
       }
-    }
 
-    .subtitle {
-      color: $grey;
-      text-align: right;
-      margin: 0.5rem 0 0;
+			.subtitle {
+				color: $grey_dark;
+				font-size: 1rem;
+				margin: 0.75rem 0 0.2rem;
+			}
     }
   }
 
