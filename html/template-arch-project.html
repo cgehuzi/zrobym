@@ -84,13 +84,14 @@
                     [[Switch? &switch=`[*project_plan1_image*]` &case:=``
                     &default=`
                     <div class="project__plan">
-                        <img class="project__plan-image" src="[*project_plan1_image*]" alt="План 1">
+                        <img class="project__plan-image" src="[*project_plan1_image*]" alt="[%project_plan_1%]">
 
                         [[multiTV?
                         &tvName=`project_plan1_explication`
                         &outerTpl=`@CODE:
                         <div class="section__content project__plan-desc">
-                            <h4 class="title">[%project_explication_title%]</h4>
+                            <h4 class="title">[%project_plan_1%]</h4>
+                            <h5 class="subtitle">[%project_explication_title%]</h5>
                             <p>[%project_explication_subtitle%]</p>
                         </div>
                         <ul class="project-explication">
@@ -109,13 +110,14 @@
                     [[Switch? &switch=`[*project_plan2_image*]` &case:=``
                     &default=`
                     <div class="project__plan">
-                        <img class="project__plan-image" src="[*project_plan2_image*]" alt="План 2">
+                        <img class="project__plan-image" src="[*project_plan2_image*]" alt="[%project_plan_2%]">
 
                         [[multiTV?
                         &tvName=`project_plan2_explication`
                         &outerTpl=`@CODE:
                         <div class="section__content project__plan-desc">
-                            <h4 class="title">[%project_explication_title%]</h4>
+                            <h4 class="title">[%project_plan_2%]</h4>
+                            <h5 class="subtitle">[%project_explication_title%]</h5>
                             <p>[%project_explication_subtitle%]</p>
                         </div>
                         <ul class="project-explication">
@@ -134,13 +136,14 @@
                     [[Switch? &switch=`[*project_plan3_image*]` &case:=``
                     &default=`
                     <div class="project__plan">
-                        <img class="project__plan-image" src="[*project_plan3_image*]" alt="План 3">
+                        <img class="project__plan-image" src="[*project_plan3_image*]" alt="[%project_plan_3%]">
 
                         [[multiTV?
                         &tvName=`project_plan3_explication`
                         &outerTpl=`@CODE:
                         <div class="section__content project__plan-desc">
-                            <h4 class="title">[%project_explication_title%]</h4>
+                            <h4 class="title">[%project_plan_3%]</h4>
+                            <h5 class="subtitle">[%project_explication_title%]</h5>
                             <p>[%project_explication_subtitle%]</p>
                         </div>
                         <ul class="project-explication">
@@ -159,13 +162,14 @@
                     [[Switch? &switch=`[*project_plan4_image*]` &case:=``
                     &default=`
                     <div class="project__plan">
-                        <img class="project__plan-image" src="[*project_plan4_image*]" alt="План 4">
+                        <img class="project__plan-image" src="[*project_plan4_image*]" alt="[%project_plan_4%]">
 
                         [[multiTV?
                         &tvName=`project_plan4_explication`
                         &outerTpl=`@CODE:
                         <div class="section__content project__plan-desc">
-                            <h4 class="title">[%project_explication_title%]</h4>
+                            <h4 class="title">[%project_plan_4%]</h4>
+                            <h5 class="subtitle">[%project_explication_title%]</h5>
                             <p>[%project_explication_subtitle%]</p>
                         </div>
                         <ul class="project-explication">
@@ -208,7 +212,7 @@
                     <ul class="project-gallery__list">
                         [[Switch? &switch=`[*project_video_main*]` &case:=`` &default=`
                         <li class="project-gallery__list-point">
-                            <a data-fancybox data-caption="[[Typo? &text=`[*pagetitle*]`]]" class="project-gallery__item youtube__item" href="[*project_video_main*]">
+                            <a rel="nofollow" data-fancybox data-caption="[[Typo? &text=`[*pagetitle*]`]]" class="project-gallery__item youtube__item" href="[*project_video_main*]">
                                 <img class="project-gallery__item-image youtube__item-image" src="[[Switch?
 								&switch=`[*project_video_image*]`
 								&case:=`[*project_image*]`
@@ -217,7 +221,7 @@
                             </a>
                         </li>`]]
 
-                        [[if? &is=`[*publishedon*]:>:1576838533`
+                        [[if? &is=`[*publishedon*]:>:[%watermark_pubdate%]`
 
                         &then=`[[multiTV?
                         &tvName=`project_gallery`
