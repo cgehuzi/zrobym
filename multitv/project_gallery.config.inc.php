@@ -11,6 +11,11 @@ $settings['fields'] = array(
         'type' => 'image',
         'width' => '30%'
     ),
+    'progress' => array(
+        'caption' => 'В реализации?<br><span class="comment">IN&nbsp;PROGRESS</span>',
+        'type' => 'checkbox',
+        'elements' => 'Да==1'
+    ),
     'plan' => array(
         'caption' => 'План<br><span class="comment">на котором это помещение</span>',
         'type' => 'dropdown',
