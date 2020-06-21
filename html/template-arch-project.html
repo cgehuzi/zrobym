@@ -71,6 +71,7 @@
 
                             </ul>
                         </div>
+
                     </div>
 
                     [[Switch? &switch=`[*project_desc_content*]` &case:=``
@@ -81,16 +82,31 @@
                     </div>
                     `]]
 
+                    [[multiTV?
+                    &tvName=`project_publications`
+                    &display=`all`
+                    &outerTpl=`@CODE:
+                    <div class="project-pub">
+                        <h4>[%Публикации в прессе%]</h4>
+                        <ul class="project-pub__list">
+                            ((wrapper))
+                        </ul>
+                    </div>`
+                    &rowTpl=`project_publication--rowTpl`
+                    ]]
+
                     [[Switch? &switch=`[*project_plan1_image*]` &case:=``
                     &default=`
                     <div class="project__plan">
                         <img class="project__plan-image" src="[*project_plan1_image*]" alt="[%project_plan_1%]">
+                        <div class="section__content project__plan-desc">
+                            <h4 class="title">[%project_plan_1%]</h4>
+                        </div>
 
                         [[multiTV?
                         &tvName=`project_plan1_explication`
                         &outerTpl=`@CODE:
-                        <div class="section__content project__plan-desc">
-                            <h4 class="title">[%project_plan_1%]</h4>
+                        <div class="section__content project__plan-desc" style="margin-top: 0;">
                             <h5 class="subtitle">[%project_explication_title%]</h5>
                             <p>[%project_explication_subtitle%]</p>
                         </div>
@@ -111,12 +127,14 @@
                     &default=`
                     <div class="project__plan">
                         <img class="project__plan-image" src="[*project_plan2_image*]" alt="[%project_plan_2%]">
+                        <div class="section__content project__plan-desc">
+                            <h4 class="title">[%project_plan_2%]</h4>
+                        </div>
 
                         [[multiTV?
                         &tvName=`project_plan2_explication`
                         &outerTpl=`@CODE:
-                        <div class="section__content project__plan-desc">
-                            <h4 class="title">[%project_plan_2%]</h4>
+                        <div class="section__content project__plan-desc" style="margin-top: 0;">
                             <h5 class="subtitle">[%project_explication_title%]</h5>
                             <p>[%project_explication_subtitle%]</p>
                         </div>
@@ -137,12 +155,14 @@
                     &default=`
                     <div class="project__plan">
                         <img class="project__plan-image" src="[*project_plan3_image*]" alt="[%project_plan_3%]">
+                        <div class="section__content project__plan-desc">
+                            <h4 class="title">[%project_plan_3%]</h4>
+                        </div>
 
                         [[multiTV?
                         &tvName=`project_plan3_explication`
                         &outerTpl=`@CODE:
-                        <div class="section__content project__plan-desc">
-                            <h4 class="title">[%project_plan_3%]</h4>
+                        <div class="section__content project__plan-desc" style="margin-top: 0;">
                             <h5 class="subtitle">[%project_explication_title%]</h5>
                             <p>[%project_explication_subtitle%]</p>
                         </div>
@@ -163,12 +183,14 @@
                     &default=`
                     <div class="project__plan">
                         <img class="project__plan-image" src="[*project_plan4_image*]" alt="[%project_plan_4%]">
+                        <div class="section__content project__plan-desc">
+                            <h4 class="title">[%project_plan_4%]</h4>
+                        </div>
 
                         [[multiTV?
                         &tvName=`project_plan4_explication`
                         &outerTpl=`@CODE:
-                        <div class="section__content project__plan-desc">
-                            <h4 class="title">[%project_plan_4%]</h4>
+                        <div class="section__content project__plan-desc" style="margin-top: 0;">
                             <h5 class="subtitle">[%project_explication_title%]</h5>
                             <p>[%project_explication_subtitle%]</p>
                         </div>
@@ -223,19 +245,17 @@
 
                         [[if? &is=`[*publishedon*]:>:[%watermark_pubdate%]`
 
-                        &then=`[[multiTV?
+                        &then=`[!multiTV?
                         &tvName=`project_gallery`
                         &outerTpl=`@CODE: ((wrapper))`
                         &rowTpl=`project_gallery_water--rowTpl`
-                        &display=`all`
-                        ]]`
+                        &display=`all`!]`
 
-                        &else=`[[multiTV?
+                        &else=`[!multiTV?
                         &tvName=`project_gallery`
                         &outerTpl=`@CODE: ((wrapper))`
                         &rowTpl=`project_gallery--rowTpl`
-                        &display=`all`
-                        ]]`
+                        &display=`all`!]`
 
                         ]]
 
