@@ -114,6 +114,7 @@
       display: block;
       border: 1px solid $border_light;
       position: relative;
+      transition: none;
 
       &::before {
         content: '';
