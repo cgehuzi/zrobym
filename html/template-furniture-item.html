@@ -1,231 +1,231 @@
 <!DOCTYPE html>
 <html lang="[%config_lang_code%]">
 
-	<head>
+    <head>
 
-		{{head}}
-		<link rel="stylesheet" href="assets/templates/zrobym/css/template-furniture-item.css?[%config_last_mod%]">
-	</head>
+        {{head}}
+        <link rel="stylesheet" href="assets/templates/zrobym/css/template-furniture-item.css?[%config_last_mod%]">
+    </head>
 
-	<body class="template-furniture-item">
-		<hr class="grid-line grid-line--left">
-		<hr class="grid-line grid-line--center">
-		<hr class="grid-line grid-line--right">
+    <body class="template-furniture-item">
+        <hr class="grid-line grid-line--left">
+        <hr class="grid-line grid-line--center">
+        <hr class="grid-line grid-line--right">
 
-		{{menu}}
+        {{menu}}
 
-		<link rel="stylesheet" href="assets/templates/zrobym/css/header.css?[%config_last_mod%]">
-		<div class="header section">
-			<div class="header__header">
-				<img class="header__header-logo" src="assets/templates/zrobym/images/logo-furniture-black.svg" alt="logo">
-			</div>
-			<hr class="grid-row">
-		</div>
+        <link rel="stylesheet" href="assets/templates/zrobym/css/header.css?[%config_last_mod%]">
+        <div class="header section">
+            <div class="header__header">
+                <img class="header__header-logo" src="assets/templates/zrobym/images/logo-furniture-black.svg" alt="logo">
+            </div>
+            <hr class="grid-row">
+        </div>
 
-		<link rel="stylesheet" href="assets/templates/zrobym/css/furniture.css?[%config_last_mod%]">
-		<div class="section furniture">
-			<div class="separ separ--small"></div>
-			<div class="section__body" id="colors" data-tabs>
-				<div class="section__body-col furniture-info">
-					<div class="furniture__header">
-						<div class="section__header furniture__header-title" data-scroll="title">
-							<div class="section__header-title">
-								<strong>[*pagetitle*]</strong>
-							</div>
-							<div class="section__header-subtitle furniture__workers">
-								by [[WorkersList? &list=`[*item_workers*]` &multi=`1`]]
-							</div>
-						</div>
-						[[Switch? &switch=`[*item_color1*][*item_color2*][*item_color3*][*item_color4*][*item_color5*]`
-						&case:=`<button data-tab-open="#color-1" data-tab-group="#colors" style="display: none;"></button>`
-						&default=`
-						<ul class="furniture__color">
-							[[Switch? &switch=`[*item_color1*]`
-							&case:=`` &default=`
-							<li class="furniture__color-point">
-								<button class="furniture__color-item" type="button" style="background-color: [*item_color1*];" data-tab-open="#color-1" data-tab-group="#colors"></button>
-							</li>`]]
-							[[Switch? &switch=`[*item_color2*]`
-							&case:=`` &default=`
-							<li class="furniture__color-point">
-								<button class="furniture__color-item" type="button" style="background-color: [*item_color2*];" data-tab-open="#color-2" data-tab-group="#colors"></button>
-							</li>`]]
-							[[Switch? &switch=`[*item_color3*]`
-							&case:=`` &default=`
-							<li class="furniture__color-point">
-								<button class="furniture__color-item" type="button" style="background-color: [*item_color3*];" data-tab-open="#color-3" data-tab-group="#colors"></button>
-							</li>`]]
-							[[Switch? &switch=`[*item_color4*]`
-							&case:=`` &default=`
-							<li class="furniture__color-point">
-								<button class="furniture__color-item" type="button" style="background-color: [*item_color4*];" data-tab-open="#color-4" data-tab-group="#colors"></button>
-							</li>`]]
-							[[Switch? &switch=`[*item_color5*]`
-							&case:=`` &default=`
-							<li class="furniture__color-point">
-								<button class="furniture__color-item" type="button" style="background-color: [*item_color5*];" data-tab-open="#color-5" data-tab-group="#colors"></button>
-							</li>`]]
-						</ul>`]]
-					</div>
-					<div class="section__buttons">
-						<a href="tel:+375293032540" data-href="tel:+375293032540" class="button" data-phone="+375 29 3032540">[%Контактный телефон%]</a>
-					</div>
+        <link rel="stylesheet" href="assets/templates/zrobym/css/furniture.css?[%config_last_mod%]">
+        <div class="section furniture">
+            <div class="separ separ--small"></div>
+            <div class="section__body" id="colors" data-tabs>
+                <div class="section__body-col furniture-info">
+                    <div class="furniture__header">
+                        <div class="section__header furniture__header-title" data-scroll="title">
+                            <div class="section__header-title">
+                                <strong>[*pagetitle*]</strong>
+                            </div>
+                            <div class="section__header-subtitle furniture__workers">
+                                by [[WorkersList? &list=`[*item_workers*]` &multi=`1`]]
+                            </div>
+                        </div>
+                        [[Switch? &switch=`[*item_color1*][*item_color2*][*item_color3*][*item_color4*][*item_color5*]`
+                        &case:=`<button data-tab-open="#color-1" data-tab-group="#colors" style="display: none;"></button>`
+                        &default=`
+                        <ul class="furniture__color">
+                            [[Switch? &switch=`[*item_color1*]`
+                            &case:=`` &default=`
+                            <li class="furniture__color-point">
+                                <button class="furniture__color-item" type="button" style="background-color: [*item_color1*];" data-tab-open="#color-1" data-tab-group="#colors"></button>
+                            </li>`]]
+                            [[Switch? &switch=`[*item_color2*]`
+                            &case:=`` &default=`
+                            <li class="furniture__color-point">
+                                <button class="furniture__color-item" type="button" style="background-color: [*item_color2*];" data-tab-open="#color-2" data-tab-group="#colors"></button>
+                            </li>`]]
+                            [[Switch? &switch=`[*item_color3*]`
+                            &case:=`` &default=`
+                            <li class="furniture__color-point">
+                                <button class="furniture__color-item" type="button" style="background-color: [*item_color3*];" data-tab-open="#color-3" data-tab-group="#colors"></button>
+                            </li>`]]
+                            [[Switch? &switch=`[*item_color4*]`
+                            &case:=`` &default=`
+                            <li class="furniture__color-point">
+                                <button class="furniture__color-item" type="button" style="background-color: [*item_color4*];" data-tab-open="#color-4" data-tab-group="#colors"></button>
+                            </li>`]]
+                            [[Switch? &switch=`[*item_color5*]`
+                            &case:=`` &default=`
+                            <li class="furniture__color-point">
+                                <button class="furniture__color-item" type="button" style="background-color: [*item_color5*];" data-tab-open="#color-5" data-tab-group="#colors"></button>
+                            </li>`]]
+                        </ul>`]]
+                    </div>
+                    <div class="section__buttons">
+                        <a href="tel:+375293032540" data-href="tel:+375293032540" class="button" data-phone="+375 29 3032540">[%Контактный телефон%]</a>
+                    </div>
 
-					[[Switch? &switch=`[*item_desc*]`
-					&case:=`` &default=`
-					<div class="section__content furniture__desc">
-						[[Typo? &breakline=`off` &text=`[*item_desc*]`]]
-					</div>`]]
+                    [[Switch? &switch=`[*item_desc*]`
+                    &case:=`` &default=`
+                    <div class="section__content furniture__desc">
+                        [[Typo? &breakline=`off` &text=`[*item_desc*]`]]
+                    </div>`]]
 
-					[[Switch? &switch=`[*item_materials*]`
-					&case:=`` &default=`
-					<div class="section__content furniture__material">
-						[[Typo? &breakline=`off` &text=`
-						<h4>[%Используемые материалы%]</h4>
-						[*item_materials*]`]]
-					</div>`]]
+                    [[Switch? &switch=`[*item_materials*]`
+                    &case:=`` &default=`
+                    <div class="section__content furniture__material">
+                        [[Typo? &breakline=`off` &text=`
+                        <h4>[%Используемые материалы%]</h4>
+                        [*item_materials*]`]]
+                    </div>`]]
 
-					[[multiTV?
-					&tvName=`item_schemes`
-					&outerTpl=`@CODE:
-					<ul class="furniture-scheme">
-						((wrapper))
-					</ul>`
-					&rowTpl=`furniture_scheme--rowTpl`
-					&display=`all`
-					]]
+                    [[multiTV?
+                    &tvName=`item_schemes`
+                    &outerTpl=`@CODE:
+                    <ul class="furniture-scheme">
+                        ((wrapper))
+                    </ul>`
+                    &rowTpl=`furniture_scheme--rowTpl`
+                    &display=`all`
+                    ]]
 
-					[[Switch? &switch=`[*item_3d*]`
-					&case:=`` &default=`
-					<div class="section__buttons">
-						<a href="[*item_3d*]" class="button" download>[%Скачать 3D-модель%]</a>
-					</div>`]]
-				</div>
-				<div class="section__body-col furniture-gallery">
-					<div class="furniture-gallery__header">
-						<div class="section__header" data-scroll="title">
-							<div class="section__header-title">
-								<strong>[*pagetitle*]</strong>
-							</div>
-							<div class="section__header-subtitle furniture__workers">
-								by [[WorkersList? &list=`[*item_workers*]` &multi=`1`]]
-							</div>
-						</div>
-					</div>
+                    [[Switch? &switch=`[*item_3d*]`
+                    &case:=`` &default=`
+                    <div class="section__buttons">
+                        <a href="[*item_3d*]" class="button" download>[%Скачать 3D-модель%]</a>
+                    </div>`]]
+                </div>
+                <div class="section__body-col furniture-gallery">
+                    <div class="furniture-gallery__header">
+                        <div class="section__header" data-scroll="title">
+                            <div class="section__header-title">
+                                <strong>[*pagetitle*]</strong>
+                            </div>
+                            <div class="section__header-subtitle furniture__workers">
+                                by [[WorkersList? &list=`[*item_workers*]` &multi=`1`]]
+                            </div>
+                        </div>
+                    </div>
 
-					[[multiTV?
-					&tvName=`item_color1_gallery`
-					&outerTpl=`@CODE:
-					<ul class="furniture-gallery__list" id="color-1" data-tab-item>
-						((wrapper))
-					</ul>`
-					&rowTpl=`furniture_gallery--rowTpl`
-					&display=`all`
-					&firstClass=``
-					&lastClass=``
-					&evenClass=`color 1`
-					&oddClass=`color 1`
-					]]
+                    [[multiTV?
+                    &tvName=`item_color1_gallery`
+                    &outerTpl=`@CODE:
+                    <ul class="furniture-gallery__list" id="color-1" data-tab-item>
+                        ((wrapper))
+                    </ul>`
+                    &rowTpl=`furniture_gallery--rowTpl`
+                    &display=`all`
+                    &firstClass=``
+                    &lastClass=``
+                    &evenClass=`color 1`
+                    &oddClass=`color 1`
+                    ]]
 
-					[[multiTV?
-					&tvName=`item_color2_gallery`
-					&outerTpl=`@CODE:
-					<ul class="furniture-gallery__list" id="color-2" data-tab-item>
-						((wrapper))
-					</ul>`
-					&rowTpl=`furniture_gallery--rowTpl`
-					&display=`all`
-					&firstClass=``
-					&lastClass=``
-					&evenClass=`color 2`
-					&oddClass=`color 2`
-					]]
+                    [[multiTV?
+                    &tvName=`item_color2_gallery`
+                    &outerTpl=`@CODE:
+                    <ul class="furniture-gallery__list" id="color-2" data-tab-item>
+                        ((wrapper))
+                    </ul>`
+                    &rowTpl=`furniture_gallery--rowTpl`
+                    &display=`all`
+                    &firstClass=``
+                    &lastClass=``
+                    &evenClass=`color 2`
+                    &oddClass=`color 2`
+                    ]]
 
-					[[multiTV?
-					&tvName=`item_color3_gallery`
-					&outerTpl=`@CODE:
-					<ul class="furniture-gallery__list" id="color-3" data-tab-item>
-						((wrapper))
-					</ul>`
-					&rowTpl=`furniture_gallery--rowTpl`
-					&display=`all`
-					&firstClass=``
-					&lastClass=``
-					&evenClass=`color 3`
-					&oddClass=`color 3`
-					]]
+                    [[multiTV?
+                    &tvName=`item_color3_gallery`
+                    &outerTpl=`@CODE:
+                    <ul class="furniture-gallery__list" id="color-3" data-tab-item>
+                        ((wrapper))
+                    </ul>`
+                    &rowTpl=`furniture_gallery--rowTpl`
+                    &display=`all`
+                    &firstClass=``
+                    &lastClass=``
+                    &evenClass=`color 3`
+                    &oddClass=`color 3`
+                    ]]
 
-					[[multiTV?
-					&tvName=`item_color4_gallery`
-					&outerTpl=`@CODE:
-					<ul class="furniture-gallery__list" id="color-4" data-tab-item>
-						((wrapper))
-					</ul>`
-					&rowTpl=`furniture_gallery--rowTpl`
-					&display=`all`
-					&firstClass=``
-					&lastClass=``
-					&evenClass=`color 4`
-					&oddClass=`color 4`
-					]]
+                    [[multiTV?
+                    &tvName=`item_color4_gallery`
+                    &outerTpl=`@CODE:
+                    <ul class="furniture-gallery__list" id="color-4" data-tab-item>
+                        ((wrapper))
+                    </ul>`
+                    &rowTpl=`furniture_gallery--rowTpl`
+                    &display=`all`
+                    &firstClass=``
+                    &lastClass=``
+                    &evenClass=`color 4`
+                    &oddClass=`color 4`
+                    ]]
 
-					[[multiTV?
-					&tvName=`item_color5_gallery`
-					&outerTpl=`@CODE:
-					<ul class="furniture-gallery__list" id="color-5" data-tab-item>
-						((wrapper))
-					</ul>`
-					&rowTpl=`furniture_gallery--rowTpl`
-					&display=`all`
-					&firstClass=``
-					&lastClass=``
-					&evenClass=`color 5`
-					&oddClass=`color 5`
-					]]
+                    [[multiTV?
+                    &tvName=`item_color5_gallery`
+                    &outerTpl=`@CODE:
+                    <ul class="furniture-gallery__list" id="color-5" data-tab-item>
+                        ((wrapper))
+                    </ul>`
+                    &rowTpl=`furniture_gallery--rowTpl`
+                    &display=`all`
+                    &firstClass=``
+                    &lastClass=``
+                    &evenClass=`color 5`
+                    &oddClass=`color 5`
+                    ]]
 
-				</div>
-			</div>
-			<div class="separ"></div>
-		</div>
+                </div>
+            </div>
+            <div class="separ"></div>
+        </div>
 
-		<link rel="stylesheet" href="assets/templates/zrobym/css/more.css?[%config_last_mod%]">
-		<div class="section more">
-			<hr class="grid-row grid-row--all">
-			<div class="separ separ--small"></div>
-			<div class="section__body">
-				<div class="section__body-col">
-					<div class="section__content more__content">
-						<h4>[%section_more_furniture_title%]</h4>
-						<p>[%section_more_furniture_subtitle%]</p>
-					</div>
-				</div>
-				<div class="section__body-col">
-					<link rel="stylesheet" href="assets/templates/zrobym/css/ya-share2.css?[%config_last_mod%]">
-					<script async src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-					<script async src="https://yastatic.net/share2/share.js"></script>
-					<div class="ya-share2" data-services="vkontakte,facebook,telegram,viber,twitter"></div>
-				</div>
-			</div>
-			<div class="separ separ--small"></div>
-		</div>
+        <link rel="stylesheet" href="assets/templates/zrobym/css/more.css?[%config_last_mod%]">
+        <div class="section more">
+            <hr class="grid-row grid-row--all">
+            <div class="separ separ--small"></div>
+            <div class="section__body">
+                <div class="section__body-col">
+                    <div class="section__content more__content">
+                        <h4>[%section_more_furniture_title%]</h4>
+                        <p>[%section_more_furniture_subtitle%]</p>
+                    </div>
+                </div>
+                <div class="section__body-col">
+                    <link rel="stylesheet" href="assets/templates/zrobym/css/ya-share2.css?[%config_last_mod%]">
+                    <script async src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                    <script async src="https://yastatic.net/share2/share.js"></script>
+                    <div class="ya-share2" data-services="vkontakte,facebook,telegram,viber,twitter"></div>
+                </div>
+            </div>
+            <div class="separ separ--small"></div>
+        </div>
 
-		<div class="header section">
-			<hr class="grid-row">
-			<div class="header__footer">
-				<div class="header__footer-lang">[+switchLang+][+activeLang+]</div>
-			</div>
-		</div>
+        <div class="header section">
+            <hr class="grid-row">
+            <div class="header__footer">
+                <div class="header__footer-lang">[+switchLang+][+activeLang+]</div>
+            </div>
+        </div>
 
-		{{section_our_furniture}}
+        {{section_our_furniture}}
 
-		{{feedback}}
-		{{footer}}
+        {{feedback}}
+        {{footer}}
 
-		{{plugins}}
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-		{{scripts}}
+        {{plugins}}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        {{scripts}}
 
-	</body>
+    </body>
 
 </html>
