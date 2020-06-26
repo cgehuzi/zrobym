@@ -1,330 +1,342 @@
 @import './1-const.scss';
 
 .menu {
-	opacity: 0;
-	visibility: hidden;
-	transition: $slow;
-	position: fixed;
-	z-index: 3;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	background-color: $dark;
+  opacity: 0;
+  visibility: hidden;
+  transition: $slow;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $dark;
 
-	@include for-tablet-vertical-up {
-		background-color: rgba(#000000, 0.9);
-	}
+  @include for-tablet-vertical-up {
+    background-color: rgba(#000000, 0.9);
+  }
 
-	&.opened {
-		opacity: 1;
-		visibility: visible;
-	}
+  &.opened {
+    opacity: 1;
+    visibility: visible;
+  }
 
-	&__header {
-		height: 102px;
-		min-height: 102px;
+  &__header {
+    height: 102px;
+    min-height: 102px;
 
-		@include for-phone {
-			display: none;
-		}
+    @include for-phone {
+      display: none;
+    }
 
-		@include for-desktop {
-			height: $separ;
-			min-height: $separ;
-		}
+    @include for-desktop {
+      height: $separ;
+      min-height: $separ;
+    }
 
-		&-link {
-			display: block;
-			height: 100%;
-			width: 10vw;
+    &-link {
+      display: block;
+      height: 100%;
+      width: 10vw;
 
-			img {
-				display: block;
-				width: 100%;
-				height: 100%;
-				padding: 16px;
-				object-fit: contain;
-				object-position: center;
-			}
-		}
-	}
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
 
-	&__footer {
-		height: 102px;
-		min-height: 102px;
-		color: #ffffff;
-		display: flex;
+  &__footer {
+    height: 102px;
+    min-height: 102px;
+    color: #ffffff;
+    display: flex;
 
-		@include for-phone {
-			display: none;
-		}
+    @include for-phone {
+      display: none;
+    }
 
-		@include for-desktop {
-			height: $separ;
-			min-height: $separ;
-		}
+    @include for-desktop {
+      height: $separ;
+      min-height: $separ;
+    }
 
-		&-lang {
-			margin-left: auto;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 10vw;
-			min-width: 10vw;
-			font-weight: $fw_medium;
-		}
-	}
+    &-lang {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 10vw;
+      min-width: 10vw;
+      font-weight: $fw_medium;
+    }
+  }
 
-	&__body {
-		flex-grow: 1;
-		overflow: auto;
+  &__body {
+    flex-grow: 1;
+    overflow: auto;
 
-		@include for-phone-horizontal-up {
-			margin: 0 10vw;
-			display: flex;
-		}
+    @include for-phone-horizontal-up {
+      margin: 0 10vw;
+      display: flex;
+    }
 
-		@include for-tablet-horizontal-up {
-			margin-right: 50vw;
+    @include for-tablet-vertical-up {
+      margin-top: -102px;
+      margin-bottom: -102px;
+      margin-left: calc(10vw - 1px);
+      background-color: rgba(#000000, 0.8);
+      z-index: 3;
+    }
 
-		}
-	}
+    @include for-tablet-horizontal-up {
+      margin-right: 50vw;
+    }
 
-	&__list {
-		padding-top: 12px;
-		padding-bottom: 12px;
-		padding-right: 72px;
-		line-height: 1.4;
+    @include for-desktop {
+      margin-top: -$separ;
+      margin-bottom: -$separ;
+    }
+  }
 
-		@include for-phone-horizontal-up {
-			padding-right: 0;
-		}
+  &__list {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 72px;
+    line-height: 1.4;
 
-		@include for-tablet-horizontal-up {
-			margin-top: auto;
-			margin-bottom: auto;
-		}
+    @include for-phone-horizontal-up {
+      padding-right: 0;
+    }
 
-		&-link {
-			display: block;
-			padding: 12px 12px 12px 24px;
-			color: #ffffff;
-			text-transform: uppercase;
-			font-weight: $fw_medium;
+    @include for-tablet-horizontal-up {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
 
-			@include for-tablet-horizontal-up {
-				padding: 8px 8px 8px 36px;
-				font-size: 0.9rem;
-			}
+    &-link {
+      display: block;
+      padding: 12px 12px 12px 24px;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-weight: $fw_medium;
 
-			@include for-laptop {
-				font-size: 0.8rem;
-				line-height: 1;
-			}
+      @include for-tablet-horizontal-up {
+        padding: 8px 8px 8px 36px;
+        font-size: 0.9rem;
+      }
 
-			&:hover {
-				color: $gold;
-			}
+      @include for-laptop {
+        font-size: 0.8rem;
+        line-height: 1;
+      }
 
-			&.parent {
-				padding-bottom: 8px;
+      &:hover {
+        color: $gold;
+      }
 
-				@include for-tablet-horizontal-up {
-					padding-bottom: 4px;
-				}
-			}
+      &.parent {
+        padding-bottom: 8px;
 
-			&.active,
-			&.has {
-				color: $gold;
-			}
-		}
-	}
+        @include for-tablet-horizontal-up {
+          padding-bottom: 4px;
+        }
+      }
 
-	&__sublist {
-		padding-bottom: 0.8rem;
+      &.active,
+      &.has {
+        color: $gold;
+      }
+    }
+  }
 
-		&-link {
-			display: block;
-			padding: 6px 12px 6px 24px;
-			color: $grey_light;
+  &__sublist {
+    padding-bottom: 0.8rem;
 
-			@include for-tablet-horizontal-up {
-				padding: 4px 4px 4px 36px;
-				font-size: 0.9rem;
-			}
+    &-link {
+      display: block;
+      padding: 6px 12px 6px 24px;
+      color: $grey_light;
 
-			@include for-laptop {
-				font-size: 0.8rem;
-				line-height: 1.1;
-			}
+      @include for-tablet-horizontal-up {
+        padding: 4px 4px 4px 36px;
+        font-size: 0.9rem;
+      }
 
-			&:hover {
-				color: $gold;
-			}
+      @include for-laptop {
+        font-size: 0.8rem;
+        line-height: 1.1;
+      }
 
-			&.active,
-			&.has {
-				color: $gold;
-			}
-		}
-	}
+      &:hover {
+        color: $gold;
+      }
 
-	&-open {
-		position: relative;
-		z-index: 3;
-		width: 100%;
-		height: 102px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 0;
-		background-color: transparent;
-		border: none;
-		line-height: 1;
+      &.active,
+      &.has {
+        color: $gold;
+      }
+    }
+  }
 
-		@include for-phone {
-			margin-bottom: -32px;
-		}
+  &-open {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    line-height: 1;
 
-		@include for-tablet-up {
-			position: fixed;
-			left: 0;
-			top: 0;
-			width: 10%;
-			height: 100%;
-			flex-direction: column-reverse;
-		}
+    @include for-phone {
+      margin-bottom: -32px;
+    }
 
-		@include for-laptop-up {
-			&:hover {
-				.menu-open {
-					&__icon {
-						&-top {
-							margin-left: 12px;
-							height: 42px;
-						}
+    @include for-tablet-up {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 10%;
+      height: 100%;
+      flex-direction: column-reverse;
+    }
 
-						&-bottom {
-							margin-right: 12px;
-							height: 42px;
-						}
-					}
-				}
-			}
-		}
+    @include for-laptop-up {
+      &:hover {
+        .menu-open {
+          &__icon {
+            &-top {
+              margin-left: 12px;
+              height: 42px;
+            }
 
-		&__icon {
-			width: 27px;
-			height: 42px;
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
+            &-bottom {
+              margin-right: 12px;
+              height: 42px;
+            }
+          }
+        }
+      }
+    }
 
-			@include for-phone {
-				transform: rotate(90deg);
-			}
+    &__icon {
+      width: 27px;
+      height: 42px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-			&-top,
-			&-center,
-			&-bottom {
-				width: 3px;
-				height: 32px;
-				background-color: #000000;
+      @include for-phone {
+        transform: rotate(90deg);
+      }
 
-				@include for-tablet-up {
-					background-color: $gold;
-				}
+      &-top,
+      &-center,
+      &-bottom {
+        width: 3px;
+        height: 32px;
+        background-color: #000000;
 
-				@include for-laptop-up {
-					transition: $slow;
-				}
-			}
+        @include for-tablet-up {
+          background-color: $gold;
+        }
 
-			&-center {
-				height: 42px;
-			}
-		}
+        @include for-laptop-up {
+          transition: $slow;
+        }
+      }
 
-		&__text {
-			@include for-phone {
-				display: none;
-			}
+      &-center {
+        height: 42px;
+      }
+    }
 
-			@include for-tablet-up {
-				writing-mode: vertical-rl;
-				transform: rotate(180deg);
-				white-space: nowrap;
-				text-transform: uppercase;
-				letter-spacing: 2px;
-				font-weight: $fw_medium;
-				color: $gold;
-				font-size: 1.2rem;
-				margin-top: 12px;
-			}
-		}
-	}
+    &__text {
+      @include for-phone {
+        display: none;
+      }
 
-	&-close {
-		position: absolute;
-		z-index: 5;
-		right: 0;
-		top: 0;
-		display: block;
-		width: 72px;
-		height: 72px;
-		background-color: transparent;
-		background-image: url('../icons/white/close.svg');
-		background-size: 24px;
-		background-position: center;
-		background-repeat: no-repeat;
-		border: none;
-		padding: 0;
-		margin: 0;
-		opacity: 0;
-		visibility: hidden;
+      @include for-tablet-up {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        white-space: nowrap;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: $fw_medium;
+        color: $gold;
+        font-size: 1.2rem;
+        margin-top: 12px;
+      }
+    }
+  }
 
-		@include for-phone-horizontal-up {
-			width: 10vw;
-			height: 10vw;
-		}
+  &-close {
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    background-image: url('../icons/white/close.svg');
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
 
-		@include for-tablet-vertical {
-			height: 84px;
-		}
+    @include for-phone-horizontal-up {
+      width: 10vw;
+      height: 10vw;
+    }
 
-		@include for-tablet-horizontal-up {
-			right: 10vw;
-			top: 102px;
-			width: 40vw;
-			height: calc(100vh - 204px);
-			background-position: top 24px right 24px;
-		}
+    @include for-tablet-vertical {
+      height: 84px;
+    }
 
-		@include for-desktop {
-			top: 7.2vw;
-		}
+    @include for-tablet-horizontal-up {
+      right: 10vw;
+      top: 102px;
+      width: 40vw;
+      height: calc(100vh - 204px);
+      background-position: top 24px right 24px;
+    }
 
-		&.active {
-			opacity: 1;
-			visibility: visible;
+    @include for-desktop {
+      top: 7.2vw;
+    }
 
-			@include for-laptop-up {
-				opacity: 0.6;
+    &.active {
+      opacity: 1;
+      visibility: visible;
 
-				&:hover {
-					opacity: 1;
-				}
-			}
-		}
-	}
+      @include for-laptop-up {
+        opacity: 0.6;
 
-	.lang {
-		color: #ffffff;
-		position: fixed;
-	}
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .lang {
+    color: #ffffff;
+    position: fixed;
+  }
 }
