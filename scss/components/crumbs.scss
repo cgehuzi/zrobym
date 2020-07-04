@@ -1,16 +1,20 @@
 @import '../1-const.scss';
 
 .crumbs {
-  margin-top: 32px;
   font-size: 0.8rem;
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    margin: 0 -6px;
+    margin: 24px -6px 0;
     color: inherit;
     opacity: 0.8;
+
+    @include for-phone {
+      justify-content: center;
+      margin-top: 16px;
+    }
 
     &-point {
       position: relative;
