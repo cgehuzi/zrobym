@@ -1,0 +1,42 @@
+@import '../1-const.scss';
+
+.crumbs {
+  margin-top: 32px;
+  font-size: 0.8rem;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -6px;
+    color: inherit;
+    opacity: 0.6;
+
+    &-point {
+      position: relative;
+      padding: 0 6px;
+
+      &::before {
+        content: '/';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: translateX(50%);
+      }
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__item {
+    color: inherit;
+    border-bottom: 1px solid;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
