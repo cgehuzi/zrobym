@@ -504,9 +504,9 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 248 || document.documentElement.scrollTop > 248) {
-    document.querySelector('.to-top').classList.add('visible');
+    document.querySelector('.totop').classList.add('visible');
   } else {
-    document.querySelector('.to-top').classList.remove('visible');
+    document.querySelector('.totop').classList.remove('visible');
   }
 }
 
