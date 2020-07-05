@@ -19,7 +19,8 @@
   transition: $slow;
 
   @include for-phone {
-    display: none;
+    width: 100%;
+    height: 86px;
   }
 
   @include for-desktop {
@@ -35,6 +36,9 @@
   &__arrow {
     width: 42px;
     transform: rotate(180deg);
+    @include for-phone {
+      width: 36px;
+    }
   }
 
   &:hover &__arrow {
