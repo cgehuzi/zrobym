@@ -503,7 +503,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 248 || document.documentElement.scrollTop > 248) {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
     document.querySelector('.totop').classList.add('visible');
   } else {
     document.querySelector('.totop').classList.remove('visible');
