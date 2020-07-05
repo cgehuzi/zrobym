@@ -6,7 +6,8 @@
   right: 0;
   bottom: 0;
   width: 10vw;
-  height: 10vw;
+  height: 102px;
+  min-height: 102px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +20,11 @@
 
   @include for-phone {
     display: none;
+  }
+
+  @include for-desktop {
+    height: $separ;
+    min-height: $separ;
   }
 
   &.visible {
