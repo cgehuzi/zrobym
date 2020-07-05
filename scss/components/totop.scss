@@ -33,6 +33,11 @@
   }
 
   &__arrow {
+    width: 42px;
+    transform: rotate(180deg);
+  }
+
+  &:hover &__arrow {
     animation: animation-arrow 1s forwards infinite;
   }
 }
