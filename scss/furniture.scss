@@ -253,6 +253,12 @@
         background-image: url('../icons/black/arrow-prev.svg');
         margin-right: 8px;
       }
+
+      &:hover {
+        &::before {
+          background-image: url('../icons/gold/arrow-prev.svg');
+        }
+      }
     }
 
     &.next {
@@ -262,6 +268,12 @@
         background-image: url('../icons/black/arrow-next.svg');
         margin-left: 8px;
         order: 2;
+      }
+
+      &:hover {
+        &::before {
+          background-image: url('../icons/gold/arrow-next.svg');
+        }
       }
     }
   }
