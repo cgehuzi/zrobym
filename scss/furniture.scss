@@ -244,9 +244,8 @@
 
     &::before {
       content: '';
-      width: 18px;
-      height: 18px;
-      background-image: url('../icons/black/arrow-prev.svg');
+      width: 20px;
+      height: 20px;
       background-size: 18px;
       background-position: center;
       background-repeat: no-repeat;
@@ -254,13 +253,15 @@
 
     &.prev {
       &::before {
-        padding-right: 16px;
+        background-image: url('../icons/black/arrow-prev.svg');
+        margin-right: 8px;
       }
     }
 
     &.next {
       &::before {
-        padding-left: 16px;
+        background-image: url('../icons/black/arrow-next.svg');
+        margin-left: 8px;
         order: 2;
       }
     }
