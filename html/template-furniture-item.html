@@ -30,11 +30,18 @@
                     <div class="furniture__header">
                         <div class="section__header furniture__header-title" data-scroll="title">
                             <div class="section__header-title">
-                                <strong>[*pagetitle*]</strong>
+                                <h1 style="font-weight: 800; font-size: inherit;">[*pagetitle*]</h1>
                             </div>
                             <div class="section__header-subtitle furniture__workers">
                                 by [[WorkersList? &list=`[*item_workers*]` &multi=`1`]]
                             </div>
+                            [[DLcrumbs?
+                            &ownerTPL=`crumbs--ownerTPL`
+                            &tpl=`crumbs--tpl`
+                            &tplCurrent=`crumbs--tplCurrent`
+                            &showCurrent=`1`
+                            &addWhereList=`c.template!=25`
+                            ]]
                         </div>
                         [[Switch? &switch=`[*item_color1*][*item_color2*][*item_color3*][*item_color4*][*item_color5*]`
                         &case:=`<button data-tab-open="#color-1" data-tab-group="#colors" style="display: none;"></button>`
@@ -186,6 +193,42 @@
                 </div>
             </div>
             <div class="separ"></div>
+        </div>
+
+        <div class="section">
+            <hr class="grid-row grid-row--all">
+            <div class="section__body">
+                <div class="section__body-col">
+
+                    [[DocLister?
+                    &parents=`[*parent*]`
+                    &addWhereList=`c.template=24 and c.menuindex<[*menuindex*]`
+                    &display=`1`
+                    &orderBy=`menuindex DESC`
+                    &tpl=`@CODE:
+                    <a href="[+url+]" class="furniture-link prev">[+title+]</a>`
+                    &ownerTPL=`@CODE: [+dl.wrap+]`
+                    &noneTPL=``
+                    &noneWrapOuter=`0`
+                    ]]
+
+                </div>
+                <div class="section__body-col">
+
+                    [[DocLister?
+                    &parents=`[*parent*]`
+                    &addWhereList=`c.template=24 and c.menuindex>[*menuindex*]`
+                    &display=`1`
+                    &orderBy=`menuindex ASC`
+                    &tpl=`@CODE:
+                    <a href="[+url+]" class="furniture-link prev">[+title+]</a>`
+                    &ownerTPL=`@CODE: [+dl.wrap+]`
+                    &noneTPL=``
+                    &noneWrapOuter=`0`
+                    ]]
+
+                </div>
+            </div>
         </div>
 
         <link rel="stylesheet" href="assets/templates/zrobym/css/more.css?[%config_last_mod%]">
