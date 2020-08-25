@@ -229,6 +229,10 @@
     font-weight: $fw_medium;
     color: $dark;
 
+    @include for-tablet-vertical-down {
+      justify-content: center !important;
+    }
+
     @include for-laptop-up {
       &:hover {
         background-color: transparent;
