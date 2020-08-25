@@ -6,6 +6,7 @@
   font-size: 0.9rem;
   font-weight: $fw_medium;
   color: $dark;
+  text-transform: uppercase;
 
   @include for-tablet-vertical-down {
     justify-content: center !important;
