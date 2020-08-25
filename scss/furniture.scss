@@ -228,6 +228,9 @@
     background-color: $back_light;
     border: 1px solid $border_light;
     line-height: 1.2;
+    font-size: 0.9rem;
+    font-weight: $fw_medium;
+    color: $dark;
 
     @include for-laptop-up {
       &:hover {
@@ -247,6 +250,19 @@
       background-size: 18px;
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    &.prev {
+      &::before {
+        padding-right: 16px;
+      }
+    }
+
+    &.next {
+      &::before {
+        padding-left: 16px;
+        order: 2;
+      }
     }
   }
 }
