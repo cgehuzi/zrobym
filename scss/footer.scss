@@ -24,12 +24,12 @@
   &__block {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -24px;
+    margin: 0 -16px;
 
     &-col {
       flex-basis: 100%;
       max-width: 100%;
-      padding: 42px 24px 0;
+      padding: 42px 16px 0;
 
       @include for-tablet-vertical {
         flex-basis: 50%;
@@ -141,10 +141,10 @@
   &-menu {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -16px 32px;
 
     &__list {
-      padding-top: 12px;
-      padding-bottom: 12px;
+      padding: 0 16px 32px;
       padding-right: 72px;
       line-height: 1.4;
       flex-basis: 100%;
@@ -175,6 +175,7 @@
         color: #ffffff;
         text-transform: uppercase;
         font-weight: $fw_medium;
+        line-height: 1.4;
 
         @include for-tablet-horizontal-up {
           font-size: 0.9rem;
@@ -182,7 +183,6 @@
 
         @include for-laptop {
           font-size: 0.8rem;
-          line-height: 1;
         }
 
         &:hover {
@@ -211,6 +211,7 @@
         display: block;
         padding: 4px 0;
         color: $grey_light;
+        line-height: 1.4;
 
         @include for-tablet-horizontal-up {
           font-size: 0.9rem;
@@ -218,7 +219,6 @@
 
         @include for-laptop {
           font-size: 0.8rem;
-          line-height: 1.1;
         }
 
         &:hover {
