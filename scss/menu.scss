@@ -83,8 +83,8 @@
     overflow: auto;
     padding-top: 72px;
 
-    @include for-tablet-up {
-      padding-top: 0;
+    @include for-tablet-vertical {
+      padding-top: 102px;
     }
 
     @include for-phone-horizontal-up {
@@ -365,8 +365,10 @@
     letter-spacing: 2px;
     border: none;
 
-    @include for-tablet-up {
-      display: none;
+    @include for-tablet-vertical {
+      top: 15px;
+      left: calc(10vw + 15px);
+      width: calc(100% - 20vw - 30px);
     }
   }
 }
