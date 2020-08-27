@@ -141,18 +141,19 @@
   &-menu {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -16px 32px;
+    margin: 0 -16px -32px;
+
+    &.second {
+      @include for-tablet-vertical-down {
+        margin-top: -32px;
+      }
+    }
 
     &__list {
       padding: 0 16px 32px;
-      padding-right: 72px;
       line-height: 1.4;
       flex-basis: 100%;
       max-width: 100%;
-
-      @include for-phone-horizontal-up {
-        padding-right: 0;
-      }
 
       @include for-tablet-vertical {
         flex-basis: 50%;
