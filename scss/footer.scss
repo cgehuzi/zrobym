@@ -159,11 +159,6 @@
         max-width: 50%;
       }
 
-      @include for-tablet-horizontal-up {
-        margin-top: auto;
-        margin-bottom: auto;
-      }
-
       @include for-laptop-up {
         flex-basis: 50%;
         max-width: 50%;
