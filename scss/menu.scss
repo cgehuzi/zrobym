@@ -81,6 +81,11 @@
   &__body {
     flex-grow: 1;
     overflow: auto;
+    padding-top: 72px;
+
+    @include for-tablet-up {
+      padding-top: 0;
+    }
 
     @include for-phone-horizontal-up {
       margin: 0 10vw;
@@ -285,7 +290,7 @@
     position: absolute;
     z-index: 5;
     right: 0;
-    top: 0;
+    top: 72px;
     display: block;
     width: 72px;
     height: 72px;
@@ -303,6 +308,9 @@
     @include for-phone-horizontal-up {
       width: 10vw;
       height: 10vw;
+    }
+    @include for-tablet-up {
+      top: 0;
     }
 
     @include for-tablet-vertical {
@@ -338,5 +346,27 @@
   .lang {
     color: #ffffff;
     position: fixed;
+  }
+
+  &__callback {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $gold;
+    color: $dark;
+    font-weight: $fw_bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+
+    @include for-tablet-up {
+      display: none;
+    }
   }
 }
