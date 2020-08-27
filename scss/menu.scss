@@ -371,9 +371,10 @@
       width: calc(100% - 20vw - 30px);
     }
     @include for-tablet-horizontal-up {
-      top: 15px;
+      top: auto;
       left: calc(50% + 15px);
       width: calc(50% - 10vw - 30px);
+      bottom: 15px;
     }
   }
 }

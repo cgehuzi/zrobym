@@ -514,3 +514,12 @@ function topFunction() {
   $('body, html').animate({ scrollTop: 0 }, 600);
 }
 // END ------------------------
+
+// ====================================================
+// Реализация блока callback
+// ====================================================
+document.querySelector('[data-callback]').addEventListener('click', function () {
+  menu_close.click();
+  $('body, html').animate({ scrollTop: $('#form-feedback').offset.top }, 600);
+});
+// END ------------------------
