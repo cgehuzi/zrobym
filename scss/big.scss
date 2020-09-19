@@ -1,78 +1,98 @@
 @import './1-const.scss';
 
 .big {
-	&__list {
-		@include for-phone-horizontal-up {
-			border-top: 1px solid $border_light;
-		}
+  &__list {
+    @include for-phone-horizontal-up {
+      border-top: 1px solid $border_light;
+    }
 
-		&-point {
-			@include for-tablet-horizontal-up {
-				&:nth-child(odd) {
-					.big {
-						&__item {
-							&-header {
-								order: 2;
-								margin-right: -10vw;
-								margin-left: 0;
-							}
+    &-point {
+      @include for-tablet-horizontal-up {
+        &:nth-child(odd) {
+          .big {
+            &__item {
+              &-header {
+                order: 2;
+                margin-right: -10vw;
+                margin-left: 0;
+              }
 
-							&-body {
-								order: 1;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+              &-body {
+                order: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
-	&__item {
-		position: relative;
+  &__item {
+    position: relative;
 
-		&-header {
-			padding: 32px 0;
+    &-header {
+      padding: 32px 0;
 
-			@include for-phone-horizontal-up {
-				padding: 0 0 32px;
-			}
+      @include for-phone-horizontal-up {
+        padding: 0 0 32px;
+      }
 
-			@include for-tablet-horizontal-up {
-				flex-basis: calc(50% + 10vw);
-				max-width: calc(50% + 10vw);
-				padding: 0;
-				margin-left: -10vw;
-				margin-right: 0;
-			}
-		}
+      @include for-tablet-horizontal-up {
+        flex-basis: calc(50% + 10vw);
+        max-width: calc(50% + 10vw);
+        padding: 0;
+        margin-left: -10vw;
+        margin-right: 0;
+      }
+    }
 
-		&-image {
+    &-image {
+      @include for-tablet-horizontal-up {
+        min-height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
 
-			@include for-tablet-horizontal-up {
-				min-height: 100%;
-				object-fit: cover;
-				object-position: center;
-			}
-		}
+    &-body {
+      @include for-tablet-horizontal-up {
+        justify-content: center;
+        padding-top: $separ_small;
+        padding-bottom: $separ_small;
+      }
+    }
 
-		&-body {
-			@include for-tablet-horizontal-up {
-				justify-content: center;
-				padding-top: $separ_small;
-				padding-bottom: $separ_small;
-			}
-		}
+    .section {
+      &__header {
+        position: relative;
+        top: 0;
+      }
 
-		.section {
-			&__header {
-				position: relative;
-				top: 0;
-			}
+      &__content {
+        padding-top: 32px;
+        margin-top: 0;
+      }
+    }
+  }
+}
 
-			&__content {
-				padding-top: 32px;
-				margin-top: 0;
-			}
-		}
-	}
+[dir='rtl'] {
+  .big {
+    &__list {
+      &-point {
+        @include for-tablet-horizontal-up {
+          &:nth-child(odd) {
+            .big {
+              &__item {
+                &-header {
+                  margin-right: 0;
+                  margin-left: -10vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
