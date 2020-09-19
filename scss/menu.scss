@@ -405,7 +405,33 @@
 
       @include for-tablet-horizontal-up {
         margin-right: calc(10vw + 1px);
-        margin-left: 50vw;
+        margin-left: calc(50vw + 1px);
+      }
+    }
+
+    &__list {
+      padding-right: 0;
+      padding-left: 72px;
+
+      @include for-phone-horizontal-up {
+        padding-left: 0;
+      }
+
+      &-link {
+        padding: 12px 24px 12px 12px;
+
+        @include for-tablet-horizontal-up {
+          padding: 8px 36px 8px 8px;
+        }
+      }
+      &__sublist {
+        &-link {
+          padding: 6px 24px 6px 12px;
+
+          @include for-tablet-horizontal-up {
+            padding: 4px 36px 4px 4px;
+          }
+        }
       }
     }
   }
