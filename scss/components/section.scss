@@ -392,5 +392,21 @@
         }
       }
     }
+
+    &__back {
+      &-left {
+        @include for-tablet-up {
+          right: 0;
+          left: auto;
+        }
+      }
+
+      &-right {
+        @include for-tablet-up {
+          left: auto;
+          right: 50%;
+        }
+      }
+    }
   }
 }
