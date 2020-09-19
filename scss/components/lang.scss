@@ -1,53 +1,60 @@
 .lang {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	width: 72px;
-	padding: 10px 0;
-	line-height: 1.4;
-	color: $dark;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 72px;
+  padding: 10px 0;
+  line-height: 1.4;
+  color: $dark;
 
-	@include for-phone-horizontal-up {
-		width: 10vw;
-		padding: 24px 0;
-	}
+  @include for-phone-horizontal-up {
+    width: 10vw;
+    padding: 24px 0;
+  }
 
-	@include for-tablet-vertical-up {
-		bottom: 102px;
-	}
+  @include for-tablet-vertical-up {
+    bottom: 102px;
+  }
 
-	@include for-desktop {
-		bottom: $separ;
-	}
+  @include for-desktop {
+    bottom: $separ;
+  }
 
-	&__point {
-		position: relative;
-		text-align: center;
-		line-height: 1;
+  &__point {
+    position: relative;
+    text-align: center;
+    line-height: 1;
 
-		span {
-			color: $gold;
-			display: block;
-			padding: 14px 0;
-		}
-	}
+    span {
+      color: $gold;
+      display: block;
+      padding: 14px 0;
+    }
+  }
 
-	&__link {
-		display: block;
-        color: inherit;
-        padding: 14px 0;
+  &__link {
+    display: block;
+    color: inherit;
+    padding: 14px 0;
 
-		&::before {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-		}
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-		&:hover {
-			color: $gold;
-		}
-	}
+    &:hover {
+      color: $gold;
+    }
+  }
+}
+
+[dir='rtl'] {
+  .lang {
+    right: auto;
+    left: 0;
+  }
 }

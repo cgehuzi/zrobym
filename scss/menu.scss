@@ -378,3 +378,35 @@
     }
   }
 }
+
+[dir='rtl'] {
+  .menu {
+    &-open {
+      @include for-tablet-up {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    &-close {
+      right: auto;
+      left: 0;
+
+      @include for-tablet-horizontal-up {
+        left: 10vw;
+        background-position: top 24px left 24px;
+      }
+    }
+
+    &__body {
+      @include for-tablet-vertical-up {
+        margin-left: calc(10vw + 1px);
+      }
+
+      @include for-tablet-horizontal-up {
+        margin-right: calc(10vw + 1px);
+        margin-left: 50vw;
+      }
+    }
+  }
+}
