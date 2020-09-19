@@ -56,3 +56,10 @@
     padding-top: 0;
   }
 }
+
+[dir='rtl'] {
+  .totop {
+    right: auto;
+    left: 0;
+  }
+}
