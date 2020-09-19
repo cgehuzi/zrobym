@@ -94,5 +94,14 @@
         }
       }
     }
+
+    &__item {
+      &-header {
+        @include for-tablet-horizontal-up {
+          margin-left: 0;
+          margin-right: -10vw;
+        }
+      }
+    }
   }
 }
