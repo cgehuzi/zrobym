@@ -220,3 +220,31 @@
     }
   }
 }
+
+[dir='rtl'] {
+  .furniture {
+    &__header {
+      &-list {
+        ul {
+          li {
+            strong {
+              padding-right: 0;
+              padding-left: 8px;
+            }
+          }
+        }
+        a {
+          &:not([class]) {
+            padding-right: 0;
+            padding-left: 4px;
+          }
+        }
+      }
+    }
+    &-gallery {
+      @include for-tablet-horizontal-up {
+        left: 0;
+      }
+    }
+  }
+}
