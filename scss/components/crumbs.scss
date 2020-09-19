@@ -47,3 +47,16 @@
     }
   }
 }
+
+[dir='rtl'] {
+  .crumbs {
+    &__list {
+      &-point {
+        &::before {
+          right: auto;
+          left: 0;
+        }
+      }
+    }
+  }
+}
