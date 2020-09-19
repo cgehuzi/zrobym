@@ -1,100 +1,115 @@
 @import './1-const.scss';
 
 .team {
-	z-index: 0;
+  z-index: 0;
 
-	@include for-tablet-horizontal-up {
-		justify-content: center;
-	}
+  @include for-tablet-horizontal-up {
+    justify-content: center;
+  }
 
-	&__header {
-		padding-bottom: 64px;
-	}
+  &__header {
+    padding-bottom: 64px;
+  }
 
-	&__content {
-		margin-top: auto;
-	}
+  &__content {
+    margin-top: auto;
+  }
 
-	&__slider {
-		height: 75vw;
-		margin: 4rem -32px 0;
-		background-size: cover;
-		cursor: grab;
+  &__slider {
+    height: 75vw;
+    margin: 4rem -32px 0;
+    background-size: cover;
+    cursor: grab;
 
-		@include for-phone-horizontal-up {
-			position: absolute;
-			z-index: -1;
-			left: 0;
-			top: 0;
-			width: 100%;
-			margin: 0;
-		}
+    @include for-phone-horizontal-up {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      margin: 0;
+    }
 
-		@include for-phone-horizontal {
-			height: 320px;
-		}
+    @include for-phone-horizontal {
+      height: 320px;
+    }
 
-		@include for-tablet-vertical {
-			height: 420px;
-		}
+    @include for-tablet-vertical {
+      height: 420px;
+    }
 
-		@include for-tablet-horizontal-up {
-			height: 100%;
-		}
-	}
+    @include for-tablet-horizontal-up {
+      height: 100%;
+    }
+  }
 
-	.section {
-		&__body {
-			padding-top: 32px;
-			padding-bottom: 32px;
+  .section {
+    &__body {
+      padding-top: 32px;
+      padding-bottom: 32px;
 
-			@include for-phone-horizontal-up {
-				z-index: 1;
-			}
+      @include for-phone-horizontal-up {
+        z-index: 1;
+      }
 
-			@include for-phone-horizontal {
-				padding-top: 352px;
-			}
+      @include for-phone-horizontal {
+        padding-top: 352px;
+      }
 
-			@include for-tablet-vertical {
-				padding-top: 452px;
-			}
+      @include for-tablet-vertical {
+        padding-top: 452px;
+      }
 
-			@include for-tablet-horizontal-up {
-				padding-top: 5vw;
-				padding-bottom: 5vw;
-				flex-grow: 0;
-				min-height: 75vh;
+      @include for-tablet-horizontal-up {
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        flex-grow: 0;
+        min-height: 75vh;
 
-				&::before {
-					content: '';
-					position: absolute;
-					z-index: 0;
-					left: 10vw;
-					right: 10vw;
-					top: 50%;
-					height: 80vw;
-					margin-top: -40vw;
-					border: 1px solid $border_light;
-					border-radius: 50%;
-					pointer-events: none;
-				}
+        &::before {
+          content: '';
+          position: absolute;
+          z-index: 0;
+          left: 10vw;
+          right: 10vw;
+          top: 50%;
+          height: 80vw;
+          margin-top: -40vw;
+          border: 1px solid $border_light;
+          border-radius: 50%;
+          pointer-events: none;
+        }
 
-				&::after {
-					content: '';
-					position: absolute;
-					z-index: -1;
-					left: 0;
-					top: 0;
-					width: 50%;
-					height: 100%;
-					background-color: rgba(#ffffff, 0.8);
-				}
-			}
-		}
+        &::after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          left: 0;
+          top: 0;
+          width: 50%;
+          height: 100%;
+          background-color: rgba(#ffffff, 0.8);
+        }
+      }
+    }
 
-		&__content {
-			position: relative;
-		}
-	}
+    &__content {
+      position: relative;
+    }
+  }
+}
+
+[dir='rtl'] {
+  .team {
+    .section {
+      &__body {
+        @include for-tablet-horizontal-up {
+          &::after {
+            right: 0;
+            left: auto;
+          }
+        }
+      }
+    }
+  }
 }
