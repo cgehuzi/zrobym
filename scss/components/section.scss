@@ -408,5 +408,39 @@
         }
       }
     }
+
+    &__content {
+      ol {
+        & > li {
+          padding-right: 1rem;
+          padding-left: 0;
+
+          @include for-phone {
+            text-align: right;
+          }
+
+          &:before {
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+
+      ul {
+        li {
+          padding-right: 1rem;
+          padding-left: 0;
+
+          @include for-phone {
+            text-align: right;
+          }
+
+          &::before {
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+    }
   }
 }
