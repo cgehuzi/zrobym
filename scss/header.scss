@@ -1,152 +1,162 @@
 @import './1-const.scss';
 
 .header {
-	position: relative;
-	// min-height: calc(100vh - 102px + 32px);
+  position: relative;
+  // min-height: calc(100vh - 102px + 32px);
 
-	@include for-tablet-up {
-		min-height: 100vh;
-	}
+  @include for-tablet-up {
+    min-height: 100vh;
+  }
 
-	&__logo {
-		position: relative;
-		width: 36%;
-		display: block;
-		align-self: center;
-		margin-top: auto;
-		margin-bottom: auto;
+  &__logo {
+    position: relative;
+    width: 36%;
+    display: block;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
 
-		@include for-phone-horizontal-up {
-			display: none;
-		}
-	}
+    @include for-phone-horizontal-up {
+      display: none;
+    }
+  }
 
-	&__back {
-		position: absolute;
-		z-index: -2;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		object-position: center;
-	}
+  &__back {
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 
-	&__header {
-		position: relative;
-		z-index: 1;
-		height: 102px;
-		min-height: 102px;
-		pointer-events: none;
+  &__header {
+    position: relative;
+    z-index: 1;
+    height: 102px;
+    min-height: 102px;
+    pointer-events: none;
 
-		@include for-phone {
-			display: none;
-		}
+    @include for-phone {
+      display: none;
+    }
 
-		@include for-desktop {
-			height: $separ;
-			min-height: $separ;
-		}
+    @include for-desktop {
+      height: $separ;
+      min-height: $separ;
+    }
 
-		&-logo {
-			display: block;
-			height: 100%;
-			width: 10vw;
-			padding: 16px;
-			object-fit: contain;
-			object-position: center;
-		}
-	}
+    &-logo {
+      display: block;
+      height: 100%;
+      width: 10vw;
+      padding: 16px;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
 
-	&__footer {
-		position: relative;
-		height: 102px;
-		min-height: 102px;
-		display: flex;
+  &__footer {
+    position: relative;
+    height: 102px;
+    min-height: 102px;
+    display: flex;
 
+    @include for-phone {
+      display: none;
+    }
 
-		@include for-phone {
-			display: none;
-		}
+    @include for-desktop {
+      height: $separ;
+      min-height: $separ;
+    }
 
-		@include for-desktop {
-			height: $separ;
-			min-height: $separ;
-		}
+    &-lang {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 10vw;
+      min-width: 10vw;
+      font-weight: $fw_medium;
+      cursor: default;
 
-		&-lang {
-			margin-left: auto;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 10vw;
-			min-width: 10vw;
-			font-weight: $fw_medium;
-			cursor: default;
+      &:hover {
+        .lang {
+          opacity: 1;
+          visibility: visible;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 
-			&:hover {
-				.lang {
-					opacity: 1;
-					visibility: visible;
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
+  &__arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 48px;
+    height: 102px;
+    object-fit: contain;
+    object-position: center;
+    margin-left: -24px;
+    animation: animation-arrow 1s forwards infinite;
+    opacity: 0.8;
 
-	&__arrow {
-		position: absolute;
-		left: 50%;
-		bottom: 0;
-		width: 48px;
-		height: 102px;
-		object-fit: contain;
-		object-position: center;
-		margin-left: -24px;
-		animation: animation-arrow 1s forwards infinite;
-		opacity: 0.8;
+    @include for-tablet-horizontal-up {
+      width: 64px;
+      margin-left: -32px;
+    }
 
-		@include for-tablet-horizontal-up {
-			width: 64px;
-			margin-left: -32px;
-		}
+    @include for-desktop {
+      height: $separ;
+      width: 72px;
+      margin-left: -36px;
+    }
+  }
 
-		@include for-desktop {
-			height: $separ;
-			width: 72px;
-			margin-left: -36px;
-		}
-	}
+  @keyframes animation-arrow {
+    66% {
+      padding-top: 16px;
+    }
 
-	@keyframes animation-arrow {
-		66% {
-			padding-top: 16px;
-		}
+    100% {
+      padding-top: 0;
+    }
+  }
 
-		100% {
-			padding-top: 0;
-		}
-	}
+  .section {
+    &__body {
+      flex-grow: 1;
 
-	.section {
-		&__body {
-			flex-grow: 1;
+      @include for-phone {
+        padding-bottom: 64px;
+      }
+    }
+  }
 
-			@include for-phone {
-				padding-bottom: 64px;
-			}
-		}
-	}
+  .lang {
+    display: none;
 
-	.lang {
-		display: none;
+    @include for-tablet-vertical-up {
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      transition: $slow;
+      margin-bottom: -24px;
+    }
+  }
+}
 
-		@include for-tablet-vertical-up {
-			display: block;
-			opacity: 0;
-			visibility: hidden;
-			transition: $slow;
-			margin-bottom: -24px;
-		}
-	}
+[dir='rtl'] {
+  .header {
+    &__footer {
+      &-lang {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+  }
 }
