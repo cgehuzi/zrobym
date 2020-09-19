@@ -1,15 +1,26 @@
 @import './1-const.scss';
 
 .more {
-	&__content {
-		margin-top: 0;
+  &__content {
+    margin-top: 0;
 
-		@include for-laptop-up {
-			padding-right: 10vw;
-		}
-	}
+    @include for-laptop-up {
+      padding-right: 10vw;
+    }
+  }
 
-	&__buttons {
-		margin-top: 0;
-	}
+  &__buttons {
+    margin-top: 0;
+  }
+}
+
+[dir='rtl'] {
+  .more {
+    &__content {
+      @include for-laptop-up {
+        padding-right: 0;
+        padding-left: 10vw;
+      }
+    }
+  }
 }
