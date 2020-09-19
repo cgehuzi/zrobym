@@ -2,126 +2,139 @@
 @import './1-furniture-colors.scss';
 
 .template-furniture {
-	.header {
-		min-height: 100vh;
-		background-color: $back_grey;
+  .header {
+    min-height: 100vh;
+    background-color: $back_grey;
 
-		.section {
+    .section {
+      &__back {
+        z-index: 0;
+        left: auto;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+        height: 100%;
+        object-fit: contain;
+        object-position: bottom;
 
-			&__back {
-				z-index: 0;
-				left: auto;
-				top: auto;
-				right: 0;
-				bottom: 0;
-				width: 40%;
-				height: 100%;
-				object-fit: contain;
-				object-position: bottom;
+        @include for-phone-vertical {
+          width: 65%;
+        }
+      }
 
-				@include for-phone-vertical {
-					width: 65%;
-				}
-			}
+      &__header {
+        position: sticky;
+        top: 32px;
+        margin-top: auto;
 
-			&__header {
-				position: sticky;
-				top: 32px;
-				margin-top: auto;
+        @include for-phone {
+          margin-bottom: auto;
+          padding-bottom: 32px;
+          position: relative;
+          top: 0;
+        }
+      }
 
-				@include for-phone {
-					margin-bottom: auto;
-					padding-bottom: 32px;
-					position: relative;
-					top: 0;
-				}
-			}
+      &__body {
+        padding-bottom: 0;
+      }
+    }
+  }
 
-			&__body {
-				padding-bottom: 0;
-			}
-		}
-	}
+  .menu {
+    &-open {
+      @include for-phone {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
 
-	.menu {
-		&-open {
-			@include for-phone {
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-			}
-		}
-	}
+  .feedback {
+    .section {
+      &__content {
+        padding-top: 0;
+      }
+    }
+  }
 
-	.feedback {
-		.section {
-			&__content {
-				padding-top: 0;
-			}
-		}
-	}
+  .section {
+    &__header {
+      position: relative;
+      top: 0;
+    }
 
-	.section {
-		&__header {
-			position: relative;
-			top: 0;
-		}
+    &__content {
+      padding-top: 64px;
+    }
 
-		&__content {
-			padding-top: 64px;
-		}
+    &--back {
+      .section {
+        &__header {
+          position: sticky;
+          top: 32px;
 
-		&--back {
-			.section {
-				&__header {
-					position: sticky;
-					top: 32px;
+          @include for-tablet-vertical-down {
+            margin-top: auto;
+            position: relative;
+            top: 0;
+          }
+        }
 
-					@include for-tablet-vertical-down {
-						margin-top: auto;
-						position: relative;
-						top: 0;
-					}
-				}
+        &__body {
+          flex-grow: 1;
+        }
 
-				&__body {
-					flex-grow: 1;
-				}
+        &__buttons {
+          margin-bottom: auto;
 
-				&__buttons {
-					margin-bottom: auto;
+          @include for-tablet-horizontal-up {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 
-					@include for-tablet-horizontal-up {
-						display: none;
-					}
-				}
-			}
-		}
-	}
+  .big {
+    &__item {
+      &-separ {
+        height: calc(#{$separ_phone} + 64px);
 
-	.big {
-		&__item {
-			&-separ {
-				height: calc(#{$separ_phone} + 64px);
+        @include for-tablet-horizontal-up {
+          height: 64px;
+        }
+      }
 
-				@include for-tablet-horizontal-up {
-					height: 64px;
-				}
-			}
+      &-header {
+        @include for-phone {
+          display: none;
+        }
 
-			&-header {
-				@include for-phone {
-					display: none;
-				}
+        @include for-tablet-vertical {
+          padding: 32px;
+          height: 0;
+          overflow: hidden;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
 
-				@include for-tablet-vertical {
-					padding: 32px;
-					height: 0;
-					overflow: hidden;
-					opacity: 0;
-				}
-			}
-		}
-	}
+[dir='rtl'] {
+  .template-furniture {
+    .header {
+      .section {
+        &__back {
+          left: 0;
+          right: auto;
+          transform: scale(-1, 1);
+        }
+      }
+    }
+  }
 }
