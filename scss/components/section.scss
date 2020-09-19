@@ -380,6 +380,16 @@
 
 [dir='rtl'] {
   .section {
+    &__body {
+      &-col {
+        &.right {
+          @include for-tablet-horizontal-up {
+            margin-left: 0;
+            margin-right: auto;
+          }
+        }
+      }
+    }
     &__header {
       &-title {
         &::before {
