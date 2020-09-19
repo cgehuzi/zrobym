@@ -90,6 +90,16 @@ img {
 }
 
 [dir='rtl'] {
+  font-size: 17px;
+
+  @include for-laptop {
+    font-size: 19px;
+  }
+
+  @include for-desktop {
+    font-size: 1.25vw;
+  }
+
   body {
     text-align: right;
   }
