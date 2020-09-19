@@ -1,100 +1,115 @@
 @import './1-const.scss';
 
 .chief {
-	z-index: 1;
+  z-index: 1;
 
-	&__image {
-		margin: 0 -32px;
-		object-fit: cover;
-		object-position: center;
-		max-width: none;
-		width: calc(100% + 64px);
+  &__image {
+    margin: 0 -32px;
+    object-fit: cover;
+    object-position: center;
+    max-width: none;
+    width: calc(100% + 64px);
 
-		@include for-phone-vertical {
-			margin-top: -64px;
-		}
+    @include for-phone-vertical {
+      margin-top: -64px;
+    }
 
-		@include for-tablet-horizontal-up {
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 50%;
-			height: 100%;
-			margin: 0;
-		}
-	}
+    @include for-tablet-horizontal-up {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      margin: 0;
+    }
+  }
 
-	&__item {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-bottom: 1rem;
-		text-transform: uppercase;
-		font-weight: $fw_bold;
-		font-size: 1.2rem;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: $fw_bold;
+    font-size: 1.2rem;
 
-		@include for-phone-vertical {
-			font-size: 1.1rem;
-		}
+    @include for-phone-vertical {
+      font-size: 1.1rem;
+    }
 
-		@include for-tablet-up {
-			justify-content: flex-start;
-		}
-	}
+    @include for-tablet-up {
+      justify-content: flex-start;
+    }
+  }
 
-	&__title {
-		margin-right: 12px;
-		line-height: 1;
-	}
+  &__title {
+    margin-right: 12px;
+    line-height: 1;
+  }
 
-	&__list {
-		display: flex;
-		align-items: center;
+  &__list {
+    display: flex;
+    align-items: center;
 
-		&-point {
-			padding: 0 8px;
-		}
-	}
+    &-point {
+      padding: 0 8px;
+    }
+  }
 
-	&__social {
-		display: block;
-		width: 24px;
-		height: 24px;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
+  &__social {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
-		&--instagram {
-			background-image: url('../icons/black/instagram-small.svg');
+    &--instagram {
+      background-image: url('../icons/black/instagram-small.svg');
 
-			@include for-laptop-up {
-				&:hover {
-					background-image: url('../icons/gold/instagram-small.svg');
-				}
-			}
-		}
+      @include for-laptop-up {
+        &:hover {
+          background-image: url('../icons/gold/instagram-small.svg');
+        }
+      }
+    }
 
-		&--facebook {
-			background-image: url('../icons/black/facebook-small.svg');
+    &--facebook {
+      background-image: url('../icons/black/facebook-small.svg');
 
-			@include for-laptop-up {
-				&:hover {
-					background-image: url('../icons/gold/facebook-small.svg');
-				}
-			}
-		}
-	}
+      @include for-laptop-up {
+        &:hover {
+          background-image: url('../icons/gold/facebook-small.svg');
+        }
+      }
+    }
+  }
 
-	.section {
-		&__body {
-			position: relative;
+  .section {
+    &__body {
+      position: relative;
 
-			@include for-tablet-horizontal-up {
-				align-items: center;
-				min-height: 35vw;
-				margin-top: 32px;
-				margin-bottom: 32px;
-			}
-		}
-	}
+      @include for-tablet-horizontal-up {
+        align-items: center;
+        min-height: 35vw;
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+
+[dir='rtl'] {
+  .chief {
+    &__image {
+      @include for-tablet-horizontal-up {
+        left: auto;
+        right: 0;
+      }
+    }
+    &__title {
+      margin-right: 0;
+      margin-left: 12px;
+    }
+  }
 }
