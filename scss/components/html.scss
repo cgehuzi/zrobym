@@ -1,51 +1,51 @@
 .js-focus-visible :focus:not(.focus-visible) {
-	outline: 0;
+  outline: 0;
 }
 
 /*SCROLL STYLING*/
 
 @include for-tablet-horizontal-up {
-	::-webkit-scrollbar {
-		width: 6px;
-		background-color: $border_light;
+  ::-webkit-scrollbar {
+    width: 6px;
+    background-color: $border_light;
 
-		&-track {
-			box-shadow: inset 0 0 6px rgba(#000000, 0.3);
-			background-color: $border_light;
-		}
+    &-track {
+      box-shadow: inset 0 0 6px rgba(#000000, 0.3);
+      background-color: $border_light;
+    }
 
-		&-thumb {
-			background-color: $gold;
-			border-radius: 10px;
-		}
-	}
+    &-thumb {
+      background-color: $gold;
+      border-radius: 10px;
+    }
+  }
 }
 
 .noscroll {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 html {
-	font-size: 15px;
+  font-size: 15px;
 
-	@include for-laptop {
-		font-size: 16px;
-	}
+  @include for-laptop {
+    font-size: 16px;
+  }
 
-	@include for-desktop {
-		font-size: 1vw;
-	}
+  @include for-desktop {
+    font-size: 1vw;
+  }
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	font-family: $font;
-	font-weight: $fw_light;
-	line-height: 1.6;
-	background-color: #ffffff;
-	overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $font;
+  font-weight: $fw_light;
+  line-height: 1.6;
+  background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 h1,
@@ -58,33 +58,39 @@ h5,
 .h3,
 .h4,
 .h5 {
-	font-weight: $fw_semi;
-	text-transform: uppercase;
-	margin-bottom: 1.6rem;
-	margin-top: 3.2rem;
+  font-weight: $fw_semi;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  margin-top: 3.2rem;
 
-	&:first-child {
-		margin-top: 0;
-	}
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 ol,
 ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a,
 button {
-	font-family: $font;
-	transition: $fast;
+  font-family: $font;
+  transition: $fast;
 }
 
 strong {
-	font-weight: $fw_medium;
+  font-weight: $fw_medium;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
+}
+
+[dir='rtl'] {
+  body {
+    text-align: right;
+  }
 }
