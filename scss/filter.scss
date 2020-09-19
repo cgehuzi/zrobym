@@ -3,83 +3,103 @@
 [data-filter-group],
 [data-filter-item],
 [data-tab-item] {
-	&:not(.active) {
-		display: none !important;
-	}
+  &:not(.active) {
+    display: none !important;
+  }
 }
 
 .filter {
-	margin-bottom: -1px;
+  margin-bottom: -1px;
 
-	&__list {
-		position: relative;
+  &__list {
+    position: relative;
 
-		@include for-phone-vertical {
-			padding-top: 32px;
-			padding-bottom: 32px;
-		}
+    @include for-phone-vertical {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
-		@include for-phone-horizontal-up {
-			background-color: $back_light;
-		}
+    @include for-phone-horizontal-up {
+      background-color: $back_light;
+    }
 
-		&-point {
-			@include for-phone-vertical {
-				flex-basis: 100%;
-				max-width: 100%;
-			}
+    &-point {
+      @include for-phone-vertical {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
 
-			@include for-phone-horizontal-up {
-				padding-left: 32px;
-			}
+      @include for-phone-horizontal-up {
+        padding-left: 32px;
+      }
 
-			@include for-laptop-up {
-				&:first-child {
-					padding-left: 64px;
-				}
-			}
-		}
+      @include for-laptop-up {
+        &:first-child {
+          padding-left: 64px;
+        }
+      }
+    }
 
-		&-button {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			width: 100%;
-			height: 100%;
-			min-height: $separ_phone;
-			padding: 12px;
-			background-color: transparent;
-			border: none;
-			line-height: 1.2;
-			color: $grey;
-			font-weight: $fw_medium;
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      min-height: $separ_phone;
+      padding: 12px;
+      background-color: transparent;
+      border: none;
+      line-height: 1.2;
+      color: $grey;
+      font-weight: $fw_medium;
 
-			@include for-phone-horizontal-up {
-				padding: 24px 0;
-			}
+      @include for-phone-horizontal-up {
+        padding: 24px 0;
+      }
 
-			@include for-tablet-up {
-				min-height: $separ;
-			}
+      @include for-tablet-up {
+        min-height: $separ;
+      }
 
-			@include for-laptop-up {
-				opacity: 0.6;
+      @include for-laptop-up {
+        opacity: 0.6;
 
-				&:hover {
-					opacity: 0.7;
-					color: #000000;
-				}
-			}
+        &:hover {
+          opacity: 0.7;
+          color: #000000;
+        }
+      }
 
-			@include for-desktop {
-				padding: 1rem 0;
-			}
+      @include for-desktop {
+        padding: 1rem 0;
+      }
 
-			&.active {
-				opacity: 1;
-				color: #000000;
-			}
-		}
-	}
+      &.active {
+        opacity: 1;
+        color: #000000;
+      }
+    }
+  }
+}
+
+[dir='rtl'] {
+  .filter {
+    &__list {
+      &-point {
+        @include for-phone-horizontal-up {
+          padding-right: 32px;
+          padding-left: 0;
+        }
+
+        @include for-laptop-up {
+          &:first-child {
+            padding-right: 64px;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
 }
