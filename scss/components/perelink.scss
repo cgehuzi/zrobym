@@ -60,3 +60,25 @@
     }
   }
 }
+
+[dir='rtl'] {
+  .perelink {
+    &::before {
+      transform: rotate(180deg);
+    }
+
+    &.prev {
+      &::before {
+        margin-right: 0;
+        margin-left: 8px;
+      }
+    }
+
+    &.next {
+      &::before {
+        margin-left: 0;
+        margin-right: 8px;
+      }
+    }
+  }
+}
