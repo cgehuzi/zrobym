@@ -387,6 +387,7 @@
           right: 0;
           @include for-phone {
             right: auto;
+            left: 50%;
           }
         }
       }
