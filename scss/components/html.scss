@@ -93,11 +93,11 @@ img {
   font-size: 17px;
 
   @include for-laptop {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   @include for-desktop {
-    font-size: 1.25vw;
+    font-size: 1.2vw;
   }
 
   body {
