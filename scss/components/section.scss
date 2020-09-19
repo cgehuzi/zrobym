@@ -400,6 +400,19 @@
           right: 50%;
         }
       }
+      &-left {
+        @include for-tablet-up {
+          left: auto;
+          right: 0;
+        }
+      }
+
+      &-wrapper {
+        @include for-tablet-horizontal-up {
+          padding-left: 0;
+          padding-right: 10vw;
+        }
+      }
     }
 
     &__content {
