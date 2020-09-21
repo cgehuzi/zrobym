@@ -2,18 +2,31 @@
 
 [dir='rtl'] {
   .fancybox {
-    &-stage {
-      direction: inherit;
+    &-container {
+      * {
+        direction: rtl;
+      }
     }
-    &-slide > * {
-      text-align: initial;
+    &-infobar {
+      right: 0;
+      left: auto;
     }
-    &-caption-wrap {
-      direction: inherit;
-    }
-    &-close-small {
+
+    &-toolbar {
+      right: auto;
       left: 0;
-      right: initial;
+    }
+    &-navigation .fancybox-button {
+      transform: rotate(180deg);
+
+      &--arrow_left {
+        right: 0;
+        left: auto;
+      }
+      &--arrow_right {
+        right: auto;
+        left: 0;
+      }
     }
   }
 }
