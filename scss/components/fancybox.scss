@@ -1,0 +1,19 @@
+@import '../1-const.scss';
+
+[dir='rtl'] {
+  .fancybox {
+    &-stage {
+      direction: inherit;
+    }
+    &-slide > * {
+      text-align: initial;
+    }
+    &-caption-wrap {
+      direction: inherit;
+    }
+    &-close-small {
+      left: 0;
+      right: initial;
+    }
+  }
+}
