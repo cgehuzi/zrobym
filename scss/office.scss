@@ -1,142 +1,152 @@
 @import './1-const.scss';
 
 .office {
-	@include for-tablet-horizontal-up {
-		min-height: 100vh;
-	}
+  @include for-tablet-horizontal-up {
+    min-height: 100vh;
+  }
 
-	&-info {
-		@include for-tablet-vertical-down {
-			order: 2;
-		}
+  &-info {
+    @include for-tablet-vertical-down {
+      order: 2;
+    }
 
-		&__body {
-			position: sticky;
-			top: 32px;
+    &__body {
+      position: sticky;
+      top: 32px;
 
-			@include for-laptop-up {
-				top: 64px;
-			}
-		}
+      @include for-laptop-up {
+        top: 64px;
+      }
+    }
 
-		&__header {
-			position: relative;
-			top: 0;
-			margin-bottom: 64px;
+    &__header {
+      position: relative;
+      top: 0;
+      margin-bottom: 64px;
 
-			@include for-tablet-vertical-down {
-				display: none;
-			}
-		}
-	}
+      @include for-tablet-vertical-down {
+        display: none;
+      }
+    }
+  }
 
-	&-gallery {
-		@include for-tablet-vertical-down {
-			order: 1;
-		}
+  &-gallery {
+    @include for-tablet-vertical-down {
+      order: 1;
+    }
 
-		@include for-tablet-horizontal-up {
-			position: absolute;
-			left: 50%;
-			height: calc(100% + #{$separ});
-			padding: 0 0 0 8px;
-			margin-top: -#{$separ};
-			margin-right: -10vw;
-		}
+    @include for-tablet-horizontal-up {
+      position: absolute;
+      left: 50%;
+      height: calc(100% + #{$separ});
+      padding: 0 0 0 8px;
+      margin-top: -#{$separ};
+      margin-right: -10vw;
+    }
 
-		&__header {
-			padding-bottom: 64px;
+    &__header {
+      padding-bottom: 64px;
 
-			@include for-tablet-horizontal-up {
-				display: none;
-			}
-		}
+      @include for-tablet-horizontal-up {
+        display: none;
+      }
+    }
 
-		&__list {
-			overflow: auto;
-			display: flex;
+    &__list {
+      overflow: auto;
+      display: flex;
 
-			@include for-phone-vertical {
-				margin-left: -32px;
-				margin-right: -32px;
-			}
+      @include for-phone-vertical {
+        margin-left: -32px;
+        margin-right: -32px;
+      }
 
-			@include for-phone-horizontal-up {
-				@include for-tablet-vertical-down {
-					margin-left: calc(-10vw - 32px);
-					margin-right: calc(-10vw - 32px);
-					padding-left: 10vw;
-					padding-right: 10vw;
+      @include for-phone-horizontal-up {
+        @include for-tablet-vertical-down {
+          margin-left: calc(-10vw - 32px);
+          margin-right: calc(-10vw - 32px);
+          padding-left: 10vw;
+          padding-right: 10vw;
 
-					&::-webkit-scrollbar {
-						display: none;
-					}
-				}
-			}
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
 
-			@include for-tablet-horizontal-up {
-				flex-direction: column;
+      @include for-tablet-horizontal-up {
+        flex-direction: column;
 
-				&::-webkit-scrollbar {
-					display: none;
-				}
-			}
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
 
-			&-point {
-				padding: 0 8px 0 0;
+      &-point {
+        padding: 0 8px 0 0;
 
-				@include for-tablet-horizontal-up {
-					padding: 0 0 8px 0;
-				}
+        @include for-tablet-horizontal-up {
+          padding: 0 0 8px 0;
+        }
 
-				&:last-child {
-					padding: 0;
+        &:last-child {
+          padding: 0;
 
-					@include for-phone-horizontal-up {
-						@include for-tablet-vertical-down {
-							padding-right: 10vw;
-						}
-					}
-				}
-			}
-		}
+          @include for-phone-horizontal-up {
+            @include for-tablet-vertical-down {
+              padding-right: 10vw;
+            }
+          }
+        }
+      }
+    }
 
-		&__item {
-			display: block;
+    &__item {
+      display: block;
 
-			&-image {
-				height: 60vw;
-				max-width: 90vw;
-				object-fit: cover;
-				object-position: center;
+      &-image {
+        height: 60vw;
+        max-width: 90vw;
+        object-fit: cover;
+        object-position: center;
 
-				@include for-phone-horizontal-up {
-					@include for-tablet-vertical-down {
-						height: 320px;
-					}
-				}
+        @include for-phone-horizontal-up {
+          @include for-tablet-vertical-down {
+            height: 320px;
+          }
+        }
 
-				@include for-tablet-horizontal-up {
-					height: auto;
-					width: 100%;
-				}
-			}
-		}
-	}
+        @include for-tablet-horizontal-up {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
 
-	&--zrobym {
-		.office {
-			&-gallery {
-				@include for-tablet-horizontal-up {
-					margin-top: calc(-#{$separ_small} - 102px - 1px);
-					height: calc(100% + 102px);
-				}
+  &--zrobym {
+    .office {
+      &-gallery {
+        @include for-tablet-horizontal-up {
+          margin-top: calc(-#{$separ_small} - 102px - 1px);
+          height: calc(100% + 102px);
+        }
 
-				@include for-desktop {
-					margin-top: calc(-#{$separ_small + $separ} - 1px);
-					height: calc(100% + #{$separ_small * 2});
-				}
-			}
-		}
-	}
+        @include for-desktop {
+          margin-top: calc(-#{$separ_small + $separ} - 1px);
+          height: calc(100% + #{$separ_small * 2});
+        }
+      }
+    }
+  }
+}
+
+[dir='rtl'] {
+  .office {
+    &-gallery {
+      @include for-tablet-horizontal-up {
+        left: 0;
+      }
+    }
+  }
 }
