@@ -35,6 +35,14 @@
           display: none;
         }
       }
+
+      &.active {
+        a {
+          color: $grey !important;
+          text-decoration: none;
+          pointer-events: none;
+        }
+      }
     }
   }
 
