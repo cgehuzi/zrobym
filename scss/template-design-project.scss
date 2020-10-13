@@ -1,23 +1,28 @@
 @import './1-const.scss';
 
 .template-design-project {
-	.header {
-		min-height: initial;
-	}
+  h1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-	.youtube {
-		&__item {
-			&::before {
-				@include for-laptop-up {
-					background-size: 72px;
-				}
-			}
+  .header {
+    min-height: initial;
+  }
 
-			&-image {
-				@include for-tablet-vertical-down {
-					width: auto;
-				}
-			}
-		}
-	}
+  .youtube {
+    &__item {
+      &::before {
+        @include for-laptop-up {
+          background-size: 72px;
+        }
+      }
+
+      &-image {
+        @include for-tablet-vertical-down {
+          width: auto;
+        }
+      }
+    }
+  }
 }
