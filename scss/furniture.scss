@@ -22,6 +22,53 @@
         display: none;
       }
     }
+
+    &-list {
+      ul {
+        li {
+          strong {
+            font-weight: $fw_medium;
+            padding-right: 8px;
+          }
+        }
+      }
+
+      a {
+        &:not([class]) {
+          color: #000000;
+          border: none;
+          padding-right: 4px;
+
+          span {
+            border-bottom: 1px solid $gold;
+          }
+
+          @include for-laptop-up {
+            &:hover {
+              span {
+                border-color: transparent;
+              }
+            }
+          }
+        }
+
+        &:not([href]) {
+          span {
+            border: none;
+          }
+        }
+
+        &::after {
+          content: ',';
+        }
+
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
   }
 
   &__workers {
