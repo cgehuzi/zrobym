@@ -212,6 +212,12 @@
         display: block;
         font-weight: $fw_extra;
       }
+
+      h1 {
+        font-size: inherit;
+        font-weight: $fw_extra;
+        margin: 0;
+      }
     }
 
     &-subtitle {
@@ -403,10 +409,6 @@
             left: 50%;
           }
         }
-      }
-      h1 {
-        font-size: 1rem;
-        font-weight: $fw_bold;
       }
     }
 
