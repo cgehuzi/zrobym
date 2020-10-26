@@ -376,10 +376,113 @@
       margin-left: -125px;
     }
 
-    @include for-laptop-up {
+    @include for-desktop-up {
       width: 18vw;
       margin-left: -9vw;
       bottom: 1.6vw;
+    }
+  }
+
+  .social {
+    &__list {
+      position: fixed;
+      flex-direction: column;
+      margin: 0;
+
+      @include for-phone-vertical {
+        right: 0;
+        top: 40%;
+        width: 72px;
+        transform: translateY(-50%);
+      }
+
+      @include for-phone-horizontal {
+        left: 0;
+        bottom: 20px;
+        width: 10vw;
+      }
+
+      @include for-tablet-vertical {
+        left: 0;
+        bottom: 102px;
+        width: 10vw;
+        margin-bottom: 20px;
+      }
+
+      @include for-tablet-horizontal-up {
+        left: 70vw;
+        top: 0;
+        flex-direction: row;
+        top: 32px;
+        transform: translateX(-50%);
+      }
+
+      @include for-desktop-up {
+        top: 2.4vw;
+      }
+
+      &-point {
+        padding: 4px 0;
+
+        @include for-tablet-horizontal-up {
+          padding: 0 4px;
+        }
+      }
+    }
+
+    &__item {
+      width: 36px;
+      height: 36px;
+
+      &--behance {
+        background-image: url('../icons/white/behance-trans.svg');
+
+        @include for-laptop-up {
+          &:hover {
+            background-image: url('../icons/gold/behance-trans.svg');
+          }
+        }
+      }
+
+      &--youtube {
+        background-image: url('../icons/white/youtube-trans.svg');
+
+        @include for-laptop-up {
+          &:hover {
+            background-image: url('../icons/gold/youtube-trans.svg');
+          }
+        }
+      }
+
+      &--instagram {
+        background-image: url('../icons/white/instagram-trans.svg');
+
+        @include for-laptop-up {
+          &:hover {
+            background-image: url('../icons/gold/instagram-trans.svg');
+          }
+        }
+      }
+
+      &--facebook {
+        background-image: url('../icons/white/facebook-trans.svg');
+
+        @include for-laptop-up {
+          &:hover {
+            background-image: url('../icons/gold/facebook-trans.svg');
+          }
+        }
+      }
+
+      &--vk {
+        background-image: url('../icons/white/vk-trans.svg');
+
+        @include for-laptop-up {
+          &:hover {
+            background-image: url('../icons/gold/vk-trans.svg');
+          }
+        }
+      }
     }
   }
 }
