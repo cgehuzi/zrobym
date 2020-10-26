@@ -433,6 +433,16 @@
       width: 36px;
       height: 36px;
 
+      &--telegram {
+        background-image: url('../icons/white/telegram-trans.svg');
+
+        @include for-laptop-up {
+          &:hover {
+            background-image: url('../icons/gold/telegram-trans.svg');
+          }
+        }
+      }
+
       &--behance {
         background-image: url('../icons/white/behance-trans.svg');
 
