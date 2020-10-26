@@ -88,15 +88,14 @@
     }
 
     @include for-phone-horizontal-up {
-      margin: 0 10vw;
+      margin: 0 calc(10vw + 1px);
       display: flex;
     }
 
     @include for-tablet-vertical-up {
       margin-top: -102px;
       margin-bottom: -102px;
-      margin-left: calc(10vw + 1px);
-      background-color: rgba(#000000, 0.8);
+      background-color: $dark;
       z-index: 3;
     }
 
