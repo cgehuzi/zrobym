@@ -370,13 +370,14 @@
     @include for-tablet-horizontal-up {
       top: auto;
       left: 70vw;
-      width: 240px;
+      width: 14vw;
       bottom: 30px;
       box-shadow: none;
-      margin-left: -120px;
+      margin-left: -7vw;
     }
 
     @include for-laptop-up {
+      bottom: 1.6vw;
     }
   }
 }
