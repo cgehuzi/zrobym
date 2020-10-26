@@ -50,6 +50,18 @@
       color: $gold;
     }
   }
+
+  &__tablet {
+    @include for-tablet-horizontal-up {
+      display: none;
+    }
+  }
+
+  &__laptop {
+    @include for-tablet-vertical-down {
+      display: none;
+    }
+  }
 }
 
 [dir='rtl'] {

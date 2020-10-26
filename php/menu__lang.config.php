@@ -6,7 +6,7 @@ if (!defined('MODX_BASE_PATH')) {
 }
 
 //активный язык отдельно от списка
-$activeLang = '[+name+]';
+$activeLang = '<span class="lang__tablet">LANGUAGE</span> <span class="lang__laptop">LANG</span>';
 
 //активный язык в списке
 $activeRow = '<li class="lang__point"><span>[+name+]</span></li>';
