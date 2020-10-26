@@ -553,6 +553,14 @@
     &__callback {
       left: 72px;
 
+      @include for-phone-horizontal {
+        left: calc(10vw + 24px);
+      }
+
+      @include for-tablet-vertical {
+        left: calc(10vw + 25px);
+      }
+
       @include for-tablet-horizontal-up {
         left: 30vw;
       }
