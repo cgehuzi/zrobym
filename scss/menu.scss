@@ -352,7 +352,6 @@
     left: 24px;
     top: 24px;
     width: calc(100% - 96px);
-    background-color: $dark;
     box-shadow: 0 0 0 24px $dark;
 
     @include for-phone-horizontal {
