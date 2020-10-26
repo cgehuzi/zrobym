@@ -95,7 +95,7 @@
     @include for-tablet-vertical-up {
       margin-top: -102px;
       margin-bottom: -102px;
-      background-color: $dark;
+      background-color: #000000;
       z-index: 3;
     }
 
@@ -363,7 +363,7 @@
       top: 28px;
       left: calc(10vw + 25px);
       width: calc(100% - 20vw - 50px);
-      box-shadow: 0 -4px 0 24px $dark;
+      box-shadow: 0 -4px 0 24px #000000;
     }
 
     @include for-tablet-horizontal-up {
