@@ -415,12 +415,8 @@
       bottom: 0;
       width: 10vw;
       height: 102px;
-      background-color: $gold;
-      background-image: url(../icons/black/help.svg);
-    }
-
-    @include for-tablet-horizontal {
-      background-image: url(../icons/black/help.svg);
+      background-color: transparent;
+      background-image: url(../icons/white/help.svg);
     }
 
     @include for-tablet-horizontal-up {
