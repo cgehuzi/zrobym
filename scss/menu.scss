@@ -386,9 +386,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: 28px;
+    background-size: 32px;
     background-position: center;
     background-repeat: no-repeat;
+    font-size: 0;
 
     @include for-phone-vertical {
       left: 24px;
@@ -428,6 +429,7 @@
       width: 10vw;
       height: 102px;
       background-color: $gold;
+      color: $dark;
       font-size: 0.8rem;
       font-weight: $fw_medium;
 
