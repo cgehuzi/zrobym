@@ -33,6 +33,7 @@
   }
 
   &__header {
+    display: flex;
     position: relative;
     z-index: 1;
     height: 102px;
@@ -61,7 +62,6 @@
       display: none;
 
       @include for-tablet-horizontal-up {
-        position: fixed;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -73,6 +73,7 @@
         color: $dark;
         font-size: 1rem;
         font-weight: $fw_medium;
+        margin-left: auto;
 
         &:hover {
           background-color: $gold_hover;
