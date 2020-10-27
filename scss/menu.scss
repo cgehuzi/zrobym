@@ -349,9 +349,9 @@
 
   &__callback {
     position: fixed;
-    left: 24px;
+    left: 90px;
     top: 24px;
-    width: calc(100% - 96px);
+    width: calc(100% - 162px);
     box-shadow: 0 0 0 24px $dark;
 
     @include for-phone-horizontal {
@@ -378,6 +378,66 @@
 
     @include for-desktop-up {
       height: calc(6.8vw - 48px);
+    }
+  }
+
+  &__consult {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include for-phone-vertical {
+      left: 24px;
+      top: 24px;
+      height: 42px;
+      width: 42px;
+      font-size: 0;
+      background-color: transparent;
+      background-image: url(../icons/white/help.svg);
+    }
+
+    @include for-phone-horizontal {
+      left: 0;
+      top: 0;
+      width: 10vw;
+      height: 90px;
+      background-color: transparent;
+      background-image: url(../icons/white/help.svg);
+    }
+
+    @include for-tablet-vertical {
+      left: 0;
+      bottom: 0;
+      width: 10vw;
+      height: 102px;
+      background-color: $gold;
+      background-image: url(../icons/black/help.svg);
+    }
+
+    @include for-tablet-horizontal {
+      background-image: url(../icons/black/help.svg);
+    }
+
+    @include for-tablet-horizontal-up {
+      right: 0;
+      top: 0;
+      width: 10vw;
+      height: 102px;
+      background-color: $gold;
+      font-size: 0.8rem;
+      font-weight: $fw_medium;
+
+      &:hover {
+        background-color: $gold_hover;
+      }
+    }
+
+    @include for-desktop-up {
+      height: $separ;
     }
   }
 

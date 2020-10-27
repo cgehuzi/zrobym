@@ -52,12 +52,16 @@
   }
 
   &__tablet {
+    font-size: 0.8rem;
+
     @include for-tablet-horizontal-up {
       display: none;
     }
   }
 
   &__laptop {
+    font-size: 0.8rem;
+
     @include for-tablet-vertical-down {
       display: none;
     }
