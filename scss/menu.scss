@@ -369,16 +369,15 @@
     @include for-tablet-horizontal-up {
       top: auto;
       left: 70vw;
-      bottom: 30px;
+      bottom: 24px;
       box-shadow: none;
-      width: 250px;
-      margin-left: -125px;
+      width: calc(40vw - 48px);
+      margin-left: calc(-20vw + 24px);
+      height: calc(102px - 48px);
     }
 
     @include for-desktop-up {
-      width: 18vw;
-      margin-left: -9vw;
-      bottom: 1.6vw;
+      height: calc($separ - 48px);
     }
   }
 
