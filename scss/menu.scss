@@ -389,9 +389,8 @@
 
       @include for-phone-vertical {
         right: 0;
-        top: 40%;
+        top: 92px;
         width: 72px;
-        transform: translateY(-50%);
       }
 
       @include for-phone-horizontal {
