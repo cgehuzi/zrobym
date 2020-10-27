@@ -429,8 +429,13 @@
     }
 
     &__item {
-      width: 36px;
+      width: 32px;
       height: 36px;
+
+      @include for-phone {
+        width: 24px;
+        height: 24px;
+      }
 
       &--telegram {
         background-image: url('../icons/white/telegram-trans.svg');
