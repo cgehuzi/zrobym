@@ -38,7 +38,10 @@
     z-index: 1;
     height: 102px;
     min-height: 102px;
-    pointer-events: none;
+
+    @include for-tablet-vertical-down {
+      pointer-events: none;
+    }
 
     @include for-phone {
       display: none;
