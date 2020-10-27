@@ -56,6 +56,33 @@
       object-fit: contain;
       object-position: center;
     }
+
+    &-consult {
+      display: none;
+
+      @include for-tablet-horizontal-up {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        top: 0;
+        width: 10vw;
+        height: 102px;
+        background-color: $gold;
+        color: $dark;
+        font-size: 1rem;
+        font-weight: $fw_medium;
+
+        &:hover {
+          background-color: $gold_hover;
+        }
+      }
+
+      @include for-desktop-up {
+        height: $separ;
+      }
+    }
   }
 
   &__footer {
