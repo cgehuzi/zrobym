@@ -299,7 +299,7 @@ if (typeof city_items_data === 'object') {
     })
     .attr('x', 15)
     .attr('y', 5)
-    .attr('font-family', 'Montserrat')
+    .attr('font-family', 'Zrobym')
     .attr('fill', function (d, i) {
       return '#cda173';
     })
