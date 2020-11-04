@@ -637,6 +637,28 @@
       }
     }
 
+    &__consult {
+      @include for-phone-vertical {
+        right: 24px;
+        left: auto;
+      }
+
+      @include for-phone-horizontal {
+        right: 0;
+        left: auto;
+      }
+
+      @include for-tablet-vertical {
+        right: 0;
+        left: auto;
+      }
+
+      @include for-tablet-horizontal-up {
+        left: 0;
+        right: auto;
+      }
+    }
+
     .social {
       &__list {
         @include for-phone-vertical {
