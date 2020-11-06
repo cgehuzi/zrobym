@@ -44,12 +44,8 @@
       top: 42px;
     }
 
-    @include for-laptop-up {
-      transition: $fast;
-
-      &:hover {
-        opacity: 1;
-      }
+    &:hover {
+      opacity: 1;
     }
   }
 
@@ -159,5 +155,19 @@
   &.opened .modal__window {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+[dir='rtl'] {
+  .modal {
+    &__close {
+      right: auto;
+      left: 24px;
+
+      @include for-tablet-vertical-up {
+        right: auto;
+        left: 42px;
+      }
+    }
   }
 }
