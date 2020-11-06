@@ -540,7 +540,6 @@ if (document.querySelector('.modal')) {
 
     modal__OPEN.addEventListener('click', function (e) {
       e.preventDefault();
-      hideScrollBar();
       modal__OPEN_TARGET.classList.add(modal__OPEN_CLASS); // открываем элемент-цель
       modal__CLOSE_TARGET = modal__OPEN_TARGET;
     });
@@ -552,7 +551,6 @@ if (document.querySelector('.modal')) {
     modal__CLOSE.addEventListener('click', function (e) {
       e.preventDefault();
       modal__CLOSE_TARGET.classList.remove(modal__OPEN_CLASS); // закрываем элемент-цель
-      showScrollBar();
     });
   }
 }
