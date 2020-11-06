@@ -18,4 +18,12 @@
     padding: 0;
     justify-content: center;
   }
+
+  &__text {
+    @include for-tablet-up {
+      padding-top: 0;
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  }
 }
