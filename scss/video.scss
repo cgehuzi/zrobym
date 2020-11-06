@@ -1,0 +1,21 @@
+@import './1-const.scss';
+
+.video {
+  &__title {
+    position: relative;
+    top: 0;
+  }
+
+  &__content {
+    margin-top: 32px;
+
+    @include for-tablet-up {
+      margin-top: 48px;
+    }
+  }
+
+  &__body {
+    padding: 0;
+    justify-content: center;
+  }
+}
