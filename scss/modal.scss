@@ -59,7 +59,7 @@
     flex-direction: column;
     width: calc(100% - 16px);
     margin: 8px auto;
-    padding: 24px;
+    padding: 32px;
     background-color: #ffffff;
     border-radius: 1px;
     box-shadow: 0 0 32px -12px #000000;
@@ -125,10 +125,10 @@
   &__row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -21px;
+    margin: 0 -16px;
 
     &-col {
-      padding: 0 21px 42px;
+      padding: 0 16px 32px;
       flex-basis: 100%;
       max-width: 100%;
 
