@@ -523,3 +523,37 @@ document.querySelector('[data-callback]').addEventListener('click', function () 
   $('body, html').animate({ scrollTop: $('#form-feedback').offset().top }, 600);
 });
 // END ------------------------
+
+// ----------------------------------------------------
+// Реализация блока modal
+// ----------------------------------------------------
+if (document.querySelector('.modal')) {
+  let modal__OPENS = document.querySelectorAll('[data-modal-open]'); // кнопки открытия модалек
+  let modal__CLOSES = document.querySelectorAll('[data-modal-close]'); // кнопки закрытия модалек
+  let modal__OPEN_CLASS = 'opened'; // класс активации модалек
+  let modal__CLOSE_TARGET; // элемент-цель — будет вставляться текущая открытая модалька
+  let modal__WINDOW_SCROLL; // ширина скролл-бара — будет вставляться при открывании модпльки
+
+  for (let index = 0; index < modal__OPENS.length; index++) {
+    let modal__OPEN = modal__OPENS[index]; // кнопка открытия
+    let modal__OPEN_TARGET = document.querySelector(modal__OPEN.getAttribute('data-modal-open')); // элемент-цель
+
+    modal__OPEN.addEventListener('click', function (e) {
+      e.preventDefault();
+      hideScrollBar();
+      modal__OPEN_TARGET.classList.add(modal__OPEN_CLASS); // открываем элемент-цель
+      modal__CLOSE_TARGET = modal__OPEN_TARGET;
+    });
+  }
+
+  for (let index = 0; index < modal__CLOSES.length; index++) {
+    let modal__CLOSE = modal__CLOSES[index]; // кнопка закрытия
+
+    modal__CLOSE.addEventListener('click', function (e) {
+      e.preventDefault();
+      modal__CLOSE_TARGET.classList.remove(modal__OPEN_CLASS); // закрываем элемент-цель
+      showScrollBar();
+    });
+  }
+}
+// END ------------------------
