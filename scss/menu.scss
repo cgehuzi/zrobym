@@ -390,6 +390,7 @@
     background-position: center;
     background-repeat: no-repeat;
     font-size: 0;
+    border: none;
 
     @include for-phone-vertical {
       left: 24px;
