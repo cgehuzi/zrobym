@@ -1,55 +1,62 @@
 @import './1-const.scss';
 
 .template-main {
-	.header {
-		min-height: 100vh;
+  .header {
+    min-height: 100vh;
 
-		.section {
-			&__header {
-				margin-top: auto;
+    .section {
+      &__header {
+        margin-top: auto;
 
-				@include for-phone {
-					padding-bottom: 64px;
-					position: relative;
-					top: 0;
-				}
-			}
+        @include for-phone {
+          padding-bottom: 64px;
+          position: relative;
+          top: 0;
+        }
+      }
 
-			&__body {
-				padding-bottom: 0;
+      &__body {
+        padding-bottom: 0;
 
-				&-col {
-					@include for-phone-vertical {
-						padding-top: 96px;
-					}
-				}
-			}
-		}
+        &-col {
+          @include for-phone-vertical {
+            padding-top: 96px;
+          }
+        }
+      }
+    }
 
-		.lang {
-			color: #ffffff;
-		}
-	}
+    .lang {
+      color: #ffffff;
+    }
+  }
 
-	.menu {
-		&-open {
-			@include for-phone {
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-			}
+  .menu {
+    &-open {
+      @include for-phone {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
 
-			&__icon {
+      &__icon {
+        &-top,
+        &-center,
+        &-bottom {
+          @include for-phone {
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+  }
 
-				&-top,
-				&-center,
-				&-bottom {
-					@include for-phone {
-						background-color: #ffffff;
-					}
-				}
-			}
-		}
-	}
+  .youtube {
+    &__item {
+      &::before {
+        box-shadow: none;
+      }
+    }
+  }
 }
