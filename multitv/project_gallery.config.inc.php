@@ -20,7 +20,7 @@ $settings['fields'] = array(
         'caption' => 'План<br><span class="comment">на котором это помещение</span>',
         'type' => 'dropdown',
         'width' => '60%',
-        'elements' => 'Не выбран==0||План 1==1||План 2==2||План 3==3||План 4==4'
+        'elements' => 'Не выбран==0||Цоколь==-1||План 1==1||План 2==2||План 3==3||План 4==4'
     ),
     'title' => array(
         'caption' => 'Название помещения<br><span class="comment">как в экспликации</span>',
