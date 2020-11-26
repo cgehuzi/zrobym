@@ -15,5 +15,10 @@ $settings['fields'] = array(
         'caption' => 'Превью-изображение<br><span class="comment">Размер: 1280 x 720 px</span>',
         'type' => 'image',
         'width' => '30%'
+    ),
+    'title' => array(
+        'caption' => 'Название видео',
+        'type' => 'text',
+        'width' => '60%'
     )
 );

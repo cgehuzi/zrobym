@@ -94,6 +94,23 @@
 
   &__video {
     margin-top: 64px;
+
+    &-list {
+      display: block;
+    }
+
+    &-point {
+      & + & {
+        margin-top: 32px;
+      }
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin: 0.75rem 0 0;
+      text-transform: uppercase;
+    }
   }
 
   &-pub {
