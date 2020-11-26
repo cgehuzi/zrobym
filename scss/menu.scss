@@ -355,8 +355,10 @@
     box-shadow: 0 0 0 24px $dark;
 
     &.with-consult {
-      left: 92px;
-      width: calc(100% - 162px);
+      @include for-phone-vertical {
+        left: 92px;
+        width: calc(100% - 162px);
+      }
     }
 
     @include for-phone-horizontal {
