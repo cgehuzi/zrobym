@@ -1,64 +1,80 @@
 @import './1-const.scss';
 
 .philosophy {
-	z-index: 1;
+  z-index: 1;
 
-	&__header {
-		flex-grow: 1;
-		padding-bottom: 64px;
-	}
+  &__header {
+    padding-bottom: 64px;
+  }
 
-	&__list {
-		position: relative;
-		margin: 0 0 -32px;
+  &__gif {
+    overflow: hidden;
+    margin: -64px 0 0;
 
-		@include for-phone-horizontal-up {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
+    @include for-tablet-horizontal-up {
+      margin: auto 0;
+    }
 
-		&-point {
-			padding: 0 16px 32px;
-			text-align: center;
+    &-image {
+      width: 256px;
 
-			@include for-phone-horizontal-up {
-				max-width: 33.333%;
+      @include for-tablet-vertical-up {
+        margin-left: -72px;
+      }
+    }
+  }
 
-				&:nth-child(3n + 1) {
-					padding-left: 0;
-				}
+  &__list {
+    position: relative;
+    margin: 0 0 -32px;
 
-				&:nth-child(3n + 3) {
-					padding-right: 0;
-				}
-			}
+    @include for-phone-horizontal-up {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-			@include for-desktop {
-				min-width: 9vw;
-			}
-		}
-	}
+    &-point {
+      padding: 0 16px 32px;
+      text-align: center;
 
-	&__item {
-		&-title {
-			font-size: 2.6rem;
-			font-weight: $fw_extra;
+      @include for-phone-horizontal-up {
+        max-width: 33.333%;
 
-			@include for-tablet {
-				font-size: 3rem;
-			}
+        &:nth-child(3n + 1) {
+          padding-left: 0;
+        }
 
-			@include for-laptop-up {
-				font-size: 3.4rem;
-			}
-		}
+        &:nth-child(3n + 3) {
+          padding-right: 0;
+        }
+      }
 
-		&-desc {
-			text-transform: uppercase;
-			font-size: 0.9rem;
-			display: flex;
-			justify-content: center;
-		}
-	}
+      @include for-desktop {
+        min-width: 9vw;
+      }
+    }
+  }
+
+  &__item {
+    &-title {
+      font-size: 2.6rem;
+      font-weight: $fw_extra;
+
+      @include for-tablet {
+        font-size: 3rem;
+      }
+
+      @include for-laptop-up {
+        font-size: 3.4rem;
+      }
+    }
+
+    &-desc {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
