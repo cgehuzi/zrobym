@@ -3,13 +3,8 @@
 .philosophy {
   z-index: 1;
 
-  &__header {
-    padding-bottom: 64px;
-  }
-
   &__gif {
     overflow: hidden;
-    margin: -64px 0 0;
 
     @include for-tablet-horizontal-up {
       margin: auto 0;
